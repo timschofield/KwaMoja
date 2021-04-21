@@ -35,7 +35,7 @@ $Title = _('Configure rooms for') . ' ' . $MyRow['name'];
 include ('includes/header.php');
 
 echo '<p class="page_title_text">
-		<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/hospital.png" title="', _('Maintain Rooms'), '" alt="" />', $Title, '
+		<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images-medical/hospital.png" title="', _('Maintain Rooms'), '" alt="" />', $Title, '
 	</p>';
 
 if (isset($_POST['update'])) {

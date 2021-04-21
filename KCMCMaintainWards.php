@@ -14,7 +14,7 @@ if (isset($_POST['SelectedWard'])) {
 echo '<div class="toplink"><a href="' . $RootPath . '/KCMCWardOverview.php?SelectedWard=', $SelectedWard, '">' . _('Ward Overview Screen') . '</a></div>';
 
 echo '<p class="page_title_text">
-		<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/hospital.png" title="', _('Hospital Ward Configuration'), '" alt="" />', $Title, '
+		<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images-medical/hospital.png" title="', _('Hospital Ward Configuration'), '" alt="" />', $Title, '
 	</p>';
 
 if (isset($_POST['insert']) or isset($_POST['update'])) {
