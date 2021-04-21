@@ -33,8 +33,11 @@ if (isset($_GET['PID'])) {
 															time_from,
 															discharge_type_nr,
 															history,
+															status,
 															create_id,
-															create_time
+															create_time,
+															modify_id,
+															modify_time
 														) VALUES (
 															'" . $Encounter . "',
 															2,
@@ -45,6 +48,9 @@ if (isset($_GET['PID'])) {
 															CURRENT_TIME,
 															0,
 															'CREATE: " . date('Y-m-d H:i:s') . " " . $_SESSION['UserID'] . "',
+															'admitted',
+															'" . $_SESSION['UserID'] . "',
+															NOW(),
 															'" . $_SESSION['UserID'] . "',
 															NOW()
 														)";
@@ -57,8 +63,11 @@ if (isset($_GET['PID'])) {
 															time_from,
 															discharge_type_nr,
 															history,
+															status,
 															create_id,
-															create_time
+															create_time,
+															modify_id,
+															modify_time
 														) VALUES (
 															'" . $Encounter . "',
 															4,
@@ -69,6 +78,9 @@ if (isset($_GET['PID'])) {
 															CURRENT_TIME,
 															0,
 															'CREATE: " . date('Y-m-d H:i:s') . " " . $_SESSION['UserID'] . "',
+															'admitted',
+															'" . $_SESSION['UserID'] . "',
+															NOW(),
 															'" . $_SESSION['UserID'] . "',
 															NOW()
 														)";
@@ -81,8 +93,11 @@ if (isset($_GET['PID'])) {
 															time_from,
 															discharge_type_nr,
 															history,
+															status,
 															create_id,
-															create_time
+															create_time,
+															modify_id,
+															modify_time
 														) VALUES (
 															'" . $Encounter . "',
 															5,
@@ -93,6 +108,9 @@ if (isset($_GET['PID'])) {
 															CURRENT_TIME,
 															0,
 															'CREATE: " . date('Y-m-d H:i:s') . " " . $_SESSION['UserID'] . "',
+															'admitted',
+															'" . $_SESSION['UserID'] . "',
+															NOW(),
 															'" . $_SESSION['UserID'] . "',
 															NOW()
 														)";
