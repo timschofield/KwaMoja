@@ -197,6 +197,32 @@ if (isset($_POST['UpdateRequest'])) {
 			include ('includes/footer.php');
 			exit;
 		}
+		if ($_SESSION['BillForBacteriologyTest'] == 1) {
+
+			$StockSQL = "SELECT stockid FROM care_baclabor_test_type WHERE type='" . $Test . "'";
+			$StockResult = DB_query($StockSQL);
+			$StockRow = DB_fetch_array($StockResult);
+
+			$PriceListSQL = "SELECT salestype FROM debtorsmaster WHERE debtorno='" . $PID . "'";
+			$PriceListResult = DB_query($PriceListSQL);
+			$PriceListRow = DB_fetch_array($PriceListResult);
+
+			$SQL = "INSERT INTO care_billable_items (`pid`,
+													`stockid`,
+													`price_list`,
+													`create_id`,
+													`create_time`
+												) VALUES (
+													'" . $SelectedPatient . "',
+													'" . $StockRow['stockid'] . "',
+													'" . $PriceListRow['salestype'] . "',
+													'" . $_SESSION['UserID'] . "',
+													NOW()
+											)";
+			$ErrMsg = _('There was a problem inserting the billable items because');
+			$DbgMsg = _('The SQL used to insert the billable items was');
+			$Result = DB_query($SQL, $ErrMsg, $DbgMsg, true);
+		}
 	}
 	prnMsg(_('The batch of tests has been updated successfully'), 'success');
 
@@ -324,6 +350,32 @@ if (isset($_POST['SendRequest'])) {
 			prnMsg(_('Failed to insert the batch line into the database'), 'error');
 			include ('includes/footer.php');
 			exit;
+		}
+		if ($_SESSION['BillForBacteriologyTest'] == 1) {
+
+			$StockSQL = "SELECT stockid FROM care_baclabor_test_type WHERE type='" . $Test . "'";
+			$StockResult = DB_query($StockSQL);
+			$StockRow = DB_fetch_array($StockResult);
+
+			$PriceListSQL = "SELECT salestype FROM debtorsmaster WHERE debtorno='" . $SelectedPatient . "'";
+			$PriceListResult = DB_query($PriceListSQL);
+			$PriceListRow = DB_fetch_array($PriceListResult);
+
+			$SQL = "INSERT INTO care_billable_items (`pid`,
+													`stockid`,
+													`price_list`,
+													`create_id`,
+													`create_time`
+												) VALUES (
+													'" . $SelectedPatient . "',
+													'" . $StockRow['stockid'] . "',
+													'" . $PriceListRow['salestype'] . "',
+													'" . $_SESSION['UserID'] . "',
+													NOW()
+											)";
+			$ErrMsg = _('There was a problem inserting the billable items because');
+			$DbgMsg = _('The SQL used to insert the billable items was');
+			$Result = DB_query($SQL, $ErrMsg, $DbgMsg, true);
 		}
 	}
 	prnMsg(_('The batch of tests has been sent successfully'), 'success');
@@ -472,6 +524,14 @@ if (isset($SelectedPatient) and $SelectedPatient != '') {
 
 	echo '</form>';
 } else {
+
+	if (!isset($_POST['Notes'])) {
+		$_POST['Notes'] = '';
+	}
+
+	if (!isset($_POST['SampleDate'])) {
+		$_POST['SampleDate'] = '';
+	}
 
 	echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '?identifier=', $Identifier, '" method="post">';
 	echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';

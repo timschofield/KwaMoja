@@ -46,6 +46,9 @@ if (isset($_POST['submit'])) {
 		if ($_SESSION['barcodes_dir'] != $_POST['X_barcodes_dir']) {
 			$SQL[] = "UPDATE config SET confvalue = 'companies/" . $_SESSION['DatabaseName'] . '/' . $_POST['X_barcodes_dir'] . "' WHERE confname = 'barcodes_dir'";
 		}
+		if ($_SESSION['bacteriology_cat'] != $_POST['X_bacteriology_cat']) {
+			$SQL[] = "UPDATE config SET confvalue = '" . $_POST['X_bacteriology_cat'] . "' WHERE confname = 'bacteriology_cat'";
+		}
 		$ErrMsg = _('The hospital configuration could not be updated because');
 		$DbgMsg = _('The SQL that failed was') . ':';
 		if (sizeof($SQL) > 0) {
@@ -70,7 +73,7 @@ if (isset($_POST['submit'])) {
 echo '<form method="post" action="', htmlspecialchars(htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), ENT_QUOTES, 'UTF-8'), '">';
 echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
 
-echo '<fieldset>
+echo '<fieldset style="width:auto; margin-right:5px;">
 		<legend>', _('General Settings'), '</legend>';
 
 echo '<field>
@@ -201,6 +204,29 @@ while ($DirEntry = $DirHandle->read()) {
 }
 echo '</select>
 	<fieldhelp>', _('The directory under which all qrcodes_dir files will be stored.'), '</fieldhelp>
+</field>';
+
+echo '</fieldset>';
+
+echo '<fieldset style="width:auto; margin-right:5px;">
+		<legend>', _('Laboratory Settings'), '</legend>';
+
+$SQL = "SELECT categoryid, categorydescription FROM stockcategory";
+$Result = DB_query($SQL);
+
+echo '<field>
+		<label for="X_bacteriology_cat">', _('Stock category for bacteriology tests'), '</label>
+		<select required="required" name="X_bacteriology_cat">';
+
+while ($MyRow = DB_fetch_array($Result)) {
+	if (isset($_SESSION['bacteriology_cat']) and $MyRow['categoryid'] == $_SESSION['bacteriology_cat']) {
+		echo '<option selected="selected" value="', $MyRow['categoryid'], '">', $MyRow['categorydescription'], '</option>';
+	} else {
+		echo '<option value="', $MyRow['categoryid'], '">', $MyRow['categorydescription'], '</option>';
+	}
+} //end while loop
+echo '</select>
+	<fieldhelp>', _('Select the stock category to be used for bacteriology test part numbers'), '</fieldhelp>
 </field>';
 
 echo '</fieldset>';

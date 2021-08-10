@@ -37,6 +37,9 @@ echo '<fieldset class="MenuList">
 echo '<fieldset class="MenuList">
 		<legend><img alt="" src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/maintenance.png" data-title="', _('Laboratory Maintenance'), '" />', _('Laboratory Maintenance'), '</legend>
 		<ul>
+			<li class="MenuItem">
+				<a href="', $RootPath, '/KCMCMaintainBacteriologyTests.php">', _('Maintain Bacteriology Tests'), '</a>
+			</li>
 		</ul>
 	</fieldset>';
 
