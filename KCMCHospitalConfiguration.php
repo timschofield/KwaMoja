@@ -49,6 +49,9 @@ if (isset($_POST['submit'])) {
 		if ($_SESSION['bacteriology_cat'] != $_POST['X_bacteriology_cat']) {
 			$SQL[] = "UPDATE config SET confvalue = '" . $_POST['X_bacteriology_cat'] . "' WHERE confname = 'bacteriology_cat'";
 		}
+		if ($_SESSION['radiology_cat'] != $_POST['X_radiology_cat']) {
+			$SQL[] = "UPDATE config SET confvalue = '" . $_POST['X_radiology_cat'] . "' WHERE confname = 'radiology_cat'";
+		}
 		$ErrMsg = _('The hospital configuration could not be updated because');
 		$DbgMsg = _('The SQL that failed was') . ':';
 		if (sizeof($SQL) > 0) {
@@ -227,6 +230,24 @@ while ($MyRow = DB_fetch_array($Result)) {
 } //end while loop
 echo '</select>
 	<fieldhelp>', _('Select the stock category to be used for bacteriology test part numbers'), '</fieldhelp>
+</field>';
+
+$SQL = "SELECT categoryid, categorydescription FROM stockcategory";
+$Result = DB_query($SQL);
+
+echo '<field>
+		<label for="X_radiology_cat">', _('Stock category for radiology tests'), '</label>
+		<select required="required" name="X_radiology_cat">';
+
+while ($MyRow = DB_fetch_array($Result)) {
+	if (isset($_SESSION['radiology_cat']) and $MyRow['categoryid'] == $_SESSION['radiology_cat']) {
+		echo '<option selected="selected" value="', $MyRow['categoryid'], '">', $MyRow['categorydescription'], '</option>';
+	} else {
+		echo '<option value="', $MyRow['categoryid'], '">', $MyRow['categorydescription'], '</option>';
+	}
+} //end while loop
+echo '</select>
+	<fieldhelp>', _('Select the stock category to be used for radiology part numbers'), '</fieldhelp>
 </field>';
 
 echo '</fieldset>';
