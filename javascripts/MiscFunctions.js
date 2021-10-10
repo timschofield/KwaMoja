@@ -453,9 +453,7 @@ function Scheduler() {
 	xmlhttp.send();
 	return false;
 }
-function Redirect(e) {
-	alert(e.getAttribute("href"));
-}
+
 function NotificationMessages() {
 	/* Notification messages */
 
@@ -498,6 +496,7 @@ function initial() {
 	if (document.getElementsByTagName) {
 		var e = document.getElementsByTagName("a");
 		for (i = 0; i < e.length; i++) {
+			SetLinkHandler(e[i]);
 			var t = e[i];
 			if (t.getAttribute("href") && t.getAttribute("rel") == "external") t.target = "_blank"
 //			e[i].onclick = function () {Redirect(this); return false};
