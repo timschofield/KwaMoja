@@ -39,14 +39,24 @@ if (isset($_GET['SelectedTag'])) {
 	if (isset($_POST['submit'])) {
 		$SQL = "INSERT INTO tags values(NULL, '" . $_POST['Department'] . "', '" . $_POST['Description'] . "')";
 		$Result = DB_query($SQL);
+		if (DB_error_no() != 0) {
+			prnMsg(_('There was a problem inserting this tag'), 'error');
+		} else {
+			prnMsg(_('The tag has been inserted'), 'success');
+		}
 		unset($_POST['Department']);
 	}
 
 	if (isset($_POST['update'])) {
 		$SQL = "UPDATE tags SET tagdescription='" . $_POST['Description'] . "',
-							department='" . $_POST['Department'] . "'
-		WHERE tagref='" . $_POST['reference'] . "'";
+						department='" . $_POST['Department'] . "'
+	WHERE tagref='" . $_POST['reference'] . "'";
 		$Result = DB_query($SQL);
+		if (DB_error_no() != 0) {
+			prnMsg(_('There was a problem updating this tag'), 'error');
+		} else {
+			prnMsg(_('The tag has been updated'), 'success');
+		}
 		unset($_POST['Department']);
 	}
 	echo '<p class="page_title_text" >

@@ -364,6 +364,12 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 			$ParentResult = DB_query($SQL);
 			$ParentRow = DB_fetch_array($ParentResult);
 
+			if (DB_num_rows($ParentResult) == 0) {
+				$ParentGroupName = '';
+			} else {
+				$ParentGroupName = $ParentRow['groupname'];
+			}
+
 			echo '<tr class="striped_row">
 				<td class="number">', $MyRow['groupcode'], '</td>
 				<td>', $MyRow['groupname'], '</td>
@@ -372,7 +378,7 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 				<td class="number">', $MyRow['sequenceintb'], '</td>
 				<td>', $PandLText, '</td>
 				<td>', $MyRow['parentgroupcode'], '</td>
-				<td>', $ParentRow['groupname'], '</td>
+				<td>', $ParentGroupName, '</td>
 				<td class="noPrint"><a href="', htmlspecialchars(basename(__FILE__) . '?SelectedAccountGroup=' . urlencode($MyRow['groupcode']), ENT_QUOTES, 'UTF-8'), '">', _('Edit'), '</a></td>
 				<td class="noPrint"><a href="', htmlspecialchars(basename(__FILE__) . '?SelectedAccountGroup=' . urlencode($MyRow['groupcode']), ENT_QUOTES, 'UTF-8'), '&amp;delete=1" onclick="return MakeConfirm(\'' . _('Are you sure you wish to delete this account group?') . '\', \'Confirm Delete\', this);">', _('Delete'), '</a></td>
 			</tr>';
