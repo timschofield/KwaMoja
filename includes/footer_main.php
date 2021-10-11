@@ -1,4 +1,19 @@
-Exception_PHP_Beautifier_Filter: Doesn't exists filter 'KeepEmptyLines' in /usr/lib/php/pear/PHP/Beautifier.php on line 448
-#0 /usr/lib/php/pear/PHP/Beautifier.php(448): PHP_Beautifier->addFilterFile()
-#1 /home/tim/code/KwaMoja/.git/hooks/pre-commit.d/bin/format.phps(18): PHP_Beautifier->addFilter()
-#2 {main}
+<?php
+echo '</section>'; // BodyDiv
+echo '<footer class="noPrint">
+		<a class="FooterLogo" href="http://www.kwamoja.com" target="_blank">
+			<img src="', $RootPath, '/', $_SESSION['LogoFile'], '" width="120" alt="KwaMoja" title="KwaMoja" />
+		</a>
+		<div class="FooterVersion">KwaMoja ', _('version'), ' ', $_SESSION['VersionNumber'], '.', $_SESSION['DBUpdateNumber'], '</div>
+		<div class="FooterTime">', DisplayDateTime(), '</div>
+	</footer>'; // FooterDiv
+
+
+echo '<div id="mask">
+				<div id="dialog" name="dialog"></div>
+			</div>';
+
+echo '</body>';
+echo '</html>';
+
+?>

@@ -81,8 +81,7 @@ function SubmitThisForm(FormName, Element) {
 	}
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			Element.innerHTML=xmlhttp.responseText;
-			GetContent('modal', Target);
+			document.getElementById('modal').innerHTML=xmlhttp.responseText;
 			OverRideClicks();
 		}
 	}
@@ -93,6 +92,9 @@ function SubmitThisForm(FormName, Element) {
 	xmlhttp.send(PostData);
 	return false;
 }
+function FadeOut(divMessage) {
+	divMessage.style.opacity=0;
+}
 function ShowMessages() {
 	var divMessage = new Array();
 	n=document.getElementsByName('success');
@@ -100,31 +102,42 @@ function ShowMessages() {
 	for (i = 0; i < n.length; i++) {
 		divMessage[i] = document.createElement("div");
 		divMessage[i].className = "success";
-		divMessage[i].style.top = (50+140*i)+"px";
+		divMessage[i].style.top = (50+100*i)+"px";
 		divMessage[i].innerHTML=n[i].innerHTML;
-		divModal.appendChild(divMessage[i]);
+		document.getElementById('modal').appendChild(divMessage[i]);
 		setTimeout(FadeOut, 2000, divMessage[i]);
 	}
 	w=i;
 	n=document.getElementsByName('info');
 	if (n.length > 0)
-	for (i = w; i < (n+w).length; i++) {
+	for (i = w; i < n.length+w-1; i++) {
 		divMessage[i] = document.createElement("div");
 		divMessage[i].className = "info";
 		divMessage[i].style.top = (50+140*i)+"px";
 		divMessage[i].innerHTML=n[i].innerHTML;
-		divModal.appendChild(divMessage[i]);
+		document.getElementById('modal').appendChild(divMessage[i]);
 		setTimeout(FadeOut, 2000, divMessage[i]);
 	}
 	w=i;
 	n=document.getElementsByName('warn');
 	if (n.length > 0)
-	for (i = w; i < (n+w).length; i++) {
+	for (i = w; i < n.length+w-1; i++) {
 		divMessage[i] = document.createElement("div");
 		divMessage[i].className = "warn";
 		divMessage[i].style.top = (50+140*i)+"px";
 		divMessage[i].innerHTML=n[i].innerHTML;
-		divModal.appendChild(divMessage[i]);
+		document.getElementById('modal').appendChild(divMessage[i]);
+		setTimeout(FadeOut, 2000, divMessage[i]);
+	}
+	w=i;
+	n=document.getElementsByName('error');
+	if (n.length > 0)
+	for (i = w; i < n.length+w-1; i++) {
+		divMessage[i] = document.createElement("div");
+		divMessage[i].className = "error";
+		divMessage[i].style.top = (50+140*i)+"px";
+		divMessage[i].innerHTML=n[i].innerHTML;
+		document.getElementById('modal').appendChild(divMessage[i]);
 		setTimeout(FadeOut, 2000, divMessage[i]);
 	}
 }
