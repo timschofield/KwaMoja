@@ -97,9 +97,22 @@ function FadeOut(divMessage) {
 }
 function ShowMessages() {
 	var divMessage = new Array();
+	n=document.getElementsByName('error');
+	w=0;
+	i=0;
+	if (n.length > 0)
+	for (i = w; i < n.length; i++) {
+		divMessage[i] = document.createElement("div");
+		divMessage[i].className = "error";
+		divMessage[i].style.top = (50+100*i)+"px";
+		divMessage[i].innerHTML=n[i].innerHTML;
+		document.getElementById('modal').appendChild(divMessage[i]);
+		setTimeout(FadeOut, 2000, divMessage[i]);
+	}
+	w=i;
 	n=document.getElementsByName('success');
 	if (n.length > 0)
-	for (i = 0; i < n.length; i++) {
+	for (i = w; i < (n.length+w); i++) {
 		divMessage[i] = document.createElement("div");
 		divMessage[i].className = "success";
 		divMessage[i].style.top = (50+100*i)+"px";
@@ -110,10 +123,10 @@ function ShowMessages() {
 	w=i;
 	n=document.getElementsByName('info');
 	if (n.length > 0)
-	for (i = w; i < n.length+w-1; i++) {
+	for (i = w; i < n.length+w; i++) {
 		divMessage[i] = document.createElement("div");
 		divMessage[i].className = "info";
-		divMessage[i].style.top = (50+140*i)+"px";
+		divMessage[i].style.top = (50+100*i)+"px";
 		divMessage[i].innerHTML=n[i].innerHTML;
 		document.getElementById('modal').appendChild(divMessage[i]);
 		setTimeout(FadeOut, 2000, divMessage[i]);
@@ -121,21 +134,10 @@ function ShowMessages() {
 	w=i;
 	n=document.getElementsByName('warn');
 	if (n.length > 0)
-	for (i = w; i < n.length+w-1; i++) {
+	for (i = w; i < n.length+w; i++) {
 		divMessage[i] = document.createElement("div");
 		divMessage[i].className = "warn";
-		divMessage[i].style.top = (50+140*i)+"px";
-		divMessage[i].innerHTML=n[i].innerHTML;
-		document.getElementById('modal').appendChild(divMessage[i]);
-		setTimeout(FadeOut, 2000, divMessage[i]);
-	}
-	w=i;
-	n=document.getElementsByName('error');
-	if (n.length > 0)
-	for (i = w; i < n.length+w-1; i++) {
-		divMessage[i] = document.createElement("div");
-		divMessage[i].className = "error";
-		divMessage[i].style.top = (50+140*i)+"px";
+		divMessage[i].style.top = (50+100*i)+"px";
 		divMessage[i].innerHTML=n[i].innerHTML;
 		document.getElementById('modal').appendChild(divMessage[i]);
 		setTimeout(FadeOut, 2000, divMessage[i]);
