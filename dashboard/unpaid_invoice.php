@@ -1,28 +1,28 @@
 <?php
-$PathPrefix = '../';
+$PathPrefix = '';
 
 if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 	require_once ($PathPrefix . 'includes/session.php');
-	$DashBoardURL = $RootPath . '/Dashboard.php';
-}
+	$DashBoardURL = $RootPath . '/index.php';
+	}
 
-$ScriptTitle = _('Latest unpaid customer invoices');
+	$ScriptTitle = _('Latest unpaid customer invoices');
 
-$SQL = "SELECT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
-$DashboardResult = DB_query($SQL);
-$DashboardRow = DB_fetch_array($DashboardResult);
+	$SQL = "SELECT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
+	$DashboardResult = DB_query($SQL);
+	$DashboardRow = DB_fetch_array($DashboardResult);
 
-echo '<div class="container">
+	echo '<div class="container">
 		<table class="DashboardTable">
 			<tr>
 				<th colspan="5">
 					<div class="CanvasTitle">', $ScriptTitle, '
-						<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" id="CloseButton">X</a>
+						<a class="CloseButton" id="CloseButton" href="#" onclick="GetContent(\'body\', \'', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '\')">X</a>
 					</div>
 				</th>
 			</tr>';
 
-$SQL = "SELECT salesorders.orderno,
+	$SQL = "SELECT salesorders.orderno,
 				debtorsmaster.name,
 				custbranch.brname,
 				salesorders.customerref,
@@ -54,9 +54,9 @@ $SQL = "SELECT salesorders.orderno,
 					salesorders.printedpackingslip,
 					salesorders.poplaced
 			ORDER BY salesorders.orderno";
-$SalesOrdersResult1 = DB_query($SQL);
+	$SalesOrdersResult1 = DB_query($SQL);
 
-echo '<tr>
+	echo '<tr>
 		<th>', _('Customer'), '</th>
 		<th>', _('Order Date'), '</th>
 		<th>', _('Delivery Date'), '</th>
@@ -64,15 +64,15 @@ echo '<tr>
 		<th>', _('Order Total'), '</th>
 	</tr> ';
 
-$TotalOrderValue = 0;
-while ($row = DB_fetch_array($SalesOrdersResult1)) {
-	$fo = locale_number_format($row['ordervalue'], $row['currdecimalplaces']);
-	$TotalOrderValue+= $row['ordervalue'];
+	$TotalOrderValue = 0;
+	while ($row = DB_fetch_array($SalesOrdersResult1)) {
+		$fo = locale_number_format($row['ordervalue'], $row['currdecimalplaces']);
+		$TotalOrderValue+= $row['ordervalue'];
 
-	$FormatedOrderDate = ConvertSQLDate($row['orddate']);
-	$FormatedDelDate = ConvertSQLDate($row['deliverydate']);
+		$FormatedOrderDate = ConvertSQLDate($row['orddate']);
+		$FormatedDelDate = ConvertSQLDate($row['deliverydate']);
 
-	echo '<tr class="striped_row">
+		echo '<tr class="striped_row">
 			<td>', $row['name'], '</td>
 			<td>', $FormatedOrderDate, '</td>
 			<td>', $FormatedDelDate, '</td>
@@ -80,14 +80,14 @@ while ($row = DB_fetch_array($SalesOrdersResult1)) {
 			<td class="number">', $fo, '</td>
 		</tr>';
 
-}
-echo '<tr class="total_row">
+	}
+	echo '<tr class="total_row">
 		<td colspan="4">', _('Total'), '</td>
 		<td class="number">', locale_number_format($TotalOrderValue, $row['currdecimalplaces']), '</td>
 	</tr>
 </tbody>';
 
-echo '</table>
+	echo '</table>
 	</div>';
 
 ?>

@@ -1,33 +1,164 @@
 <?php
 $PageSecurity = 0;
-
 include ('includes/session.php');
+$Title = _('KwaMoja ERP');
+$ViewTopic = 'Dashboard';
+$BookMark = 'MainScreen';
+if (!isset($RootPath)) {
+	$RootPath = dirname(htmlspecialchars(basename(__FILE__)));
+	if ($RootPath == '/' or $RootPath == "\\") {
+		$RootPath = '';
+	}
+	}
 
-if (isset($_SESSION['FirstLogIn']) and $_SESSION['FirstLogIn'] == '1' and isset($_SESSION['DatabaseName'])) {
-	$_SESSION['FirstRun'] = true;
-	echo '<meta http-equiv="refresh" content="0; url=' . $RootPath . '/InitialScripts.php">';
-	exit;
+	$ViewTopic = isset($ViewTopic) ? '?ViewTopic=' . $ViewTopic : '';
+	$BookMark = isset($BookMark) ? '#' . $BookMark : '';
+
+	if (isset($_GET['Theme'])) {
+		$_SESSION['Theme'] = $_GET['Theme'];
+		$SQL = "UPDATE www_users SET theme='" . $_GET['Theme'] . "' WHERE userid='" . $_SESSION['UserID'] . "'";
+		$Result = DB_query($SQL);
+	}
+
+	if ($LanguagesArray[$_SESSION['Language']]['Direction'] == 'rtl' and mb_substr($_SESSION['Theme'], -4) != '-rtl') {
+		$_SESSION['Theme'] = $_SESSION['Theme'] . '-rtl';
+	}
+
+	if (isset($Title) and $Title == _('Copy a BOM to New Item Code')) { //solve the cannot modify heaer information in CopyBOM.php scritps
+		ob_start();
+	}
+
+	echo '<!DOCTYPE html>';
+
+	echo '<html>
+		<head>
+			<meta http-equiv="Content-Type" content="application/html; charset=utf-8; cache-control: no-cache, no-store, must-revalidate; Pragma: no-cache" />
+			<title>', _('KwaMoja'), ' - ', $Title, '</title>
+			<link rel="icon" href="', $PathPrefix, $RootPath, '/favicon.ico?v=2" />
+			<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/styles.css?v=30" rel="stylesheet" type="text/css" media="screen" />
+			<link href="', $PathPrefix, $RootPath, '/css/print.css" rel="stylesheet" type="text/css" media="print" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">';
+	echo '<script async type="text/javascript" src = "', $PathPrefix, $RootPath, '/javascripts/MiscFunctions.js"></script>';
+	echo '<script async type="text/javascript" src = "', $PathPrefix, $RootPath, '/javascripts/Modal.js"></script>';
+	echo '<script>
+		localStorage.setItem("DateFormat", "', $_SESSION['DefaultDateFormat'], '");
+		localStorage.setItem("Theme", "', $_SESSION['Theme'], '");
+	</script>';
+
+	if ($_SESSION['ShowPageHelp'] == 0) {
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/page_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
 	} else {
-		$_SESSION['FirstRun'] = false;
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/page_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
 	}
 
-	$Title = _('Main Menu');
-
-	if (isset($_GET['Application']) and ($_GET['Application'] != '')) {
-		/*This is sent by this page (to itself) when the user clicks on a tab */
-		$_SESSION['Module'] = $_GET['Application'];
-		setcookie('Module', $_GET['Application'], time() + 3600 * 24 * 30);
+	if ($_SESSION['ShowFieldHelp'] == 0) {
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/field_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
+	} else {
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/field_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
 	}
 
-	include ('includes/header_main.php');
+	if ($Debug === 0) {
+		echo '</head>';
+		if (isset($AutoPrintPage)) {
+			echo '<body onload="window.print()" id="body">';
+		} else {
+			echo '<body onload="initial(); load()" onunload="GUnload()" id="body">';
+		}
+	} else {
+		echo '<link href="', $PathPrefix, $RootPath, '/css/holmes.css" rel="stylesheet" type="text/css" />';
+		echo '</head>';
+		echo '<body class="holmes-debug" onload="initial()">';
+	}
+
+	if (isset($_GET['FontSize'])) {
+		$SQL = "UPDATE www_users
+				SET fontsize='" . $_GET['FontSize'] . "'
+				WHERE userid = '" . $_SESSION['UserID'] . "'";
+		$Result = DB_query($SQL);
+		switch ($_GET['FontSize']) {
+			case 0:
+				$_SESSION['ScreenFontSize'] = '0.667rem';
+			break;
+			case 1:
+				$_SESSION['ScreenFontSize'] = '0.833rem';
+			break;
+			case 2:
+				$_SESSION['ScreenFontSize'] = '1rem';
+			break;
+			default:
+				$_SESSION['ScreenFontSize'] = '0.833rem';
+		}
+	}
+	echo '<style>
+			body {
+					font-size: ', $_SESSION['ScreenFontSize'], ';
+				}
+			</style>';
+
+	$ScriptName = basename($_SERVER['SCRIPT_NAME']);
+	echo '<div class="ShowModal" id="modal"></div>';
+
+	$DashBoardURL = 'index.php';
+
+	echo '<link href="', $RootPath, '/dashboard/css/dashboard.css?v=1" rel="stylesheet" type="text/css" media="screen" />';
+
+	$SQL = "SELECT scripts FROM dashboard_users WHERE userid = '" . $_SESSION['UserID'] . "' ";
+
+	$Result = DB_query($SQL);
+
+	$MyRow = DB_fetch_array($Result);
+	$ScriptArray = explode(',', $MyRow['scripts']);
+
+	$UserSQL = "SELECT scripts FROM dashboard_users WHERE userid = '" . $_SESSION['UserID'] . "' ";
+	$Result = DB_query($UserSQL);
+	if (DB_num_rows($Result) == 0) {
+		$InsertSQL = "INSERT INTO dashboard_users VALUES(null, '" . $_SESSION['UserID'] . "', '')";
+		$InsertResult = DB_query($InsertSQL);
+	}
+
+	if (isset($_GET['Remove'])) {
+		foreach ($ScriptArray as $Key => $Value) {
+			if ($Value == $_GET['Remove']) {
+				unset($ScriptArray[$Key]);
+			}
+		}
+		$UpdateSQL = "UPDATE dashboard_users SET scripts='" . implode(',', $ScriptArray) . "' WHERE userid = '" . $_SESSION['UserID'] . "'";
+		$UpdateResult = DB_query($UpdateSQL);
+	}
+
+	if (isset($_GET['Reports']) and count($ScriptArray) < 7) {
+		$ScriptArray[] = $_GET['Reports'];
+		asort($ScriptArray);
+		$UpdateSQL = "UPDATE dashboard_users SET scripts='" . implode(',', $ScriptArray) . "' WHERE userid = '" . $_SESSION['UserID'] . "' ";
+		$UpdateResult = DB_query($UpdateSQL);
+	} else if (isset($_POST['Reports']) and count($ScriptArray) == 7) {
+		prnMsg(_('A maximum of 6 reports is allowd on each users dashboard'), 'warn');
+	}
 
 	if (!isset($_SESSION['MenuItems'])) {
 		include ('includes/MainMenuLinksArray.php');
 	}
 
+	echo '<div class="title_bar">', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']), '
+		<a id="exit" class="close_button" itle="', _('Logout'), '" href="', $PathPrefix, $RootPath, '/Logout.php" onclick="return MakeConfirm(\'', _('Are you sure you wish to logout?'), '\', \'', _('Confirm Logout'), '\', this);">
+			X
+		</a>
+	</div>';
+
+	echo '<div id="menuiconcontainer" class="menuiconcontainer" title="Show Menu" onclick="ShowModules()">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>';
+	echo '<div id="mask">';
 	//=== MainMenuDiv =======================================================================
-	echo '<nav class="ModuleList">
-		<ul>'; //===HJ===
+	
+
+	echo '<nav class="ModuleList" id="ModuleList">
+		<ul class="ListHolder">'; //===HJ===
+	echo '<div class="CloseModuleList" onclick="ShowModules()">X</div>';
+
+	echo '<div id="TopLogo" class="TopLogo">KwaMoja</div>';
 	$i = 0;
 	while ($i < count($_SESSION['ModuleLink'])) {
 		// This determines if the user has display access to the module see config.php and header_main.php
@@ -39,181 +170,65 @@ if (isset($_SESSION['FirstLogIn']) and $_SESSION['FirstLogIn'] == '1' and isset(
 				$_SESSION['Module'] = $_SESSION['ModuleLink'][$i];
 			}
 			if ($_SESSION['ModuleLink'][$i] == $_SESSION['Module']) {
-				echo '<li class="ModuleSelected">';
+				echo '<li class="Module ModuleSelected" onclick="ShowModal(\'Menu.php?Application=', urlencode($_SESSION['ModuleLink'][$i]), '\')">';
 			} else {
-				echo '<li class="ModuleUnSelected">';
-
+				echo '<li class="Module ModuleUnSelected" onclick="ShowModal(\'Menu.php?Application=', urlencode($_SESSION['ModuleLink'][$i]), '\')">';
 			}
-			echo '<a id="MainMenu" href="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '?Application=', urlencode($_SESSION['ModuleLink'][$i]), '">', $_SESSION['ModuleList'][$i], '</a></li>';
+			echo '<a id="MainMenu">', $_SESSION['ModuleList'][$i], '</a></li>';
 		}
 		++$i;
 	}
 	echo '</ul>
 	</nav>'; // MainMenuDiv ===HJ===
+	echo '</div>';
+	$SQL = "SELECT id,
+				scripts,
+				pagesecurity,
+				description
+			FROM dashboard_scripts";
+	$Result = DB_query($SQL);
+
+	$i = 0;
+	echo '<table>
+		<tr>';
+	while ($MyRow = DB_fetch_array($Result)) {
+		if (in_array($MyRow['id'], $ScriptArray) and in_array($MyRow['pagesecurity'], $_SESSION['AllowedPageSecurityTokens'])) {
+			echo '<td class="dashboard_cell" id="dashboard_cell', $i, '" title="', $MyRow['description'], '" onload="">';
+			include ('dashboard/' . $MyRow['scripts']);
+			echo '</td>';
+			if ($i == 2) {
+				echo '</tr><tr>';
+			}
+			++$i;
+		}
+	}
+	echo '</tr>
+	</table>';
+	DB_data_seek($Result, 0);
+
+	//echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post">';
+	//echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
 	
 
-	//=== SubMenuDiv (wrapper) ==============================================================================
-	echo '<section class="MainBody clearfix">';
-	echo '<fieldset class="MenuList">'; //=== TransactionsDiv ===
-	echo '<legend>'; //=== SubMenuHeader ===
-	if ($_SESSION['Module'] == 'system') {
-		echo '<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/company.png" data-title="', _('General Setup Options'), '" alt="', _('General Setup Options'), '" /><b>', _('General Setup Options'), '</b>';
-	} elseif ($_SESSION['Module'] == 'hospsetup') {
-		echo '<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/company.png" data-title="', _('General Hospital Setup'), '" alt="', _('General Hospital Setup'), '" /><b>', _('General Hospital Setup'), '</b>';
-	} else {
-		echo '<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/transactions.png" data-title="', _('Transactions'), '" alt="', _('Transactions'), '" /><b>', _('Transactions'), '</b>';
-	}
-
-	echo '</legend><ul>'; // SubMenuHeader
-	//=== SubMenu Items ===
-	$i = 0;
-	foreach ($_SESSION['MenuItems'][$_SESSION['Module']]['Transactions']['Caption'] as $Caption) {
-		/* Transactions Menu Item */
-		$ScriptNameArray = explode('?', substr($_SESSION['MenuItems'][$_SESSION['Module']]['Transactions']['URL'][$i], 1));
-		if (isset($_SESSION['PageSecurityArray'][$ScriptNameArray[0]])) {
-			$PageSecurity = $_SESSION['PageSecurityArray'][$ScriptNameArray[0]];
-		}
-		if ((in_array($PageSecurity, $_SESSION['AllowedPageSecurityTokens']) and $PageSecurity != '')) {
-			echo '<li class="MenuItem">
-				<a id="MainMenu" href="', $RootPath, $_SESSION['MenuItems'][$_SESSION['Module']]['Transactions']['URL'][$i], '" onclick="ShowModal(this); return false">&bull; ', $Caption, '</a>
-			</li>';
-		}
-		++$i;
-	}
-	echo '</ul>
-	</fieldset>'; //=== TransactionsDiv ===
-	echo '<fieldset class="MenuList">'; //=== TransactionsDiv ===
-	echo '<legend>'; //=== SubMenuHeader ===
-	if ($_SESSION['Module'] == 'system') {
-		$Header = '<img src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/ar.png" data-title="' . _('Receivables/Payables Setup') . '" alt="' . _('Receivables/Payables Setup') . '" /><b>' . _('Receivables/Payables Setup') . '</b>';
-	} elseif ($_SESSION['Module'] == 'hospsetup') {
-		$Header = '<img src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/ar.png" data-title="' . _('ERP Integration') . '" alt="' . _('ERP Integration') . '" /><b>' . _('ERP Integration') . '</b>';
-	} else {
-		$Header = '<img data-title="' . _('Inquiries and Reports') . '" src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/reports.png" alt="' . _('Inquiries and Reports') . '" /><b>' . _('Inquiries and Reports') . '</b>';
-	}
-	echo $Header;
-	echo '</legend>
-	<ul>';
-
-	$i = 0;
-	if (isset($_SESSION['MenuItems'][$_SESSION['Module']]['Reports'])) {
-		foreach ($_SESSION['MenuItems'][$_SESSION['Module']]['Reports']['Caption'] as $Caption) {
-			/* Transactions Menu Item */
-			$ScriptNameArray = explode('?', substr($_SESSION['MenuItems'][$_SESSION['Module']]['Reports']['URL'][$i], 1));
-			$PageSecurity = $_SESSION['PageSecurityArray'][$ScriptNameArray[0]];
-			if ((in_array($PageSecurity, $_SESSION['AllowedPageSecurityTokens']) or !isset($PageSecurity))) {
-				echo '<li class="MenuItem">
-				<a id="MainMenu" href="' . $RootPath . $_SESSION['MenuItems'][$_SESSION['Module']]['Reports']['URL'][$i] . '" onclick="ShowModal(this); return false">&bull; ' . $Caption . '</a>
-			</li>';
-			}
-			++$i;
+	echo '<fieldset style="margin:auto;width:33%">
+		<field>
+			<label for="Reports">', _('Add reports to your dashboard'), '</label>
+			<select name="Reports" onchange="GetContent(\'body\', \'index.php?Reports=\'+this.value)">
+			<option value=""></option>';
+	while ($MyRow = DB_fetch_array($Result)) {
+		if (!in_array($MyRow['id'], $ScriptArray) and in_array($MyRow['pagesecurity'], $_SESSION['AllowedPageSecurityTokens'])) {
+			echo '<option value="', $MyRow['id'], '">', $MyRow['description'], '</option>';
 		}
 	}
+	echo '</select>
+	</field>
+</fieldset>';
 
-	echo GetRptLinks($_SESSION['Module']); //=== GetRptLinks() must be modified!!! ===
-	echo '</ul>
-	</fieldset>'; //=== InquiriesDiv ===
-	echo '<fieldset class="MenuList">'; //=== MaintenanceDive ===
-	echo '<legend>';
-	if ($_SESSION['Module'] == 'system') {
-		$Header = '<img src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/inventory.png" data-title="' . _('Inventory Setup') . '" alt="' . _('Inventory Setup') . '" /><b>' . _('Inventory Setup') . '</b>';
-	} elseif ($_SESSION['Module'] == 'hospsetup') {
-		$Header = '<img src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/maintenance.png" data-title="' . _('Maintain types') . '" alt="' . _('Maintain Types') . '" /><b>' . _('Maintain Types') . '</b>';
-	} else {
-		$Header = '<img src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/maintenance.png" data-title="' . _('Maintenance') . '" alt="' . _('Maintenance') . '" /><b>' . _('Maintenance') . '</b>';
-	}
-	echo $Header;
-	echo '</legend>
-	<ul>';
+	//echo '<input type="submit" name="submit" value="" style="display:none;" />';
+	
 
-	$i = 0;
-	if (isset($_SESSION['MenuItems'][$_SESSION['Module']]['Maintenance'])) {
-		foreach ($_SESSION['MenuItems'][$_SESSION['Module']]['Maintenance']['Caption'] as $Caption) {
-			/* Transactions Menu Item */
-			$ScriptNameArray = explode('?', substr($_SESSION['MenuItems'][$_SESSION['Module']]['Maintenance']['URL'][$i], 1));
-			if (isset($_SESSION['PageSecurityArray'][$ScriptNameArray[0]])) {
-				$PageSecurity = $_SESSION['PageSecurityArray'][$ScriptNameArray[0]];
-				if ((in_array($PageSecurity, $_SESSION['AllowedPageSecurityTokens']) or !isset($PageSecurity))) {
-					echo '<li class="MenuItem">
-						<a id="MainMenu" href="' . $RootPath . $_SESSION['MenuItems'][$_SESSION['Module']]['Maintenance']['URL'][$i] . '" onclick="ShowModal(this); return false">&bull; ' . $Caption . '</a>
-					</li>';
-				}
-			}
-			++$i;
-		}
-	}
-	echo '</ul>
-</fieldset>'; // MaintenanceDive ===HJ===
-	include ('includes/footer_main.php');
+	//echo '</form>';
+	
 
-	function GetRptLinks($GroupID) {
-		/*
-		This function retrieves the reports given a certain group id as defined in /reports/admin/defaults.php
-		in the acssociative array $ReportGroups[]. It will fetch the reports belonging solely to the group
-		specified to create a list of links for insertion into a table to choose a report. Two table sections will
-		be generated, one for standard reports and the other for custom reports.
-		*/
-		global $RootPath;
-		if (!isset($_SESSION['FormGroups'])) {
-			$_SESSION['FormGroups'] = array('gl:chk' => _('Bank Checks'), // Bank checks grouped with the gl report group
-			'ar:col' => _('Collection Letters'), 'ar:cust' => _('Customer Statements'), 'gl:deps' => _('Bank Deposit Slips'), 'ar:inv' => _('Invoices and Packing Slips'), 'ar:lblc' => _('Labels - Customer'), 'prch:lblv' => _('Labels - Vendor'), 'prch:po' => _('Purchase Orders'), 'ord:quot' => _('Customer Quotes'), 'ar:rcpt' => _('Sales Receipts'), 'ord:so' => _('Sales Orders'), 'misc:misc' => _('Miscellaneous')); // do not delete misc category
-			
-
-			
-		}
-		if (isset($_SESSION['ReportList'][$GroupID])) {
-			$GroupID = $_SESSION['ReportList'][$GroupID];
-		}
-		$Title = array(_('Custom Reports'), _('Standard Reports and Forms'));
-
-		if (!isset($_SESSION['ReportList'])) {
-			$SQL = "SELECT id,
-						reporttype,
-						defaultreport,
-						groupname,
-						reportname
-					FROM reports
-					ORDER BY groupname,
-							reportname";
-			$Result = DB_query($SQL, '', '', false, true);
-			$_SESSION['ReportList'] = array();
-			while ($Temp = DB_fetch_assoc($Result)) {
-				$_SESSION['ReportList'][] = $Temp;
-			}
-		}
-		$RptLinks = '';
-		for ($Def = 1;$Def >= 0;$Def--) {
-			$RptLinks.= '<li class="CustomMenuList">';
-			$RptLinks.= '<b>' . $Title[$Def] . '</b>';
-			$RptLinks.= '</li>';
-			$NoEntries = true;
-			if (isset($_SESSION['ReportList']['groupname']) and count($_SESSION['ReportList']['groupname']) > 0) { // then there are reports to show, show by grouping
-				foreach ($_SESSION['ReportList'] as $Report) {
-					if (isset($Report['groupname']) and $Report['groupname'] == $GroupID and $Report['defaultreport'] == $Def) {
-						$RptLinks.= '<li class="menu_group_item">';
-						$RptLinks.= '<p><a href="' . $RootPath . '/reportwriter/ReportMaker.php?action=go&amp;reportid=';
-						$RptLinks.= urlencode($Report['id']) . '">&nbsp; ' . _($Report['reportname']) . '</a></p>';
-						$RptLinks.= '</li>';
-						$NoEntries = false;
-					}
-				}
-				// now fetch the form groups that are a part of this group (List after reports)
-				$NoForms = true;
-				foreach ($_SESSION['ReportList'] as $Report) {
-					$Group = explode(':', $Report['groupname']); // break into main group and form group array
-					if ($NoForms and $Group[0] == $GroupID and $Report['reporttype'] == 'frm' and $Report['defaultreport'] == $Def) {
-						$RptLinks.= '<li class="menu_group_item">';
-						$RptLinks.= '<img src="' . $RootPath . '/css/' . $_SESSION['Theme'] . '/images/folders.gif" width="16" height="13" alt="" />&nbsp; ';
-						$RptLinks.= '<p><a href="' . $RootPath . '/reportwriter/FormMaker.php?id=' . urlencode($Report['groupname']) . '">';
-						$RptLinks.= $_SESSION['FormGroups'][$Report['groupname']] . '</a></p>';
-						$RptLinks.= '</li>';
-						$NoForms = false;
-						$NoEntries = false;
-					}
-				}
-			}
-			if ($NoEntries) $RptLinks.= '<li class="menu_group_item">' . _('There are no reports to show!') . '</li>';
-		}
-		return $RptLinks;
-	}
+	echo '<script async type="text/javascript" src = "', $RootPath, '/dashboard/javascript/dashboard.js"></script>';
 ?>

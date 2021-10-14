@@ -1,28 +1,28 @@
 <?php
-$PathPrefix = '../';
+$PathPrefix = '';
 
 if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 	require_once ($PathPrefix . 'includes/session.php');
-	$DashBoardURL = $RootPath . '/Dashboard.php';
-}
+	$DashBoardURL = $RootPath . '/index.php';
+	}
 
-$ScriptTitle = _('Order Summary');
+	$ScriptTitle = _('Order Summary');
 
-$SQL = "SELECT DISTINCT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
-$DashboardResult = DB_query($SQL);
-$DashboardRow = DB_fetch_array($DashboardResult);
+	$SQL = "SELECT DISTINCT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
+	$DashboardResult = DB_query($SQL);
+	$DashboardRow = DB_fetch_array($DashboardResult);
 
-echo '<div class="container">
+	echo '<div class="container">
 		<table class="DashboardTable">
 			<tr>
 				<th colspan="2">
 					<div class="CanvasTitle">', $ScriptTitle, '
-						<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" id="CloseButton">X</a>
+						<a class="CloseButton" id="CloseButton" href="#" onclick="GetContent(\'body\', \'', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '\')">X</a>
 					</div>
 				</th>
 			</tr>';
 
-$SQL = "SELECT salesorders.orderno,
+	$SQL = "SELECT salesorders.orderno,
 				debtorsmaster.name,
 				custbranch.brname,
 				salesorders.customerref,
@@ -48,19 +48,19 @@ $SQL = "SELECT salesorders.orderno,
 					salesorders.customerref,
 					salesorders.orddate ORDER BY salesorders.orderno";
 
-$SalesOrdersResult = DB_query($SQL);
+	$SalesOrdersResult = DB_query($SQL);
 
-$TotalSalesOrders = 0;
-while ($row = DB_fetch_array($SalesOrdersResult)) {
-	$TotalSalesOrders+= $row['ordervalue'];
-}
+	$TotalSalesOrders = 0;
+	while ($row = DB_fetch_array($SalesOrdersResult)) {
+		$TotalSalesOrders+= $row['ordervalue'];
+	}
 
-echo '<tr class="striped_row">
+	echo '<tr class="striped_row">
 		<th>', _('Total Sales Orders'), '</th>
 		<td class="number">', locale_number_format($TotalSalesOrders, $row['currdecimalplaces']), '</td>
 	</tr>';
 
-$SQL = "SELECT purchorders.orderno,
+	$SQL = "SELECT purchorders.orderno,
 						suppliers.suppname,
 						purchorders.orddate,
 						purchorders.deliverydate,
@@ -88,18 +88,18 @@ $SQL = "SELECT purchorders.orderno,
 						purchorders.status,
 						suppliers.currcode,
 						currencies.decimalplaces LIMIT 5";
-$SalesOrdersResult2 = DB_query($SQL);
-$TotalPurchaseOrders = 0;
-while ($row = DB_fetch_array($SalesOrdersResult2)) {
+	$SalesOrdersResult2 = DB_query($SQL);
+	$TotalPurchaseOrders = 0;
+	while ($row = DB_fetch_array($SalesOrdersResult2)) {
 
-	$TotalPurchaseOrders+= $row['ordervalue'];
-}
-echo '<tr class="striped_row">
+		$TotalPurchaseOrders+= $row['ordervalue'];
+	}
+	echo '<tr class="striped_row">
 		<th>', _('Total Purchase orders'), '</th>
 		<td class="number">', locale_number_format($TotalPurchaseOrders, $row['currdecimalplaces']), '</td>
 	</tr>';
 
-$SQL = "SELECT salesorders.orderno,
+	$SQL = "SELECT salesorders.orderno,
 					debtorsmaster.name,
 					custbranch.brname,
 					salesorders.customerref,
@@ -130,13 +130,13 @@ $SQL = "SELECT salesorders.orderno,
 					salesorders.printedpackingslip,
 					salesorders.poplaced
 				ORDER BY salesorders.orderno";
-$SalesOrdersResult1 = DB_query($SQL);
-$TotalOutstanding = 0;
-while ($row = DB_fetch_array($SalesOrdersResult1)) {
-	$TotalOutstanding+= $row['ordervalue'];
-}
+	$SalesOrdersResult1 = DB_query($SQL);
+	$TotalOutstanding = 0;
+	while ($row = DB_fetch_array($SalesOrdersResult1)) {
+		$TotalOutstanding+= $row['ordervalue'];
+	}
 
-echo '<tr class="striped_row">
+	echo '<tr class="striped_row">
 		<th>', _('Total Outstanding to receive'), '</th>
 		<td class="number">', locale_number_format($TotalOutstanding, $row['currdecimalplaces']), '</td>
 	</tr>

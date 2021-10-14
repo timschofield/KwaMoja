@@ -50,6 +50,8 @@ width:98%;
 float:right;
 margin-right:10px;
 cursor:pointer;
+color:#FFFFFF;
+font-weight:bold;
 }
 .ModalBody {
 height:85%;

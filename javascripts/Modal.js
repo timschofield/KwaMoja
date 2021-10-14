@@ -12,7 +12,7 @@ function CloseModal() {
 }
 
 function Redirect(e) {
-	GetContent('modal', e.getAttribute("href").replace(/^.*[\\\/]/, ''));
+		GetContent('modal', e.getAttribute("href").replace(/^.*[\\\/]/, ''));
 }
 
 function OverRideClicks() {
@@ -50,8 +50,6 @@ function GetContent(id, section) {
 	}
 	xmlhttp.onreadystatechange=function() {
 		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-//			data=JSON.parse(xmlhttp.responseText);
-//			modalHeader.innerHTML=document.getElementById('title').innerHTML;
 			document.getElementById(id).innerHTML=xmlhttp.responseText;
 			OverRideClicks();
 			SetSortingEvent();
@@ -141,5 +139,29 @@ function ShowMessages() {
 		divMessage[i].innerHTML=n[i].innerHTML;
 		document.getElementById('modal').appendChild(divMessage[i]);
 		setTimeout(FadeOut, 2000, divMessage[i]);
+	}
+}
+function ShowModules() {
+	if (document.getElementById("ModuleList").style.height=="80%") {
+
+		document.getElementById("mask").style.display="none";
+		document.getElementById("ModuleList").style.height="0px";
+		document.getElementById("ModuleList").style.padding="0%";
+		document.getElementById("TopLogo").style.display="none";
+		var n = document.getElementsByClassName("Module");
+		for (i = 0; i < (n.length); i++) {
+			n[i].style.display='none';
+			n[i].style.width='0%';
+		}
+	} else {
+		document.getElementById("mask").style.display="block";
+		document.getElementById("ModuleList").style.height="80%";
+		document.getElementById("ModuleList").style.padding="1%";
+		document.getElementById("TopLogo").style.display="block";
+		var n = document.getElementsByClassName("Module");
+		for (i = 0; i < (n.length); i++) {
+			n[i].style.display='block';
+			n[i].style.width='90%';
+		}
 	}
 }

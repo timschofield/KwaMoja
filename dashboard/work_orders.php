@@ -1,28 +1,28 @@
 <?php
-$PathPrefix = '../';
+$PathPrefix = '';
 
 if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 	require_once ($PathPrefix . 'includes/session.php');
-	$DashBoardURL = $RootPath . '/Dashboard.php';
-}
+	$DashBoardURL = $RootPath . '/index.php';
+	}
 
-$ScriptTitle = _('Latest work orders');
+	$ScriptTitle = _('Latest work orders');
 
-$SQL = "SELECT DISTINCT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
-$DashboardResult = DB_query($SQL);
-$DashboardRow = DB_fetch_array($DashboardResult);
+	$SQL = "SELECT DISTINCT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
+	$DashboardResult = DB_query($SQL);
+	$DashboardRow = DB_fetch_array($DashboardResult);
 
-echo '<div class="container">
+	echo '<div class="container">
 		<table class="DashboardTable">
 			<tr>
 				<th colspan="4">
 					<div class="CanvasTitle">', $ScriptTitle, '
-						<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" id="CloseButton">X</a>
+						<a class="CloseButton" id="CloseButton" href="#" onclick="GetContent(\'body\', \'', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '\')">X</a>
 					</div>
 				</th>
 			</tr>';
 
-$SQL = "SELECT workorders.wo,
+	$SQL = "SELECT workorders.wo,
 				woitems.stockid,
 				stockmaster.
 				description,
@@ -37,9 +37,9 @@ $SQL = "SELECT workorders.wo,
 			INNER JOIN stockmaster
 				ON woitems.stockid = stockmaster.stockid
 			ORDER BY workorders.requiredby DESC LIMIT 7";
-$WorkOrdersResult = DB_query($SQL);
+	$WorkOrdersResult = DB_query($SQL);
 
-echo '<tbody>
+	echo '<tbody>
 		<tr>
 			<th>', _('Item'), '</th>
 			<th>', _('Required By'), '</th>
@@ -47,23 +47,23 @@ echo '<tbody>
 			<th>', _('Quantity Outstanding'), '</th>
 		</tr>';
 
-while ($row = DB_fetch_array($WorkOrdersResult)) {
-	$StockId = $row['stockid'];
-	$FormatedRequiredByDate = ConvertSQLDate($row['requiredby']);
-	$FormatedStartDate = ConvertSQLDate($row['startdate']);
-	$qreq = locale_number_format($row['qtyreqd'], $row['decimalplaces']);
-	$qout = locale_number_format($row['qtyreqd'] - $row['qtyrecd'], $row['decimalplaces']);
+	while ($row = DB_fetch_array($WorkOrdersResult)) {
+		$StockId = $row['stockid'];
+		$FormatedRequiredByDate = ConvertSQLDate($row['requiredby']);
+		$FormatedStartDate = ConvertSQLDate($row['startdate']);
+		$qreq = locale_number_format($row['qtyreqd'], $row['decimalplaces']);
+		$qout = locale_number_format($row['qtyreqd'] - $row['qtyrecd'], $row['decimalplaces']);
 
-	echo '<tr class="striped_row">
+		echo '<tr class="striped_row">
 			<td><a href="', $RootPath, '/StockStatus.php?StockID=', urlencode($StockId), '" target="_blank">', $row['stockid'], ' -', $row['description'], '</td>
 			<td class="number">', ConvertSQLDate($row['requiredby']), '</td>
 			<td class="number">', $qreq, '</td>
 			<td class="number">', $qout, '</td>
 		</tr>';
 
-}
+	}
 
-echo '</tbody>
+	echo '</tbody>
 	</table>';
 
 ?>

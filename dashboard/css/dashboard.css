@@ -14,8 +14,10 @@ color:#ADD8E6;
 padding-left:2px;
 padding-right:2px;
 border-radius:17px;
+cursor:pointer;
 }
 table.DashboardTable{
 max-width:100%;
 width:99%;
+margin-top:3%;
 }
