@@ -1,9 +1,9 @@
 <?php
-$PathPrefix = '';
+$PathPrefix = '../';
 
 if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 	require_once ($PathPrefix . 'includes/session.php');
-	$DashBoardURL = $RootPath . '/index.php';
+	$DashBoardURL = $RootPath . '/Dashboard.php';
 }
 
 $ScriptTitle = _('Latest unpaid customer invoices');
@@ -17,7 +17,7 @@ echo '<div class="container">
 			<tr>
 				<th colspan="5">
 					<div class="CanvasTitle">', $ScriptTitle, '
-						<a class="CloseButton" id="CloseButton" href="#" onclick="GetContent(\'body\', \'', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '\')">X</a>
+						<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" id="CloseButton">X</a>
 					</div>
 				</th>
 			</tr>';
@@ -68,6 +68,7 @@ $TotalOrderValue = 0;
 while ($row = DB_fetch_array($SalesOrdersResult1)) {
 	$fo = locale_number_format($row['ordervalue'], $row['currdecimalplaces']);
 	$TotalOrderValue+= $row['ordervalue'];
+	$DecimalPlaces = $row['currdecimalplaces'];
 
 	$FormatedOrderDate = ConvertSQLDate($row['orddate']);
 	$FormatedDelDate = ConvertSQLDate($row['deliverydate']);
@@ -85,7 +86,7 @@ while ($row = DB_fetch_array($SalesOrdersResult1)) {
 if (DB_num_rows($SalesOrdersResult) > 0) {
 	echo '<tr class="total_row">
 			<td colspan="4">', _('Total'), '</td>
-			<td class="number">', locale_number_format($TotalOrderValue, $row['currdecimalplaces']), '</td>
+			<td class="number">', locale_number_format($TotalOrderValue, $DecimalPlaces), '</td>
 		</tr>
 	</tbody>';
 }
