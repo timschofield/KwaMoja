@@ -54,7 +54,8 @@ padding:0%;
 top:50px;
 border-radius:20px;
 transition: height .2s;
-backdrop-filter: blur(2px);}
+backdrop-filter: blur(2px);
+}
 ul.ListHolder{
 margin:0;
 padding:0;
@@ -65,7 +66,9 @@ right:6px;
 top:6px;
 background:#033055;
 color:#FFFFFF;
-padding:4px;
+padding:2px;
+padding-left:4px;
+padding-right:4px;
 border-radius:20px;
 cursor:pointer;
 }
@@ -128,12 +131,16 @@ height:32px;
 vertical-align:middle;
 }
 .MenuItem {
-color:#8DCDEB;
+list-style-type:none;
+margin-bottom:3px;
+}
+.MenuItem a{
+color:#CD2828;
 text-decoration:none;
 text-align:left;
 padding:2px;
 }
-.MenuItem:hover {
+.MenuItem:hover a{
 background:transparent;
 text-align:left;
 color:black;
