@@ -1,8 +1,6 @@
 <?php
-
 /* Definition of the PurchOrder class to hold all the information for a purchase order and delivery
- */
-
+*/
 
 class PurchOrder {
 
@@ -62,7 +60,7 @@ class PurchOrder {
 		$this->LinesOnOrder = 0;
 	}
 
-	function add_to_order($LineNo, $StockId, $Serialised, $Controlled, $Qty, $ItemDescr, $Price, $UOM, $GLCode, $ReqDelDate, $ShiptRef, $Completed, $JobRef, $QtyInv = 0, $QtyRecd = 0, $GLActName = '', $DecimalPlaces = 2, $SuppliersUnit, $ConversionFactor = 1, $LeadTime = 1, $Suppliers_PartNo = '', $AssetID = 0) {
+	function add_to_order($LineNo, $StockId, $Serialised, $Controlled, $Qty, $ItemDescr, $Price, $UOM, $GLCode, $ReqDelDate, $ShiptRef, $Completed, $JobRef, $QtyInv = 0, $QtyRecd = 0, $GLActName = '', $DecimalPlaces = 2, $SuppliersUnit = '', $ConversionFactor = 1, $LeadTime = 1, $Suppliers_PartNo = '', $AssetID = 0) {
 
 		if ($Qty != 0 and isset($Qty)) {
 
@@ -91,7 +89,6 @@ class PurchOrder {
 	function remove_from_order(&$LineNo) {
 		$this->LineItems[$LineNo]->Deleted = True;
 	}
-
 
 	function Any_Already_Received() {
 		/* Checks if there have been deliveries or invoiced entered against any of the line items */
@@ -130,7 +127,7 @@ class PurchOrder {
 		$TotalValue = 0;
 		foreach ($this->LineItems as $OrderedItems) {
 			if ($OrderedItems->Deleted == False) {
-				$TotalValue += ($OrderedItems->Price) * ($OrderedItems->Quantity);
+				$TotalValue+= ($OrderedItems->Price) * ($OrderedItems->Quantity);
 			}
 		}
 		return $TotalValue;
@@ -143,6 +140,7 @@ class PurchOrder {
 			}
 		}
 		return 1; //all lines must be fully received
+		
 	}
 
 	function SomethingReceived() {
@@ -152,81 +150,82 @@ class PurchOrder {
 			}
 		}
 		return 0; //nowt received
+		
 	}
 
-}
-/* end of class defintion */
+	}
+	/* end of class defintion */
 
-class LineDetails {
-	/* PurchOrderDetails */
-	var $LineNo;
-	var $PODetailRec;
-	var $StockId;
-	var $ItemDescription;
-	var $DecimalPlaces;
-	var $GLCode;
-	var $GLActName;
-	var $Quantity;
-	var $Price;
-	var $Units;
-	var $ReqDelDate;
-	var $QtyInv;
-	var $QtyReceived;
-	var $StandardCost;
-	var $ShiptRef;
-	var $Completed;
-	var $JobRef;
-	var $ConversionFactor;
-	var $SuppliersUnit;
-	var $Suppliers_PartNo;
-	var $LeadTime;
-	var $ReceiveQty; //this receipt of stock
-	var $Deleted;
-	var $Controlled;
-	var $Serialised;
-	var $SerialItems;
-	var $GRNReference;
-	/*An array holding the batch/serial numbers and quantities in each batch*/
-	var $AssetID;
+	class LineDetails {
+		/* PurchOrderDetails */
+		var $LineNo;
+		var $PODetailRec;
+		var $StockId;
+		var $ItemDescription;
+		var $DecimalPlaces;
+		var $GLCode;
+		var $GLActName;
+		var $Quantity;
+		var $Price;
+		var $Units;
+		var $ReqDelDate;
+		var $QtyInv;
+		var $QtyReceived;
+		var $StandardCost;
+		var $ShiptRef;
+		var $Completed;
+		var $JobRef;
+		var $ConversionFactor;
+		var $SuppliersUnit;
+		var $Suppliers_PartNo;
+		var $LeadTime;
+		var $ReceiveQty; //this receipt of stock
+		var $Deleted;
+		var $Controlled;
+		var $Serialised;
+		var $SerialItems;
+		var $GRNReference;
+		/*An array holding the batch/serial numbers and quantities in each batch*/
+		var $AssetID;
 
-	function __construct($LineNo, $StockItem, $Serialised, $Controlled, $Qty, $ItemDescr, $Price, $UOM, $GLCode, $ReqDelDate, $ShiptRef = 0, $Completed, $JobRef, $QtyInv, $QtyRecd, $GLActName, $DecimalPlaces, $SuppliersUnit, $ConversionFactor, $LeadTime, $Suppliers_PartNo, $AssetID) {
+		function __construct($LineNo, $StockItem, $Serialised, $Controlled, $Qty, $ItemDescr, $Price, $UOM, $GLCode, $ReqDelDate, $ShiptRef, $Completed, $JobRef, $QtyInv, $QtyRecd, $GLActName, $DecimalPlaces, $SuppliersUnit, $ConversionFactor, $LeadTime, $Suppliers_PartNo, $AssetID) {
 
-		/* Constructor function to add a new LineDetail object with passed params */
-		$this->LineNo = $LineNo;
-		$this->StockID = $StockItem;
-		$this->Controlled = $Controlled;
-		$this->Serialised = $Serialised;
-		$this->DecimalPlaces = $DecimalPlaces;
-		$this->ItemDescription = $ItemDescr;
-		$this->Quantity = $Qty;
-		$this->ReqDelDate = $ReqDelDate;
-		$this->Price = $Price;
-		$this->Units = $UOM;
-		$this->QtyReceived = $QtyRecd;
-		$this->QtyInv = $QtyInv;
-		$this->GLCode = $GLCode;
-		$this->JobRef = $JobRef;
-		$this->SuppliersUnit = $SuppliersUnit;
-		$this->ConversionFactor = $ConversionFactor;
-		$this->Suppliers_PartNo = $Suppliers_PartNo;
-		$this->LeadTime = $LeadTime;
-		if (is_numeric($ShiptRef)) {
-			$this->ShiptRef = $ShiptRef;
-		} else {
-			$this->ShiptRef = 0;
+			/* Constructor function to add a new LineDetail object with passed params */
+			$this->LineNo = $LineNo;
+			$this->StockID = $StockItem;
+			$this->Controlled = $Controlled;
+			$this->Serialised = $Serialised;
+			$this->DecimalPlaces = $DecimalPlaces;
+			$this->ItemDescription = $ItemDescr;
+			$this->Quantity = $Qty;
+			$this->ReqDelDate = $ReqDelDate;
+			$this->Price = $Price;
+			$this->Units = $UOM;
+			$this->QtyReceived = $QtyRecd;
+			$this->QtyInv = $QtyInv;
+			$this->GLCode = $GLCode;
+			$this->JobRef = $JobRef;
+			$this->SuppliersUnit = $SuppliersUnit;
+			$this->ConversionFactor = $ConversionFactor;
+			$this->Suppliers_PartNo = $Suppliers_PartNo;
+			$this->LeadTime = $LeadTime;
+			if (is_numeric($ShiptRef)) {
+				$this->ShiptRef = $ShiptRef;
+			} else {
+				$this->ShiptRef = 0;
+			}
+			$this->Completed = $Completed;
+			$this->GLActName = $GLActName;
+			$this->ReceiveQty = 0;
+			/*initialise these last two only */
+			$this->StandardCost = 0;
+			$this->Deleted = false;
+			$this->SerialItems = array();
+			/*if Controlled then need to populate this later */
+			$this->SerialItemsValid = false;
+			$this->AssetID = $AssetID;
+			$this->GRNReference = '';
+
 		}
-		$this->Completed = $Completed;
-		$this->GLActName = $GLActName;
-		$this->ReceiveQty = 0;
-		/*initialise these last two only */
-		$this->StandardCost = 0;
-		$this->Deleted = false;
-		$this->SerialItems = array();
-		/*if Controlled then need to populate this later */
-		$this->SerialItemsValid = false;
-		$this->AssetID = $AssetID;
-		$this->GRNReference = '';
-
 	}
-}
 ?>
