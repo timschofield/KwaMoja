@@ -1,9 +1,9 @@
 <?php
 $PathPrefix = '../';
 
-if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
+if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 	require_once ($PathPrefix . 'includes/session.php');
-	$DashBoardURL = $RootPath . '/Dashboard.php';
+	$DashBoardURL = $RootPath . '/index.php';
 }
 
 $ScriptTitle = _('Latest Customer Orders');
