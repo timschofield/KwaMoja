@@ -1,5 +1,4 @@
 <?php
-
 /* -----------------------------------------------------------------------------------------------
 This class was an extension to the FPDF class to use the syntax of the R&OS pdf.php class,
 the syntax that KwaMoja original reports were written in.
@@ -12,8 +11,8 @@ the TCPDF class by Nicola Asuni.
 Work to move from FPDF to TCPDF by:
 Javier de Lorenzo-Cáceres <info@civicom.eu>
 ----------------------------------------------------------------------------------------------- */
-require_once(dirname(__FILE__) . '/tcpdf/config/lang/eng.php');
-require_once(dirname(__FILE__) . '/tcpdf/tcpdf.php');
+require_once (dirname(__FILE__) . '/tcpdf/config/lang/eng.php');
+require_once (dirname(__FILE__) . '/tcpdf/tcpdf.php');
 
 if (!class_exists('Cpdf', false)) {
 
@@ -39,16 +38,16 @@ if (!class_exists('Cpdf', false)) {
 				switch ($UserPdfLang) {
 					case 0:
 						$UserPdfFont = 'times';
-						break;
+					break;
 					case 1:
 						$UserPdfFont = 'javierjp';
-						break;
+					break;
 					case 2:
 						$UserPdfFont = 'javiergb';
-						break;
+					break;
 					case 3:
 						$UserPdfFont = 'freeserif';
-						break;
+					break;
 				}
 
 			} else {
@@ -57,8 +56,8 @@ if (!class_exists('Cpdf', false)) {
 
 			$this->SetFont($UserPdfFont, '', 11);
 			//     SetFont($family, $style='', $size=0, $fontfile='')
+			
 		}
-
 
 		function newPage() {
 			/* Javier: 	$this->setPrintHeader(false);  This is not a removed call but added in. */
@@ -71,16 +70,18 @@ if (!class_exists('Cpdf', false)) {
 			TCPDF::Line($x1, $this->h - $y1, $x2, $this->h - $y2, $style);
 		}
 
-		function addText($XPos, $YPos, $fontsize, $text /*,$angle=0,$wordSpaceAdjust=0*/ ) {
+		function addText($XPos, $YPos, $fontsize, $text /*,$angle=0,$wordSpaceAdjust=0*/
+		) {
 			// $XPos = cell horizontal coordinate from page left side to cell left side in dpi (72dpi = 25.4mm).
 			// $YPos = cell vertical coordinate from page bottom side to cell top side in dpi (72dpi = 25.4mm).
 			// $fontsize = font size in dpi (72dpi = 25.4mm).
 			// Javier	$text = html_entity_decode($text);
 			$this->SetFontSize($fontsize); // Public function SetFontSize() in ~/includes/tcpdf/tcpdf.php.
 			$this->Text($XPos, $this->h - $YPos, $text); // Public function Text() in ~/includes/tcpdf/tcpdf.php.
+			
 		}
 
-		function addTextWrap($XPos, $YPos, $Width, $Height, $Text, $Align='J', $border = 0, $fill = 0) {
+		function addTextWrap($XPos, $YPos, $Width, $Height, $Text, $Align = 'J', $border = 0, $fill = 0) {
 			// R&OS version 0.12.2: "addTextWrap function is no more, use addText instead".
 			// Adds text to the page and returns the balance of the string that could not fit in the width.
 			// $XPos = cell horizontal coordinate from page left side to cell left side in dpi (72dpi = 25.4mm).
@@ -91,41 +92,46 @@ if (!class_exists('Cpdf', false)) {
 			// $Align = 'left', 'center', 'centre', 'full' or 'right'.
 			//some special characters are html encoded
 			//this code serves to make them appear human readable in pdf file
-			$Text = html_entity_decode($Text, ENT_QUOTES, 'UTF-8');// Convert all HTML entities to their applicable characters.
+			$Text = html_entity_decode($Text, ENT_QUOTES, 'UTF-8'); // Convert all HTML entities to their applicable characters.
+			
 
 			$this->x = $XPos;
-			$this->y = $this->h - $YPos - $Height;//RChacon: This -$Height is the difference in yPos between AddText() and AddTextWarp(). It is better "$this->y = $this->h-$YPos", but that requires to recode all the pdf generator scripts.
+			$this->y = $this->h - $YPos - $Height; //RChacon: This -$Height is the difference in yPos between AddText() and AddTextWarp(). It is better "$this->y = $this->h-$YPos", but that requires to recode all the pdf generator scripts.
+			
 
-			switch($Align) {// Translate from Pdf-Creator to TCPDF.
+			switch ($Align) { // Translate from Pdf-Creator to TCPDF.
+					
 				case 'left':
 					$Align = 'L';
-					break;
+				break;
 				case 'right':
 					$Align = 'R';
-					break;
+				break;
 				case 'center':
 					$Align = 'C';
-					break;
+				break;
 				case 'centre':
 					$Align = 'C';
-					break;
+				break;
 				case 'full':
 					$Align = 'J';
-					break;
+				break;
 				default:
 					$Align = 'L';
-					break;
+				break;
 			}
-			$this->SetFontSize($Height);// Public function SetFontSize() in ~/includes/tcpdf/tcpdf.php.
+			$this->SetFontSize($Height); // Public function SetFontSize() in ~/includes/tcpdf/tcpdf.php.
+			
 
 			if ($Width == 0) {
-				$Width = $this->w - $this->rMargin - $this->x;// Line_width = Page_width - Right_margin - Cell_horizontal_coordinate($XPos).
+				$Width = $this->w - $this->rMargin - $this->x; // Line_width = Page_width - Right_margin - Cell_horizontal_coordinate($XPos).
+				
 			}
 			$wmax = ($Width - 2 * $this->cMargin);
 			$s = str_replace("\r", '', $Text);
 			$s = str_replace("\n", ' ', $s);
 			$s = trim($s) . ' ';
-			$nb = mb_strlen($s,'UTF-8');
+			$nb = mb_strlen($s, 'UTF-8');
 			$b = 0;
 			if ($border) {
 				if ($border == 1) {
@@ -135,15 +141,15 @@ if (!class_exists('Cpdf', false)) {
 				} else {
 					$b2 = '';
 					if (is_int(mb_strpos($border, 'L', 0, 'UTF-8'))) {
-						$b2 .= 'L';
+						$b2.= 'L';
 					}
 					if (is_int(mb_strpos($border, 'R', 0, 'UTF-8'))) {
-						$b2 .= 'R';
+						$b2.= 'R';
 					}
 					$b = is_int(mb_strpos($border, 'T', 0, 'UTF-8')) ? $b2 . 'T' : $b2;
 				}
 			}
-			$sep = -1;
+			$sep = - 1;
 			$i = 0;
 			$l = $ls = 0;
 			$ns = 0;
@@ -157,7 +163,7 @@ if (!class_exists('Cpdf', false)) {
 					$ns++;
 				}
 				if (isset($cw[$i])) {
-					$l += $cw[$i];
+					$l+= $cw[$i];
 				}
 				if ($l > $wmax) {
 					break;
@@ -165,7 +171,7 @@ if (!class_exists('Cpdf', false)) {
 					$i++;
 				}
 			}
-			if ($sep == -1) {
+			if ($sep == - 1) {
 				if ($i == 0) {
 					$i++;
 				}
@@ -184,8 +190,9 @@ if (!class_exists('Cpdf', false)) {
 
 			$this->Cell($Width, $Height, mb_substr($s, 0, $sep, 'UTF-8'), $b, 2, $Align, $fill);
 			$this->x = $this->lMargin;
-			return mb_substr($s, $sep, $nb-$sep, 'UTF-8');
+			return mb_substr($s, $sep, $nb - $sep, 'UTF-8');
 		} // End function addTextWrap.
+		
 
 		function addInfo($label, $Value) {
 			if ($label == 'Creator') {
@@ -206,20 +213,21 @@ if (!class_exists('Cpdf', false)) {
 			}
 		}
 
-		function addJpegFromFile($file, $x, $YPos, $width = 0, $height) {
+		function addJpegFromFile($file, $x, $YPos, $width, $height) {
 			// Puts an image in the page.
 			// $file (string) Name of the file containing the image.
 			// $x (float) Abscissa from left border to the upper-left corner (LTR).
 			// $this->h is the page height.
 			// $YPos Ordinate of upper-left corner. WARNING: Measured from bottom left corner!
 			// $width (float) Width of the image in the page. If not specified or equal to zero, it is automatically calculated.
-	 		// $height (float) Height of the image in the page.
-			$this->Image($file, $x, $this->h - $YPos - $height, $width, $height);// Public function Image() in ~/includes/tcpdf/tcpdf.php.
- 		}
+			// $height (float) Height of the image in the page.
+			$this->Image($file, $x, $this->h - $YPos - $height, $width, $height); // Public function Image() in ~/includes/tcpdf/tcpdf.php.
+			
+		}
 
 		/*
 		 * Next Two functions are adopted from R&OS pdf class
-		 */
+		*/
 
 		/**
 		 * draw a part of an ellipse
@@ -250,18 +258,18 @@ if (!class_exists('Cpdf', false)) {
 				$nSeg = 2;
 			}
 
-			$astart = deg2rad((float) $astart);
-			$afinish = deg2rad((float) $afinish);
+			$astart = deg2rad((float)$astart);
+			$afinish = deg2rad((float)$afinish);
 			$totalAngle = $afinish - $astart;
 
 			$dt = $totalAngle / $nSeg;
 			$dtm = $dt / 3;
 
 			if ($angle != 0) {
-				$a = -1 * deg2rad((float) $angle);
+				$a = - 1 * deg2rad((float)$angle);
 				$tmp = "\n q ";
-				$tmp .= sprintf('%.3f', cos($a)) . ' ' . sprintf('%.3f', (-1.0 * sin($a))) . ' ' . sprintf('%.3f', sin($a)) . ' ' . sprintf('%.3f', cos($a)) . ' ';
-				$tmp .= sprintf('%.3f', $x0) . ' ' . sprintf('%.3f', $y0) . ' cm';
+				$tmp.= sprintf('%.3f', cos($a)) . ' ' . sprintf('%.3f', (-1.0 * sin($a))) . ' ' . sprintf('%.3f', sin($a)) . ' ' . sprintf('%.3f', cos($a)) . ' ';
+				$tmp.= sprintf('%.3f', $x0) . ' ' . sprintf('%.3f', $y0) . ' cm';
 				$x0 = 0;
 				$y0 = 0;
 			} else {
@@ -271,19 +279,19 @@ if (!class_exists('Cpdf', false)) {
 			$t1 = $astart;
 			$a0 = $x0 + $r1 * cos($t1);
 			$b0 = $y0 + $r2 * sin($t1);
-			$c0 = -$r1 * sin($t1);
+			$c0 = - $r1 * sin($t1);
 			$d0 = $r2 * cos($t1);
 
-			$tmp .= "\n" . sprintf('%.3f', $a0) . ' ' . sprintf('%.3f', $b0) . ' m ';
-			for ($i = 1; $i <= $nSeg; $i++) {
+			$tmp.= "\n" . sprintf('%.3f', $a0) . ' ' . sprintf('%.3f', $b0) . ' m ';
+			for ($i = 1;$i <= $nSeg;$i++) {
 				// draw this bit of the total curve
 				$t1 = $i * $dt + $astart;
 				$a1 = $x0 + $r1 * cos($t1);
 				$b1 = $y0 + $r2 * sin($t1);
-				$c1 = -$r1 * sin($t1);
+				$c1 = - $r1 * sin($t1);
 				$d1 = $r2 * cos($t1);
-				$tmp .= "\n" . sprintf('%.3f', ($a0 + $c0 * $dtm)) . ' ' . sprintf('%.3f', ($b0 + $d0 * $dtm));
-				$tmp .= ' ' . sprintf('%.3f', ($a1 - $c1 * $dtm)) . ' ' . sprintf('%.3f', ($b1 - $d1 * $dtm)) . ' ' . sprintf('%.3f', $a1) . ' ' . sprintf('%.3f', $b1) . ' c';
+				$tmp.= "\n" . sprintf('%.3f', ($a0 + $c0 * $dtm)) . ' ' . sprintf('%.3f', ($b0 + $d0 * $dtm));
+				$tmp.= ' ' . sprintf('%.3f', ($a1 - $c1 * $dtm)) . ' ' . sprintf('%.3f', ($b1 - $d1 * $dtm)) . ' ' . sprintf('%.3f', $a1) . ' ' . sprintf('%.3f', $b1) . ' c';
 				$a0 = $a1;
 				$b0 = $b1;
 				$c0 = $c1;
@@ -291,16 +299,17 @@ if (!class_exists('Cpdf', false)) {
 			}
 			if ($fill) {
 				//$this->objects[$this->currentContents]['c']
-				$tmp .= ' f';
+				$tmp.= ' f';
 			} else {
 				if ($close) {
-					$tmp .= ' s'; // small 's' signifies closing the path as well
+					$tmp.= ' s'; // small 's' signifies closing the path as well
+					
 				} else {
-					$tmp .= ' S';
+					$tmp.= ' S';
 				}
 			}
 			if ($angle != 0) {
-				$tmp .= ' Q';
+				$tmp.= ' Q';
 			}
 			$this->_out($tmp);
 		}
@@ -333,7 +342,8 @@ if (!class_exists('Cpdf', false)) {
 			// $YPos Ordinate of upper-left corner. WARNING: Measured from bottom left corner!
 			// $width (float) Rectangle width.
 			// $height (float) Rectangle height.
-			$this->Rect($x, $this->h-$YPos, $width, $height);// Public function Rect() in ~/includes/tcpdf/tcpdf.php.
+			$this->Rect($x, $this->h - $YPos, $width, $height); // Public function Rect() in ~/includes/tcpdf/tcpdf.php.
+			
 		}
 
 		function RoundRectangle($x, $YPos, $width, $height, $rx, $ry) {
@@ -345,9 +355,12 @@ if (!class_exists('Cpdf', false)) {
 			// $height (float) Rectangle height.
 			// $rx (float) the x-axis radius of the ellipse used to round off the corners of the rectangle.
 			// $ry (float) the y-axis radius of the ellipse used to round off the corners of the rectangle.
-			$this->RoundedRectXY($x, $this->h-$YPos, $width, $height, $rx, $ry);// Public function RoundedRectXY() in ~/includes/tcpdf/tcpdf.php.
+			$this->RoundedRectXY($x, $this->h - $YPos, $width, $height, $rx, $ry); // Public function RoundedRectXY() in ~/includes/tcpdf/tcpdf.php.
+			
 		}
 
 	} // end of class
-} //end if  Cpdf class exists already
+	
+	} //end if  Cpdf class exists already
+	
 ?>

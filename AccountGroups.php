@@ -131,7 +131,11 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 
 		$ParentGroupSQL = "SELECT groupname FROM accountgroups WHERE groupcode='" . $_POST['ParentGroup'] . "' AND language='" . $_SESSION['ChartLanguage'] . "'";
 		$ParentGroupResult = DB_query($ParentGroupSQL);
-		$ParentGroupRow = DB_fetch_array($ParentGroupResult);
+		if (DB_num_rows($ParentGroupResult) > 0) {
+			$ParentGroupRow = DB_fetch_array($ParentGroupResult);
+		} else {
+			$ParentGroupRow['groupname'] = '';
+		}
 
 		if (isset($_POST['OldGroupCode']) and $InputError != 1) {
 			foreach ($GroupNames as $GroupLanguage => $GroupName) {
@@ -421,6 +425,7 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 			while ($MyRow = DB_fetch_array($Result)) {
 
 				$_POST['GroupCode'] = $MyRow['groupcode'];
+				$_POST['GroupName'] = $MyRow['groupname'];
 				$GroupNames[$MyRow['language']] = $MyRow['groupname'];
 				$_POST['SectionInAccounts'] = $MyRow['sectioninaccounts'];
 				$_POST['SequenceInTB'] = $MyRow['sequenceintb'];
