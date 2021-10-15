@@ -4,15 +4,15 @@ $PathPrefix = '../';
 if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 	require_once ($PathPrefix . 'includes/session.php');
 	$DashBoardURL = $RootPath . '/Dashboard.php';
-	}
+}
 
-	$ScriptTitle = _('Latest unpaid customer invoices');
+$ScriptTitle = _('Latest unpaid customer invoices');
 
-	$SQL = "SELECT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
-	$DashboardResult = DB_query($SQL);
-	$DashboardRow = DB_fetch_array($DashboardResult);
+$SQL = "SELECT id FROM dashboard_scripts WHERE scripts='" . basename(basename(__FILE__)) . "'";
+$DashboardResult = DB_query($SQL);
+$DashboardRow = DB_fetch_array($DashboardResult);
 
-	echo '<div class="container">
+echo '<div class="container">
 		<table class="DashboardTable">
 			<tr>
 				<th colspan="5">
@@ -22,7 +22,7 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 				</th>
 			</tr>';
 
-	$SQL = "SELECT salesorders.orderno,
+$SQL = "SELECT salesorders.orderno,
 				debtorsmaster.name,
 				custbranch.brname,
 				salesorders.customerref,
@@ -54,9 +54,9 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 					salesorders.printedpackingslip,
 					salesorders.poplaced
 			ORDER BY salesorders.orderno";
-	$SalesOrdersResult1 = DB_query($SQL);
+$SalesOrdersResult1 = DB_query($SQL);
 
-	echo '<tr>
+echo '<tr>
 		<th>', _('Customer'), '</th>
 		<th>', _('Order Date'), '</th>
 		<th>', _('Delivery Date'), '</th>
@@ -64,15 +64,16 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 		<th>', _('Order Total'), '</th>
 	</tr> ';
 
-	$TotalOrderValue = 0;
-	while ($row = DB_fetch_array($SalesOrdersResult1)) {
-		$fo = locale_number_format($row['ordervalue'], $row['currdecimalplaces']);
-		$TotalOrderValue+= $row['ordervalue'];
+$TotalOrderValue = 0;
+while ($row = DB_fetch_array($SalesOrdersResult1)) {
+	$fo = locale_number_format($row['ordervalue'], $row['currdecimalplaces']);
+	$TotalOrderValue+= $row['ordervalue'];
+	$DecimalPlaces = $row['currdecimalplaces'];
 
-		$FormatedOrderDate = ConvertSQLDate($row['orddate']);
-		$FormatedDelDate = ConvertSQLDate($row['deliverydate']);
+	$FormatedOrderDate = ConvertSQLDate($row['orddate']);
+	$FormatedDelDate = ConvertSQLDate($row['deliverydate']);
 
-		echo '<tr class="striped_row">
+	echo '<tr class="striped_row">
 			<td>', $row['name'], '</td>
 			<td>', $FormatedOrderDate, '</td>
 			<td>', $FormatedDelDate, '</td>
@@ -81,15 +82,16 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 		</tr>';
 
 	}
-	if (DB_num_rows($SalesOrdersResult) > 0) {
-		echo '<tr class="total_row">
+
+if (DB_num_rows($SalesOrdersResult) > 0) {
+	echo '<tr class="total_row">
 			<td colspan="4">', _('Total'), '</td>
-			<td class="number">', locale_number_format($TotalOrderValue, $row['currdecimalplaces']), '</td>
+			<td class="number">', locale_number_format($TotalOrderValue, $DecimalPlaces), '</td>
 		</tr>
 	</tbody>';
-	}
+}
 
-	echo '</table>
+echo '</table>
 	</div>';
 
 ?>
