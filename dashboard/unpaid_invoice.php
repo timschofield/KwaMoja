@@ -83,7 +83,7 @@ while ($row = DB_fetch_array($SalesOrdersResult1)) {
 
 	}
 
-if (DB_num_rows($SalesOrdersResult) > 0) {
+if (DB_num_rows($SalesOrdersResult1) > 0) {
 	echo '<tr class="total_row">
 			<td colspan="4">', _('Total'), '</td>
 			<td class="number">', locale_number_format($TotalOrderValue, $DecimalPlaces), '</td>

@@ -1,5 +1,5 @@
 <?php
-$PathPrefix = '';
+$PathPrefix = '../';
 
 if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 	require_once ($PathPrefix . 'includes/session.php');

@@ -1,5 +1,6 @@
 function RefreshDashboard(Target, Element) {
 	Target = "dashboard/"+Target;
+	alert(Target);
 	var PostData="";
 	if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();
@@ -22,7 +23,7 @@ function RefreshDashboard(Target, Element) {
 function RefreshAll() {
 	var elements = document.getElementsByClassName("dashboard_cell");
 	for (var i=0; i<elements.length; i++) {
-		RefreshDashboard(elements[i].title, elements[i].id)
+		RefreshDashboard(elements[i].getAttribute('name'), elements[i].id)
 	}
 }
 

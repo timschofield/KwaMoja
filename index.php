@@ -152,7 +152,7 @@ if (!isset($RootPath)) {
 	</div>';
 	echo '<div id="mask">';
 	//=== MainMenuDiv =======================================================================
-	
+
 
 	echo '<nav class="ModuleList" id="ModuleList">
 		<ul class="ListHolder">'; //===HJ===
@@ -193,7 +193,7 @@ if (!isset($RootPath)) {
 		<tr>';
 	while ($MyRow = DB_fetch_array($Result)) {
 		if (in_array($MyRow['id'], $ScriptArray) and in_array($MyRow['pagesecurity'], $_SESSION['AllowedPageSecurityTokens'])) {
-			echo '<td class="dashboard_cell" id="dashboard_cell', $i, '" title="', $MyRow['description'], '" onload="">';
+			echo '<td class="dashboard_cell" name="', $MyRow['scripts'], '" id="dashboard_cell', $i, '" title="', $MyRow['description'], '" onload="">';
 			include ('dashboard/' . $MyRow['scripts']);
 			echo '</td>';
 			if ($i == 2) {
@@ -208,7 +208,7 @@ if (!isset($RootPath)) {
 
 	//echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post">';
 	//echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
-	
+
 
 	echo '<fieldset style="margin:auto;width:33%">
 		<field>
@@ -225,10 +225,10 @@ if (!isset($RootPath)) {
 </fieldset>';
 
 	//echo '<input type="submit" name="submit" value="" style="display:none;" />';
-	
+
 
 	//echo '</form>';
-	
+
 
 	echo '<script async type="text/javascript" src = "', $RootPath, '/dashboard/javascript/dashboard.js"></script>';
 ?>

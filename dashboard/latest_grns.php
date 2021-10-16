@@ -1,6 +1,6 @@
 <?php
 /**********************************************************/
-$PathPrefix = '';
+$PathPrefix = '../';
 
 if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 	require_once ($PathPrefix . 'includes/session.php');
