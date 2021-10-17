@@ -1,6 +1,5 @@
 function RefreshDashboard(Target, Element) {
 	Target = "dashboard/"+Target;
-	alert(Target);
 	var PostData="";
 	if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();

@@ -100,12 +100,6 @@ transition: width .5s;
 background:#4197ED;
 transition: width .5s;
 }
-.ModuleSelected {
-background:#0000FF;
-}
-.ModuleSelected a {
-color:#E6E6FA;
-}
 .MenuList {
 background:#C0DFFE;
 display: inline;
@@ -135,7 +129,7 @@ list-style-type:none;
 margin-bottom:3px;
 }
 .MenuItem a{
-color:#CD2828;
+color:#0B0B56;
 text-decoration:none;
 text-align:left;
 padding:2px;
