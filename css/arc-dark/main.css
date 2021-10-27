@@ -5,23 +5,90 @@ padding:10px;
 border: 1px solid #82BCF4;
 border-radius: 7px;
 }
-.ModuleList {
+.MainBody li a {
+color:#0000FF;
+text-decoration:none;
+}
+.MainBody li a:hover {
+color:#000000;
+text-decoration:underline;
+}
+.page_title_text{
+position:relative;
+font-weight:bold;
+text-align:center;
+margin:0 auto;
+padding:5px;
+clear: both;
+}
+.page_title_text img {
+padding-right:7px;
+width:32px;
+height:32px;
+vertical-align:middle;
+}
+div.toplink {
 float:left;
+}
+div.menuiconcontainer {
+float:left;
+display:block;
+cursor:pointer;
+}
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: #6D95AB;
+margin: 6px 10px;
+transition: 0.4s;
+display:block;
+}
+.ModuleList {
+position:absolute;
+width:12%;
+height:0%;
 background:transparent;
-white-space:nowrap;
-text-align:left;
-padding-left:10px;
-padding-right:10px;
-padding-top:3px;
-width:11%;
-width:min-content;
-border:1px solid #8DCDEB;
-border-radius:7px;
-margin:7px;
+float:left;
+margin-left:2%;
+padding:0%;
+top:50px;
+border:1px solid #00644B;
+border-radius:20px;
+transition: height .2s;
+backdrop-filter: blur(2px);
+}
+ul.ListHolder{
+margin:0;
+padding:0;
+}
+.CloseModuleList {
+position:absolute;
+right:6px;
+top:6px;
+background:#00644B;
+color:#FFFFFF;
+padding:2px;
+padding-left:4px;
+padding-right:4px;
+border-radius:20px;
+cursor:pointer;
+}
+.TopLogo {
+font-size:300%;
+padding:1%;
+background:#2D2F36;
+color:#FFFFFF;
+font-weight:bold;
+padding:5%;
+margin-bottom:12px;
+border-radius:20px;
+margin-top:7px;
+display:none;
 }
 .ModuleList li a,.ModuleList li a:hover {
-background:#A3D2FF;
-color:#494C56;
+background:#2D2F36;
+opacity:0.6;
+color:#FFFFFF;
 display:block;
 border-radius:10px;
 text-decoration:none;
@@ -30,24 +97,13 @@ padding:3px;
 border:1px solid #404552;
 padding-left:5px;
 }
-.ModuleList .ModuleSelected a {
-border:1px solid #1A1A1A;
-background:#A3D2FF;
-color:#494C56;
-padding-left:5px;
-}
-.ModuleList .ModuleUnSelected a{
-border:1px solid #0E1826;
-background:transparent;
-color:#A3D2FF;
-padding-left:5px;
-}
 .ModuleList ul,.MenuList ul {
 margin:0;
 padding:0;
 }
 .ModuleList li,.MenuList li {
 list-style:none;
+cursor:pointer;
 }
 .MenuList {
 display: inline;
@@ -83,23 +139,6 @@ color:#FFF;
 font-weight:700;
 text-align:center;
 padding:3px;
-}
-.page_title_text{
-position:relative;
-font-weight:bold;
-text-align:center;
-margin:0 auto;
-padding:5px;
-clear: both;
-}
-.page_title_text img {
-padding-right:7px;
-width:32px;
-height:32px;
-vertical-align:middle;
-}
-div.toplink {
-float:left;
 }
 .clearfix {
   overflow: auto;

@@ -39,27 +39,45 @@ font-weight:bold;
 display:inline;
 padding:3px;
 }
-header .ScriptTitle {
+.ThemeChanger{
+position:absolute;
+right:10%;
+}
+.ScriptTitle {
 font-weight:bold;
-font-size:130%;
+font-size:100%;
 display:inline;
 padding:10px;
-margin-left:0px;
 }
-header #favourites {
+.Themes {
+font-size:80%;
+}
+#favourites {
 background: url(images/descending.png) no-repeat right transparent;
 background-size:contain;
 overflow: hidden;
-color:#B0C4DE;
-font-size: 130%;
+color:#FFFFFF;
+font-size: 80%;
+font-weight:bold;
 padding-top: 2px;
 padding-bottom: 2px;
 padding-left: 7px;
 padding-right:32px;
-border: solid 1px #fff;
+border: solid 1px #00644B;
 border-radius: 15px;
-margin: 2px;
+margin: 1px;
 -moz-appearance:none;
 -webkit-appearance: none;
 cursor:pointer;
+}
+.title_bar {
+border-radius:13px;
+font-size:150%;
+font-weight:bold;
+color:#FFFFFF;
+margin:1px;
+margin-bottom:5px;
+padding:6px;
+background:#404552;
+border:2px solid #A3D2FF;
 }

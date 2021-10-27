@@ -49,7 +49,7 @@ line-height:170%;
 }
 form fieldset field input,textarea,select {
 background-color:inherit;
-color:inherit;
+color:#9DCAF5;
 border-radius: 5px;
 border: 1px solid #8DCDEB;
 padding:2px;
