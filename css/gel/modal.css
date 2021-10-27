@@ -1,0 +1,53 @@
+.ShowModal {
+position:absolute;
+border-radius:23px;
+padding:0px;
+margin-left:2%;
+margin-top:1%;
+width:0%;
+height:91%;
+transition: width .5s;
+background:#E3E5FD;
+border:0px solid #0000FF;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+opacity:0.95;
+z-index:9999;
+}
+.ShowScrollBar{
+overflow:auto;
+}
+.HideScrollBar{
+overflow:hidden;
+}
+.page_title_text {
+display:none;
+}
+.footer_bar {
+position:absolute;
+bottom:2%;
+border-radius:13px;
+font-size:150%;
+font-weight:bold;
+color:#FFFFFF;
+margin:1px;
+margin-top:5px;
+margin-bottom:5px;
+padding:6px;
+background-image: linear-gradient(#9B9BCE, #0202EE);
+width:98%;
+}
+.close_button {
+float:right;
+margin-right:10px;
+cursor:pointer;
+color:#FFFFFF;
+font-weight:bold;
+}
+.ModalBody {
+height:85%;
+overflow: auto;
+scrollbar-color: #0000FF #ADD8E6;
+}
+.footer_date {
+float:right;
+}
