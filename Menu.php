@@ -172,5 +172,6 @@ if (isset($_GET['Application']) and ($_GET['Application'] != '')) {
 		}
 		return $RptLinks;
 	}
+	include ('includes/footer.php');
 
 ?>
