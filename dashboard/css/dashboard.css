@@ -6,6 +6,7 @@ border-radius:7px;
 td.dashboard_cell{
 width:30%;
 vertical-align:top;
+scrollbar-color: #561F1F #CDCDCD;
 }
 .CloseButton{
 float:right;
