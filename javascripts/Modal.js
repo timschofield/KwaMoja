@@ -1,10 +1,12 @@
 function ShowModal(linkURL) {
+	document.body.style.overflow="hidden";
 	document.getElementById("modal").style.borderWidth = "4px";
 	document.getElementById("modal").style.padding = "6px";
 	document.getElementById("modal").style.width = "96%";
 	GetContent('modal', linkURL);
 }
 function CloseModal() {
+	document.body.style.overflow="auto";
 	document.getElementById("modal").style.padding = "0px";
 	document.getElementById("modal").style.width = "0px";
 	document.getElementById("modal").style.borderWidth = "0px";
@@ -12,7 +14,7 @@ function CloseModal() {
 }
 
 function Redirect(e) {
-		GetContent('modal', e.getAttribute("href").replace(/^.*[\\\/]/, ''));
+	GetContent('modal', e.getAttribute("href").replace(/^.*[\\\/]/, ''));
 }
 
 function OverRideClicks() {
@@ -27,7 +29,8 @@ function OverRideClicks() {
 					var conf=Function(handler+';return false');
 					t.onclick =  function () {conf(); Redirect(this); return false};
 				} else {
-					t.onclick =  function () {Redirect(this); return false};
+					var conf=Function(handler+';');
+					t.onclick =  function () {conf(); Redirect(this); return false};
 				}
 			}
 		}
@@ -35,7 +38,7 @@ function OverRideClicks() {
 		for (i = 0; i < e.length; i++) {
 			var t = e[i];
 			if (t.getAttribute("type")=='submit') {
-				t.onclick = function () {SubmitThisForm(t.form,'modal'); return false};
+				t.onclick = function () {SubmitThisForm(t.form, this,'modal'); return false};
 			}
 		}
 	}
@@ -63,14 +66,18 @@ function GetContent(id, section) {
 	return false;
 };
 
-function SubmitThisForm(FormName, Element) {
+function SubmitThisForm(FormName, Button, Element) {
 	Target=FormName.action;
 	var PostData='';
 	for(var i=0,fLen=FormName.length;i<fLen;i++){
 		if(FormName.elements[i].type=='checkbox' && !FormName.elements[i].checked) {
 			FormName.elements[i].value=null;
 		}
-		PostData=PostData+FormName.elements[i].name+'='+FormName.elements[i].value+'&';
+		if(FormName.elements[i].type=='submit' && (FormName.elements[i].name != Button.name)) {
+			FormName.elements[i].value=null;
+		} else {
+			PostData=PostData+FormName.elements[i].name+'='+FormName.elements[i].value+'&';
+		}
 	}
 	if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
 		xmlhttp=new XMLHttpRequest();
