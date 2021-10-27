@@ -213,8 +213,6 @@ if (!isset($RootPath)) {
 		echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
 		echo '<div class="ScriptTitle">', _('Theme'), ':</div>';
 
-		echo '<select name="Theme" id="favourites" onchange="window.open (\'index.php?Theme=\' + this.value,\'_self\',false)">';
-
 		$Themes = glob('css/*', GLOB_ONLYDIR);
 		foreach ($Themes as $ThemeName) {
 			$ThemeName = basename($ThemeName);
