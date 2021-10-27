@@ -542,4 +542,9 @@ function AddAmount(t,Target,d) {
 		if(d) document.getElementById(d).required="";
 	}
 }
+history.pushState(null, null, document.URL);
+window.addEventListener('popstate', function () {
+    history.pushState(null, null, document.URL);
+});
+
 window.onload = initial
