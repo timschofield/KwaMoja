@@ -40,19 +40,25 @@ display:inline;
 padding:3px;
 color:#4D4D4D;
 }
-header .ScriptTitle {
+.ThemeChanger{
+position:absolute;
+right:10%;
+}
+.ScriptTitle {
 font-weight:bold;
-font-size:130%;
+font-size:100%;
 display:inline;
 padding:10px;
-margin-left:0px;
 }
-header #favourites {
+.Themes {
+font-size:80%;
+}
+#favourites {
 background: url(images/descending.png) no-repeat right #CFCFCF;
 background-size:contain;
 overflow: hidden;
 color:#4D4D4D;
-font-size: 130%;
+font-size: 70%;
 font-weight:bold;
 padding-top: 2px;
 padding-bottom: 2px;
@@ -64,4 +70,15 @@ margin: 2px;
 -moz-appearance:none;
 -webkit-appearance: none;
 cursor:pointer;
+}
+.title_bar {
+border-radius:13px;
+font-size:150%;
+font-weight:bold;
+color:#330000;
+margin:1px;
+margin-bottom:5px;
+padding:6px;
+background:#C3C3C3;
+border:2px solid #1A1A1A;
 }
