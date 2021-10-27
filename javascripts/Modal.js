@@ -38,7 +38,7 @@ function OverRideClicks() {
 		for (i = 0; i < e.length; i++) {
 			var t = e[i];
 			if (t.getAttribute("type")=='submit') {
-				t.onclick = function () {SubmitThisForm(t.form, this,'modal'); return false};
+				t.onclick = function () {SubmitThisForm(this,'modal'); return false};
 			}
 		}
 	}
@@ -66,7 +66,8 @@ function GetContent(id, section) {
 	return false;
 };
 
-function SubmitThisForm(FormName, Button, Element) {
+function SubmitThisForm(Button, Element) {
+	FormName =Button.form;
 	Target=FormName.action;
 	var PostData='';
 	for(var i=0,fLen=FormName.length;i<fLen;i++){
