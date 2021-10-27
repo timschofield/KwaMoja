@@ -50,6 +50,19 @@ padding:10px;
 margin-left:0px;
 color:white;
 }
+.ThemeChanger{
+position:absolute;
+right:10%;
+}
+.ScriptTitle {
+font-weight:bold;
+font-size:100%;
+display:inline;
+padding:10px;
+}
+.Themes {
+font-size:80%;
+}
 header #favourites {
 background: url(images/descending.png) no-repeat right transparent;
 background-size:contain;
@@ -67,4 +80,14 @@ margin: 2px;
 -moz-appearance:none;
 -webkit-appearance: none;
 cursor:pointer;
+}
+.title_bar {
+border-radius:13px;
+font-size:150%;
+font-weight:bold;
+color:white;
+margin:1px;
+margin-bottom:5px;
+padding:6px;
+background:#556699;
 }
