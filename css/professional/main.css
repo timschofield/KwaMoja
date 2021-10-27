@@ -5,7 +5,49 @@ padding:1px;
 border: 1px solid #82BCF4;
 border-radius: 7px;
 }
+.MainBody li a {
+color:#0000FF;
+text-decoration:none;
+}
+.MainBody li a:hover {
+color:#000000;
+text-decoration:underline;
+}
+.page_title_text {
+padding-top:2px;
+padding-bottom:2px;
+font-weight:700;
+color:#000;
+text-align:center;
+margin:0 auto;
+clear: both;
+}
+.page_title_text img {
+padding-right:7px;
+width:48px;
+height:48px;
+vertical-align:middle;
+}
+.toplink {
+float:left;
+margin-top:10px;
+display:inline-block;
+}
+div.menuiconcontainer {
+float:left;
+display:block;
+cursor:pointer;
+}
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 5px;
+background-color: #561F1F;
+margin: 6px 10px;
+transition: 0.4s;
+display:block;
+}
 .ModuleList {
+position:absolute;
 float:left;
 background:#DDDDDD;
 white-space:nowrap;
@@ -14,15 +56,42 @@ padding-left:10px;
 padding-right:10px;
 padding-top:13px;
 padding-bottom:13px;
-width:11%;
-width:min-content;
+width:12%;
 border:0px solid #8DCDEB;
 border-radius:7px;
 margin:7px;
 transition-duration:0.5s;
 }
-.ModuleList li a,.ModuleList li a:hover {
-background:linear-gradient(45deg, #655051, #551b1b);
+ul.ListHolder{
+margin:0;
+padding:0;
+}
+.CloseModuleList {
+position:absolute;
+right:6px;
+top:6px;
+background:#572222;
+color:#FFFFFF;
+padding:2px;
+padding-left:4px;
+padding-right:4px;
+border-radius:20px;
+cursor:pointer;
+}
+.TopLogo {
+font-size:250%;
+padding:1%;
+background:#572222;
+color:#FFFFFF;
+font-weight:bold;
+padding:5%;
+margin-bottom:12px;
+border-radius:20px;
+margin-top:7px;
+display:none;
+}
+.Module {
+background:transparent;
 color:#FFFFFF;
 display:block;
 border-radius:4px;
@@ -32,23 +101,17 @@ padding:3px;
 border:1px solid #404552;
 padding-left:5px;
 }
-.ModuleList .ModuleSelected a {
-border:1px solid #1A1A1A;
+.Module:hover {
+background:linear-gradient(45deg, #655051, #551b1b);
 color:#FFFFFF;
+display:block;
+border-radius:4px;
+text-decoration:none;
+margin-bottom:5px;
+padding:3px;
+border:1px solid #404552;
 padding-left:5px;
-}
-.ModuleList .ModuleUnSelected a {
-border:1px solid #1A1A1A;
-background:transparent;
-color:#1A1A1A;
-padding-left:5px;
-}
-.ModuleList ul,.MenuList ul {
-margin:0;
-padding:0;
-}
-.ModuleList li,.MenuList li {
-list-style:none;
+cursor:pointer;
 }
 .MenuList {
 background:#EEEEEE;
@@ -76,12 +139,13 @@ padding:2px;
 transition-property:text-decoration;
 transition-duration:0.5s;
 }
-.MenuItem a{
+.MenuItem {
 color:#0E3D53;
 text-decoration:none;
+list-style-type:none;
 text-align:left;
 }
-.MenuItem a:hover {
+.MenuItem:hover {
 background:transparent;
 text-decoration:underline;
 text-align:left;
@@ -92,26 +156,6 @@ background:#ddd;
 outline:thin outset #ddd;
 text-align:center;
 color:#000;
-}
-.page_title_text {
-padding-top:2px;
-padding-bottom:2px;
-font-weight:700;
-color:#000;
-text-align:center;
-margin:0 auto;
-clear: both;
-}
-.page_title_text img {
-padding-right:7px;
-width:48px;
-height:48px;
-vertical-align:middle;
-}
-.toplink {
-float:left;
-margin-top:10px;
-display:inline-block;
 }
 .clearfix {
   overflow: auto;
