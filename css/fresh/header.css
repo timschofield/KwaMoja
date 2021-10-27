@@ -48,21 +48,44 @@ display:inline;
 padding:10px;
 margin-left:0px;
 }
-header #favourites {
-background: url(images/descending.png) no-repeat right transparent;
+.ThemeChanger{
+position:absolute;
+right:10%;
+}
+.ScriptTitle {
+font-weight:bold;
+font-size:100%;
+display:inline;
+padding:10px;
+}
+.Themes {
+font-size:80%;
+}
+#favourites {
+background: url(images/descending.png) no-repeat right #5A5F00;
+color:#CAF17C;
 background-size:contain;
 overflow: hidden;
-color:#5A5F00;
-font-size: 130%;
+font-size: 70%;
 font-weight:bold;
-padding-top: 2px;
+padding-top: 1px;
 padding-bottom: 2px;
 padding-left: 7px;
 padding-right: 32px;
 border: solid 2px #5A5F00;
 border-radius: 12px;
-margin: 2px;
+margin: 0px;
 -moz-appearance:none;
 -webkit-appearance: none;
 cursor:pointer;
+}
+.title_bar {
+border-radius:13px;
+font-size:150%;
+font-weight:bold;
+color:#607B4E;
+margin:1px;
+margin-bottom:5px;
+padding:6px;
+background:#DFF3AE;
 }
