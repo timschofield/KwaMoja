@@ -140,7 +140,23 @@ if (!isset($RootPath)) {
 	}
 
 	echo '<div class="title_bar">', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']), '
-		<a id="exit" class="close_button" itle="', _('Logout'), '" href="', $PathPrefix, $RootPath, '/Logout.php" onclick="return MakeConfirm(\'', _('Are you sure you wish to logout?'), '\', \'', _('Confirm Logout'), '\', this);">
+		<span class="ThemeChanger"><label for="Theme" class="ScriptTitle">', _('Theme'), ':</label>';
+
+	echo '<select name="Theme" class="Themes" id="favourites" onchange="window.open (\'index.php?Theme=\' + this.value,\'_self\',false)">';
+
+	$Themes = glob('css/*', GLOB_ONLYDIR);
+	foreach ($Themes as $ThemeName) {
+		$ThemeName = basename($ThemeName);
+		if ($ThemeName != 'mobile' and mb_substr($ThemeName, -4) != '-rtl') {
+			if ($_SESSION['Theme'] == $ThemeName) {
+				echo '<option selected="selected" value="', $ThemeName, '">', ucfirst($ThemeName), '</option>';
+			} else {
+				echo '<option value="', $ThemeName, '">', ucfirst($ThemeName), '</option>';
+			}
+		}
+	}
+	echo '</select></span>
+			<a id="exit" class="close_button" title="', _('Logout'), '" href="', $PathPrefix, $RootPath, '/Logout.php" onclick="return MakeConfirm(\'', _('Are you sure you wish to logout?'), '\', \'', _('Confirm Logout'), '\', this);">
 			X
 		</a>
 	</div>';
@@ -152,7 +168,7 @@ if (!isset($RootPath)) {
 	</div>';
 	echo '<div id="mask">';
 	//=== MainMenuDiv =======================================================================
-
+	
 
 	echo '<nav class="ModuleList" id="ModuleList">
 		<ul class="ListHolder">'; //===HJ===
@@ -169,12 +185,9 @@ if (!isset($RootPath)) {
 			if (!isset($_SESSION['Module']) or $_SESSION['Module'] == '') {
 				$_SESSION['Module'] = $_SESSION['ModuleLink'][$i];
 			}
-			if ($_SESSION['ModuleLink'][$i] == $_SESSION['Module']) {
-				echo '<li class="Module ModuleSelected" onclick="ShowModal(\'Menu.php?Application=', urlencode($_SESSION['ModuleLink'][$i]), '\')">';
-			} else {
-				echo '<li class="Module ModuleUnSelected" onclick="ShowModal(\'Menu.php?Application=', urlencode($_SESSION['ModuleLink'][$i]), '\')">';
-			}
-			echo '<a id="MainMenu">', $_SESSION['ModuleList'][$i], '</a></li>';
+			echo '<li class="Module" onclick="ShowModal(\'Menu.php?Application=', urlencode($_SESSION['ModuleLink'][$i]), '\')">
+					<a id="MainMenu">', $_SESSION['ModuleList'][$i], '</a>
+				</li>';
 		}
 		++$i;
 	}
@@ -208,7 +221,7 @@ if (!isset($RootPath)) {
 
 	//echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post">';
 	//echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
-
+	
 
 	echo '<fieldset style="margin:auto;width:33%">
 		<field>
@@ -225,10 +238,10 @@ if (!isset($RootPath)) {
 </fieldset>';
 
 	//echo '<input type="submit" name="submit" value="" style="display:none;" />';
-
+	
 
 	//echo '</form>';
-
+	
 
 	echo '<script async type="text/javascript" src = "', $RootPath, '/dashboard/javascript/dashboard.js"></script>';
 ?>
