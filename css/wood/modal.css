@@ -1,0 +1,51 @@
+.ShowModal {
+position:absolute;
+border-radius:23px;
+padding:0px;
+margin-left:2%;
+margin-top:1%;
+width:0%;
+height:91%;
+transition: width .5s;
+background:url(images/wood.jpg) #feb;
+border:0px solid #1A1A1A;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+opacity:0.95;
+z-index:9999;
+}
+.ShowScrollBar{
+overflow:auto;
+}
+.HideScrollBar{
+overflow:hidden;
+}
+.page_title_text {
+display:none;
+}
+.footer_bar {
+border: 2px solid #FFD980;
+border-radius:13px;
+font-size:150%;
+font-weight:bold;
+color:white;
+margin:1px;
+margin-bottom:5px;
+padding:6px;
+background:url(images/desk.jpg) #feb;
+}
+.close_button {
+float:right;
+margin-right:10px;
+cursor:pointer;
+color:#FFF8D1;
+background:#472411;
+font-weight:bold;
+}
+.ModalBody {
+height:85%;
+overflow: auto;
+scrollbar-color: #222222 #C6C6C6;
+}
+.footer_date {
+float:right;
+}
