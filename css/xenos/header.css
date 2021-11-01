@@ -2,9 +2,18 @@ header {
 background:transparent;
 padding:10px;
 }
-header #Info {
+#ActionIcon {
 display:inline;
-padding:10px;
+float:right;
+padding-left:10px;
+padding-right:5px;
+padding-bottom:2px;
+margin-top:-5px;
+font-weight:bold;
+color:white;
+height:28px;
+object-fit: contain;
+cursor:pointer;
 }
 header #Info img {
 padding-right:7px;
@@ -109,6 +118,7 @@ font-weight:bold;
 color:white;
 margin:1px;
 margin-bottom:5px;
+margin-top:5px;
 padding:6px;
 background:#8A8A8A;
 }
