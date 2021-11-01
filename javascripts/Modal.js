@@ -1,4 +1,9 @@
+// @ts-check
 function ShowModal(linkURL) {
+	if (document.getElementById("mask").style.display!="block") {
+		document.getElementById("mask").style.display="block";
+		document.getElementById("ModuleList").style.display="none";
+	}
 	document.body.style.overflow="hidden";
 	document.getElementById("modal").style.borderWidth = "4px";
 	document.getElementById("modal").style.padding = "6px";
@@ -11,6 +16,10 @@ function CloseModal() {
 	document.getElementById("modal").style.width = "0px";
 	document.getElementById("modal").style.borderWidth = "0px";
 	document.getElementById('modal').innerHTML='';
+	if (document.getElementById("mask").style.display=="block") {
+		document.getElementById("ModuleList").style.display="block";
+		document.getElementById("mask").style.display="none";
+	}
 }
 
 function Redirect(e) {
@@ -68,6 +77,9 @@ function GetContent(id, section) {
 
 function SubmitThisForm(Button, Element) {
 	FormName =Button.form;
+	if (FormName.name=="UserSettings") {
+		document.getElementById('StyleSheet').setAttribute("href", "css/" + document.getElementById('Theme').value + "/styles.css");
+	}
 	Target=FormName.action;
 	var PostData='';
 	for(var i=0,fLen=FormName.length;i<fLen;i++){
