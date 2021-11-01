@@ -14,10 +14,18 @@ vertical-align:middle;
 }
 header #Info a {
 }
-header #ActionIcon {
+#ActionIcon {
 display:inline;
 float:right;
 padding-left:10px;
+padding-right:5px;
+padding-bottom:2px;
+margin-top:-5px;
+font-weight:bold;
+color:white;
+height:28px;
+object-fit: contain;
+cursor:pointer;
 }
 header #ActionIcon img{
 padding-right:7px;
@@ -75,7 +83,7 @@ cursor:pointer;
 border-radius:13px;
 font-size:150%;
 font-weight:bold;
-color:#330000;
+color:#1A1A1A;
 margin:1px;
 margin-bottom:5px;
 padding:6px;
