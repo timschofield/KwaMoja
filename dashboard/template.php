@@ -13,8 +13,7 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 	$DashboardResult = DB_query($SQL);
 	$DashboardRow = DB_fetch_array($DashboardResult);
 
-	echo '<div class="container">
-		<thead>
+	echo '<thead>
 			<table class="DashboardTable">
 				<tr>
 					<th colspan="5">

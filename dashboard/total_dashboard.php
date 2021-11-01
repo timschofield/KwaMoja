@@ -1,7 +1,7 @@
 <?php
 $PathPrefix = '../';
 
-if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
+if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 	require_once ($PathPrefix . 'includes/session.php');
 	$DashBoardURL = $RootPath . '/index.php';
 	}
@@ -12,8 +12,7 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'Dashboard.php') {
 	$DashboardResult = DB_query($SQL);
 	$DashboardRow = DB_fetch_array($DashboardResult);
 
-	echo '<div class="container">
-		<table class="DashboardTable">
+	echo '<table class="DashboardTable">
 			<tr>
 				<th colspan="2">
 					<div class="CanvasTitle">', $ScriptTitle, '
