@@ -35,7 +35,7 @@ if (!isset($RootPath)) {
 			<meta http-equiv="Content-Type" content="application/html; charset=utf-8; cache-control: no-cache, no-store, must-revalidate; Pragma: no-cache" />
 			<title>', _('KwaMoja'), ' - ', $Title, '</title>
 			<link rel="icon" href="', $PathPrefix, $RootPath, '/favicon.ico?v=2" />
-			<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/styles.css?v=30" rel="stylesheet" type="text/css" media="screen" />
+			<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/styles.css?v=30" id="StyleSheet" rel="stylesheet" type="text/css" media="screen" />
 			<link href="', $PathPrefix, $RootPath, '/css/print.css" rel="stylesheet" type="text/css" media="print" />
 			<meta name="viewport" content="width=device-width, initial-scale=1">';
 	echo '<script async type="text/javascript" src = "', $PathPrefix, $RootPath, '/javascripts/MiscFunctions.js"></script>';
@@ -100,8 +100,6 @@ if (!isset($RootPath)) {
 
 	$DashBoardURL = 'index.php';
 
-	echo '<link href="', $RootPath, '/dashboard/css/dashboard.css?v=1" rel="stylesheet" type="text/css" media="screen" />';
-
 	$SQL = "SELECT scripts FROM dashboard_users WHERE userid = '" . $_SESSION['UserID'] . "' ";
 
 	$Result = DB_query($SQL);
@@ -139,27 +137,14 @@ if (!isset($RootPath)) {
 		include ('includes/MainMenuLinksArray.php');
 	}
 
-	echo '<div class="title_bar">', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']), '
-		<span class="ThemeChanger"><label for="Theme" class="ScriptTitle">', _('Theme'), ':</label>';
+	echo '<div class="title_bar">', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']);
 
-	echo '<select name="Theme" class="Themes" id="favourites" onchange="window.open (\'index.php?Theme=\' + this.value,\'_self\',false)">';
+	echo '<a id="exit" class="close_button" title="', _('Logout'), '" href="', $PathPrefix, $RootPath, '/Logout.php" onclick="return MakeConfirm(\'', _('Are you sure you wish to logout?'), '\', \'', _('Confirm Logout'), '\', this);">
+			<img id="ActionIcon" src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/quit.png" title="', _('Logout'), '" alt="" />
+		</a>';
+	echo '<img id="ActionIcon" onclick="ShowModal(\'UserSettings.php\')" src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/maintenance.png" title="', _('Change the user settings'), '" alt="" />';
 
-	$Themes = glob('css/*', GLOB_ONLYDIR);
-	foreach ($Themes as $ThemeName) {
-		$ThemeName = basename($ThemeName);
-		if ($ThemeName != 'mobile' and mb_substr($ThemeName, -4) != '-rtl') {
-			if ($_SESSION['Theme'] == $ThemeName) {
-				echo '<option selected="selected" value="', $ThemeName, '">', ucfirst($ThemeName), '</option>';
-			} else {
-				echo '<option value="', $ThemeName, '">', ucfirst($ThemeName), '</option>';
-			}
-		}
-	}
-	echo '</select></span>
-			<a id="exit" class="close_button" title="', _('Logout'), '" href="', $PathPrefix, $RootPath, '/Logout.php" onclick="return MakeConfirm(\'', _('Are you sure you wish to logout?'), '\', \'', _('Confirm Logout'), '\', this);">
-			X
-		</a>
-	</div>';
+	echo '</div>';
 
 	echo '<div id="menuiconcontainer" class="menuiconcontainer" title="Show Menu" onclick="ShowModules()">
 		<div class="bar1"></div>
@@ -202,46 +187,35 @@ if (!isset($RootPath)) {
 	$Result = DB_query($SQL);
 
 	$i = 0;
-	echo '<table>
-		<tr>';
+	echo '<div class="container" style="--cols:3; --rows:2">';
+
 	while ($MyRow = DB_fetch_array($Result)) {
 		if (in_array($MyRow['id'], $ScriptArray) and in_array($MyRow['pagesecurity'], $_SESSION['AllowedPageSecurityTokens'])) {
-			echo '<td class="dashboard_cell" name="', $MyRow['scripts'], '" id="dashboard_cell', $i, '" title="', $MyRow['description'], '" onload="">';
+			echo '<div class="dashboard_cell" name="', $MyRow['scripts'], '" id="dashboard_cell', $i, '" title="', $MyRow['description'], '" onload="">';
 			include ('dashboard/' . $MyRow['scripts']);
-			echo '</td>';
-			if ($i == 2) {
-				echo '</tr><tr>';
-			}
+			echo '</div>';
 			++$i;
 		}
 	}
-	echo '</tr>
-	</table>';
+	echo '</div>';
 	DB_data_seek($Result, 0);
 
-	//echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post">';
-	//echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
-	
-
-	echo '<fieldset style="margin:auto;width:33%">
-		<field>
-			<label for="Reports">', _('Add reports to your dashboard'), '</label>
-			<select name="Reports" onchange="GetContent(\'body\', \'index.php?Reports=\'+this.value)">
-			<option value=""></option>';
-	while ($MyRow = DB_fetch_array($Result)) {
-		if (!in_array($MyRow['id'], $ScriptArray) and in_array($MyRow['pagesecurity'], $_SESSION['AllowedPageSecurityTokens'])) {
-			echo '<option value="', $MyRow['id'], '">', $MyRow['description'], '</option>';
+	if ($i < 6) {
+		echo '<form>
+				<fieldset style="margin:auto">
+					<field>
+						<label for="Reports">', _('Add reports to your dashboard'), '</label>
+						<select name="Reports" onchange="GetContent(\'body\', \'index.php?Reports=\'+this.value)">
+						<option value=""></option>';
+		while ($MyRow = DB_fetch_array($Result)) {
+			if (!in_array($MyRow['id'], $ScriptArray) and in_array($MyRow['pagesecurity'], $_SESSION['AllowedPageSecurityTokens'])) {
+				echo '<option value="', $MyRow['id'], '">', $MyRow['description'], '</option>';
+			}
 		}
+		echo '</select>
+			</field>
+		</fieldset>
+	</form>';
 	}
-	echo '</select>
-	</field>
-</fieldset>';
-
-	//echo '<input type="submit" name="submit" value="" style="display:none;" />';
-	
-
-	//echo '</form>';
-	
-
 	echo '<script async type="text/javascript" src = "', $RootPath, '/dashboard/javascript/dashboard.js"></script>';
 ?>
