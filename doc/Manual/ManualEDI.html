@@ -1,3 +1,4 @@
+<article>
 <a id="EDI">
 	<h1>EDI</h1>
 </a>
@@ -143,3 +144,4 @@
 <p>Some customers may also require the item code to be their item code, not the KwaMoja item code. The variable CustStockID is derived from the cross reference table EDIItemMapping which would need to contain a cross reference record for each item that they may buy.</p>
 <p>The script that creates the EDI invoices (EDISendInvoices.php) should be run automatically in the background as a scheduled task. It first gets a list of all customers who should receive EDI invoices (or credit notes) - as determined in the settings of their DebtorsMaster record. Then the script goes through each customer returned in turn to get any invoices or credits that have not already been sent. A flat file is created for all the customers invoices and credits and sent to the customer using the transport, address and other parameters defined in the customer edi setup page - recorded against their DebtorsMaster record. There is a link to enable the script to be run manually - the browser will also show the output of the EDI message.</p>
 <!-- Help End: CustEDISetup -->
+</article>

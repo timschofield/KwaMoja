@@ -96,7 +96,8 @@ if (!isset($RootPath)) {
 			</style>';
 
 	$ScriptName = basename($_SERVER['SCRIPT_NAME']);
-	echo '<div class="ShowModal" id="modal"></div>';
+	echo '<div class="ShowModal" id="modal">
+		</div>';
 
 	$DashBoardURL = 'index.php';
 

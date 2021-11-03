@@ -1,3 +1,4 @@
+<article>
 <h1><a id="GettingStarted">Getting Started</a></h1>
 <h2>Prerequisites</h2>
 <ul>
@@ -25,7 +26,7 @@
 	<a class="minitext" href="#top">⬆ Top</a>
 </div>
 <h2>Using the KwaMoja Installer</h2>
-<img src="images/installer1.png" />
+<img class="ManualImage" src="doc/Manual/images/installer1.png" />
 <p>Assuming that a web server with PHP functionality is operational and a MySQL database server is available either on the same machine or on the network and that the web-server is running under a user that is able to write to the KwaMoja installation directory then a new installation can proceed.</p>
 <ul>
 <li>After downloading KwaMoja and placing the code in the web root, point your browser to the code.</li>
@@ -34,9 +35,9 @@
 <li>This is the wizard that will guide you through the entire installation process.</li>
 
 <li>The first selection you must make is the language that you want to use for the installation, and for the admin user.</li>
-<img src="images/installer2.png" />
+<img class="ManualImage" src="doc/Manual/images/installer2.png" />
 <li>Changing this language setting will immediately refresh the screen, and you should now see it in your chosen language.</li>
-<img src="images/installer3.png" />
+<img class="ManualImage" src="doc/Manual/images/installer3.png" />
 
 <li>This language setting will remain constant through the rest of the installation process.</li>
 
@@ -44,30 +45,30 @@
 
 
 <li>The final step on this first page is to choose the database management system that you want to use in KwaMoja</li>
-<img src="images/installer4.png" />
+<img class="ManualImage" src="doc/Manual/images/installer4.png" />
 
 <li>Currently only MariaDB, MySQL, and MySQLi are supported. Clicking on "Next Step" takes you to the second screen of the installer.</li>
 
 
 <li>This screen will make all the necessary checks on your system to ensure that KwaMoja can be installed and run on your server.</li>
-<img src="images/installer5.png" />
+<img class="ManualImage" src="doc/Manual/images/installer5.png" />
 
 <li>If you get any failures here then you will be presented with a button to "Check Again". Just correct the problem and then click this button, until all problems are resolved, and you get a screen above. Then move on to the next step.</li>
 
 <li>This screen is for details of the database connection that we are going to use.</li>
-<img src="images/installer6.png" />
+<img class="ManualImage" src="doc/Manual/images/installer6.png" />
 
 <li>The first field is for the host machine that the database is on, relative to the web server, not to the client machine. So if the web server and the database server are on the same machine this can be left as "localhost". An IP address can also be used.</li>
 
 <li>The last two fields are for the login details to your database. This shouldn't be confused with the login details to KwaMoja. The second field is for the name of the database that you will use. This should only contains alphanumeric characters, and no spaces. If the database login that you supply doesn't have permissions to create a database (a lot of shared hosting companies do not allow this) then this database must be created manually before the installation process begins.</li>
 
 <li>Clicking on "Next Step" takes us to the final screen of the installer. The first field is for the name of your company. This should be the full name that you want to appear on all paper work. Next we select a chart of accounts to be used for our company. Currently we have 27 charts kindly donated from all around the world - Many thanks to all those who have donated. Next is the timezone that the server is located in KwaMoja should choose the correct for you. Finally you can upload your company logo which appears throughout KwaMoja If you don't upload a logo the default KwaMoja logo will be used instead.</li>
-<img src="images/installer7.png" />
+<img class="ManualImage" src="doc/Manual/images/installer7.png" />
 
 <li>Next we have the option to install some random test data. Choose this if you are just evaluating KwaMoja otherwise leave this unchecked.</li>
-<img src="images/installer8.png" />
+<img class="ManualImage" src="doc/Manual/images/installer8.png" />
 <li>Finally you need to enter the details for the KwaMoja system administrator account. Default is a userid of admin, and a password of "kwamoja", but you can decide your own.</li>
-<img src="images/installer9.png" />
+<img class="ManualImage" src="doc/Manual/images/installer9.png" />
 
 <li>Once done click on the install button, and the installation process will start.</li>
 
@@ -283,8 +284,8 @@
 <p>KwaMoja uses the gettext library of functions for using the data under the locale files to perform the translations. The gettext libraries need to be installed on the web-server together with the locales that you wish to translate into. In addition the web-server's PHP installation must have the gettext extension configured to use the gettext library functions. Pointing the browser at http://yourdomain/KwaMoja/phpinfo.php will show the details of the PHP installation on your web-server and you should see the gettext extension available from this page.</p>
 <p>KwaMoja distributes language packs for all the different languages from sourceforge - http://sourceforge.net/projects/web-erp/files/ Browse to the language your require and download the zip archive. Transfer the file or download it to your web-server under the KwaMoja/locale directory - then extract it. Make sure the files are readable by the web-server (and the user that the web-server runs under) - it may be necessary to change the owner or permissions of the language files.</p>
 <p>To change the language displayed for a specific user - the user clicks on their name as shown on every screen at the top of the page. This brings up their user settings.</p>
-<p align="center"><img src="images/UserSettings.jpg"></p>
-<p align="center"><img src="doc/Manual/images/UserSettings.jpg"></p>
+<p align="center"><img class="ManualImage" src="doc/Manual/images/UserSettings.jpg"></p>
+<p align="center"><img class="ManualImage" src="doc/Manual/doc/Manual/images/UserSettings.jpg"></p>
 
 <p>KwaMoja looks at all the directories available under locale to see which languages are installed and provides a convenient way for users to select their preferred language. In addition to selecting the language it is also necessary to select the fonts required for pdf support in the selected language.</p>
 
@@ -297,3 +298,4 @@
 <p>PDFs are produced in utf-8 character set which has 4 bytes for each character. Unfortunately, the CID fonts used in PDFs only have 2 bytes so there is required to be some mapping of CID characters to utf-8 fonts to make everything work. In practise all this means is that the correct language needs also to be selected for the PDF language.</p>
 <p>If you are interested in contributing a language pack to KwaMoja - which is always very much appreciated! There are instructions for how to proceed at http://www.kwamoja.com/HowToTranslate</p>
 <!-- Help End: WWW_Users -->
+</article>

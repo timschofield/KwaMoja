@@ -1,8 +1,9 @@
+<article>
 <h1><a id="Multilanguage">Multilanguage</a></h1>
 
 <p>KwaMoja can be translated to any language so that the entire web-interface is displayed in the language of any user. The system can display different languages for different users - all at the same time - depending on the setting of the language in the individual users' settings.</p>
 <p>Each user can select their language by clicking on their user name at the top left of every screen immediately to the right of the company name. Clicking on your user name this brings up the user settings screen below:</p>
-<img src="images/UserSettings.png" alt="User Settings Screen" />
+<img class="ManualImage" src="doc/Manual/images/UserSettings.png" alt="User Settings Screen" />
 <p>A dropdown box displaying all the available translations is available. Also, the character set of PDFs must also be selected from the 3 choices to create small portable pdf files using the CID fonts bundled with KwaMoja. The preferred user display theme can also be selected from this screen.</p>
 
 <h2>Other Language Translations</h2>
@@ -218,3 +219,5 @@ this line is the english string which is to be substituted by the text in msgstr
 <p>Once the language and module have been selected then click on Proceed. A handy interface comes up with all of the strings listed that are within that module and beside them an area to enter your translation of that string. On the right is a list of the line number where the string occurs in the code within the module. After entering some translations click on Enter Information in order to save all changes.</p>
 
 <p>If there has been some development work on your version of KwaMoja it is possible to merge any new strings that have been created by the developers with the existing language file and create a new messages.po that contain all the strings required by the system. If some messages still come up in English but they don't appear when editing the module for that screen then you know you must Merge the existing messages.po with any new messages. To ensure all strings are extracted by the gettext utility it is important to ensure that the "Rebuild the System Default Language File" is run first. Then from the "Edit a Language File Module" screen click on the "Refresh Messages With Latest Strings" - this merges the newly creates master messages.po file created by the Rebuild with your existing translations.</p>
+
+</article>
