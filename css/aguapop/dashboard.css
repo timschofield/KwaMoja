@@ -9,6 +9,7 @@ margin-right:1%;
 }
 .dashboard_cell {
 overflow:auto;
+scrollbar-color: #BA5F62 #4682B4;
 background:#B0AEAE;
 border: 0px solid #9E0101;
 padding:3px;
