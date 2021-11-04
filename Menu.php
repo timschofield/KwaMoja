@@ -6,6 +6,9 @@ $Title = _('Main Menu');
 include ('includes/header.php');
 //=== SubMenuDiv (wrapper) ==============================================================================
 if (isset($_GET['Application']) and ($_GET['Application'] != '')) {
+	echo '<script>
+		localStorage.setItem("Module", "', $_SESSION['Appliocation'], '");
+	</script>';
 	/*This is sent by this page (to itself) when the user clicks on a tab */
 	$_SESSION['Module'] = $_GET['Application'];
 	setcookie('Module', $_GET['Application'], time() + 3600 * 24 * 30);

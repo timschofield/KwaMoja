@@ -1,5 +1,6 @@
-// @ts-check
+let CurrentPage = '';
 function ShowModal(linkURL) {
+	CurrentPage=linkURL;
 	if (document.getElementById("mask").style.display!="block") {
 		document.getElementById("mask").style.display="block";
 		document.getElementById("ModuleList").style.display="none";
@@ -11,6 +12,10 @@ function ShowModal(linkURL) {
 	GetContent('modal', linkURL);
 }
 function CloseModal() {
+	if (CurrentPage.toString().substring(0,8) != "Menu.php") {
+		ShowModal("Menu.php");
+		return;
+	}
 	document.body.style.overflow="auto";
 	document.getElementById("modal").style.padding = "0px";
 	document.getElementById("modal").style.width = "0px";

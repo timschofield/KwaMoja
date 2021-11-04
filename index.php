@@ -192,7 +192,7 @@ if (!isset($RootPath)) {
 
 	while ($MyRow = DB_fetch_array($Result)) {
 		if (in_array($MyRow['id'], $ScriptArray) and in_array($MyRow['pagesecurity'], $_SESSION['AllowedPageSecurityTokens'])) {
-			echo '<div class="dashboard_cell" name="', $MyRow['scripts'], '" id="dashboard_cell', $i, '" title="', $MyRow['description'], '" onload="">';
+			echo '<div draggable="true" class="dashboard_cell" name="', $MyRow['scripts'], '" id="dashboard_cell', $i, '" title="', $MyRow['description'], '" onload="">';
 			include ('dashboard/' . $MyRow['scripts']);
 			echo '</div>';
 			++$i;
