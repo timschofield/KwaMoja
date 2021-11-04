@@ -91,6 +91,10 @@ function SubmitThisForm(Button, Element) {
 	FormName =Button.form;
 	if (FormName.name=="UserSettings") {
 		document.getElementById('StyleSheet').setAttribute("href", "css/" + document.getElementById('Theme').value + "/styles.css");
+		images = document.getElementsByTagName("img");
+		for (i = 0; i < images.length; i++) {
+			images[i].src = "css/" + document.getElementById('Theme').value + "/images/" + images[i].src.split('\\').pop().split('/').pop();
+		}
 	}
 	Target=FormName.action;
 	var PostData='';
