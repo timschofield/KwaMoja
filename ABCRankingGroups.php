@@ -2,6 +2,8 @@
 include ('includes/session.php');
 
 $Title = _('Maintain ABC ranking groups');
+$ViewTopic = 'Inventory';
+$BookMark = 'ABC';
 
 include ('includes/header.php');
 
@@ -24,55 +26,55 @@ if (isset($_GET['Delete'])) {
 	} else {
 		prnMsg(_('ABC Ranking group number') . ' ' . $_GET['SelectedMethodID'] . ' ' . _('cannot be deleted as it already has been run'), 'error');
 	}
-}
-
-if (isset($_POST['Submit'])) {
-	$InputError = 0;
-	if ($_POST['GroupID'] == '') {
-		$InputError++;
-		prnMsg(_('The group id field cannot be left empty'), 'error');
-	}
-	if (!filter_var($_POST['GroupID'], FILTER_VALIDATE_INT)) {
-		$InputError++;
-		prnMsg(_('The group id field must be numeric'), 'error');
-	}
-	if ($_POST['GroupName'] == '') {
-		$InputError++;
-		prnMsg(_('The group name field cannot be left empty'), 'error');
-	}
-	if (mb_strlen($_POST['GroupName']) > 40) {
-		$_POST['GroupName'] = substr($_POST['GroupName'], 0, 40);
-		prnMsg(_('The group name cannot be more than 40 characters long, it has been shortened to') . ' ' . $_POST['GroupName'], 'info');
-	}
-	if ($_POST['MethodID'] == '') {
-		$InputError++;
-		prnMsg(_('You must select a ranking method.'), 'error');
-	}
-	if (!filter_var($_POST['APercent'], FILTER_VALIDATE_INT)) {
-		$InputError++;
-		prnMsg(_('The A percentage field must be numeric'), 'error');
-	}
-	if (!filter_var($_POST['BPercent'], FILTER_VALIDATE_INT)) {
-		$InputError++;
-		prnMsg(_('The B percentage field must be numeric'), 'error');
-	}
-	if (!filter_var($_POST['CPercent'], FILTER_VALIDATE_INT)) {
-		$InputError++;
-		prnMsg(_('The C percentage field must be numeric'), 'error');
 	}
 
-	if (($_POST['APercent'] + $_POST['BPercent'] + $_POST['CPercent']) != 100) {
-		$InputError++;
-		prnMsg(_('The percentage fields must add up to 100'), 'error');
-	}
+	if (isset($_POST['Submit'])) {
+		$InputError = 0;
+		if ($_POST['GroupID'] == '') {
+			$InputError++;
+			prnMsg(_('The group id field cannot be left empty'), 'error');
+		}
+		if (!filter_var($_POST['GroupID'], FILTER_VALIDATE_INT)) {
+			$InputError++;
+			prnMsg(_('The group id field must be numeric'), 'error');
+		}
+		if ($_POST['GroupName'] == '') {
+			$InputError++;
+			prnMsg(_('The group name field cannot be left empty'), 'error');
+		}
+		if (mb_strlen($_POST['GroupName']) > 40) {
+			$_POST['GroupName'] = substr($_POST['GroupName'], 0, 40);
+			prnMsg(_('The group name cannot be more than 40 characters long, it has been shortened to') . ' ' . $_POST['GroupName'], 'info');
+		}
+		if ($_POST['MethodID'] == '') {
+			$InputError++;
+			prnMsg(_('You must select a ranking method.'), 'error');
+		}
+		if (!filter_var($_POST['APercent'], FILTER_VALIDATE_INT)) {
+			$InputError++;
+			prnMsg(_('The A percentage field must be numeric'), 'error');
+		}
+		if (!filter_var($_POST['BPercent'], FILTER_VALIDATE_INT)) {
+			$InputError++;
+			prnMsg(_('The B percentage field must be numeric'), 'error');
+		}
+		if (!filter_var($_POST['CPercent'], FILTER_VALIDATE_INT)) {
+			$InputError++;
+			prnMsg(_('The C percentage field must be numeric'), 'error');
+		}
 
-	if (!filter_var($_POST['Months'], FILTER_VALIDATE_INT)) {
-		$InputError++;
-		prnMsg(_('The number of months field must be numeric'), 'error');
-	}
+		if (($_POST['APercent'] + $_POST['BPercent'] + $_POST['CPercent']) != 100) {
+			$InputError++;
+			prnMsg(_('The percentage fields must add up to 100'), 'error');
+		}
 
-	if ($InputError == 0) {
-		$SQL = "INSERT INTO abcgroups ( groupid,
+		if (!filter_var($_POST['Months'], FILTER_VALIDATE_INT)) {
+			$InputError++;
+			prnMsg(_('The number of months field must be numeric'), 'error');
+		}
+
+		if ($InputError == 0) {
+			$SQL = "INSERT INTO abcgroups ( groupid,
 										groupname,
 										methodid,
 										apercentage,
@@ -90,17 +92,17 @@ if (isset($_POST['Submit'])) {
 										'" . $_POST['ZeroUsage'] . "',
 										'" . $_POST['Months'] . "'
 									)";
-		$InputResult = DB_query($SQL);
-		prnMsg(_('The ranking group has been successfully saved to the database'), 'success');
-		echo '<div class="centre">
+			$InputResult = DB_query($SQL);
+			prnMsg(_('The ranking group has been successfully saved to the database'), 'success');
+			echo '<div class="centre">
 				<a href="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '">', _('View all the ranking groups'), '</a>
 			</div>';
-		include ('includes/footer.php');
-		exit;
-	}
+			include ('includes/footer.php');
+			exit;
+		}
 
-} else {
-	$SQL = "SELECT groupid,
+	} else {
+		$SQL = "SELECT groupid,
 					groupname,
 					methodname,
 					apercentage,
@@ -111,8 +113,8 @@ if (isset($_POST['Submit'])) {
 				FROM abcgroups
 				INNER JOIN abcmethods
 					ON abcgroups.methodid=abcmethods.methodid";
-	$Result = DB_query($SQL);
-	echo '<table summary="', _('List of ABC Ranking Methods'), '">
+		$Result = DB_query($SQL);
+		echo '<table summary="', _('List of ABC Ranking Methods'), '">
 			<tr>
 				<th colspan="10">
 					<h3>', _('List of ABC Ranking Groups'), '
@@ -132,8 +134,8 @@ if (isset($_POST['Submit'])) {
 				<th></th>
 			</tr>';
 
-	while ($MyRow = DB_fetch_array($Result)) {
-		echo '<tr class="striped_row">
+		while ($MyRow = DB_fetch_array($Result)) {
+			echo '<tr class="striped_row">
 				<td>', $MyRow['groupid'], '</td>
 				<td>', $MyRow['groupname'], '</td>
 				<td>', $MyRow['methodname'], '</td>
@@ -144,13 +146,13 @@ if (isset($_POST['Submit'])) {
 				<td>', $MyRow['months'], '</td>
 				<td><a href="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '?SelectedGroupID=', urlencode($MyRow['groupid']), '&amp;Delete=1" onclick="return MakeConfirm(\'' . _('Are you sure you wish to delete this ranking group?') . '\', \'Confirm Delete\', this);">', _('Delete'), '</a></td>
 			</tr>';
-	}
-	echo '</table>';
+		}
+		echo '</table>';
 
-	echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post" id="ABCMethods">';
-	echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
+		echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post" id="ABCMethods">';
+		echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
 
-	echo '<fieldset>
+		echo '<fieldset>
 			<legend>', _('Ranking Group Details'), '</legend>
 			<field>
 				<label for="GroupID">', _('Group ID'), '</label>
@@ -163,23 +165,23 @@ if (isset($_POST['Submit'])) {
 				<fieldhelp>', _('The name by which this group will be known.'), '</fieldhelp>
 			</field>';
 
-	$SQL = "SELECT methodid,
+		$SQL = "SELECT methodid,
 					methodname
 				FROM abcmethods";
-	$Result = DB_query($SQL);
+		$Result = DB_query($SQL);
 
-	echo '<field>
+		echo '<field>
 			<label for="MethodID">', _('Ranking method'), '</label>
 				<select required="required" name="MethodID">
 					<option value=""></option>';
-	while ($MyRow = DB_fetch_array($Result)) {
-		echo '<option value="', $MyRow['methodid'], '">', $MyRow['methodname'], '</option>';
-	}
-	echo '</select>
+		while ($MyRow = DB_fetch_array($Result)) {
+			echo '<option value="', $MyRow['methodid'], '">', $MyRow['methodname'], '</option>';
+		}
+		echo '</select>
 		<fieldhelp>', _('Select the method used to calculate the group this stock item belongs to.'), '</fieldhelp>
 	</field>';
 
-	echo '<field>
+		echo '<field>
 			<label for="APercent">', _('Percentage in A Category'), '</label>
 			<input required="required" type="text" size="3" class="number" name="APercent" value="10" />
 			<fieldhelp>', _('The percentage of items to place in the A category.'), '</fieldhelp>
@@ -208,13 +210,13 @@ if (isset($_POST['Submit'])) {
 			<fieldhelp>', _('The number of months stock movement to analyse.'), '</fieldhelp>
 		</field>';
 
-	echo '</fieldset>';
-	echo '<div class="centre">
+		echo '</fieldset>';
+		echo '<div class="centre">
 			<input type="submit" name="Submit" value="', _('Save'), '" />
 		</div>';
-	echo '</form>';
-}
+		echo '</form>';
+	}
 
-include ('includes/footer.php');
+	include ('includes/footer.php');
 
 ?>

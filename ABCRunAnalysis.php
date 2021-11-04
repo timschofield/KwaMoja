@@ -2,6 +2,8 @@
 include ('includes/session.php');
 
 $Title = _('Run stock ranking analysis');
+$ViewTopic = 'Inventory';
+$BookMark = 'ABC';
 
 include ('includes/header.php');
 
@@ -117,39 +119,39 @@ if (isset($_POST['Submit'])) {
 	$Result = DB_query("DROP TABLE IF EXISTS tempabc");
 
 	prnMsg(_('The ABC analysis has been successfully run'), 'success');
-} else {
+	} else {
 
-	echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post" id="ABCAnalysis">';
-	echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
+		echo '<form action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" method="post" id="ABCAnalysis">';
+		echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
 
-	echo '<fieldset>
+		echo '<fieldset>
 			<legend>', _('Ranking Analysis Details'), '</legend>
 			<field>
 				<label for="GroupID">', _('Ranking group'), '</label>
 				<select required="required" autofocus="autofocus" name="GroupID">';
 
-	$SQL = "SELECT groupid,
+		$SQL = "SELECT groupid,
 					groupname
 				FROM abcgroups";
-	$Result = DB_query($SQL);
+		$Result = DB_query($SQL);
 
-	echo '<option value=""></option>';
-	while ($MyRow = DB_fetch_array($Result)) {
-		echo '<option value="', $MyRow['groupid'], '">', $MyRow['groupname'], '</option>';
-	}
+		echo '<option value=""></option>';
+		while ($MyRow = DB_fetch_array($Result)) {
+			echo '<option value="', $MyRow['groupid'], '">', $MyRow['groupname'], '</option>';
+		}
 
-	echo '</select>
+		echo '</select>
 		</field>';
 
-	echo '</fieldset>
+		echo '</fieldset>
 		<div class="centre">
 			<input type="submit" name="Submit" value="', _('Run'), '" />
 		</div>
 	</form>';
 
-	prnMsg(_('Please note if you run an ABC analysis against a ranking group that has been used before, that analysis will be deleted and replaced by this one'), 'warn');
-}
+		prnMsg(_('Please note if you run an ABC analysis against a ranking group that has been used before, that analysis will be deleted and replaced by this one'), 'warn');
+	}
 
-include ('includes/footer.php');
+	include ('includes/footer.php');
 
 ?>
