@@ -12,7 +12,7 @@ function ShowModal(linkURL) {
 	GetContent('modal', linkURL);
 }
 function CloseModal() {
-	if (CurrentPage.toString().substring(0,8) != "Menu.php") {
+	if ((CurrentPage.toString().substring(0,8) != "Menu.php") && (CurrentPage.toString() != "UserSettings.php")) {
 		ShowModal("Menu.php");
 		return;
 	}
