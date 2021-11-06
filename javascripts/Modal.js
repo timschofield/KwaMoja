@@ -8,7 +8,9 @@ function ShowModal(linkURL) {
 	document.body.style.overflow="hidden";
 	document.getElementById("modal").style.borderWidth = "4px";
 	document.getElementById("modal").style.padding = "6px";
-	document.getElementById("modal").style.width = "96%";
+	document.getElementById("modal").style.width = "98%";
+	document.getElementById("modal").style.marginLeft = ".5%";
+	document.getElementById("modal").style.marginTop = ".5%";
 	GetContent('modal', linkURL);
 }
 function CloseModal() {
