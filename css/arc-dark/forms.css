@@ -1,10 +1,11 @@
 form {
 background:transparent;
-width: 100%;
+max-width: 51%;
 text-align: center;
+margin:auto;
+color:#77AAC3;
 }
 form fieldset {
-display: inline;
 border:solid 1px;
 margin:auto;
 padding-top:7px;
@@ -13,6 +14,10 @@ margin-right:4px;
 border-radius:7px;
 text-align:left;
 vertical-align:top;
+width:auto;
+display:grid;
+grid-template-columns:max-content max-content 2fr;
+grid-column-gap:1em;
 }
 form fieldset legend {
 background-color:transparent;
@@ -32,20 +37,23 @@ background-position:5px center;
 padding-left:26px;
 }
 form fieldset field {
-display:block;
 text-align:left;
 margin-bottom:3px;
+display:grid;
+grid-column:span 3;
+grid-template-columns:subgrid;
+grid:inherit;
+grid-gap:inherit;
 }
 form fieldset field label {
 float:left;
 width:24.5em;
-text-align:left;
+text-align:right;
 }
 form fieldset field .fieldtext {
-margin-top:2px;
-margin-bottom:8px;
 display:inline;
-line-height:170%;
+line-height:130%;
+padding-bottom:5px;
 }
 form fieldset field input,textarea,select {
 background-color:inherit;
@@ -59,6 +67,7 @@ font-size:inherit;
 form fieldset field select:not([multiple]) {
 background:url(images/descending.png) no-repeat right transparent;
 padding-right:24px;
+color:#9FCCF7;
 background-size:contain;
 -moz-appearance:none;
 -webkit-appearance: none;

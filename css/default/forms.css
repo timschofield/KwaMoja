@@ -1,12 +1,12 @@
 form {
 background:transparent;
-width: 100%;
+max-width: 51%;
 text-align: center;
 color:#1A1A1A;
+margin:auto;
 }
 form fieldset {
 background:#BAD8F6;
-display: inline-block;
 border:solid 0px;
 margin:auto;
 padding-top:7px;
@@ -14,6 +14,9 @@ border-radius:7px;
 text-align:left;
 vertical-align:top;
 width:auto;
+display:grid;
+grid-template-columns:max-content max-content 2fr;
+grid-column-gap:1em;
 }
 form fieldset fieldset {
 border: solid 1px #588BB6;
@@ -41,20 +44,24 @@ background-position:5px center;
 padding-left:26px;
 }
 form fieldset field {
-display:block;
 text-align:left;
 margin-bottom:3px;
 margin-top:2px;
+display:grid;
+grid-column:span 3;
+grid-template-columns:subgrid;
+grid:inherit;
+grid-gap:inherit;
 }
 form fieldset field label {
 float:left;
 width:24.5em;
-text-align:left;
+text-align:right;
 }
 form fieldset field .fieldtext {
 display:inline;
-line-height:170%;
-padding-bottom:10px;
+line-height:130%;
+padding-bottom:5px;
 }
 form fieldset field input,textarea,select {
 background-color:#C0C3FF;
@@ -64,6 +71,7 @@ padding:2px;
 color:#1A1A1A;
 font-family:inherit;
 font-size:inherit;
+width:auto;
 }
 form fieldset field select:not([multiple]) {
 background:url(images/descending.png) no-repeat right #C0C3FF;

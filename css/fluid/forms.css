@@ -1,12 +1,12 @@
 form {
 background:transparent;
-width: 100%;
+width: 51%;
 text-align: center;
+margin:auto;
 }
 form fieldset {
 background:#556699;
 color:#FFFFFF;
-display: inline;
 border:solid 1px;
 margin:auto;
 padding-top:7px;
@@ -16,6 +16,10 @@ margin-right:2px;
 border-radius:7px;
 text-align:left;
 vertical-align:top;
+width:auto;
+display:grid;
+grid-template-columns:max-content max-content 2fr;
+grid-column-gap:1em;
 }
 form fieldset legend {
 background-color:#C9C5C5;
@@ -34,19 +38,23 @@ background-position:5px center;
 padding-left:26px;
 }
 form fieldset field {
-display:block;
 text-align:left;
 margin-bottom:3px;
+display:grid;
+grid-column:span 3;
+grid-template-columns:subgrid;
+grid:inherit;
+grid-gap:inherit;
 }
 form fieldset field label {
 float:left;
 width:24.5em;
-text-align:left;
+text-align:right;
 }
 form fieldset field .fieldtext {
-margin-bottom:8px;
+margin-bottom:5px;
 display:inline;
-line-height:170%;
+line-height:130%;
 }
 form fieldset field input,textarea,select {
 background-color:#556699;
