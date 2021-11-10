@@ -60,8 +60,8 @@ if (isset($_GET['SelectedTag'])) {
 		unset($_POST['Department']);
 	}
 	echo '<p class="page_title_text" >
-		<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/maintenance.png" title="', _('Print'), '" alt="', $Title, '" />', ' ', $Title, '
-	</p>';
+			<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/maintenance.png" title="', _('Print'), '" alt="', $Title, '" />', ' ', $Title, '
+		</p>';
 
 	echo '<form method="post" action="', htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8'), '" id="form">';
 	echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
