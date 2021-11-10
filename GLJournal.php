@@ -470,8 +470,6 @@ if (isset($_GET['NewJournal']) and $_GET['NewJournal'] == 'Yes' and isset($_SESS
 		$_SESSION['JournalDetail']->JnlDate = Date($_SESSION['DefaultDateFormat'], mktime(0, 0, 0, date('m'), 0, date('Y')));
 	}
 
-	echo '<fieldset style="text-align:center;">';
-
 	echo '<fieldset>
 		<legend>', _('Journal Header Details'), '</legend>';
 
@@ -591,8 +589,6 @@ if (isset($_GET['NewJournal']) and $_GET['NewJournal'] == 'Yes' and isset($_SESS
 		<input type="text" name="GLNarrative" maxlength="100" size="100" value="', $_POST['GLNarrative'], '" />
 	</field>
 </fieldset>';
-	/*Close the main table */
-	echo '</fieldset>';
 
 	echo '<div class="centre">
 		<input type="submit" name="Process" value="', _('Accept'), '" />
