@@ -76,6 +76,11 @@ function GetContent(id, section, BookMark="") {
 				document.getElementById('help-header').innerHTML=document.getElementById('help-header').innerHTML+document.getElementById(ViewTopic).innerHTML+" - "+document.getElementById(BookMark).innerHTML;
 				var help_anchor = document.getElementById(BookMark);
 				help_anchor.scrollIntoView({behavior: "smooth"});
+			} else {
+				if ((CurrentPage.toString().substring(0,8) != "Menu.php")) {
+					document.title=document.getElementById("TitleIcon").src = document.getElementsByClassName("page_title_text")[0].children[0].src;
+				}
+				document.title=document.getElementById("title_bar").textContent.substring(0, document.getElementById("title_bar").textContent.length - 2);
 			}
 			OverRideClicks();
 			SetSortingEvent();
@@ -91,13 +96,6 @@ function GetContent(id, section, BookMark="") {
 
 function SubmitThisForm(Button, Element) {
 	FormName =Button.form;
-	if (FormName.name=="UserSettings") {
-		document.getElementById('StyleSheet').setAttribute("href", "css/" + document.getElementById('Theme').value + "/styles.css");
-		images = document.getElementsByTagName("img");
-		for (i = 0; i < images.length; i++) {
-			images[i].src = "css/" + document.getElementById('Theme').value + "/images/" + images[i].src.split('\\').pop().split('/').pop();
-		}
-	}
 	Target=FormName.action;
 	var PostData='';
 	for(var i=0,fLen=FormName.length;i<fLen;i++){
@@ -119,6 +117,13 @@ function SubmitThisForm(Button, Element) {
 		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
 			document.getElementById('modal').innerHTML=xmlhttp.responseText;
 			OverRideClicks();
+			if (FormName.name=="UserSettings") {
+				document.getElementById('StyleSheet').setAttribute("href", "css/" + document.getElementById('Theme').value + "/styles.css");
+				images = document.getElementsByTagName("img");
+				for (i = 0; i < images.length; i++) {
+					images[i].src = "css/" + document.getElementById('Theme').value + "/images/" + images[i].src.split('\\').pop().split('/').pop();
+				}
+			}
 		}
 	}
 	xmlhttp.open("POST",Target,true);

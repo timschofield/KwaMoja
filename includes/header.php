@@ -1,7 +1,8 @@
 <?php
 $ScriptName = basename($_SERVER['SCRIPT_NAME']);
 
-echo '<div class="title_bar">', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']), '
+echo '<div class="title_bar" id="title_bar">', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']), '
+	<img src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/user.png" class="TitleIcon" id="TitleIcon" title="" alt="" />
 		<div id="exit" class="close_button" onclick="CloseModal()" title="', _('Close this window'), '">X</div>';
 if (isset($BookMark) and $BookMark != '') {
 	echo '<div id="exit" class="close_button" onclick="ShowHelp(\'', $ViewTopic, '\',\'', $BookMark, '\')" title="', _('Help for this function'), '">?</div>';

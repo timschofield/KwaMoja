@@ -138,7 +138,8 @@ if (!isset($RootPath)) {
 		include ('includes/MainMenuLinksArray.php');
 	}
 
-	echo '<div class="title_bar">', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']);
+	echo '<div class="title_bar">
+			', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']);
 
 	echo '<a id="exit" class="close_button" title="', _('Logout'), '" href="', $PathPrefix, $RootPath, '/Logout.php" onclick="return MakeConfirm(\'', _('Are you sure you wish to logout?'), '\', \'', _('Confirm Logout'), '\', this);">
 			<img id="ActionIcon" src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/quit.png" title="', _('Logout'), '" alt="" />

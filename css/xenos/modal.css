@@ -20,6 +20,15 @@ overflow:hidden;
 .page_title_text {
 display:none;
 }
+.TitleIcon {
+float:left;
+margin-left:3px;
+margin-right:6px;
+margin-top:-3px;
+height:24px;
+width:24px;
+background-size:contain;
+}
 .footer_bar {
 border-radius:13px;
 font-size:150%;
