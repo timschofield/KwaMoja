@@ -966,7 +966,6 @@ if (isset($_GET['SupplierID'])) { // Links to Manual before header.php
 	} //isset($_POST['BankAccount']) and $_POST['BankAccount'] != ''
 	echo '<form action="', htmlspecialchars(basename(__FILE__) . '?identifier=' . $Identifier), '" method="post">';
 	echo '<input type="hidden" name="FormID" value="', $_SESSION['FormID'], '" />';
-	echo '<fieldset>';
 	echo '<fieldset>
 		<legend>', _('Payment');
 
@@ -1454,7 +1453,6 @@ if (isset($_GET['SupplierID'])) { // Links to Manual before header.php
 		/*	} else {
 		echo '<input type="hidden" name="Discount" value="0" />';
 		}*/
-		echo '</fieldset>';
 		echo '</fieldset>';
 		echo '<div class="centre">
 			<input type="submit" name="CommitBatch" value="', _('Accept and Process Supplier Payment'), '" />
