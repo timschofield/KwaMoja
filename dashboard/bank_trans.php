@@ -61,7 +61,7 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 		echo '<tr class="striped_row">
 			<td>', $row['currcode'], '</td>
 			<td class="number">', locale_number_format($row['amount'], $row['decimalplaces']), '</td>
-			<td>', $row['banktranstype'], '</td>
+			<td>', $row['typename'], '</td>
 			<td>', ConvertSQLDate($row['transdate']), '</td>
 			<td class="number">', $row['bankaccountname'], '</td>
 		</tr>';
