@@ -17,7 +17,7 @@ Functionality to add labour items to work orders and post recovery amounts to a 
 	<li>Once all components and raw materials are issued to the work order and no more manufactured items can be received against the work order it can be closed. The closing process recalculates the cost of the items manufactured on the work order and if weighted average costing is used a cost update will be processed.</li>
 </ul>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>General Ledger Integration Issues</h2>
 <p>When the "Create GL entries for stock transactions (at standard cost)" option in the company preferences form is set to "Yes", then GL journals are created as a result of work order transactions. When a work order is created there is no GL impact. The ways the GL is impacted as a result of manufacturing processes are as follows:</p>
@@ -66,7 +66,7 @@ Functionality to add labour items to work orders and post recovery amounts to a 
 	</tr>
 </table>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Work Order Entry</h2>
 <p>The Work Order is the medium for issuing components/raw materials to. A running total of the costs issued to the work order is maintained. Work orders can be created that have any number of output items. Output items are restricted to only "manufactured" items as defined in the item entry form. The work order tracks the quantity of the output items received against the work order and checks that no more than the work order quantity originally set up, with an allowance including the over-receive proportion as defined for purchase orders, is received.</p>
@@ -79,7 +79,7 @@ Functionality to add labour items to work orders and post recovery amounts to a 
 <p>The quantity received of the item is maintained automatically against the work order items. The balance of the work order yet to be manufactured and received shows as "on order" in the stock status inquiry. Similarly the quantity required of components as extended by the bill of material for work order items is shown as quantity demanded against component items stock status inquiries.</p>
 <p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Closing Work Orders</h2>
 <p>The selection of work orders allows the costing to be viewed. The work order costing shows all the issues of materials and components against the work order as compared against the bill of material requirments - as they were when the first reciept of manufactured stock was received against the work order. The variances on the work order in terms of the usage of components and the expected cost of materials/components issued to the work order are displayed. Closing the work order takes these variances and if general ledger integration to inventory is enabled then journals are created to write back the work in progress balance. Of course if there are several manufactured output items on the work order then the variances are apportioned between the items based on the quantity of the item received multipled by the expected cost as a proportion of the total expected cost of all items received on the work order. The detail of how the postings created depends on whether weighted average costing is used or standard costing.</p>
@@ -89,7 +89,7 @@ Functionality to add labour items to work orders and post recovery amounts to a 
 </ul>
 <p>Closing the work order also deletes any existing serial number/lots that were defined at the time the work order was entered (where this conifguration option is enabled) but the serial number has not been entered as received/finished.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Material Requirements Planning (MRP)</h2>
 <p>It is one thing to plan for purchasing where the item being sold is the item to be purchased. Things get more complicated when the item being sold is manufactured - each of the components in the bill of material need to be available before the item being sold can be manufactured. Where the components in turn are also manufactured then the complexity compounds - this is the material requirements planning calculations are for.</p>

@@ -15,13 +15,13 @@
 	<li>By selecting the stock category or an extract of the code or description. The user must then hit the search button to initiate the search. The page displays the choice of parts meeting the criteria for selection.</li>
 	<li>By entering the part code and quantity directly. This allows quick entry of sales orders, where the user is familiar with the stock codes. The user must hit the quick entry button to initiate the processing of entries in the quick entry grid.</li>
 </ol>
-<div class="floatright"><a class="minitext" href="#top">⬆ Top</a></div>
+<div class="floatright"><a class="minitext" href="#top">Top</a></div>
 <h2>Pricing</h2>
 <p>The script looks up the pricing for the customer based on the customer currency and sales type. As many sales types as required can be set up each with its own price list. Where there is no pricing set up for the sales type and currency of the customer then no parts are available for adding to the order.</p>
 <p><b>Kit set parts</b> can be entered - these are defined at the stage of the inventory item setup - they are exploded into their components for modification directly in the order. They are a short cut to selecting each individual part where only one part changes. eg a computer with xyz motherboard, case, keyboard, mouse, 256Meg RAM etc. The kitset part could bring all these parts into the order, but then allow deletion of the 256Meg RAM and replacement with the code for 512Meg RAM or whatever modifications are required.</p>
 <p><b>Assembly parts</b> can also be entered that refer to underlying component parts but priced at the assembly level. An assembly part is not exploded into its components at the time of order entry like a kitset. It exists in orders and sales analysis records but not for stock quantity records maintained although movement records are created for the assembly parts as well as the components of the assembly.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Delivery and Freight Charges</h2>
 <p>Having selected the customer and the line items for the order, the delivery details need to be entered. Depending on the entries in logicworks.ini the freight charge is calculated. There is an option to NOT calculate a freight charge if the total order value is greater than a specific value. The freight calculation is based on the entries made for the various courier companies from the selected stock location to the city of the delivery address entered. If the city is not found in either line 2 or 3 of the delivery address then the script returns an error. Where several courier companies are found then the system selects the one with the least cost based on the total of the kgs on the order or the volume of the order. The freight calculation is a function held in a seperate file FreightCalc.php requiring parameters to be passed, the delivery address lines, the from location the volume and weight of the order. The function returns an array containing the BestShipper and the FreightCost. The FreightCalc file is included into the DeliveryDetails.php script. There is therefore a requirement to maintain the volume in cubic meters and weight in kgs for each part and also the scale of freight costs if this functionality is used.</p>
@@ -47,17 +47,17 @@
 <p>SelectCompletedOrder.php</p>
 <p>allows similar selection facilities as the outstanding sales orders searches. This page also shows the quantities on the order that have been delivered and invoiced.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Accounts Receivable / Debtors Accounts</h2>
 <p>A customer account consists of a master record ? the branch records set up against the master record and the transactions which require a branch record for invoices and credits but no branch record for receipts. The balance of the account is not held against the master record but is accumulated from the transactions that have an amount not yet allocated. Invoices (SysTypes TypeID=10) ie charges are recorded as positives in the DebtorTrans table and credits (SysTypes TypeID=11) and receipts (SysTypes TypeID=12) are recorded as negatives.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Accounts Receivable Receipts</h2>
 <p>Since cash comes in for a number of reasons , the most common of which is the payment of invoices , the receipt form allows for entry of GL items as well as customer receipts. The total of which may need to be collated for banking. The allocation of receipts is a separate process completely see below. The script for receipts creates a class to hold all the information about the receipt before it is all accecpted. Only then is the database updated with the necessary records to record the receipt and general ledger impact if the debtors link is active.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Accounts Receivable Allocations</h2>
 <p>The system is designed so that allocations can only be made by selecting either receipts or credit notes and the available invoices for allocating to are then found. Amounts can be entered against invoices until the whole receipt or credit is allocated. An update option allows the total left to allocate to be recalculated taking into account any amounts entered against invoices already.</p>
@@ -69,7 +69,7 @@
 	<li>A transaction type (11 or 12) and transaction number ? this will show the transaction and the amount previously allocated to it with the invoices it was allocated to together with any unallocated invoices. The existing allocations can be modified at will and new allocations made.</li>
 </ol>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Sales Analysis</h2>
 <p>All invoices and credit notes create or update sales analysis records. Sales analysis records go down to the part level. There is some duplication of data by maintainig a seperate sales analysis table. The rationale for this is:</p>
@@ -83,7 +83,7 @@ Sales analysis reports can be designed for up to four levels of sorting. The rep
 <p>Sales analysis reports are designed and stored as a header record containing the information about the sorting and criteria for selection and detail records defining the columns to show on the report.</p>
 <p>Report column definitions allow the period range and type of information to show eg GP, cost, value, quantity. Periods are monthly and maintained invisibly to the user. The period is only ever used for general ledger reporting and for sales analysis. An enquiry page from the report columns definition page allows for easy reference to the period required.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Purchase Orders</h2>
 <p>Similar selection facilities exist for purchase orders as do for Sales orders using the script</p>
@@ -96,7 +96,7 @@ Sales analysis reports can be designed for up to four levels of sorting. The rep
 	<li>Receive items on the order.</li>
 </ol>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Inventory</h2>
 <p>Stock movements are created - depending on the type of stock item - each time a product is invoiced or credited. If an item is credited and written off eg. goods damaged in transit then two stock movements are created:</p>
@@ -114,7 +114,7 @@ Sales analysis reports can be designed for up to four levels of sorting. The rep
 </ol>
 <p>It is not possible to enter either of these two types of transaction against dummy, assembly or kitset parts since no stock movements or stock quantities exist for these types of parts.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Stock Inquiries</h2>
 <p>Selecting a product shows all the options available to operate on the part.</p>
@@ -126,7 +126,7 @@ Sales analysis reports can be designed for up to four levels of sorting. The rep
 </ul>
 <p>All inquires follow a similar format, that allow input of the stock code directly for users familiar with the codes. Alternatively, the enquiry script can be called from the SelectProduct.php script which has all the facilities to be able to select the part required.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Accounts Payable</h2>
 <p>Supplier invoices are entered using the script:</p>
@@ -138,7 +138,7 @@ Sales analysis reports can be designed for up to four levels of sorting. The rep
 <p>The total of all lines of goods received being invoiced are accumulated. If the GL link to creditors is active then the order lines and the GL lines are accumulated together to get the total currency amount of the invoice. If the link is not active the currency amount must be entered manually, but the amount must be more than the goods received being invoiced.</p>
 <p>The due date of supplier invoices defaults to the date of the invoice entered after applying the terms defined for the supplier. There is an option to create a payment directly from the invoice creation. The payment record created will be for the total of the single invoice.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Supplier Payments</h2>
 <p>Records can be created for all due amounts either by using the payment run or using the manual payment entry.</p>

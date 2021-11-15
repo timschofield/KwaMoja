@@ -54,7 +54,7 @@
 </p>
 <!-- Help End: CompanyPreferences -->
 <!-- Help Begin: SystemParameters -->
-<div class="floatright">    <a class="minitext" href="#top">⬆ Top</a></div>
+<div class="floatright">    <a class="minitext" href="#top">Top</a></div>
 <h2><a id="SystemParameters">System Parameters</a></h2>
 <p>
 	From the setup tab the main system configuration parameters can be set from the link "Configuration Settings". Narrative is shown alongside each parameter to give the user an idea of where the setting is used.
@@ -265,7 +265,7 @@
 <!-- Help End: SystemConfiguration -->
 <!-- Help Begin: BaseInformation -->
 <div class="floatright">
-	<a class="minitext" href="#top">⬆ Top</a>
+	<a class="minitext" href="#top">Top</a>
 </div>
 <h2>Base Data Required</h2>
 <p>
@@ -294,7 +294,7 @@
 <p>
 	Desktop databases, spreadsheets and comma separated variables (CSV) export files can also be used to import this information. Using MS Access, the process involves installing an ODBC driver for MySQL on the windows desktop machine that has MS Access on it and then attaching to the kwamoja database tables DebtorsMaster and CustBranch in a new blank Access database. The CSV file or the spreadsheet is imported into the Access database, then an append query is made to map the fields from the CSV table/spreadsheet into DebtorsMaster and or CustBranch. There are potentially many records in CustBranch each with a different branch code for one customer account in DebtorsMaster. This method is dangerous in the sense that it is imperative to ensure that no customer records or branch records refer to non-existent base data in the fields described above.
 </p>
-<div class="floatright">    <a class="minitext" href="#top">⬆ Top</a></div>
+<div class="floatright">    <a class="minitext" href="#top">Top</a></div>
 <h3>Setting Up Inventory Items</h3>
 <p>
 	Before stock items can be defined, again the base information is necessary.
@@ -331,7 +331,7 @@
 <p>
 	Some flexibility is provided in how sales transactions are posted to the general ledger. Different sales accounts can be used depending on any combination of the sales area of the customer, the sales type and the stock category of the item sold. Before entering any sales it is important to defined the posting schema under setup - Sales GL Interface Postings. The same flexibility is also afforded to the posting of cost of goods sold (COGS)- of course these journals are only created if the stock GL interface is activated. If it is then again it is critical to ensure the proper set up of the posting schema for COGS under the setup tab - COGS GL Interface posting
 </p>
-<div class="floatright">    <a class="minitext" href="#top">⬆ Top</a></div>
+<div class="floatright">    <a class="minitext" href="#top">Top</a></div>
 <h3>Tax</h3>
 <p>
 	Taxes must be setup. In Setup there are Tax Group Maintenance, Dispatch Tax Province Maintenance, Tax Categories Maintenance and Tax Authorities and Rates Maintenance. Before you set up customer branches the tax group that relates the branch must be defined - the tax group specifies the tax authorities to which taxes must be charged on sales to the branch. The system allows any number of tax authorities to be included in a tax group. The tax category must be specified on the setup of items - some items attract tax at higher rates and these must be flagged as such. As many tax categories as necessary can be defined. There is a more detailed section in the manual for further details on tax.
@@ -370,7 +370,7 @@
 <p>
 	The general ledger also keeps track of how much is spent on expenses and is charged out to customers as sales - whether or not the amounts are actually paid to the supplier of the expense or the sale has been paid by the customer. It is really only interesting to look at these accounts over a period to see what the income and expenses of the business have been and produce the <i>"Profit and Loss Statement"</i>. However, in bringing a business on to KwaMoja it is the balances that collectively represent the total worth of the business (in historical terms) that are important to record - these are called balance sheet accounts (the expense and revenue accounts are called profit and loss accounts).
 </p>
-<div class="floatright">    <a class="minitext" href="#top">⬆ Top</a></div>
+<div class="floatright">    <a class="minitext" href="#top">Top</a></div>
 <h3>Double Entry Bookkeeping</h3>
 <p>
 	When the balance of every account in the general ledger is added together the net result should always be zero - that's because every entry into the general ledger is made up of two parts a debit (a positive amount) and a credit (a negative amount). eg. We spend $100 on fuel - the debit goes to vehicle expenses and the credit goes to the bank account (since the bank balance has gone down by $100) and the accumulated costs of running the vehicle has gone up by $100.
