@@ -1,3 +1,4 @@
+<a id="top"></a>
 <article>
 <h1><a id="NewScripts">Developing New Scripts</a></h1>
 <h2>Directory Structure</h2>
@@ -21,7 +22,7 @@
 </ul>
 <p>Construction of new scripts should make use of the following building blocks that are used throughout the system.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>session.php</h3>
 <p>This page must be included and has the following functons:</p>
@@ -34,7 +35,7 @@
 	<li>LanguageSetup.php - this sets the locale and handles the fall-back to php-gettext if the local gettext libraries are not available on the web-server</li>
 </ul>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>header.php</h3>
 <p>This file should be included after the variable $Title has been set to the name of the page. This file relies on config.php being already loaded, so session.php (which in turn includes config.php) must be included before header.php. The code in this script has the following functions:</p>
@@ -44,12 +45,12 @@
 	<li>Sets the style sheet used throughout the system - by referencing the theme directory to use for css</li>
 </ul>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>footer.php</h3>
 <p>This file contains the small logo, company name and copyright notice with the closing "" tags.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>config.php</h3>
 <p>The variables in config.php are available to all of tcripts that have included session.php. There are not many now most of the configuration is stored in the database using the config table. However, the variables that give the software the information to connect to the database such as datbase user, password and host, together with the database type - dbtype - in fact only mysql is supported but there are two libraries that can be used the mysqli and the old mysql functions. There are a couple of other variables including the timezone, $RootPath which is the directory where the web server holds the system files. Also the php error_reporting code.</p>
@@ -114,12 +115,12 @@ include(&apos;includes/footer.php&apos;);
 ?&gt;
 </pre>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>PDFStarter.php</h3>
 <p>The only time when it is not appropriate to include session.php or header.php is when a pdf script is to be created. Here the file PDFStarter.php contains the initiation of the session and the check for proper user authentication and authorisation for the specific page using the $PageSecurity variable which must be defined before PDFStarter.php is included. Normally, config.php and ConnectDB.php are included seperately (and before PDF_starter_ros.php) in PDF scripts. PDF report scripts all make use of the FPDF class by Olivier Plathey but previously a differnt class was used so there is an extension to this which translates the calls to the old pdf class to the FPDF class. Probably better to write new scripts using the FPDF syntax.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>Database Abstraction - ConnectDB.php</h3>
 <p>Whilst the system has been developed using MySql it has always been envisaged that users should not be forced to use Mysql - in keeping with open source principles. For this reason all requests of the database are made via abstraction functions in ConnectDB.php. This policy has been rigorously maintained and developing extensions to the system which do not conform to this scheme would destroy the portability currently available between databases. Instead of using the PHP database specific functions then the functions defined in ConnectDB_mysql.php should be used</p>
@@ -131,7 +132,7 @@ include(&apos;includes/footer.php&apos;);
 </ul>
 <p>The full list of functions should be reviewed from the file includes/ConnectDB_mysql.php - which contains the mysql specific abstraction functions. Only these functions should be used in other scripts. Care has been taken to ensure that standards compliant SQL is used throughout, to ensure any database conversion issues are minimal. SQL specific to any RDBMS even mysql should be avoided in favour of generic standards compliant SQL. There are instances where mysql specific SQL has been used such as INTERVAL and SHOW TABLES - these are historical.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>DateFunctions.php</h3>
 <p>This script holds a number of functions for manipulating dates used throughout the system - these functions all depend upon the system configuration for SESSION['DefaultDateFormat']. Amongst the most useful:</p>
@@ -142,7 +143,7 @@ include(&apos;includes/footer.php&apos;);
 	<li><i>GetPeriodNo</i> - Gets the period number for a given date by looking up the date in the period table - it creates new periods as necessary to ensure a valid period is returned.</li>
 </ul>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3>SQL_CommonFuctions.php</h3>
 <p>This script has some common functions used throughout the system - in particular:</p>

@@ -1,9 +1,10 @@
+<a id="top"></a>
 <article>
 <h1><a id="Prices">Prices and Discounts</a></h1>
 <h2>Overview</h2>
 <p>Prices are held by Sales Type and Currency. When setting up a customer account the sales type applicable to the customer is defined as is the currency applicable to invoices to the customer. There is no limit to the number of sales types that can be defined and therefore no limit to the number of different price lists that can be maintained. Further flexibility is available in that where necessary prices specific to a customer can also be defined, normally pricing will be specific to a customer but the system also has the capability of making prices specific to a particular branch of a customer. If a price is flagged as specific to a branch it will not be used for all other sales of the item to the customer, the default price of the item will be used. Further flexibility in discounting is available through the discount matrix (see below). If an item has an additional discount this can be entered at the time of order. The user also has the ability to change the price manually at the time of order. Sales analysis records allow reporting on sales types, so the analysis will report the volume of business done under each set of special pricing arrangements.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h2>Logic Outline</h2>
 <p>The sequence of the search for the price follows the logic below. If a price is returned from any of the checks then subsequent checks are not performed.</p>
@@ -15,13 +16,13 @@
 	<li>If no success getting a price from any of the above then report no prices set up for the item</li>
 </ul>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h2>Prices Effectivity Dates</h2>
 <p>In many businesses a change in price has to come into effect at some later date and be published to customers in advance of the price being effective. This functionality was introduced in 2010. The date that a price is to be effective from must be specified at the time of entry. If the price is expected to continue indefinitely then it is not necessary to specify an end date. Any subsequent prices entered without an end date will superseed previous entries with starting dates prior.</p>
 <p>If a price is entered with an end date then this takes precidence over prices with no end date - where the date of entry of an order falls within the date range for the price. It is the current server date that is used to compare against the date range in determining the price to use.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h2>Maintaining Prices</h2>
 <p>To maintain pricing, first an item must be selected. This can be done from the link "Select an Item " on any page or from the inventory tab of the menu the link "Modify Or Delete An Inventory Item Or Item Pricing" allows for a part to be selected. Once selected the options available to work with the item are shown, there is a link to "Maintain Pricing". The pricing page displays, the sales type and the currency of all prices defined for the item. The existing prices can be deleted or modified from this screen and new prices can be entered. It is possible to enter many prices for a given sales type and currency with different effective from and to dates. Normally the date that the price should be effective to can be left blank. Subsequent entries of prices with no end date can be entered and these will be used after the start date of these prices. When entering prices for a fixed date range - this price will take precidence over the default price with no end date. The system automatically adjusts the end date of prices where a new price with a fixed date range is entered with an overlapping period to a previously entered price. The end date of the previous price is adjusted to be the day prior to the start date of the new price. This ensures that there can only be one price returned in a given date range.</p>
@@ -42,7 +43,7 @@
 <p>It is possible to review prices based on the proportion of cost that they represent - e.g. you may wish to review costs that are less than 100% of cost (or 1 times the cost) - i.e. prices that would result in a gross loss - a wise idea indeed! The prices meeting the criteria are displayed and available to be modified. You can specify any number of times the cost for the critiera - to look at the prices where the margin is less than 50% on cost the multiple would be 1.5 times cost. You can also look at prices where the price is more than a multiple of the cost. The prices returned can then be updated all in place without having to select them individually this is much more convenient than identifying the errant prices manually and then going in and selecting them individually in the normal price maintenace screen.</p>
 <p>From the main menu Inventory -&gt; View Or Update Prices Based On Costs. You can select the Inventory category you wish to review or leave the default - to view all categories. Initially it is assumed you wish to review prices less than cost - but you can elect to look at prices less than 2 x cost or greater than a multiple of the cost. You can select the price list to review and the currency of prices to review. On clicking submit the system identifies all the prices that meet the criteria specified and allows these prices to be edited directly.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h2>Discount Matrix</h2>
 <p>The discount matrix allows discounts to be set for quantity breaks across a range of products. Eg a business selling pens may have red, blue, black etc but offer a discount for orders greater than 100 irrespective of colour - even though these are separate items.</p>
@@ -55,7 +56,7 @@
 	<li>The discount matrix itself. This is modified from a link on the set up tab under accounts receivable set up. For each sales type/price list the quantity break and discount applicable must be entered.</li>
 </ol>
 <div class="floatright">
-	<a class="minitext" href="#top">âŹ Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">âŹ Top</a>
 </div>
 <h2>Sell Through Support</h2>
 <p>This is support from a supplier on selling through some of their products. The supplier (a manufacturer or wholesaler) agrees to provide a discount to the business for each unit that the business sells - either as a percentage or as an amount for each sale. The support typically lasts for only a set period so that the business can advertise to it's customers the availability of the discount and the business margin will be unaffected - as the discount is effectively passed on to the end customer. The discount may also be available only to some customers the supplier specifies.</p>
@@ -71,7 +72,7 @@
 <p>The KwaMoja form allows a supplier to be selected, once a supplier is selected the current sell through support offered by this supplier is listed. Any one of the items that the supplier supplies to the business (from the purchasing data table) can then be selected, also the customer for which the support is provided is also available for selection - alternatively if the customer field is left blank then all customers is assumed. A date range over which the sell through support is to be provided can also be entered. It is possible to copy existing entries at a single click to modify a date range or the customer or the amount/percent of the support from the list of support currently offered by the supplier.</p>
 <p>For the sell through support to be calculated on sales the supplier purchasing data must be set up and the supplier must be the preferred one for the item being sold, for the support discount to be applied.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">âŹ Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">âŹ Top</a>
 </div>
 </ol><!-- Help End: Prices -->
 </article>

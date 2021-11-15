@@ -1,3 +1,4 @@
+<a id="top"></a>
 <article>
 <h1><a id="SalesOrders">Sales Orders</a></h1>
 <h2>Functionality</h2>
@@ -19,7 +20,7 @@
 </ul>
 <p><img class="ManualImage" src="doc/Manual/images/Sales.jpg"></p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <!-- Help Begin: SelectOrderItems -->
 <h2><a id="SalesOrderEntry">Entry of Sales Orders</a></h2>
@@ -39,7 +40,7 @@
 <p>The customer can also be changed at any time.</p>
 <p>Once all the line items have been selected the Delivery Details button must be clicked. Note that there have been no changes to the database at all. The data entered exists only as a server side cookie - a file on the web-server. Delivery details must be confirmed before the order can be placed.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3><a id="DeliveryDetails">Delivery Details</a>a></h3>
 <p>By default the delivery details are obtained from the physical address of the branch. However, any of the information in this screen can be over-ridden. This information prints on the dispatch/packing slip and on the invoice.</p>
@@ -63,7 +64,7 @@
 <p>Only Outstanding sales orders can be modified. Only these orders have any balance of a quantity remaining to be delivered and/or invoiced. Order lines that have been invoiced completely will not be available for modification. New items cannot be added to the order. Pricing cannot be altered if any amount of the line has already been delivered/invoiced. Quantities of an order line cannot be reduced below the quantity of the line already invoiced.</p>
 <p>Note that changing the delivery address of an outstanding order that has already had some of the order delivered and invoiced will affect re-prints of the initial invoice - it will show as being delivered to the order delivery address that has been modified. Hard copy of original invoices are required.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h3><a id="SelectSalesOrder">Selecting an Outstanding Sales Order</a></h3>
 <p>There are several ways:</p>
@@ -75,7 +76,7 @@
 <p>The Outstanding sales orders are shown by inventory location, the inventory location desired can be selected on this screen, by default the location defined as the default for the user is shown. The orders matching the criteria are only shown when the user clicks on the search orders button.</p>
 <p>The orders displayed each show links to modify the line items, invoice the order or print the dispatch note. If the order has already been printed this link will show that it has already been printed to avoid printing several dispatch notes and risk doubling up deliveries.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <!-- Help End: SelectSalesOrder -->
 <!-- Help Begin: Quotations -->
@@ -83,7 +84,7 @@
 <p>A quotation can be entered for any customer/branch in much the same way as entry of an order. The pricing can be changed and discounts entered for the quotation in the same way as an order. An order is flagged as a quotation from the Delivery Details screen. On entry of a quotation a link to produce a pdf quotation for sending to the customer is available. If the quotation option is selected then the stock is not reserved in the stock status inquiries. Quotations can shown on the outstanding sales orders screen by selecting the option to show quotations. When this option is set only quotations show, there is a link so that they can be modified and if necessary changed to a sales order, there is also a link to re-print the pdf quotation.</p>
 <p>Having changed a quotation to a sales order, from then on the process is the same as for any other sales order, a packing slip can be printed and the order confirmed for invoicing.</p>
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <!-- Help End: Quotations -->
 <!-- Help Begin: RecurringSalesOrder -->
@@ -112,7 +113,7 @@
 <!-- Help End: RecurringSalesOrder -->
 <!-- Help Begin: Setting Up Discounts -->
 <div class="floatright">
-	<a class="minitext" href="#top">Top</a>
+	<a class="minitext" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'});">Top</a>
 </div>
 <h2><a id="DiscountMatrix">Discount Matrix</a></h2>
 <p>KwaMoja has a system called a discount matrix which allows any group of products to be defined and discounts applicable to all items of the group to be set up just once for the whole group of items. Different discounts can be applied to the "discount group" for each sales type (price list). When an item is entered into a sales order the system retrieves the correct price based on the customer's sales type (price list) and then retrieves the appropriate discount based on the quantity of the item and the other items already entered on the order. The discounts retrieved can be over-ridden.</p>
