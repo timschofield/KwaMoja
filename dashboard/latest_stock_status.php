@@ -17,7 +17,7 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 				<tr>
 					<th colspan="4">
 						<div class="CanvasTitle">', $ScriptTitle, '
-							<a class="CloseButton" id="CloseButton" href="#" onclick="GetContent(\'body\', \'', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '\')">X</a>
+						<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" title="', _('Remove this applet from dashboard'), '" id="CloseButton" href="#">X</a>
 						</div>
 					</th>
 				</tr>';

@@ -16,7 +16,7 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 		<tr>
 			<th colspan="6">
 				', $ScriptTitle, '
-				<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" id="CloseButton">X</a>
+				<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" title="', _('Remove this applet from dashboard'), '" id="CloseButton">X</a>
 			</th>
 		</tr>';
 
