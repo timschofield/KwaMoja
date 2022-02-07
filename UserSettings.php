@@ -131,7 +131,7 @@ if (isset($_POST['ShowPageHelp'])) {
 	</div>';
 
 	echo '<fieldset>
-		<legend>', _('Edit the settings for this user'), '</legend>
+		<legend>', _('Edit the settings for'), ' ', $_SESSION['UsersRealName'], ' (', $_SESSION['UserID'], ')</legend>
 		<field>
 			<label for="UserID">', _('User ID'), ':</label>
 			<div class="fieldtext">', $_SESSION['UserID'], '</div>
