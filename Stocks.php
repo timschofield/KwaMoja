@@ -18,7 +18,7 @@ if (isset($_GET['StockID'])) {
 	}
 
 	$ItemDescriptionLanguagesArray = explode(',', $_SESSION['ItemDescriptionLanguages']); //WARNING: if the last character is a ",", there are n+1 languages.
-	if (isset($_POST['NextItem_x'])) {
+	if (isset($_POST['NextItem'])) {
 		$Result = DB_query("SELECT stockid FROM stockmaster WHERE stockid>'" . $StockId . "' ORDER BY stockid ASC LIMIT 1");
 		$NextItemRow = DB_fetch_row($Result);
 		$StockId = $NextItemRow[0];
@@ -975,11 +975,17 @@ if (isset($_GET['StockID'])) {
 	echo '<input type="hidden" name="FormID" value="' . $_SESSION['FormID'] . '" />';
 
 	if (isset($StockId) and $StockId != '') {
+		$Result = DB_query("SELECT stockid FROM stockmaster WHERE stockid<'" . $StockId . "' ORDER BY stockid DESC LIMIT 1");
+		$PreviousItemRow = DB_fetch_row($Result);
+		$PreviousID = $PreviousItemRow[0];
+		$Result = DB_query("SELECT stockid FROM stockmaster WHERE stockid>'" . $StockId . "' ORDER BY stockid ASC LIMIT 1");
+		$NextItemRow = DB_fetch_row($Result);
+		$NextID = $NextItemRow[0];
 		echo '<table width="100%">
 			<tr>
-				<td><input class="image" src="css/' . $_SESSION['Theme'] . '/images/previous.png" type="image" name="PreviousItem" title="' . _('Previous Item') . '" value="" /></td>
+				<td><a class="image" href="' . htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8') . '?StockID=', $PreviousID, '"><img src="css/' . $_SESSION['Theme'] . '/images/previous.png"  name="PreviousItem" title="' . _('Previous Item') . '" /></a></td>
 				<td><label>' . _('Navigate Items') . '</label></td>
-				<td><input class="image" src="css/' . $_SESSION['Theme'] . '/images/next.png" type="image" name="NextItem" title="' . _('Next Item') . '" value="" /></td>
+				<td><a class="image" href="' . htmlspecialchars(basename(__FILE__), ENT_QUOTES, 'UTF-8') . '?StockID=', $NextID, '"><img src="css/' . $_SESSION['Theme'] . '/images/next.png"  name="NextItem" title="' . _('Next Item') . '" /></a></td>
 			</tr>
 		</table>';
 	}
