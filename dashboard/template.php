@@ -13,15 +13,15 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 	$DashboardResult = DB_query($SQL);
 	$DashboardRow = DB_fetch_array($DashboardResult);
 
-	echo '<thead>
-			<table class="DashboardTable">
-				<tr>
-					<th colspan="5">
-						<div class="CanvasTitle">', $ScriptTitle, '
-						<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" title="', _('Remove this applet from dashboard'), '" id="CloseButton" href="#">X</a>
-						</div>
-					</th>
-				</tr>';
+	echo '<table class="DashboardTable">
+		<thead>
+			<tr>
+				<th colspan="5">
+					<div class="CanvasTitle">', $ScriptTitle, '
+					<a class="CloseButton" href="', $DashBoardURL, '?Remove=', urlencode($DashboardRow['id']), '" target="_parent" title="', _('Remove this applet from dashboard'), '" id="CloseButton" href="#">X</a>
+					</div>
+				</th>
+			</tr>';
 	/* The section above must be left as is, apart from changing the script title.
 	 * Making other changes could stop the dashboard from functioning
 	*/
@@ -41,8 +41,9 @@ if (basename($_SERVER['SCRIPT_NAME']) != 'index.php') {
 		.................
 		<th>Final Column</th>
 	</tr>
-</thead>
-<tbody>';
+</thead>';
+
+	echo '<tbody>';
 	/* Create the table/column headings for the output that you want to show
 	*/
 
