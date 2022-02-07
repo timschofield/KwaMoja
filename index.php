@@ -20,8 +20,10 @@ if (!isset($RootPath)) {
 		$Result = DB_query($SQL);
 	}
 
-	if ($LanguagesArray[$_SESSION['Language']]['Direction'] == 'rtl' and mb_substr($_SESSION['Theme'], -4) != '-rtl') {
-		$_SESSION['Theme'] = $_SESSION['Theme'] . '-rtl';
+	if ($LanguagesArray[$_SESSION['Language']]['Direction'] == 'rtl') {
+		$_SESSION['Direction'] = 'rtl';
+	} else {
+		$_SESSION['Direction'] = 'ltr';
 	}
 
 	if (isset($Title) and $Title == _('Copy a BOM to New Item Code')) { //solve the cannot modify heaer information in CopyBOM.php scritps
@@ -35,9 +37,13 @@ if (!isset($RootPath)) {
 			<meta http-equiv="Content-Type" content="application/html; charset=utf-8; cache-control: no-cache, no-store, must-revalidate; Pragma: no-cache" />
 			<title>', _('KwaMoja'), ' - ', $Title, '</title>
 			<link rel="icon" href="', $PathPrefix, $RootPath, '/favicon.ico?v=2" />
-			<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/styles.css?v=30" id="StyleSheet" rel="stylesheet" type="text/css" media="screen" />
 			<link href="', $PathPrefix, $RootPath, '/css/print.css" rel="stylesheet" type="text/css" media="print" />
 			<meta name="viewport" content="width=device-width, initial-scale=1">';
+
+	echo '<link href="', $PathPrefix, $RootPath, '/themes/styles.css" id="StyleSheet-main" rel="stylesheet" type="text/css" media="screen" />';
+	echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/styles.css" id="StyleSheet-theme" rel="stylesheet" type="text/css" media="screen" />';
+	echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/', $_SESSION['Direction'], '/styles.css" id="StyleSheet-direction" rel="stylesheet" type="text/css" media="screen" />';
+
 	echo '<script async type="text/javascript" src = "', $PathPrefix, $RootPath, '/javascripts/MiscFunctions.js"></script>';
 	echo '<script async type="text/javascript" src = "', $PathPrefix, $RootPath, '/javascripts/Modal.js"></script>';
 	echo '<script>
@@ -46,15 +52,15 @@ if (!isset($RootPath)) {
 	</script>';
 
 	if ($_SESSION['ShowPageHelp'] == 0) {
-		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/page_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/page_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
 	} else {
-		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/page_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/page_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
 	}
 
 	if ($_SESSION['ShowFieldHelp'] == 0) {
-		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/field_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/field_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
 	} else {
-		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/field_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/field_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
 	}
 
 	if ($Debug === 0) {
@@ -138,8 +144,14 @@ if (!isset($RootPath)) {
 		include ('includes/MainMenuLinksArray.php');
 	}
 
-	echo '<div class="title_bar">
-			', $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']);
+	echo '<div class="title_bar">';
+
+	echo '<div id="menuiconcontainer" class="menuiconcontainer" title="Show Menu" onclick="ShowModules()">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>';
+	echo $Title, ' - ', stripslashes($_SESSION['CompanyRecord']['coyname']);
 
 	echo '<a id="exit" class="close_button" title="', _('Logout'), '" href="', $PathPrefix, $RootPath, '/Logout.php" onclick="return MakeConfirm(\'', _('Are you sure you wish to logout?'), '\', \'', _('Confirm Logout'), '\', this);">
 			<img id="ActionIcon" src="', $RootPath, '/css/', $_SESSION['Theme'], '/images/quit.png" title="', _('Logout'), '" alt="" />
@@ -148,11 +160,6 @@ if (!isset($RootPath)) {
 
 	echo '</div>';
 
-	echo '<div id="menuiconcontainer" class="menuiconcontainer" title="Show Menu" onclick="ShowModules()">
-		<div class="bar1"></div>
-		<div class="bar2"></div>
-		<div class="bar3"></div>
-	</div>';
 	echo '<div id="mask">';
 	//=== MainMenuDiv =======================================================================
 	
@@ -219,5 +226,9 @@ if (!isset($RootPath)) {
 		</fieldset>
 	</form>';
 	}
+	echo '<div id="main_mask">
+				<div id="dialog" name="dialog"></div>
+			</div>';
+
 	echo '<script async type="text/javascript" src = "', $RootPath, '/dashboard/javascript/dashboard.js"></script>';
 ?>
