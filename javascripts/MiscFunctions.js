@@ -11,29 +11,29 @@ function makeAlert(e, t) {
 
 function hideAlert() {
 	document.getElementById("dialog").innerHTML = "";
-	document.getElementById("mask").style["display"] = "none";
-	return true
+	document.getElementById("main_mask").style["display"] = "none";
+	return false
 }
 
 function MakeConfirm(e, t, n) {
 	url = n.href;
 	th = localStorage.Theme;
-	document.getElementById("mask").style["display"] = "inline";
+	document.getElementById("main_mask").style["display"] = "inline";
 	h = '<div id="dialog_header"><img class="dialog_image" src="css/' + th + '/images/help.png" />' + t + '</div><div id="dialog_main">' + e;
 	h = h + '</div><div id="dialog_buttons"><input type="submit" class="okButton" value="Cancel" onClick="hideConfirm(\'\')" />';
 	h = h + '<a class="ButtonLink" href="' + url + '" ><input type="submit" class="okButton" value="OK" onClick="hideConfirm(\'OK\')" /></a></div></div>';
 	document.getElementById("dialog").innerHTML = h;
 	document.getElementById("dialog").style.marginTop = -document.getElementById("dialog").offsetHeight + "px";
 	document.getElementById("dialog").style.marginLeft = -(document.getElementById("dialog").offsetWidth / 2) + "px";
-	return false
+	return false;
 }
 
 function hideConfirm(e) {
 	if (e == "") {
 		document.getElementById("dialog").innerHTML = "";
-		document.getElementById("mask").style["display"] = "none"
+		document.getElementById("main_mask").style["display"] = "none"
 	}
-	return true
+	return false
 }
 
 function expandTable(e) {
