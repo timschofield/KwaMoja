@@ -476,9 +476,9 @@ if (isset($_GET['NewJournal']) and $_GET['NewJournal'] == 'Yes' and isset($_SESS
 	echo '<field>
 		<label for="JournalProcessDate">', _('Date to Process Journal'), ':</label>';
 	if (!isset($_GET['NewJournal']) or $_GET['NewJournal'] == '') {
-		echo '<input type="text" class="date" name="JournalProcessDate" required="required" maxlength="10" size="11" value="', $_SESSION['JournalDetail']->JnlDate, '" />';
+		echo '<input type="date" class="date" name="JournalProcessDate" required="required" maxlength="10" size="11" value="', $_SESSION['JournalDetail']->JnlDate, '" />';
 	} else {
-		echo '<input type="text" autofocus="autofocus" class="date" name="JournalProcessDate" required="required" maxlength="10" size="11" value="', $_SESSION['JournalDetail']->JnlDate, '" />';
+		echo '<input type="date" autofocus="autofocus" class="date" name="JournalProcessDate" required="required" maxlength="10" size="11" value="', $_SESSION['JournalDetail']->JnlDate, '" />';
 	}
 	echo '</field>';
 
@@ -539,7 +539,7 @@ if (isset($_GET['NewJournal']) and $_GET['NewJournal'] == 'Yes' and isset($_SESS
 		<select multiple="multiple" name="tag[]">';
 	echo '<option value="0">0 - ', _('None'), '</option>';
 	while ($MyRow = DB_fetch_array($Result)) {
-		if (isset($_POST['tag']) and $_POST['tag'] == $MyRow['tagref'] or (isset($_SESSION['JournalDetail']->GLEntries[$_GET['Edit']]->tag)) and in_array($MyRow['tagref'], $_SESSION['JournalDetail']->GLEntries[$_GET['Edit']]->tag)) {
+		if (isset($_GET['Edit']) and isset($_POST['tag']) and $_POST['tag'] == $MyRow['tagref'] or (isset($_SESSION['JournalDetail']->GLEntries[$_GET['Edit']]->tag)) and in_array($MyRow['tagref'], $_SESSION['JournalDetail']->GLEntries[$_GET['Edit']]->tag)) {
 			echo '<option selected="selected" value="', $MyRow['tagref'], '">', $MyRow['tagref'], ' - ', $MyRow['tagdescription'], '</option>';
 		} else {
 			echo '<option value="', $MyRow['tagref'], '">', $MyRow['tagref'], ' - ', $MyRow['tagdescription'], '</option>';
