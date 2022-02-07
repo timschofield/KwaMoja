@@ -235,3 +235,9 @@ box-shadow:0 0 5px #7E7575
 input.button:active {
 background:#000
 }
+.waiting_show {
+position:absolute;
+float:left;
+width:20px;
+display:none;
+}

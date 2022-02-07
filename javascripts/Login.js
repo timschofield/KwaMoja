@@ -46,6 +46,9 @@ function checkMousePos(event) {
 		}
 	}
 }
+function ShowSpinner() {
+	document.getElementById("waiting_show").style.display="block";
+}
 document.addEventListener("click", checkMousePos);
 document.getElementById("eye").addEventListener("click", TogglePassword);
 document.getElementById("CompanySelect").addEventListener("click", ShowCompanies);
