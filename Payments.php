@@ -404,7 +404,7 @@ if (isset($_GET['SupplierID'])) { // Links to Manual before header.php
 
 		$SQL = "SELECT usepreprintedstationery
 			FROM paymentmethods
-			WHERE paymentname='" . $_SESSION['PaymentDetail' . $Identifier]->Paymenttype . "'";
+			WHERE paymentid='" . $_SESSION['PaymentDetail' . $Identifier]->Paymenttype . "'";
 		$Result = DB_query($SQL);
 		$MyRow = DB_fetch_array($Result);
 
