@@ -1,5 +1,4 @@
 <?php
-
 /* definition of the Payment class */
 
 class Payment {
@@ -52,6 +51,7 @@ class Payment {
 		$this->Address4 = "";
 		$this->Address5 = "";
 		$this->Address6 = "";
+		$this->Narrative = "";
 		$this->ChequeNumber = 0;
 		$this->BankTransRef = '';
 		$this->DatePaid = Date($_SESSION['DefaultDateFormat']);
@@ -64,7 +64,7 @@ class Payment {
 		if (isset($GLCode) and $Amount != 0) {
 			$this->GLItems[$this->GLItemCounter] = new PaymentGLAnalysis($Amount, $Narrative, $this->GLItemCounter, $GLCode, $GLActName, $Tag, $Cheque);
 			$this->GLItemCounter++;
-			$this->Amount[] += $Amount;
+			$this->Amount[]+= $Amount;
 			return 1;
 		}
 		return 0;
@@ -74,34 +74,34 @@ class Payment {
 		unset($this->GLItems[$GL_ID]);
 	}
 
-}
-/* end of class defintion */
-
-class PaymentGLAnalysis {
-
-	var $Amount;
-	/* in currency of the payment*/
-	var $Narrative;
-	var $GLCode;
-	var $GLActName;
-	var $ID;
-	var $Tag;
-	var $Cheque;
-
-	function __construct($Amt, $Narr, $id, $GLCode, $GLActName, $Tag, $Cheque) {
-
-		/* Constructor function to add a new PaymentGLAnalysis object with passed params */
-		if (count($Tag) == 0) {
-			$Tag = array(0);
-		}
-		$this->Amount = $Amt;
-		$this->Narrative = $Narr;
-		$this->GLCode = $GLCode;
-		$this->GLActName = $GLActName;
-		$this->ID = $id;
-		$this->Tag = $Tag;
-		$this->Cheque = $Cheque;
 	}
-}
+	/* end of class defintion */
+
+	class PaymentGLAnalysis {
+
+		var $Amount;
+		/* in currency of the payment*/
+		var $Narrative;
+		var $GLCode;
+		var $GLActName;
+		var $ID;
+		var $Tag;
+		var $Cheque;
+
+		function __construct($Amt, $Narr, $id, $GLCode, $GLActName, $Tag, $Cheque) {
+
+			/* Constructor function to add a new PaymentGLAnalysis object with passed params */
+			if (count($Tag) == 0) {
+				$Tag = array(0);
+			}
+			$this->Amount = $Amt;
+			$this->Narrative = $Narr;
+			$this->GLCode = $GLCode;
+			$this->GLActName = $GLActName;
+			$this->ID = $id;
+			$this->Tag = $Tag;
+			$this->Cheque = $Cheque;
+		}
+	}
 
 ?>
