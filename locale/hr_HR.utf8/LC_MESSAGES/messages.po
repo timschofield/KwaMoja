@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: tim@weberpafrica.com\n"
-"POT-Creation-Date: 2021-11-08 12:32+0000\n"
-"PO-Revision-Date: 2021-11-08 12:11+0000\n"
+"POT-Creation-Date: 2022-03-20 11:57+0000\n"
+"PO-Revision-Date: 2022-03-20 11:03+0000\n"
 "Last-Translator: Tim Schofield <tim@weberpafrica.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -198,8 +198,8 @@ msgstr "Popis ABC Ranking skupina"
 #: /home/tim/code/KwaMoja/PO_PDFPurchOrder.php:400
 #: /home/tim/code/KwaMoja/PO_PDFPurchOrder.php:404
 #: /home/tim/code/KwaMoja/PO_PDFPurchOrder.php:408
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:401
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:433
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:405
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:437
 #: /home/tim/code/KwaMoja/PrintCustStatements.php:83
 #: /home/tim/code/KwaMoja/PrintCustStatements.php:534
 #: /home/tim/code/KwaMoja/PrintCustStatements.php:563
@@ -236,7 +236,7 @@ msgstr "otisak"
 #: /home/tim/code/KwaMoja/InternalStockRequestInquiry.php:340
 #: /home/tim/code/KwaMoja/InternalStockRequestInquiry.php:354
 #: /home/tim/code/KwaMoja/SupplierGroups.php:279
-#: /home/tim/code/KwaMoja/Timesheets.php:510
+#: /home/tim/code/KwaMoja/Timesheets.php:518
 #: /home/tim/code/KwaMoja/Z_UpdateSystypes.php:29
 #: /home/tim/code/KwaMoja/prlTaxAuthority.php:135
 msgid "ID"
@@ -285,7 +285,7 @@ msgstr "Jeste li sigurni da želite izbrisati ovu grupu za rangiranje?"
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:153
 #: /home/tim/code/KwaMoja/AddCustomerNotes.php:129
 #: /home/tim/code/KwaMoja/AddCustomerTypeNotes.php:122
-#: /home/tim/code/KwaMoja/Areas.php:149 /home/tim/code/KwaMoja/BOMs.php:171
+#: /home/tim/code/KwaMoja/Areas.php:149 /home/tim/code/KwaMoja/BOMs.php:175
 #: /home/tim/code/KwaMoja/BankAccounts.php:230
 #: /home/tim/code/KwaMoja/COGSGLPostings.php:104
 #: /home/tim/code/KwaMoja/ContractBOM.php:264
@@ -298,7 +298,7 @@ msgstr "Jeste li sigurni da želite izbrisati ovu grupu za rangiranje?"
 #: /home/tim/code/KwaMoja/CustItem.php:169
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:1059
 #: /home/tim/code/KwaMoja/CustomerTypes.php:188
-#: /home/tim/code/KwaMoja/Customers.php:715
+#: /home/tim/code/KwaMoja/Customers.php:714
 #: /home/tim/code/KwaMoja/Departments.php:188
 #: /home/tim/code/KwaMoja/DiscountCategories.php:254
 #: /home/tim/code/KwaMoja/DiscountMatrix.php:98
@@ -306,7 +306,7 @@ msgstr "Jeste li sigurni da želite izbrisati ovu grupu za rangiranje?"
 #: /home/tim/code/KwaMoja/FixedAssetCategories.php:172
 #: /home/tim/code/KwaMoja/FreightCosts.php:260
 #: /home/tim/code/KwaMoja/GLAccounts.php:510
-#: /home/tim/code/KwaMoja/GLJournal.php:650
+#: /home/tim/code/KwaMoja/GLJournal.php:646
 #: /home/tim/code/KwaMoja/GLJournalTemplates.php:55
 #: /home/tim/code/KwaMoja/GLTags.php:140
 #: /home/tim/code/KwaMoja/GeocodeSetup.php:162
@@ -360,7 +360,7 @@ msgstr "Jeste li sigurni da želite izbrisati ovu grupu za rangiranje?"
 #: /home/tim/code/KwaMoja/PO_Items.php:1009
 #: /home/tim/code/KwaMoja/PaymentMethods.php:213
 #: /home/tim/code/KwaMoja/PaymentTerms.php:181
-#: /home/tim/code/KwaMoja/Payments.php:1303
+#: /home/tim/code/KwaMoja/Payments.php:1302
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:286
 #: /home/tim/code/KwaMoja/PcClaimExpensesFromTab.php:490
 #: /home/tim/code/KwaMoja/PcExpenses.php:207
@@ -420,7 +420,7 @@ msgstr "Jeste li sigurni da želite izbrisati ovu grupu za rangiranje?"
 #: /home/tim/code/KwaMoja/TaxGroups.php:198
 #: /home/tim/code/KwaMoja/TaxProvinces.php:185
 #: /home/tim/code/KwaMoja/TestPlanResults.php:874
-#: /home/tim/code/KwaMoja/Timesheets.php:657
+#: /home/tim/code/KwaMoja/Timesheets.php:665
 #: /home/tim/code/KwaMoja/UnitsOfMeasure.php:175
 #: /home/tim/code/KwaMoja/WOSerialNos.php:316
 #: /home/tim/code/KwaMoja/WWW_Access.php:160
@@ -567,7 +567,7 @@ msgstr "Metoda rangiranja uspješno je spremljena u bazu podataka"
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:152
 #: /home/tim/code/KwaMoja/AddCustomerNotes.php:128
 #: /home/tim/code/KwaMoja/AddCustomerTypeNotes.php:121
-#: /home/tim/code/KwaMoja/Areas.php:148 /home/tim/code/KwaMoja/BOMs.php:158
+#: /home/tim/code/KwaMoja/Areas.php:148 /home/tim/code/KwaMoja/BOMs.php:162
 #: /home/tim/code/KwaMoja/BankAccounts.php:229
 #: /home/tim/code/KwaMoja/COGSGLPostings.php:103
 #: /home/tim/code/KwaMoja/CreditStatus.php:153
@@ -576,8 +576,8 @@ msgstr "Metoda rangiranja uspješno je spremljena u bazu podataka"
 #: /home/tim/code/KwaMoja/CustItem.php:168
 #: /home/tim/code/KwaMoja/CustomerBranches.php:476
 #: /home/tim/code/KwaMoja/CustomerTypes.php:187
-#: /home/tim/code/KwaMoja/Customers.php:702
-#: /home/tim/code/KwaMoja/Customers.php:714
+#: /home/tim/code/KwaMoja/Customers.php:701
+#: /home/tim/code/KwaMoja/Customers.php:713
 #: /home/tim/code/KwaMoja/DashboardConfig.php:108
 #: /home/tim/code/KwaMoja/DefineWarehouse.php:258
 #: /home/tim/code/KwaMoja/Departments.php:187
@@ -588,7 +588,7 @@ msgstr "Metoda rangiranja uspješno je spremljena u bazu podataka"
 #: /home/tim/code/KwaMoja/FreightCosts.php:259
 #: /home/tim/code/KwaMoja/GLAccounts.php:509
 #: /home/tim/code/KwaMoja/GLBudgetHeaders.php:227
-#: /home/tim/code/KwaMoja/GLJournal.php:649
+#: /home/tim/code/KwaMoja/GLJournal.php:645
 #: /home/tim/code/KwaMoja/GLTags.php:139
 #: /home/tim/code/KwaMoja/GeocodeSetup.php:161
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:217
@@ -672,7 +672,7 @@ msgstr "Metoda rangiranja uspješno je spremljena u bazu podataka"
 #: /home/tim/code/KwaMoja/TaxCategories.php:181
 #: /home/tim/code/KwaMoja/TaxGroups.php:197
 #: /home/tim/code/KwaMoja/TaxProvinces.php:184
-#: /home/tim/code/KwaMoja/Timesheets.php:531
+#: /home/tim/code/KwaMoja/Timesheets.php:539
 #: /home/tim/code/KwaMoja/UnitsOfMeasure.php:174
 #: /home/tim/code/KwaMoja/WWW_Access.php:159
 #: /home/tim/code/KwaMoja/WWW_Users.php:435
@@ -822,8 +822,8 @@ msgstr "promijenjeni su u grupu računa"
 #: /home/tim/code/KwaMoja/BOMInquiry.php:14
 #: /home/tim/code/KwaMoja/BOMInquiry.php:182
 #: /home/tim/code/KwaMoja/BOMListing.php:119
-#: /home/tim/code/KwaMoja/BOMs.php:209 /home/tim/code/KwaMoja/BOMs.php:374
-#: /home/tim/code/KwaMoja/BOMs.php:624 /home/tim/code/KwaMoja/BOMs.php:1101
+#: /home/tim/code/KwaMoja/BOMs.php:215 /home/tim/code/KwaMoja/BOMs.php:380
+#: /home/tim/code/KwaMoja/BOMs.php:630 /home/tim/code/KwaMoja/BOMs.php:1115
 #: /home/tim/code/KwaMoja/BankReconciliation.php:12
 #: /home/tim/code/KwaMoja/COGSGLPostings.php:16
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:7
@@ -905,7 +905,7 @@ msgstr "promijenjeni su u grupu računa"
 #: /home/tim/code/KwaMoja/POReport.php:62
 #: /home/tim/code/KwaMoja/POReport.php:67
 #: /home/tim/code/KwaMoja/PO_AuthorisationLevels.php:8
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:59
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:61
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:23
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:57
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:141
@@ -992,7 +992,7 @@ msgstr "promijenjeni su u grupu računa"
 #: /home/tim/code/KwaMoja/Z_BottomUpCosts.php:51
 #: /home/tim/code/KwaMoja/Z_ReApplyCostToSA.php:6
 #: /home/tim/code/KwaMoja/Z_UpdateSystypes.php:8
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:41
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:56
 #: /home/tim/code/KwaMoja/prlPayPeriod.php:17
 msgid "Search"
 msgstr "traži"
@@ -1271,9 +1271,9 @@ msgstr "Naziv roditeljske grupe"
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:150
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:247
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:250
-#: /home/tim/code/KwaMoja/BOMs.php:122 /home/tim/code/KwaMoja/BOMs.php:586
-#: /home/tim/code/KwaMoja/BOMs.php:588 /home/tim/code/KwaMoja/BOMs.php:1129
-#: /home/tim/code/KwaMoja/BOMs.php:1132
+#: /home/tim/code/KwaMoja/BOMs.php:126 /home/tim/code/KwaMoja/BOMs.php:592
+#: /home/tim/code/KwaMoja/BOMs.php:594 /home/tim/code/KwaMoja/BOMs.php:1143
+#: /home/tim/code/KwaMoja/BOMs.php:1146
 #: /home/tim/code/KwaMoja/CompanyPreferences.php:364
 #: /home/tim/code/KwaMoja/CompanyPreferences.php:366
 #: /home/tim/code/KwaMoja/CompanyPreferences.php:442
@@ -1497,10 +1497,10 @@ msgstr "Naziv roditeljske grupe"
 #: /home/tim/code/KwaMoja/ShopParameters.php:482
 #: /home/tim/code/KwaMoja/StockQuantityByDate.php:157
 #: /home/tim/code/KwaMoja/StockTypes.php:157
-#: /home/tim/code/KwaMoja/Stocks.php:1412
-#: /home/tim/code/KwaMoja/Stocks.php:1414
-#: /home/tim/code/KwaMoja/Stocks.php:1438
-#: /home/tim/code/KwaMoja/Stocks.php:1440
+#: /home/tim/code/KwaMoja/Stocks.php:1418
+#: /home/tim/code/KwaMoja/Stocks.php:1420
+#: /home/tim/code/KwaMoja/Stocks.php:1444
+#: /home/tim/code/KwaMoja/Stocks.php:1446
 #: /home/tim/code/KwaMoja/SuppContractChgs.php:86
 #: /home/tim/code/KwaMoja/SupplierPriceList.php:594
 #: /home/tim/code/KwaMoja/SystemParameters.php:540
@@ -1582,9 +1582,9 @@ msgstr "Da"
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:150
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:246
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:249
-#: /home/tim/code/KwaMoja/BOMs.php:124 /home/tim/code/KwaMoja/BOMs.php:585
-#: /home/tim/code/KwaMoja/BOMs.php:589 /home/tim/code/KwaMoja/BOMs.php:1130
-#: /home/tim/code/KwaMoja/BOMs.php:1133
+#: /home/tim/code/KwaMoja/BOMs.php:128 /home/tim/code/KwaMoja/BOMs.php:591
+#: /home/tim/code/KwaMoja/BOMs.php:595 /home/tim/code/KwaMoja/BOMs.php:1144
+#: /home/tim/code/KwaMoja/BOMs.php:1147
 #: /home/tim/code/KwaMoja/BankAccounts.php:197
 #: /home/tim/code/KwaMoja/BankAccounts.php:374
 #: /home/tim/code/KwaMoja/BankAccounts.php:376
@@ -1812,10 +1812,10 @@ msgstr "Da"
 #: /home/tim/code/KwaMoja/ShopParameters.php:481
 #: /home/tim/code/KwaMoja/StockQuantityByDate.php:159
 #: /home/tim/code/KwaMoja/StockTypes.php:155
-#: /home/tim/code/KwaMoja/Stocks.php:1407
-#: /home/tim/code/KwaMoja/Stocks.php:1409
-#: /home/tim/code/KwaMoja/Stocks.php:1433
-#: /home/tim/code/KwaMoja/Stocks.php:1435
+#: /home/tim/code/KwaMoja/Stocks.php:1413
+#: /home/tim/code/KwaMoja/Stocks.php:1415
+#: /home/tim/code/KwaMoja/Stocks.php:1439
+#: /home/tim/code/KwaMoja/Stocks.php:1441
 #: /home/tim/code/KwaMoja/SuppContractChgs.php:88
 #: /home/tim/code/KwaMoja/SupplierPriceList.php:597
 #: /home/tim/code/KwaMoja/SystemParameters.php:539
@@ -1970,7 +1970,7 @@ msgstr "Redoslijed pokusne bilance u kojoj će se pojaviti ova grupa."
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:264
 #: /home/tim/code/KwaMoja/AddCustomerNotes.php:216
 #: /home/tim/code/KwaMoja/AddCustomerTypeNotes.php:206
-#: /home/tim/code/KwaMoja/Areas.php:238 /home/tim/code/KwaMoja/BOMs.php:610
+#: /home/tim/code/KwaMoja/Areas.php:238 /home/tim/code/KwaMoja/BOMs.php:616
 #: /home/tim/code/KwaMoja/BankAccounts.php:417
 #: /home/tim/code/KwaMoja/COGSGLPostings.php:206
 #: /home/tim/code/KwaMoja/CreditStatus.php:231
@@ -2254,8 +2254,8 @@ msgstr "Popis kontakata je izbrisan"
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:133
 #: /home/tim/code/KwaMoja/CompanyPreferences.php:270
 #: /home/tim/code/KwaMoja/CustomerBranches.php:443
-#: /home/tim/code/KwaMoja/Customers.php:689
-#: /home/tim/code/KwaMoja/Customers.php:697
+#: /home/tim/code/KwaMoja/Customers.php:688
+#: /home/tim/code/KwaMoja/Customers.php:696
 #: /home/tim/code/KwaMoja/GLBudgetHeaders.php:205
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:201
 #: /home/tim/code/KwaMoja/KCMCEditPatientDetails.php:165
@@ -2304,8 +2304,8 @@ msgstr "Ime"
 
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:134
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:225
-#: /home/tim/code/KwaMoja/Customers.php:690
-#: /home/tim/code/KwaMoja/Customers.php:698
+#: /home/tim/code/KwaMoja/Customers.php:689
+#: /home/tim/code/KwaMoja/Customers.php:697
 #: /home/tim/code/KwaMoja/SelectCustomer.php:772
 #: /home/tim/code/KwaMoja/WWW_Access.php:142
 #: /home/tim/code/KwaMoja/WWW_Access.php:203
@@ -2326,8 +2326,8 @@ msgstr "Telefon br"
 #: /home/tim/code/KwaMoja/CustomerBranches.php:901
 #: /home/tim/code/KwaMoja/CustomerInquiry.php:426
 #: /home/tim/code/KwaMoja/CustomerInquiry.php:469
-#: /home/tim/code/KwaMoja/Customers.php:692
-#: /home/tim/code/KwaMoja/Customers.php:700
+#: /home/tim/code/KwaMoja/Customers.php:691
+#: /home/tim/code/KwaMoja/Customers.php:699
 #: /home/tim/code/KwaMoja/EmailCustTrans.php:13
 #: /home/tim/code/KwaMoja/EmailCustTrans.php:59
 #: /home/tim/code/KwaMoja/Factors.php:257
@@ -2356,7 +2356,7 @@ msgstr "Telefon br"
 #: /home/tim/code/KwaMoja/SupplierContacts.php:259
 #: /home/tim/code/KwaMoja/SupplierGroups.php:247
 #: /home/tim/code/KwaMoja/SupplierGroups.php:290
-#: /home/tim/code/KwaMoja/Timesheets.php:515
+#: /home/tim/code/KwaMoja/Timesheets.php:523
 #: /home/tim/code/KwaMoja/UserSettings.php:205
 #: /home/tim/code/KwaMoja/WWW_Users.php:380
 #: /home/tim/code/KwaMoja/prlSSC.php:150 /home/tim/code/KwaMoja/prlSSC.php:220
@@ -2383,8 +2383,8 @@ msgstr "izjava"
 #: /home/tim/code/KwaMoja/AddCustomerContacts.php:257
 #: /home/tim/code/KwaMoja/AnalysisHorizontalIncome.php:226
 #: /home/tim/code/KwaMoja/AnalysisHorizontalPosition.php:153
-#: /home/tim/code/KwaMoja/Customers.php:693
-#: /home/tim/code/KwaMoja/Customers.php:701
+#: /home/tim/code/KwaMoja/Customers.php:692
+#: /home/tim/code/KwaMoja/Customers.php:700
 #: /home/tim/code/KwaMoja/GLCashFlowsIndirect.php:179
 #: /home/tim/code/KwaMoja/GLCashFlowsIndirect.php:410
 #: /home/tim/code/KwaMoja/GLStatements.php:137
@@ -2559,7 +2559,7 @@ msgstr "Napomene za kupca"
 #: /home/tim/code/KwaMoja/PDFRemittanceAdvice.php:318
 #: /home/tim/code/KwaMoja/PDFWOPrint.php:476
 #: /home/tim/code/KwaMoja/PaymentAllocations.php:61
-#: /home/tim/code/KwaMoja/Payments.php:1365
+#: /home/tim/code/KwaMoja/Payments.php:1364
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:256
 #: /home/tim/code/KwaMoja/PcAuthorizeCheque.php:94
 #: /home/tim/code/KwaMoja/PcAuthorizeExpenses.php:111
@@ -2798,7 +2798,7 @@ msgstr "Zaliha"
 #: /home/tim/code/KwaMoja/AutomaticTranslationDescriptions.php:46
 #: /home/tim/code/KwaMoja/BOMInquiry.php:112
 #: /home/tim/code/KwaMoja/BOMInquiry.php:194
-#: /home/tim/code/KwaMoja/BOMs.php:951 /home/tim/code/KwaMoja/BOMs.php:1151
+#: /home/tim/code/KwaMoja/BOMs.php:961 /home/tim/code/KwaMoja/BOMs.php:1165
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:50
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:351
 #: /home/tim/code/KwaMoja/ContractBOM.php:241
@@ -2884,7 +2884,7 @@ msgstr "Zaliha"
 #: /home/tim/code/KwaMoja/PDFOrdersInvoiced.php:357
 #: /home/tim/code/KwaMoja/PO_Items.php:956
 #: /home/tim/code/KwaMoja/PO_Items.php:1447
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:270
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:274
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:215
 #: /home/tim/code/KwaMoja/PaymentTerms.php:153
 #: /home/tim/code/KwaMoja/PcExpenses.php:166
@@ -2930,7 +2930,7 @@ msgstr "Zaliha"
 #: /home/tim/code/KwaMoja/StockLocStatus.php:167
 #: /home/tim/code/KwaMoja/StockQuantityByDate.php:132
 #: /home/tim/code/KwaMoja/StockTransfers.php:746
-#: /home/tim/code/KwaMoja/Stocks.php:1156
+#: /home/tim/code/KwaMoja/Stocks.php:1162
 #: /home/tim/code/KwaMoja/SuppCreditGRNs.php:69
 #: /home/tim/code/KwaMoja/SuppCreditGRNs.php:162
 #: /home/tim/code/KwaMoja/SuppFixedAssetChgs.php:74
@@ -3022,7 +3022,7 @@ msgstr "Dani stari"
 #: /home/tim/code/KwaMoja/CustomerInquiry.php:257
 #: /home/tim/code/KwaMoja/CustomerPurchases.php:91
 #: /home/tim/code/KwaMoja/GLBudgets.php:208
-#: /home/tim/code/KwaMoja/GLJournal.php:655
+#: /home/tim/code/KwaMoja/GLJournal.php:651
 #: /home/tim/code/KwaMoja/GLTransInquiry.php:199
 #: /home/tim/code/KwaMoja/GLTrialBalance.php:360
 #: /home/tim/code/KwaMoja/GLTrialBalance.php:426
@@ -3057,7 +3057,7 @@ msgstr "Dani stari"
 #: /home/tim/code/KwaMoja/SupplierAllocations.php:574
 #: /home/tim/code/KwaMoja/SupplierCredit.php:397
 #: /home/tim/code/KwaMoja/SupplierInquiry.php:203
-#: /home/tim/code/KwaMoja/Tax.php:336 /home/tim/code/KwaMoja/Timesheets.php:596
+#: /home/tim/code/KwaMoja/Tax.php:336 /home/tim/code/KwaMoja/Timesheets.php:604
 #: /home/tim/code/KwaMoja/Z_CheckDebtorsControl.php:137
 #: /home/tim/code/KwaMoja/prlBP.php:167 /home/tim/code/KwaMoja/prlBP.php:206
 #: /home/tim/code/KwaMoja/prlPH.php:119 /home/tim/code/KwaMoja/prlPH.php:145
@@ -3683,11 +3683,11 @@ msgstr "Sažetak ili detaljno izvješće"
 
 #: /home/tim/code/KwaMoja/AnalysisHorizontalIncome.php:24
 #: /home/tim/code/KwaMoja/AnalysisHorizontalPosition.php:24
-#: /home/tim/code/KwaMoja/BOMs.php:120 /home/tim/code/KwaMoja/BOMs.php:126
-#: /home/tim/code/KwaMoja/BOMs.php:134 /home/tim/code/KwaMoja/BOMs.php:1159
+#: /home/tim/code/KwaMoja/BOMs.php:124 /home/tim/code/KwaMoja/BOMs.php:130
+#: /home/tim/code/KwaMoja/BOMs.php:138 /home/tim/code/KwaMoja/BOMs.php:1173
 #: /home/tim/code/KwaMoja/BankAccounts.php:330
 #: /home/tim/code/KwaMoja/BankMatching.php:286
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:440
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:444
 #: /home/tim/code/KwaMoja/PaymentTerms.php:164
 #: /home/tim/code/KwaMoja/PaymentTerms.php:170
 #: /home/tim/code/KwaMoja/SalesAnalReptCols.php:262
@@ -3702,8 +3702,8 @@ msgstr "Sažetak ili detaljno izvješće"
 #: /home/tim/code/KwaMoja/StockCategorySalesInquiry.php:185
 #: /home/tim/code/KwaMoja/StockCategorySalesInquiry.php:208
 #: /home/tim/code/KwaMoja/StockCategorySalesInquiry.php:222
-#: /home/tim/code/KwaMoja/Timesheets.php:719
-#: /home/tim/code/KwaMoja/Timesheets.php:721
+#: /home/tim/code/KwaMoja/Timesheets.php:731
+#: /home/tim/code/KwaMoja/Timesheets.php:733
 #: /home/tim/code/KwaMoja/TopItems.php:193
 #: /home/tim/code/KwaMoja/TopItems.php:194
 msgid "N/A"
@@ -3773,7 +3773,7 @@ msgstr "Odaberite zadnje razdoblje u izvješću"
 
 #: /home/tim/code/KwaMoja/AnalysisHorizontalIncome.php:151
 #: /home/tim/code/KwaMoja/BOMInquiry.php:31
-#: /home/tim/code/KwaMoja/BOMs.php:1020 /home/tim/code/KwaMoja/BOMs.php:1118
+#: /home/tim/code/KwaMoja/BOMs.php:1030 /home/tim/code/KwaMoja/BOMs.php:1132
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:336
 #: /home/tim/code/KwaMoja/ContractBOM.php:329
 #: /home/tim/code/KwaMoja/ContractBOM.php:334
@@ -3821,7 +3821,7 @@ msgstr "Odaberite zadnje razdoblje u izvješću"
 #: /home/tim/code/KwaMoja/PO_Items.php:1401
 #: /home/tim/code/KwaMoja/PO_Items.php:1408
 #: /home/tim/code/KwaMoja/PO_Items.php:1414
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:233
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:237
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:197
 #: /home/tim/code/KwaMoja/ProjectBOM.php:241
 #: /home/tim/code/KwaMoja/ProjectBOM.php:246
@@ -3998,7 +3998,7 @@ msgstr "Odaberite drugo razdoblje"
 #: /home/tim/code/KwaMoja/MRPReport.php:438
 #: /home/tim/code/KwaMoja/SalesGraph.php:283
 #: /home/tim/code/KwaMoja/SalesGraph.php:291
-#: /home/tim/code/KwaMoja/Timesheets.php:558
+#: /home/tim/code/KwaMoja/Timesheets.php:566
 msgid "For"
 msgstr "Za"
 
@@ -4528,8 +4528,8 @@ msgid "User ID"
 msgstr "Korisnički ID"
 
 #: /home/tim/code/KwaMoja/AuditTrail.php:56
-#: /home/tim/code/KwaMoja/AuditTrail.php:72 /home/tim/code/KwaMoja/BOMs.php:999
-#: /home/tim/code/KwaMoja/BOMs.php:1002
+#: /home/tim/code/KwaMoja/AuditTrail.php:72
+#: /home/tim/code/KwaMoja/BOMs.php:1009 /home/tim/code/KwaMoja/BOMs.php:1012
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:268
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:272
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:276
@@ -4572,8 +4572,8 @@ msgstr "Korisnički ID"
 #: /home/tim/code/KwaMoja/PDFPriceList.php:375
 #: /home/tim/code/KwaMoja/POReport.php:1396
 #: /home/tim/code/KwaMoja/PO_Items.php:1376
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:97
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:215
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:99
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:219
 #: /home/tim/code/KwaMoja/ProjectBOM.php:215
 #: /home/tim/code/KwaMoja/ReorderLevel.php:236
 #: /home/tim/code/KwaMoja/ReorderLevel.php:238
@@ -4733,7 +4733,7 @@ msgstr "Adresa"
 #: /home/tim/code/KwaMoja/DailyBankTransactions.php:164
 #: /home/tim/code/KwaMoja/GLAccountInquiry.php:203
 #: /home/tim/code/KwaMoja/GLAccountReport.php:347
-#: /home/tim/code/KwaMoja/GLJournal.php:488
+#: /home/tim/code/KwaMoja/GLJournal.php:486
 #: /home/tim/code/KwaMoja/KCMCAnaesthesiaTypes.php:125
 #: /home/tim/code/KwaMoja/KCMCAnaesthesiaTypes.php:196
 #: /home/tim/code/KwaMoja/KCMCApplicationTypes.php:125
@@ -4792,7 +4792,7 @@ msgstr "Adresa"
 #: /home/tim/code/KwaMoja/SupplierInquiry.php:199
 #: /home/tim/code/KwaMoja/SupplierTransInquiry.php:23
 #: /home/tim/code/KwaMoja/SupplierTransInquiry.php:111
-#: /home/tim/code/KwaMoja/Tax.php:481 /home/tim/code/KwaMoja/Timesheets.php:513
+#: /home/tim/code/KwaMoja/Tax.php:481 /home/tim/code/KwaMoja/Timesheets.php:521
 #: /home/tim/code/KwaMoja/Z_CheckAllocationsFrom.php:31
 #: /home/tim/code/KwaMoja/Z_CheckAllocationsFrom.php:51
 #: /home/tim/code/KwaMoja/Z_CheckAllocs.php:60
@@ -4849,7 +4849,7 @@ msgstr "#"
 
 #: /home/tim/code/KwaMoja/AutomaticTranslationDescriptions.php:45
 #: /home/tim/code/KwaMoja/BOMInquiry.php:111
-#: /home/tim/code/KwaMoja/BOMs.php:950 /home/tim/code/KwaMoja/BOMs.php:1150
+#: /home/tim/code/KwaMoja/BOMs.php:960 /home/tim/code/KwaMoja/BOMs.php:1164
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:350
 #: /home/tim/code/KwaMoja/ContractBOM.php:348
 #: /home/tim/code/KwaMoja/CounterReturns.php:1748
@@ -4871,7 +4871,7 @@ msgstr "#"
 #: /home/tim/code/KwaMoja/PDFOrdersInvoiced.php:356
 #: /home/tim/code/KwaMoja/PO_Header.php:571
 #: /home/tim/code/KwaMoja/PO_Items.php:1446
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:269
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:273
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:214
 #: /home/tim/code/KwaMoja/PricesByCost.php:160
 #: /home/tim/code/KwaMoja/ProjectBOM.php:260
@@ -5062,8 +5062,8 @@ msgstr "M / B"
 #: /home/tim/code/KwaMoja/POReport.php:1216
 #: /home/tim/code/KwaMoja/POReport.php:1232
 #: /home/tim/code/KwaMoja/POReport.php:1263
-#: /home/tim/code/KwaMoja/Stocks.php:1134
-#: /home/tim/code/KwaMoja/Stocks.php:1144
+#: /home/tim/code/KwaMoja/Stocks.php:1140
+#: /home/tim/code/KwaMoja/Stocks.php:1150
 msgid "Part Description"
 msgstr "Dio Opis"
 
@@ -5105,8 +5105,8 @@ msgstr "Dio"
 #: /home/tim/code/KwaMoja/BOMIndented.php:206
 #: /home/tim/code/KwaMoja/BOMIndentedReverse.php:197
 #: /home/tim/code/KwaMoja/BOMInquiry.php:195
-#: /home/tim/code/KwaMoja/BOMListing.php:64 /home/tim/code/KwaMoja/BOMs.php:562
-#: /home/tim/code/KwaMoja/BOMs.php:954
+#: /home/tim/code/KwaMoja/BOMListing.php:64 /home/tim/code/KwaMoja/BOMs.php:568
+#: /home/tim/code/KwaMoja/BOMs.php:964
 #: /home/tim/code/KwaMoja/ContractBOM.php:242
 #: /home/tim/code/KwaMoja/ContractBOM.php:352
 #: /home/tim/code/KwaMoja/ContractCosting.php:78
@@ -5162,7 +5162,7 @@ msgstr "Dio"
 #: /home/tim/code/KwaMoja/PDFOrdersInvoiced.php:402
 #: /home/tim/code/KwaMoja/POReport.php:711
 #: /home/tim/code/KwaMoja/POReport.php:1289
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:393
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:397
 #: /home/tim/code/KwaMoja/PrintCredit.php:193
 #: /home/tim/code/KwaMoja/PrintCustTrans.php:995
 #: /home/tim/code/KwaMoja/PrintCustTransPortrait.php:1019
@@ -5328,8 +5328,8 @@ msgstr "Upisani BOM za"
 
 #: /home/tim/code/KwaMoja/BOMIndented.php:204
 #: /home/tim/code/KwaMoja/BOMIndentedReverse.php:195
-#: /home/tim/code/KwaMoja/BOMListing.php:62 /home/tim/code/KwaMoja/BOMs.php:443
-#: /home/tim/code/KwaMoja/BOMs.php:508 /home/tim/code/KwaMoja/BOMs.php:952
+#: /home/tim/code/KwaMoja/BOMListing.php:62 /home/tim/code/KwaMoja/BOMs.php:449
+#: /home/tim/code/KwaMoja/BOMs.php:514 /home/tim/code/KwaMoja/BOMs.php:962
 #: /home/tim/code/KwaMoja/Contracts.php:896
 #: /home/tim/code/KwaMoja/FixedAssetRegister.php:91
 #: /home/tim/code/KwaMoja/InventoryQuantities.php:137
@@ -5369,10 +5369,10 @@ msgstr "Mjesto"
 
 #: /home/tim/code/KwaMoja/BOMIndented.php:205
 #: /home/tim/code/KwaMoja/BOMIndentedReverse.php:196
-#: /home/tim/code/KwaMoja/BOMListing.php:63 /home/tim/code/KwaMoja/BOMs.php:953
-#: /home/tim/code/KwaMoja/Timesheets.php:436
-#: /home/tim/code/KwaMoja/Timesheets.php:458
-#: /home/tim/code/KwaMoja/Timesheets.php:586
+#: /home/tim/code/KwaMoja/BOMListing.php:63 /home/tim/code/KwaMoja/BOMs.php:963
+#: /home/tim/code/KwaMoja/Timesheets.php:440
+#: /home/tim/code/KwaMoja/Timesheets.php:462
+#: /home/tim/code/KwaMoja/Timesheets.php:594
 #: /home/tim/code/KwaMoja/WhereUsedInquiry.php:85
 #: /home/tim/code/KwaMoja/sql/updates/42.php:183
 msgid "Work Centre"
@@ -5381,7 +5381,7 @@ msgstr "Radni centar"
 #: /home/tim/code/KwaMoja/BOMIndented.php:207
 #: /home/tim/code/KwaMoja/BOMIndentedReverse.php:198
 #: /home/tim/code/KwaMoja/BOMInquiry.php:114
-#: /home/tim/code/KwaMoja/BOMs.php:1153
+#: /home/tim/code/KwaMoja/BOMs.php:1167
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:353
 #: /home/tim/code/KwaMoja/ConfirmDispatch_Invoice.php:353
 #: /home/tim/code/KwaMoja/ContractBOM.php:350
@@ -5402,7 +5402,7 @@ msgstr "Radni centar"
 #: /home/tim/code/KwaMoja/NoSalesItems.php:228
 #: /home/tim/code/KwaMoja/OffersReceived.php:107
 #: /home/tim/code/KwaMoja/PO_Items.php:1450
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:273
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:277
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:218
 #: /home/tim/code/KwaMoja/PickingLists.php:309
 #: /home/tim/code/KwaMoja/ProductSpecs.php:163
@@ -5488,12 +5488,12 @@ msgid "Costed Bill Of Material"
 msgstr "Troškovi materijala"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:21
-#: /home/tim/code/KwaMoja/BOMs.php:1108
+#: /home/tim/code/KwaMoja/BOMs.php:1122
 msgid "Select a manufactured part"
 msgstr "Odaberite proizvedeni dio"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:21
-#: /home/tim/code/KwaMoja/BOMs.php:1108
+#: /home/tim/code/KwaMoja/BOMs.php:1122
 msgid "or Assembly or Kit part"
 msgstr "ili skupštine ili dijela kompleta"
 
@@ -5502,17 +5502,17 @@ msgid "to view the costed bill of materials"
 msgstr "da biste vidjeli trošak nabave materijala"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:21
-#: /home/tim/code/KwaMoja/BOMs.php:1108
+#: /home/tim/code/KwaMoja/BOMs.php:1122
 msgid "Parts must be defined in the stock item entry"
 msgstr "Dijelovi moraju biti definirani u unosu zaliha"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:21
-#: /home/tim/code/KwaMoja/BOMs.php:1108
+#: /home/tim/code/KwaMoja/BOMs.php:1122
 msgid "modification screen as manufactured"
 msgstr "modifikacijski ekran kao proizveden"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:21
-#: /home/tim/code/KwaMoja/BOMs.php:1108
+#: /home/tim/code/KwaMoja/BOMs.php:1122
 msgid "kits or assemblies to be available for construction of a bill of material"
 msgstr "setove ili sklopove koji će biti dostupni za izradu nacrta materijala"
 
@@ -5521,9 +5521,9 @@ msgid "Enter Search Criteria"
 msgstr "Unesite kriterije pretraživanja"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:27
-#: /home/tim/code/KwaMoja/BOMs.php:1016 /home/tim/code/KwaMoja/BOMs.php:1114
+#: /home/tim/code/KwaMoja/BOMs.php:1026 /home/tim/code/KwaMoja/BOMs.php:1128
 #: /home/tim/code/KwaMoja/MRPDemands.php:317
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:229
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:233
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:193
 #: /home/tim/code/KwaMoja/SalesCategories.php:573
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:281
@@ -5536,9 +5536,9 @@ msgid "Enter text extracts in the"
 msgstr "Unesite tekst ekstrakte u"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:27
-#: /home/tim/code/KwaMoja/BOMs.php:1016 /home/tim/code/KwaMoja/BOMs.php:1114
+#: /home/tim/code/KwaMoja/BOMs.php:1026 /home/tim/code/KwaMoja/BOMs.php:1128
 #: /home/tim/code/KwaMoja/MRPDemands.php:317
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:229
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:233
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:193
 #: /home/tim/code/KwaMoja/SalesCategories.php:573
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:281
@@ -5555,9 +5555,9 @@ msgid "Enter part of an items description"
 msgstr "Unesite dio opisa predmeta"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:33
-#: /home/tim/code/KwaMoja/BOMs.php:1022 /home/tim/code/KwaMoja/BOMs.php:1120
+#: /home/tim/code/KwaMoja/BOMs.php:1032 /home/tim/code/KwaMoja/BOMs.php:1134
 #: /home/tim/code/KwaMoja/MRPDemands.php:324
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:236
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:240
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:200
 #: /home/tim/code/KwaMoja/SalesCategories.php:580
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:288
@@ -5570,7 +5570,7 @@ msgid "Enter extract of the"
 msgstr "Unesite ekstrakt"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:33
-#: /home/tim/code/KwaMoja/BOMs.php:1022 /home/tim/code/KwaMoja/BOMs.php:1120
+#: /home/tim/code/KwaMoja/BOMs.php:1032 /home/tim/code/KwaMoja/BOMs.php:1134
 #: /home/tim/code/KwaMoja/EmailConfirmation.php:191
 #: /home/tim/code/KwaMoja/EmailConfirmation.php:315
 #: /home/tim/code/KwaMoja/InternalStockRequest.php:324
@@ -5578,7 +5578,7 @@ msgstr "Unesite ekstrakt"
 #: /home/tim/code/KwaMoja/InternalStockRequestInquiry.php:207
 #: /home/tim/code/KwaMoja/MRPDemands.php:324
 #: /home/tim/code/KwaMoja/MRPReport.php:574
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:236
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:240
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:200
 #: /home/tim/code/KwaMoja/SalesCategories.php:580
 #: /home/tim/code/KwaMoja/SalesInquiry.php:627
@@ -5622,7 +5622,7 @@ msgid "Or enter part of an items code"
 msgstr "Ili unesite dio koda predmeta"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:39
-#: /home/tim/code/KwaMoja/BOMs.php:1029 /home/tim/code/KwaMoja/BOMs.php:1143
+#: /home/tim/code/KwaMoja/BOMs.php:1039 /home/tim/code/KwaMoja/BOMs.php:1157
 #: /home/tim/code/KwaMoja/ContractBOM.php:338
 #: /home/tim/code/KwaMoja/Contracts.php:785
 #: /home/tim/code/KwaMoja/CounterReturns.php:1719
@@ -5665,7 +5665,7 @@ msgid "Search Now"
 msgstr "Traži odmah"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:51
-#: /home/tim/code/KwaMoja/BOMs.php:1043
+#: /home/tim/code/KwaMoja/BOMs.php:1055
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:128
 #: /home/tim/code/KwaMoja/ContractBOM.php:49
 #: /home/tim/code/KwaMoja/InternalStockRequestInquiry.php:433
@@ -5691,13 +5691,13 @@ msgid "Stock description keywords have been used in preference to the Stock code
 msgstr "Ključne riječi za opis varijanti upotrebljavaju se u odnosu na unesenu izvod iz Štednog koda"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:54
-#: /home/tim/code/KwaMoja/BOMs.php:1046
+#: /home/tim/code/KwaMoja/BOMs.php:1058
 #: /home/tim/code/KwaMoja/MRPDemands.php:58
 msgid "At least one stock description keyword or an extract of a stock code must be entered for the search"
 msgstr "Za pretragu se mora unijeti barem jedna ključna riječ zaliha ili ekstrakt kataloške šifre"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:99
-#: /home/tim/code/KwaMoja/BOMs.php:1092
+#: /home/tim/code/KwaMoja/BOMs.php:1104
 #: /home/tim/code/KwaMoja/MRPCalendar.php:204
 #: /home/tim/code/KwaMoja/MRPDemands.php:79
 #: /home/tim/code/KwaMoja/MRPDemands.php:265
@@ -5708,14 +5708,14 @@ msgid "The SQL to find the parts selected failed with the message"
 msgstr "SQL za pronalaženje odabranih dijelova nije uspjelo s porukom"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:113
-#: /home/tim/code/KwaMoja/BOMs.php:1152
+#: /home/tim/code/KwaMoja/BOMs.php:1166
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:352
 #: /home/tim/code/KwaMoja/CounterReturns.php:1751
 #: /home/tim/code/KwaMoja/CounterSales.php:2165
 #: /home/tim/code/KwaMoja/CounterSales.php:2326
 #: /home/tim/code/KwaMoja/InternalStockRequest.php:708
 #: /home/tim/code/KwaMoja/MRPReport.php:175
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:271
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:275
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:216
 #: /home/tim/code/KwaMoja/PurchaseByPrefSupplier.php:387
 #: /home/tim/code/KwaMoja/ReorderLevelLocation.php:76
@@ -5757,7 +5757,7 @@ msgid "per"
 msgstr "po"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:193
-#: /home/tim/code/KwaMoja/BOMs.php:419 /home/tim/code/KwaMoja/BOMs.php:480
+#: /home/tim/code/KwaMoja/BOMs.php:425 /home/tim/code/KwaMoja/BOMs.php:486
 #: /home/tim/code/KwaMoja/WOCanBeProducedNow.php:47
 #: /home/tim/code/KwaMoja/WorkOrderReceive.php:185
 #: /home/tim/code/KwaMoja/WorkOrderReceive.php:416
@@ -5817,15 +5817,15 @@ msgstr "Ukupni trošak"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:218
 #: /home/tim/code/KwaMoja/StockCostUpdate.php:182
-#: /home/tim/code/KwaMoja/Stocks.php:1517
-#: /home/tim/code/KwaMoja/Stocks.php:1532
+#: /home/tim/code/KwaMoja/Stocks.php:1523
+#: /home/tim/code/KwaMoja/Stocks.php:1538
 msgid "Labour Cost"
 msgstr "Cijena rada"
 
 #: /home/tim/code/KwaMoja/BOMInquiry.php:224
 #: /home/tim/code/KwaMoja/StockCostUpdate.php:183
-#: /home/tim/code/KwaMoja/Stocks.php:1522
-#: /home/tim/code/KwaMoja/Stocks.php:1537
+#: /home/tim/code/KwaMoja/Stocks.php:1528
+#: /home/tim/code/KwaMoja/Stocks.php:1543
 msgid "Overhead Cost"
 msgstr "Opći troškovi"
 
@@ -5852,8 +5852,8 @@ msgstr "Bill of Material Listing za dijelove između"
 #: /home/tim/code/KwaMoja/DailyBankTransactions.php:156
 #: /home/tim/code/KwaMoja/GLJournalInquiry.php:39
 #: /home/tim/code/KwaMoja/PDFPeriodStockTransListing.php:161
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:66
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:175
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:68
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:179
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:30
 #: /home/tim/code/KwaMoja/PrintCheque.php:48
 #: /home/tim/code/KwaMoja/PrintCheque.php:177
@@ -5869,7 +5869,7 @@ msgstr "Bill of Material Listing za dijelove između"
 #: /home/tim/code/KwaMoja/SelectSalesOrder.php:474
 #: /home/tim/code/KwaMoja/Shipt_Select.php:100
 #: /home/tim/code/KwaMoja/StockMovements.php:78
-#: /home/tim/code/KwaMoja/Stocks.php:391 /home/tim/code/KwaMoja/Stocks.php:1593
+#: /home/tim/code/KwaMoja/Stocks.php:391 /home/tim/code/KwaMoja/Stocks.php:1599
 #: /home/tim/code/KwaMoja/TestPlanResults.php:120
 #: /home/tim/code/KwaMoja/includes/PDFCustomerListPageHeader.php:32
 #: /home/tim/code/KwaMoja/includes/PDFCustomerListPageHeader.php:54
@@ -5888,14 +5888,14 @@ msgstr "i"
 msgid "Component/Part Description"
 msgstr "Opis sastavnog dijela / dijela"
 
-#: /home/tim/code/KwaMoja/BOMListing.php:60 /home/tim/code/KwaMoja/BOMs.php:569
-#: /home/tim/code/KwaMoja/BOMs.php:956
+#: /home/tim/code/KwaMoja/BOMListing.php:60 /home/tim/code/KwaMoja/BOMs.php:575
+#: /home/tim/code/KwaMoja/BOMs.php:966
 #: /home/tim/code/KwaMoja/WhereUsedInquiry.php:88
 msgid "Effective After"
 msgstr "Učinkovito nakon"
 
-#: /home/tim/code/KwaMoja/BOMListing.php:61 /home/tim/code/KwaMoja/BOMs.php:575
-#: /home/tim/code/KwaMoja/BOMs.php:957 /home/tim/code/KwaMoja/PurchData.php:722
+#: /home/tim/code/KwaMoja/BOMListing.php:61 /home/tim/code/KwaMoja/BOMs.php:581
+#: /home/tim/code/KwaMoja/BOMs.php:967 /home/tim/code/KwaMoja/PurchData.php:722
 #: /home/tim/code/KwaMoja/SellThroughSupport.php:261
 #: /home/tim/code/KwaMoja/WhereUsedInquiry.php:89
 msgid "Effective To"
@@ -5930,73 +5930,73 @@ msgstr "Konačni kod dionica"
 msgid "Multi-Level Bill Of Materials Maintenance"
 msgstr "Višestruki nivo održavanja materijala"
 
-#: /home/tim/code/KwaMoja/BOMs.php:24
+#: /home/tim/code/KwaMoja/BOMs.php:26
 msgid "A maximum of 15 levels of bill of materials only can be displayed"
 msgstr "Može se prikazati najviše 15 razina materijala"
 
-#: /home/tim/code/KwaMoja/BOMs.php:36
+#: /home/tim/code/KwaMoja/BOMs.php:38
 msgid "The component and the parent is the same"
 msgstr "Komponenta i roditelj su isti"
 
-#: /home/tim/code/KwaMoja/BOMs.php:51
+#: /home/tim/code/KwaMoja/BOMs.php:53
 msgid "An error occurred in retrieving the components of the BOM during the check for recursion"
 msgstr "Došlo je do pogreške prilikom dohvaćanja komponenti BOM tijekom provjere rekurzije"
 
-#: /home/tim/code/KwaMoja/BOMs.php:52
+#: /home/tim/code/KwaMoja/BOMs.php:54
 msgid "The SQL that was used to retrieve the components of the BOM and that failed in the process was"
 msgstr "SQL koji je upotrijebljen za pronalaženje komponenti BOM i koji nije uspio u tom procesu bio je"
 
-#: /home/tim/code/KwaMoja/BOMs.php:110
+#: /home/tim/code/KwaMoja/BOMs.php:114
 msgid "Could not retrieve the BOM components because"
 msgstr "Nije uspjelo dohvaćanje komponenti BOM jer"
 
-#: /home/tim/code/KwaMoja/BOMs.php:111
+#: /home/tim/code/KwaMoja/BOMs.php:115
 msgid "The SQL used to retrieve the components was"
 msgstr "SQL koji je upotrijebio za preuzimanje komponenti bio je"
 
-#: /home/tim/code/KwaMoja/BOMs.php:162
+#: /home/tim/code/KwaMoja/BOMs.php:166
 msgid "No lower levels"
 msgstr "Nema nižih razina"
 
-#: /home/tim/code/KwaMoja/BOMs.php:166
+#: /home/tim/code/KwaMoja/BOMs.php:170
 msgid "Drill Down"
 msgstr "Bušiti u dubinu"
 
-#: /home/tim/code/KwaMoja/BOMs.php:171
+#: /home/tim/code/KwaMoja/BOMs.php:175
 msgid "Are you sure you wish to delete this component from this bill of materials?"
 msgstr "Jeste li sigurni da želite izbrisati ovu komponentu iz ovog materijala?"
 
-#: /home/tim/code/KwaMoja/BOMs.php:208
+#: /home/tim/code/KwaMoja/BOMs.php:214
 msgid "Return to main BOM screen"
 msgstr "Povratak na glavni BOM ekran"
 
-#: /home/tim/code/KwaMoja/BOMs.php:209
+#: /home/tim/code/KwaMoja/BOMs.php:215
 msgid "Select component to add to BOM"
 msgstr "Odaberite komponentu koju želite dodati BOM-u"
 
-#: /home/tim/code/KwaMoja/BOMs.php:216 /home/tim/code/KwaMoja/BOMs.php:365
-#: /home/tim/code/KwaMoja/BOMs.php:793 /home/tim/code/KwaMoja/BOMs.php:828
-#: /home/tim/code/KwaMoja/BOMs.php:851 /home/tim/code/KwaMoja/BOMs.php:879
-#: /home/tim/code/KwaMoja/BOMs.php:908
+#: /home/tim/code/KwaMoja/BOMs.php:222 /home/tim/code/KwaMoja/BOMs.php:371
+#: /home/tim/code/KwaMoja/BOMs.php:803 /home/tim/code/KwaMoja/BOMs.php:838
+#: /home/tim/code/KwaMoja/BOMs.php:861 /home/tim/code/KwaMoja/BOMs.php:889
+#: /home/tim/code/KwaMoja/BOMs.php:918
 msgid "Could not retrieve the description of the parent part because"
 msgstr "Nije moguće dohvatiti opis matičnog dijela jer"
 
-#: /home/tim/code/KwaMoja/BOMs.php:217 /home/tim/code/KwaMoja/BOMs.php:366
-#: /home/tim/code/KwaMoja/BOMs.php:794 /home/tim/code/KwaMoja/BOMs.php:829
-#: /home/tim/code/KwaMoja/BOMs.php:852 /home/tim/code/KwaMoja/BOMs.php:880
-#: /home/tim/code/KwaMoja/BOMs.php:909
+#: /home/tim/code/KwaMoja/BOMs.php:223 /home/tim/code/KwaMoja/BOMs.php:372
+#: /home/tim/code/KwaMoja/BOMs.php:804 /home/tim/code/KwaMoja/BOMs.php:839
+#: /home/tim/code/KwaMoja/BOMs.php:862 /home/tim/code/KwaMoja/BOMs.php:890
+#: /home/tim/code/KwaMoja/BOMs.php:919
 msgid "The SQL used to retrieve description of the parent part was"
 msgstr "SQL koji je upotrijebljen za pronalaženje opisa roditeljskog dijela bio je"
 
-#: /home/tim/code/KwaMoja/BOMs.php:264
+#: /home/tim/code/KwaMoja/BOMs.php:270
 msgid "Could not retrieve the list of potential components because"
 msgstr "Nije moguće dohvatiti popis potencijalnih komponenti jer"
 
-#: /home/tim/code/KwaMoja/BOMs.php:265
+#: /home/tim/code/KwaMoja/BOMs.php:271
 msgid "The SQL used to retrieve the list of potential components part was"
 msgstr "SQL koji je upotrijebljen za pronalaženje popisa potencijalnih komponenti bio je"
 
-#: /home/tim/code/KwaMoja/BOMs.php:273 /home/tim/code/KwaMoja/MRPReport.php:766
+#: /home/tim/code/KwaMoja/BOMs.php:279 /home/tim/code/KwaMoja/MRPReport.php:766
 #: /home/tim/code/KwaMoja/PurchaseByPrefSupplier.php:390
 #: /home/tim/code/KwaMoja/SelectAsset.php:250
 #: /home/tim/code/KwaMoja/SelectCustomer.php:439
@@ -6012,7 +6012,7 @@ msgstr "SQL koji je upotrijebljen za pronalaženje popisa potencijalnih komponen
 msgid "Previous"
 msgstr "prijašnji"
 
-#: /home/tim/code/KwaMoja/BOMs.php:274
+#: /home/tim/code/KwaMoja/BOMs.php:280
 #: /home/tim/code/KwaMoja/CounterReturns.php:1744
 #: /home/tim/code/KwaMoja/CounterReturns.php:1834
 #: /home/tim/code/KwaMoja/CounterSales.php:2319
@@ -6034,7 +6034,7 @@ msgstr "prijašnji"
 msgid "Next"
 msgstr "Sljedeći"
 
-#: /home/tim/code/KwaMoja/BOMs.php:278
+#: /home/tim/code/KwaMoja/BOMs.php:284
 #: /home/tim/code/KwaMoja/ConfirmDispatch_Invoice.php:350
 #: /home/tim/code/KwaMoja/ContractBOM.php:240
 #: /home/tim/code/KwaMoja/ContractCosting.php:76
@@ -6085,13 +6085,13 @@ msgstr "Sljedeći"
 #: /home/tim/code/KwaMoja/StockLocTransfer.php:374
 #: /home/tim/code/KwaMoja/StockLocTransferReceive.php:559
 #: /home/tim/code/KwaMoja/StockQuantityByDate.php:131
-#: /home/tim/code/KwaMoja/Stocks.php:1005
-#: /home/tim/code/KwaMoja/Stocks.php:1010
+#: /home/tim/code/KwaMoja/Stocks.php:1011
 #: /home/tim/code/KwaMoja/Stocks.php:1016
-#: /home/tim/code/KwaMoja/Stocks.php:1104
-#: /home/tim/code/KwaMoja/Stocks.php:1109
-#: /home/tim/code/KwaMoja/Stocks.php:1116
-#: /home/tim/code/KwaMoja/Stocks.php:1123
+#: /home/tim/code/KwaMoja/Stocks.php:1022
+#: /home/tim/code/KwaMoja/Stocks.php:1110
+#: /home/tim/code/KwaMoja/Stocks.php:1115
+#: /home/tim/code/KwaMoja/Stocks.php:1122
+#: /home/tim/code/KwaMoja/Stocks.php:1129
 #: /home/tim/code/KwaMoja/SuppCreditGRNs.php:68
 #: /home/tim/code/KwaMoja/SuppCreditGRNs.php:161
 #: /home/tim/code/KwaMoja/SuppInvGRNs.php:99
@@ -6118,7 +6118,7 @@ msgstr "Sljedeći"
 msgid "Item Code"
 msgstr "Šifra artikla"
 
-#: /home/tim/code/KwaMoja/BOMs.php:279
+#: /home/tim/code/KwaMoja/BOMs.php:285
 #: /home/tim/code/KwaMoja/ConfirmDispatch_Invoice.php:351
 #: /home/tim/code/KwaMoja/ContractCosting.php:77
 #: /home/tim/code/KwaMoja/ContractCosting.php:83
@@ -6176,83 +6176,83 @@ msgstr "Šifra artikla"
 msgid "Item Description"
 msgstr "Opis Predmeta"
 
-#: /home/tim/code/KwaMoja/BOMs.php:286
+#: /home/tim/code/KwaMoja/BOMs.php:292
 msgid "Add to the BOM"
 msgstr "Dodajte u BOM"
 
-#: /home/tim/code/KwaMoja/BOMs.php:374
+#: /home/tim/code/KwaMoja/BOMs.php:380
 msgid "Component Details"
 msgstr "Pojedinosti o sastavnici"
 
-#: /home/tim/code/KwaMoja/BOMs.php:424 /home/tim/code/KwaMoja/BOMs.php:485
+#: /home/tim/code/KwaMoja/BOMs.php:430 /home/tim/code/KwaMoja/BOMs.php:491
 msgid "Component Description"
 msgstr "Opis komponente"
 
-#: /home/tim/code/KwaMoja/BOMs.php:429 /home/tim/code/KwaMoja/BOMs.php:490
+#: /home/tim/code/KwaMoja/BOMs.php:435 /home/tim/code/KwaMoja/BOMs.php:496
 msgid "Sequence in BOM"
 msgstr "Sekvenca u BOM-u"
 
-#: /home/tim/code/KwaMoja/BOMs.php:431 /home/tim/code/KwaMoja/BOMs.php:492
+#: /home/tim/code/KwaMoja/BOMs.php:437 /home/tim/code/KwaMoja/BOMs.php:498
 msgid "Enter the sequence in the BOM where this component is to be included."
 msgstr "Unesite redoslijed u BOM u koji treba uključiti ovu komponentu."
 
-#: /home/tim/code/KwaMoja/BOMs.php:454 /home/tim/code/KwaMoja/BOMs.php:541
+#: /home/tim/code/KwaMoja/BOMs.php:460 /home/tim/code/KwaMoja/BOMs.php:547
 msgid "Work Centre Added"
 msgstr "Dodan je radni centar"
 
-#: /home/tim/code/KwaMoja/BOMs.php:477
+#: /home/tim/code/KwaMoja/BOMs.php:483
 msgid "New Component Details"
 msgstr "Pojedinosti o novim komponentama"
 
-#: /home/tim/code/KwaMoja/BOMs.php:521
+#: /home/tim/code/KwaMoja/BOMs.php:527
 msgid "Enter the stock location where this component is to be included."
 msgstr "Unesite mjesto zaliha na kojem treba uključiti ovu komponentu."
 
-#: /home/tim/code/KwaMoja/BOMs.php:535 /home/tim/code/KwaMoja/Contracts.php:916
+#: /home/tim/code/KwaMoja/BOMs.php:541 /home/tim/code/KwaMoja/Contracts.php:916
 msgid "There are no work centres set up yet"
 msgstr "Još nema radnih centara"
 
-#: /home/tim/code/KwaMoja/BOMs.php:535 /home/tim/code/KwaMoja/Contracts.php:916
+#: /home/tim/code/KwaMoja/BOMs.php:541 /home/tim/code/KwaMoja/Contracts.php:916
 msgid "Please use the link below to set up work centres"
 msgstr "Koristite donju vezu za postavljanje radnih centara"
 
-#: /home/tim/code/KwaMoja/BOMs.php:536 /home/tim/code/KwaMoja/Contracts.php:917
+#: /home/tim/code/KwaMoja/BOMs.php:542 /home/tim/code/KwaMoja/Contracts.php:917
 msgid "Work Centre Maintenance"
 msgstr "Održavanje radnog centra"
 
-#: /home/tim/code/KwaMoja/BOMs.php:553
+#: /home/tim/code/KwaMoja/BOMs.php:559
 msgid "Enter the work centre where this component is to be included."
 msgstr "Unesite radni centar u koji treba uključiti ovu komponentu."
 
-#: /home/tim/code/KwaMoja/BOMs.php:565
+#: /home/tim/code/KwaMoja/BOMs.php:571
 msgid "Enter the quantity of this component is to be included."
 msgstr "Unesite količinu ove komponente koju treba uključiti."
 
-#: /home/tim/code/KwaMoja/BOMs.php:571
+#: /home/tim/code/KwaMoja/BOMs.php:577
 msgid "The component will be used from this date."
 msgstr "Komponenta će se upotrebljavati od ovog datuma."
 
-#: /home/tim/code/KwaMoja/BOMs.php:577
+#: /home/tim/code/KwaMoja/BOMs.php:583
 msgid "The component will be used until this date."
 msgstr "Komponenta će se upotrebljavati do ovog datuma."
 
-#: /home/tim/code/KwaMoja/BOMs.php:582
+#: /home/tim/code/KwaMoja/BOMs.php:588
 msgid "Auto Issue this Component to Work Orders"
 msgstr "Automatsko izdavanje ove komponente na radne naloge"
 
-#: /home/tim/code/KwaMoja/BOMs.php:592
+#: /home/tim/code/KwaMoja/BOMs.php:598
 msgid "Should this component be automatically issued to a work order for this BOM."
 msgstr "Treba li ova komponenta automatski biti izdana radnom nalogu za ovaj BOM."
 
-#: /home/tim/code/KwaMoja/BOMs.php:603
+#: /home/tim/code/KwaMoja/BOMs.php:609
 msgid "Comment"
 msgstr "Komentar"
 
-#: /home/tim/code/KwaMoja/BOMs.php:605
+#: /home/tim/code/KwaMoja/BOMs.php:611
 msgid "Any comments for this BOM line to appear on a work order."
 msgstr "Svi komentari na ovu BOM liniju pojavljuju se na radnom nalogu."
 
-#: /home/tim/code/KwaMoja/BOMs.php:611
+#: /home/tim/code/KwaMoja/BOMs.php:617
 #: /home/tim/code/KwaMoja/BankAccountUsers.php:122
 #: /home/tim/code/KwaMoja/BankAccountUsers.php:203
 #: /home/tim/code/KwaMoja/CustomerAllocations.php:394
@@ -6265,7 +6265,7 @@ msgstr "Svi komentari na ovu BOM liniju pojavljuju se na radnom nalogu."
 #: /home/tim/code/KwaMoja/KCMCDischargeTypes.php:222
 #: /home/tim/code/KwaMoja/LocationUsers.php:135
 #: /home/tim/code/KwaMoja/LocationUsers.php:248
-#: /home/tim/code/KwaMoja/Payments.php:1268
+#: /home/tim/code/KwaMoja/Payments.php:1267
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:190
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:405
 #: /home/tim/code/KwaMoja/PcAuthorizeCheque.php:334
@@ -6292,171 +6292,171 @@ msgstr "Svi komentari na ovu BOM liniju pojavljuju se na radnom nalogu."
 msgid "Cancel"
 msgstr "Otkazati"
 
-#: /home/tim/code/KwaMoja/BOMs.php:620
+#: /home/tim/code/KwaMoja/BOMs.php:626
 msgid "Select a Different BOM"
 msgstr "Odaberite drugačiji BOM"
 
-#: /home/tim/code/KwaMoja/BOMs.php:632
+#: /home/tim/code/KwaMoja/BOMs.php:638
 msgid "The effective after date field must be a date in the format"
 msgstr "Stvarno polje nakon datuma mora biti datum u formatu"
 
-#: /home/tim/code/KwaMoja/BOMs.php:636
+#: /home/tim/code/KwaMoja/BOMs.php:642
 msgid "The effective to date field must be a date in the format"
 msgstr "Polje do datuma mora biti datum u formatu"
 
-#: /home/tim/code/KwaMoja/BOMs.php:640
+#: /home/tim/code/KwaMoja/BOMs.php:646
 #: /home/tim/code/KwaMoja/StockAdjustments.php:199
 #: /home/tim/code/KwaMoja/StockTransfers.php:219
 msgid "The quantity entered must be numeric"
 msgstr "Unesena količina mora biti numerička"
 
-#: /home/tim/code/KwaMoja/BOMs.php:650
+#: /home/tim/code/KwaMoja/BOMs.php:656
 msgid "The effective to date must be a date after the effective after date"
 msgstr "Na snazi ​​do danas mora biti datum nakon stupanja na snagu nakon datuma"
 
-#: /home/tim/code/KwaMoja/BOMs.php:650
+#: /home/tim/code/KwaMoja/BOMs.php:656
 msgid "The effective to date is"
 msgstr "Na snazi ​​je do danas"
 
-#: /home/tim/code/KwaMoja/BOMs.php:650
+#: /home/tim/code/KwaMoja/BOMs.php:656
 msgid "days before the effective after date"
 msgstr "dana prije stupanja na snagu nakon datuma"
 
-#: /home/tim/code/KwaMoja/BOMs.php:650
+#: /home/tim/code/KwaMoja/BOMs.php:656
 msgid "No updates have been performed"
 msgstr "Nije izvršeno ažuriranje"
 
-#: /home/tim/code/KwaMoja/BOMs.php:650
+#: /home/tim/code/KwaMoja/BOMs.php:656
 msgid "Effective after was"
 msgstr "Učinkovito je bilo"
 
-#: /home/tim/code/KwaMoja/BOMs.php:650
+#: /home/tim/code/KwaMoja/BOMs.php:656
 msgid "and effective to was"
 msgstr "i učinkovita je bila"
 
-#: /home/tim/code/KwaMoja/BOMs.php:657
+#: /home/tim/code/KwaMoja/BOMs.php:663
 msgid "Only non-serialised or non-lot controlled items can be set to auto issue. These items require the lot/serial numbers of items issued to the works orders to be specified so autoissue is not an option. Auto issue has been automatically set to off for this component"
 msgstr "Samo ne-serijski ili nedopuštene stavke mogu se postaviti na automatsko izdavanje.  Ove stavke zahtijevaju da se specificiraju serije / serijske brojeve stavki izdanih za narudžbe, tako da autoizazivanje nije opcija.  Automatsko izdavanje automatski je isključeno za ovu komponentu"
 
-#: /home/tim/code/KwaMoja/BOMs.php:664
+#: /home/tim/code/KwaMoja/BOMs.php:670
 msgid "The component selected is the same with the parent, it is not allowed"
 msgstr "Odabrana komponenta je ista sa roditeljem, nije dopuštena"
 
-#: /home/tim/code/KwaMoja/BOMs.php:679
+#: /home/tim/code/KwaMoja/BOMs.php:685
 msgid "Could not update this BOM component because"
 msgstr "Nije moguće ažurirati ovu komponentu BOM jer"
 
-#: /home/tim/code/KwaMoja/BOMs.php:680 /home/tim/code/KwaMoja/BOMs.php:739
+#: /home/tim/code/KwaMoja/BOMs.php:686 /home/tim/code/KwaMoja/BOMs.php:747
 msgid "The SQL used to update the component was"
 msgstr "SQL koji se koristi za ažuriranje komponente bio je"
 
-#: /home/tim/code/KwaMoja/BOMs.php:686
+#: /home/tim/code/KwaMoja/BOMs.php:692
 msgid "The component"
 msgstr "Komponenta"
 
-#: /home/tim/code/KwaMoja/BOMs.php:686
+#: /home/tim/code/KwaMoja/BOMs.php:692
 msgid "is already recorded as a component of"
 msgstr "već je zabilježen kao sastavni dio"
 
-#: /home/tim/code/KwaMoja/BOMs.php:686
+#: /home/tim/code/KwaMoja/BOMs.php:692
 msgid "Whilst the quantity of the component required can be modified it is inappropriate for a component to appear more than once in a bill of material"
 msgstr "Iako se količina tražene komponente može mijenjati, neprimjereno je da se komponenta pojavljuje više puta u zbirci materijala"
 
-#: /home/tim/code/KwaMoja/BOMs.php:716
+#: /home/tim/code/KwaMoja/BOMs.php:722
 msgid "Could not insert the BOM component because"
 msgstr "Nije moguće umetnuti komponentu BOM jer"
 
-#: /home/tim/code/KwaMoja/BOMs.php:717
+#: /home/tim/code/KwaMoja/BOMs.php:723
 msgid "The SQL used to insert the component was"
 msgstr "SQL koji je upotrijebio za umetanje komponente bio je"
 
-#: /home/tim/code/KwaMoja/BOMs.php:722
+#: /home/tim/code/KwaMoja/BOMs.php:728
 msgid "A new component part"
 msgstr "Novi sastavni dio"
 
-#: /home/tim/code/KwaMoja/BOMs.php:722
+#: /home/tim/code/KwaMoja/BOMs.php:728
 msgid "has been added to the bill of material for part"
 msgstr "je dodan u materijal za dio"
 
-#: /home/tim/code/KwaMoja/BOMs.php:738
+#: /home/tim/code/KwaMoja/BOMs.php:746
 msgid "Could not update the BOM component because"
 msgstr "Ne može se ažurirati komponenta BOM jer"
 
-#: /home/tim/code/KwaMoja/BOMs.php:744 /home/tim/code/KwaMoja/BOMs.php:771
+#: /home/tim/code/KwaMoja/BOMs.php:752 /home/tim/code/KwaMoja/BOMs.php:779
 msgid "The component part"
 msgstr "Dio komponente"
 
-#: /home/tim/code/KwaMoja/BOMs.php:744
+#: /home/tim/code/KwaMoja/BOMs.php:752
 msgid "has been updated in the bill of material for part"
 msgstr "ažurirana je u bilješci za dio"
 
-#: /home/tim/code/KwaMoja/BOMs.php:760
+#: /home/tim/code/KwaMoja/BOMs.php:768
 msgid "Could not delete this BOM components because"
 msgstr "Nije moguće izbrisati ove komponente BOM jer"
 
-#: /home/tim/code/KwaMoja/BOMs.php:761
+#: /home/tim/code/KwaMoja/BOMs.php:769
 msgid "The SQL used to delete the BOM was"
 msgstr "SQL koji je korišten za brisanje BOM-a bio je"
 
-#: /home/tim/code/KwaMoja/BOMs.php:771
+#: /home/tim/code/KwaMoja/BOMs.php:779
 msgid "has been deleted from this BOM"
 msgstr "je izbrisan iz ovog BOM-a"
 
-#: /home/tim/code/KwaMoja/BOMs.php:803
+#: /home/tim/code/KwaMoja/BOMs.php:813
 #: /home/tim/code/KwaMoja/ConfirmDispatch_Invoice.php:1155
 #: /home/tim/code/KwaMoja/CounterReturns.php:1083
 #: /home/tim/code/KwaMoja/CounterSales.php:1495
 #: /home/tim/code/KwaMoja/Credit_Invoice.php:800
 #: /home/tim/code/KwaMoja/Credit_Invoice.php:830
 #: /home/tim/code/KwaMoja/SelectCreditItems.php:1437
-#: /home/tim/code/KwaMoja/Stocks.php:1336
-#: /home/tim/code/KwaMoja/Stocks.php:1338
+#: /home/tim/code/KwaMoja/Stocks.php:1342
+#: /home/tim/code/KwaMoja/Stocks.php:1344
 #: /home/tim/code/KwaMoja/api/api_debtortransactions.php:746
 #: /home/tim/code/KwaMoja/api/api_salesorders.php:913
 msgid "Assembly"
 msgstr "Skupština"
 
-#: /home/tim/code/KwaMoja/BOMs.php:806
+#: /home/tim/code/KwaMoja/BOMs.php:816
 #: /home/tim/code/KwaMoja/FixedAssetRegister.php:362
-#: /home/tim/code/KwaMoja/Stocks.php:1356
-#: /home/tim/code/KwaMoja/Stocks.php:1358
+#: /home/tim/code/KwaMoja/Stocks.php:1362
+#: /home/tim/code/KwaMoja/Stocks.php:1364
 msgid "Purchased"
 msgstr "kupljen"
 
-#: /home/tim/code/KwaMoja/BOMs.php:809 /home/tim/code/KwaMoja/Stocks.php:1346
-#: /home/tim/code/KwaMoja/Stocks.php:1348
+#: /home/tim/code/KwaMoja/BOMs.php:819 /home/tim/code/KwaMoja/Stocks.php:1352
+#: /home/tim/code/KwaMoja/Stocks.php:1354
 msgid "Manufactured"
 msgstr "Proizveden"
 
-#: /home/tim/code/KwaMoja/BOMs.php:812
+#: /home/tim/code/KwaMoja/BOMs.php:822
 msgid "Kit Set"
 msgstr "Komplet kompleta"
 
-#: /home/tim/code/KwaMoja/BOMs.php:815 /home/tim/code/KwaMoja/BOMs.php:914
-#: /home/tim/code/KwaMoja/Stocks.php:1351
-#: /home/tim/code/KwaMoja/Stocks.php:1353
+#: /home/tim/code/KwaMoja/BOMs.php:825 /home/tim/code/KwaMoja/BOMs.php:924
+#: /home/tim/code/KwaMoja/Stocks.php:1357
+#: /home/tim/code/KwaMoja/Stocks.php:1359
 msgid "Phantom"
 msgstr "Fantom"
 
-#: /home/tim/code/KwaMoja/BOMs.php:834
+#: /home/tim/code/KwaMoja/BOMs.php:844
 msgid "Manufactured parent items"
 msgstr "Proizvedene roditeljske stavke"
 
-#: /home/tim/code/KwaMoja/BOMs.php:856
+#: /home/tim/code/KwaMoja/BOMs.php:866
 msgid "Assembly parent items"
 msgstr "Glavne stavke skupštine"
 
-#: /home/tim/code/KwaMoja/BOMs.php:884
+#: /home/tim/code/KwaMoja/BOMs.php:894
 msgid "Kit sets"
 msgstr "Komplet setova"
 
-#: /home/tim/code/KwaMoja/BOMs.php:947
+#: /home/tim/code/KwaMoja/BOMs.php:957
 #: /home/tim/code/KwaMoja/InventoryQuantities.php:252
 #: /home/tim/code/KwaMoja/ReorderLevel.php:298
 msgid "Level"
 msgstr "nivo"
 
-#: /home/tim/code/KwaMoja/BOMs.php:948
+#: /home/tim/code/KwaMoja/BOMs.php:958
 #: /home/tim/code/KwaMoja/DefineWarehouse.php:271
 #: /home/tim/code/KwaMoja/DefineWarehouse.php:393
 #: /home/tim/code/KwaMoja/EDIMessageFormat.php:127
@@ -6468,7 +6468,7 @@ msgstr "nivo"
 msgid "Sequence"
 msgstr "Slijed"
 
-#: /home/tim/code/KwaMoja/BOMs.php:949
+#: /home/tim/code/KwaMoja/BOMs.php:959
 #: /home/tim/code/KwaMoja/FixedAssetCategories.php:265
 #: /home/tim/code/KwaMoja/InventoryPlanning.php:432
 #: /home/tim/code/KwaMoja/InventoryValuation.php:202
@@ -6479,7 +6479,7 @@ msgstr "Slijed"
 msgid "Category Description"
 msgstr "Opis kategorije"
 
-#: /home/tim/code/KwaMoja/BOMs.php:955
+#: /home/tim/code/KwaMoja/BOMs.php:965
 #: /home/tim/code/KwaMoja/ContractBOM.php:243
 #: /home/tim/code/KwaMoja/InternalStockRequest.php:448
 #: /home/tim/code/KwaMoja/PrintCredit.php:194
@@ -6494,67 +6494,67 @@ msgstr "Opis kategorije"
 msgid "UOM"
 msgstr "UOM"
 
-#: /home/tim/code/KwaMoja/BOMs.php:958
+#: /home/tim/code/KwaMoja/BOMs.php:968
 #: /home/tim/code/KwaMoja/WorkOrderIssue.php:836
 #: /home/tim/code/KwaMoja/WorkOrderStatus.php:136
 msgid "Auto Issue"
 msgstr "Auto izdanje"
 
-#: /home/tim/code/KwaMoja/BOMs.php:959
+#: /home/tim/code/KwaMoja/BOMs.php:969
 #: /home/tim/code/KwaMoja/InventoryValuation.php:202
 #: /home/tim/code/KwaMoja/StockQuantityByDate.php:133
 msgid "Qty On Hand"
 msgstr "Količina pri ruci"
 
-#: /home/tim/code/KwaMoja/BOMs.php:964
+#: /home/tim/code/KwaMoja/BOMs.php:974
 msgid "No materials found."
 msgstr "Nisu pronađeni materijali."
 
-#: /home/tim/code/KwaMoja/BOMs.php:987
+#: /home/tim/code/KwaMoja/BOMs.php:997
 msgid "Select new component for BOM"
 msgstr "Odaberite novu komponentu za BOM"
 
-#: /home/tim/code/KwaMoja/BOMs.php:996
+#: /home/tim/code/KwaMoja/BOMs.php:1006
 #: /home/tim/code/KwaMoja/CounterReturns.php:1682
 #: /home/tim/code/KwaMoja/CounterSales.php:2259
 #: /home/tim/code/KwaMoja/SelectOrderItems.php:2815
 msgid "Select a Stock Category"
 msgstr "Odaberite kategoriju stanja"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1012
+#: /home/tim/code/KwaMoja/BOMs.php:1022
 #: /home/tim/code/KwaMoja/SelectCreditItems.php:915
 msgid "Select the stock category to filter by, or choose All to select from all categories"
 msgstr "Odaberite kategoriju dionica po kojoj ćete filtrirati ili odaberite Sve za odabir iz svih kategorija"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1018
+#: /home/tim/code/KwaMoja/BOMs.php:1028
 msgid "Search for the description of the component item to add to the BOM"
 msgstr "Potražite opis sastavne stavke koju želite dodati BOM-u"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1024
+#: /home/tim/code/KwaMoja/BOMs.php:1034
 msgid "Search for the component item code to add tor the BOM"
 msgstr "Potražite kôd komponente stavke za dodavanje BOM-a"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1108
+#: /home/tim/code/KwaMoja/BOMs.php:1122
 msgid "to maintain the bill of material for using the options below"
 msgstr "da biste zadržali račun materijala za korištenje opcija u nastavku"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1112
+#: /home/tim/code/KwaMoja/BOMs.php:1126
 msgid "Select the parent item for the BOM"
 msgstr "Odaberite nadređeni predmet za BOM"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1116
+#: /home/tim/code/KwaMoja/BOMs.php:1130
 msgid "Search for the description of parent item for the BOM"
 msgstr "Potražite opis matičnog predmeta za BOM"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1122
+#: /home/tim/code/KwaMoja/BOMs.php:1136
 msgid "Search for the parent item code for the BOM"
 msgstr "Potražite nadređeni kod predmeta BOM"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1126
+#: /home/tim/code/KwaMoja/BOMs.php:1140
 msgid "Show all levels"
 msgstr "Prikaži sve razine"
 
-#: /home/tim/code/KwaMoja/BOMs.php:1137
+#: /home/tim/code/KwaMoja/BOMs.php:1151
 msgid "To show all levels of the BOM choose Yes otherwise choose No."
 msgstr "Za prikaz svih razina BOM odaberite Da, u suprotnom odaberite Ne."
 
@@ -6620,7 +6620,7 @@ msgstr "Bilance bankovnog računa"
 #: /home/tim/code/KwaMoja/DailyBankTransactions.php:51
 #: /home/tim/code/KwaMoja/MonthlyBankTransactions.php:33
 #: /home/tim/code/KwaMoja/PDFChequeListing.php:51
-#: /home/tim/code/KwaMoja/Payments.php:1014
+#: /home/tim/code/KwaMoja/Payments.php:1013
 #: /home/tim/code/KwaMoja/RegularPaymentsProcess.php:205
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:240
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:378
@@ -6630,7 +6630,7 @@ msgid "Bank Account"
 msgstr "Bankovni račun"
 
 #: /home/tim/code/KwaMoja/BankAccountBalances.php:19
-#: /home/tim/code/KwaMoja/Payments.php:1036
+#: /home/tim/code/KwaMoja/Payments.php:1035
 msgid "Balance in account currency"
 msgstr "Stanje u valuti računa"
 
@@ -6730,14 +6730,14 @@ msgstr "Još nije odabrano"
 #: /home/tim/code/KwaMoja/FreightCosts.php:78
 #: /home/tim/code/KwaMoja/GLAccountUsers.php:62
 #: /home/tim/code/KwaMoja/GLJournal.php:349
-#: /home/tim/code/KwaMoja/GLJournal.php:598
+#: /home/tim/code/KwaMoja/GLJournal.php:594
 #: /home/tim/code/KwaMoja/InternalStockCategoriesByRole.php:129
 #: /home/tim/code/KwaMoja/InternalStockCategoriesByRole.php:178
 #: /home/tim/code/KwaMoja/KCMCDischargeTypes.php:221
 #: /home/tim/code/KwaMoja/LocationUsers.php:134
 #: /home/tim/code/KwaMoja/LocationUsers.php:247
 #: /home/tim/code/KwaMoja/OffersReceived.php:112
-#: /home/tim/code/KwaMoja/Payments.php:1267
+#: /home/tim/code/KwaMoja/Payments.php:1266
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:189
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:404
 #: /home/tim/code/KwaMoja/PcAuthorizeCheque.php:333
@@ -6896,7 +6896,7 @@ msgid "The SQL used to retrieve the bank account details was"
 msgstr "SQL za preuzimanje podataka o bankovnom računu bio je"
 
 #: /home/tim/code/KwaMoja/BankAccounts.php:183
-#: /home/tim/code/KwaMoja/GLJournal.php:521
+#: /home/tim/code/KwaMoja/GLJournal.php:519
 #: /home/tim/code/KwaMoja/Locations.php:431
 #: /home/tim/code/KwaMoja/Locations.php:700
 msgid "GL Account Code"
@@ -6942,7 +6942,7 @@ msgstr "Format uvoza"
 #: /home/tim/code/KwaMoja/PO_AuthorisationLevels.php:242
 #: /home/tim/code/KwaMoja/PO_AuthoriseMyOrders.php:116
 #: /home/tim/code/KwaMoja/PO_Header.php:574
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:395
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:399
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:321
 #: /home/tim/code/KwaMoja/PcReportExpense.php:142
 #: /home/tim/code/KwaMoja/PcReportTab.php:155
@@ -7221,8 +7221,8 @@ msgstr "Pokažite transakcije kojima je datum veći ili jednak ovom"
 #: /home/tim/code/KwaMoja/PDFShipLabel.php:356
 #: /home/tim/code/KwaMoja/PDFWOPrint.php:528
 #: /home/tim/code/KwaMoja/PO_PDFPurchOrder.php:360
-#: /home/tim/code/KwaMoja/Payments.php:974
-#: /home/tim/code/KwaMoja/Payments.php:979
+#: /home/tim/code/KwaMoja/Payments.php:973
+#: /home/tim/code/KwaMoja/Payments.php:978
 #: /home/tim/code/KwaMoja/PcReportTab.php:104
 #: /home/tim/code/KwaMoja/PickingListsControlled.php:64
 #: /home/tim/code/KwaMoja/PricesBasedOnMarkUp.php:220
@@ -7371,7 +7371,7 @@ msgid "Payments to be matched"
 msgstr "Plaćanja koja se podudaraju"
 
 #: /home/tim/code/KwaMoja/BankMatching.php:270
-#: /home/tim/code/KwaMoja/Payments.php:1275
+#: /home/tim/code/KwaMoja/Payments.php:1274
 msgid "Cheque No"
 msgstr "Provjerite br"
 
@@ -7395,10 +7395,10 @@ msgstr "Ref"
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:279
 #: /home/tim/code/KwaMoja/KCMCInsuranceInvoice.php:395
 #: /home/tim/code/KwaMoja/PaymentAllocations.php:62
-#: /home/tim/code/KwaMoja/Payments.php:1230
-#: /home/tim/code/KwaMoja/Payments.php:1236
-#: /home/tim/code/KwaMoja/Payments.php:1276
-#: /home/tim/code/KwaMoja/Payments.php:1370
+#: /home/tim/code/KwaMoja/Payments.php:1229
+#: /home/tim/code/KwaMoja/Payments.php:1235
+#: /home/tim/code/KwaMoja/Payments.php:1275
+#: /home/tim/code/KwaMoja/Payments.php:1369
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:258
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:378
 #: /home/tim/code/KwaMoja/PcAuthorizeCheque.php:96
@@ -7450,7 +7450,7 @@ msgstr "Iznos"
 #: /home/tim/code/KwaMoja/BankReconciliation.php:288
 #: /home/tim/code/KwaMoja/PDFOrderStatus.php:356
 #: /home/tim/code/KwaMoja/PDFOrdersInvoiced.php:360
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:272
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:276
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:217
 #: /home/tim/code/KwaMoja/Shipt_Select.php:223
 #: /home/tim/code/KwaMoja/SuppCreditGRNs.php:254
@@ -7525,7 +7525,7 @@ msgstr "SQL nije mogao dohvatiti bankovne račune jer"
 #: /home/tim/code/KwaMoja/KCMCPharmacy.php:884
 #: /home/tim/code/KwaMoja/KCMCRadiology.php:654
 #: /home/tim/code/KwaMoja/MonthlyBankTransactions.php:29
-#: /home/tim/code/KwaMoja/Payments.php:1010
+#: /home/tim/code/KwaMoja/Payments.php:1009
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:236
 #: /home/tim/code/KwaMoja/SuppPaymentRun.php:318
 msgid "The SQL used to retrieve the bank accounts was"
@@ -7555,7 +7555,7 @@ msgstr "Morate najprije"
 #: /home/tim/code/KwaMoja/KCMCPharmacy.php:891
 #: /home/tim/code/KwaMoja/KCMCRadiology.php:661
 #: /home/tim/code/KwaMoja/MonthlyBankTransactions.php:40
-#: /home/tim/code/KwaMoja/Payments.php:1019
+#: /home/tim/code/KwaMoja/Payments.php:1018
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:246
 #: /home/tim/code/KwaMoja/SuppPaymentRun.php:331
 msgid "define the bank accounts"
@@ -7571,7 +7571,7 @@ msgstr "definirati bankovne račune"
 #: /home/tim/code/KwaMoja/KCMCPharmacy.php:891
 #: /home/tim/code/KwaMoja/KCMCRadiology.php:661
 #: /home/tim/code/KwaMoja/MonthlyBankTransactions.php:40
-#: /home/tim/code/KwaMoja/Payments.php:1019
+#: /home/tim/code/KwaMoja/Payments.php:1018
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:246
 #: /home/tim/code/KwaMoja/SuppPaymentRun.php:331
 msgid "and general ledger accounts to be affected"
@@ -7679,8 +7679,8 @@ msgstr "Ček"
 #: /home/tim/code/KwaMoja/PDFRemittanceAdvice.php:319
 #: /home/tim/code/KwaMoja/PaymentAllocations.php:59
 #: /home/tim/code/KwaMoja/PaymentAllocations.php:60
-#: /home/tim/code/KwaMoja/Payments.php:1162
-#: /home/tim/code/KwaMoja/Payments.php:1369
+#: /home/tim/code/KwaMoja/Payments.php:1161
+#: /home/tim/code/KwaMoja/Payments.php:1368
 #: /home/tim/code/KwaMoja/ProjectCosting.php:174
 #: /home/tim/code/KwaMoja/PurchasesReport.php:109
 #: /home/tim/code/KwaMoja/SalesReport.php:109
@@ -7745,9 +7745,9 @@ msgstr "Time će se stvoriti časopis glavne knjige kako biste otpisali razliku 
 #: /home/tim/code/KwaMoja/BankReconciliation.php:335
 #: /home/tim/code/KwaMoja/CounterReturns.php:732
 #: /home/tim/code/KwaMoja/CounterSales.php:822
-#: /home/tim/code/KwaMoja/Customers.php:731
+#: /home/tim/code/KwaMoja/Customers.php:730
 #: /home/tim/code/KwaMoja/SelectOrderItems.php:2643
-#: /home/tim/code/KwaMoja/Stocks.php:1639
+#: /home/tim/code/KwaMoja/Stocks.php:1645
 #: /home/tim/code/KwaMoja/WorkOrderCosting.php:604
 msgid "Are You Sure?"
 msgstr "Jesi li siguran?"
@@ -7821,7 +7821,7 @@ msgstr "Stock Kategorija"
 
 #: /home/tim/code/KwaMoja/COGSGLPostings.php:90
 #: /home/tim/code/KwaMoja/COGSGLPostings.php:182
-#: /home/tim/code/KwaMoja/Customers.php:512
+#: /home/tim/code/KwaMoja/Customers.php:518
 #: /home/tim/code/KwaMoja/DiscountMatrix.php:83
 #: /home/tim/code/KwaMoja/DiscountMatrix.php:119
 #: /home/tim/code/KwaMoja/PriceMatrix.php:201
@@ -7868,7 +7868,7 @@ msgid "Select the stock category to be used in this group. To cover all categori
 msgstr "Odaberite kategoriju dionica koja će se koristiti u ovoj grupi. Da biste pokrili sve kategorije, samo odaberite Bilo koji drugi"
 
 #: /home/tim/code/KwaMoja/COGSGLPostings.php:182
-#: /home/tim/code/KwaMoja/Customers.php:512
+#: /home/tim/code/KwaMoja/Customers.php:518
 #: /home/tim/code/KwaMoja/EDIProcessOrders.php:420
 #: /home/tim/code/KwaMoja/KCMCEditPatientDetails.php:210
 #: /home/tim/code/KwaMoja/KCMCRegister.php:533
@@ -7922,8 +7922,8 @@ msgstr "Izvodite u demonstracijskom načinu, tako da lozinku nije moguće promij
 
 #: /home/tim/code/KwaMoja/ChangePassword.php:36
 #: /home/tim/code/KwaMoja/ChangePassword.php:43
-#: /home/tim/code/KwaMoja/Customers.php:345
-#: /home/tim/code/KwaMoja/Customers.php:353
+#: /home/tim/code/KwaMoja/Customers.php:351
+#: /home/tim/code/KwaMoja/Customers.php:359
 #: /home/tim/code/KwaMoja/KCMCAddPatientNotes.php:135
 #: /home/tim/code/KwaMoja/MRPPlannedPurchaseOrders.php:12
 #: /home/tim/code/KwaMoja/MRPPlannedWorkOrders.php:12
@@ -8072,7 +8072,7 @@ msgstr "Izdani trošak"
 #: /home/tim/code/KwaMoja/PDFShipLabel.php:351
 #: /home/tim/code/KwaMoja/PDFWOPrint.php:270
 #: /home/tim/code/KwaMoja/PDFWOPrint.php:524
-#: /home/tim/code/KwaMoja/Timesheets.php:585
+#: /home/tim/code/KwaMoja/Timesheets.php:593
 #: /home/tim/code/KwaMoja/sql/updates/9.php:79
 msgid "Work Order"
 msgstr "Radni nalog"
@@ -8109,7 +8109,7 @@ msgstr "SQL nije vratio nijednu stavku jer"
 
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:188
 #: /home/tim/code/KwaMoja/InternalStockRequestInquiry.php:474
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:263
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:267
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:81
 #: /home/tim/code/KwaMoja/SelectCompletedOrder.php:114
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:170
@@ -8187,7 +8187,7 @@ msgstr "Da biste potražili radne naloge za određenu stavku, upotrijebite stavk
 
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:320
 #: /home/tim/code/KwaMoja/InternalStockCategoriesByRole.php:147
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:213
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:217
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:180
 #: /home/tim/code/KwaMoja/SalesCategories.php:541
 #: /home/tim/code/KwaMoja/SelectCompletedOrder.php:378
@@ -8230,7 +8230,7 @@ msgstr "Pretražite stavke odmah"
 
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:342
 #: /home/tim/code/KwaMoja/InternalStockRequestInquiry.php:222
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:244
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:248
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:207
 #: /home/tim/code/KwaMoja/SelectCompletedOrder.php:410
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:296
@@ -8263,7 +8263,7 @@ msgstr "SQL nije vraćen nijedan nalog za rad jer je"
 #: /home/tim/code/KwaMoja/SuppInvGRNs.php:224
 #: /home/tim/code/KwaMoja/SupplierTenderCreate.php:368
 #: /home/tim/code/KwaMoja/SupplierTenders.php:180
-#: /home/tim/code/KwaMoja/Timesheets.php:530
+#: /home/tim/code/KwaMoja/Timesheets.php:538
 #: /home/tim/code/KwaMoja/prlSelectPayroll.php:83
 msgid "Select"
 msgstr "Izaberi"
@@ -8336,7 +8336,7 @@ msgstr "izmijeniti"
 #: /home/tim/code/KwaMoja/PO_Header.php:824
 #: /home/tim/code/KwaMoja/PO_Header.php:830
 #: /home/tim/code/KwaMoja/PO_OrderDetails.php:155
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:400
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:404
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:327
 #: /home/tim/code/KwaMoja/SelectWorkOrder.php:369
 #: /home/tim/code/KwaMoja/SelectWorkOrder.php:400
@@ -8363,8 +8363,8 @@ msgstr "Izdanje za"
 #: /home/tim/code/KwaMoja/CollectiveWorkOrderCost.php:515
 #: /home/tim/code/KwaMoja/GoodsReceived.php:84
 #: /home/tim/code/KwaMoja/ImportBankTrans.php:40
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:402
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:428
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:406
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:432
 #: /home/tim/code/KwaMoja/SelectWorkOrder.php:371
 #: /home/tim/code/KwaMoja/SelectWorkOrder.php:402
 #: /home/tim/code/KwaMoja/StockLocTransferReceive.php:732
@@ -8919,7 +8919,7 @@ msgstr "Kad je transakcija inventara izvršena, treba li KwaMoja kreirati potreb
 #: /home/tim/code/KwaMoja/LocationUsers.php:180
 #: /home/tim/code/KwaMoja/MRPCalendar.php:309
 #: /home/tim/code/KwaMoja/PO_AuthoriseMyOrders.php:146
-#: /home/tim/code/KwaMoja/Payments.php:1177
+#: /home/tim/code/KwaMoja/Payments.php:1176
 #: /home/tim/code/KwaMoja/PcAuthorizeCheque.php:107
 #: /home/tim/code/KwaMoja/PcAuthorizeCheque.php:299
 #: /home/tim/code/KwaMoja/PcAuthorizeExpenses.php:160
@@ -8937,7 +8937,7 @@ msgstr "Kad je transakcija inventara izvršena, treba li KwaMoja kreirati potreb
 #: /home/tim/code/KwaMoja/ShopParameters.php:597
 #: /home/tim/code/KwaMoja/StockCostUpdate.php:236
 #: /home/tim/code/KwaMoja/StockReorderLevel.php:97
-#: /home/tim/code/KwaMoja/Stocks.php:1638
+#: /home/tim/code/KwaMoja/Stocks.php:1644
 #: /home/tim/code/KwaMoja/SystemParameters.php:1395
 #: /home/tim/code/KwaMoja/TaxAuthorityRates.php:83
 #: /home/tim/code/KwaMoja/UserGLAccounts.php:144
@@ -9091,8 +9091,8 @@ msgstr "Potvrdi slanje i fakturu"
 
 #: /home/tim/code/KwaMoja/ConfirmDispatch_Invoice.php:328
 #: /home/tim/code/KwaMoja/CustEDISetup.php:77
-#: /home/tim/code/KwaMoja/Customers.php:400
-#: /home/tim/code/KwaMoja/Customers.php:462
+#: /home/tim/code/KwaMoja/Customers.php:405
+#: /home/tim/code/KwaMoja/Customers.php:466
 #: /home/tim/code/KwaMoja/OrderDetails.php:88
 #: /home/tim/code/KwaMoja/PickingLists.php:293
 #: /home/tim/code/KwaMoja/SalesAnalRepts.php:29
@@ -9125,7 +9125,7 @@ msgstr "Kod kupca"
 #: /home/tim/code/KwaMoja/CustItem.php:385
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:303
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:1257
-#: /home/tim/code/KwaMoja/Customers.php:470
+#: /home/tim/code/KwaMoja/Customers.php:476
 #: /home/tim/code/KwaMoja/OrderDetails.php:90
 #: /home/tim/code/KwaMoja/POReport.php:480
 #: /home/tim/code/KwaMoja/POReport.php:1183
@@ -9365,7 +9365,7 @@ msgstr "Molimo Vas da koristite vezu u nastavku kako biste postavili brodarske t
 #: /home/tim/code/KwaMoja/Prices.php:348
 #: /home/tim/code/KwaMoja/RelatedItemsUpdate.php:194
 #: /home/tim/code/KwaMoja/SelectOrderItems.php:233
-#: /home/tim/code/KwaMoja/Timesheets.php:776
+#: /home/tim/code/KwaMoja/Timesheets.php:788
 #: /home/tim/code/KwaMoja/includes/InputSerialItemsExisting.php:95
 #: /home/tim/code/KwaMoja/includes/InputSerialItemsKeyed.php:150
 #: /home/tim/code/KwaMoja/includes/InputSerialItemsSequential.php:51
@@ -9866,11 +9866,11 @@ msgstr "SQL koji je upotrijebljen za ažuriranje zadanog grana grane bio je"
 #: /home/tim/code/KwaMoja/SupplierInvoice.php:1774
 #: /home/tim/code/KwaMoja/SupplierInvoice.php:1803
 #: /home/tim/code/KwaMoja/TaxAuthorities.php:137
-#: /home/tim/code/KwaMoja/Timesheets.php:407
-#: /home/tim/code/KwaMoja/Timesheets.php:439
-#: /home/tim/code/KwaMoja/Timesheets.php:461
-#: /home/tim/code/KwaMoja/Timesheets.php:468
-#: /home/tim/code/KwaMoja/Timesheets.php:478
+#: /home/tim/code/KwaMoja/Timesheets.php:411
+#: /home/tim/code/KwaMoja/Timesheets.php:443
+#: /home/tim/code/KwaMoja/Timesheets.php:465
+#: /home/tim/code/KwaMoja/Timesheets.php:472
+#: /home/tim/code/KwaMoja/Timesheets.php:482
 #: /home/tim/code/KwaMoja/WorkOrderCosting.php:403
 #: /home/tim/code/KwaMoja/WorkOrderCosting.php:423
 #: /home/tim/code/KwaMoja/WorkOrderCosting.php:442
@@ -10242,11 +10242,11 @@ msgstr "KRITIČNA GREŠKA"
 #: /home/tim/code/KwaMoja/SupplierInvoice.php:1774
 #: /home/tim/code/KwaMoja/SupplierInvoice.php:1803
 #: /home/tim/code/KwaMoja/TaxAuthorities.php:137
-#: /home/tim/code/KwaMoja/Timesheets.php:407
-#: /home/tim/code/KwaMoja/Timesheets.php:439
-#: /home/tim/code/KwaMoja/Timesheets.php:461
-#: /home/tim/code/KwaMoja/Timesheets.php:468
-#: /home/tim/code/KwaMoja/Timesheets.php:478
+#: /home/tim/code/KwaMoja/Timesheets.php:411
+#: /home/tim/code/KwaMoja/Timesheets.php:443
+#: /home/tim/code/KwaMoja/Timesheets.php:465
+#: /home/tim/code/KwaMoja/Timesheets.php:472
+#: /home/tim/code/KwaMoja/Timesheets.php:482
 #: /home/tim/code/KwaMoja/WorkOrderCosting.php:403
 #: /home/tim/code/KwaMoja/WorkOrderCosting.php:423
 #: /home/tim/code/KwaMoja/WorkOrderCosting.php:442
@@ -10410,7 +10410,7 @@ msgstr "Nije moguće preuzeti mbflag"
 #: /home/tim/code/KwaMoja/CounterSales.php:1406
 #: /home/tim/code/KwaMoja/FixedAssetItems.php:655
 #: /home/tim/code/KwaMoja/SalesAnalReptCols.php:290
-#: /home/tim/code/KwaMoja/Stocks.php:1643
+#: /home/tim/code/KwaMoja/Stocks.php:1649
 #: /home/tim/code/KwaMoja/prlCostCenter.php:169
 #: /home/tim/code/KwaMoja/prlDepartments.php:178
 #: /home/tim/code/KwaMoja/prlEditPayroll.php:323
@@ -10427,7 +10427,7 @@ msgstr "Nije moguće preuzeti mbflag"
 #: /home/tim/code/KwaMoja/prlnssf.php:492
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:18
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:64
-#: /home/tim/code/KwaMoja/includes/header.php:36
+#: /home/tim/code/KwaMoja/includes/header.php:37
 msgid "WARNING"
 msgstr "UPOZORENJE"
 
@@ -11369,9 +11369,9 @@ msgstr "Slika"
 #: /home/tim/code/KwaMoja/SelectOrderItems.php:2914
 #: /home/tim/code/KwaMoja/SelectProduct.php:533
 #: /home/tim/code/KwaMoja/SelectProduct.php:840
-#: /home/tim/code/KwaMoja/Stocks.php:1176
-#: /home/tim/code/KwaMoja/Stocks.php:1193
-#: /home/tim/code/KwaMoja/Stocks.php:1217
+#: /home/tim/code/KwaMoja/Stocks.php:1182
+#: /home/tim/code/KwaMoja/Stocks.php:1199
+#: /home/tim/code/KwaMoja/Stocks.php:1223
 #: /home/tim/code/KwaMoja/SupplierTenderCreate.php:769
 #: /home/tim/code/KwaMoja/SupplierTenders.php:692
 #: /home/tim/code/KwaMoja/WorkOrderEntry.php:647
@@ -11530,9 +11530,9 @@ msgstr "Ostali troškovi proračuna"
 #: /home/tim/code/KwaMoja/OffersReceived.php:104
 #: /home/tim/code/KwaMoja/OutstandingGRNs.php:73
 #: /home/tim/code/KwaMoja/PO_AuthoriseMyOrders.php:55
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:391
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:395
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:320
-#: /home/tim/code/KwaMoja/Payments.php:1366
+#: /home/tim/code/KwaMoja/Payments.php:1365
 #: /home/tim/code/KwaMoja/ProjectCosting.php:173
 #: /home/tim/code/KwaMoja/PurchData.php:287
 #: /home/tim/code/KwaMoja/ReprintGRN.php:84
@@ -11671,8 +11671,8 @@ msgstr "Nije moguće ažurirati zapis stavke radne narudžbe s ukupnom količino
 
 #: /home/tim/code/KwaMoja/ContractCosting.php:418
 #: /home/tim/code/KwaMoja/ProjectCosting.php:418
-#: /home/tim/code/KwaMoja/Timesheets.php:469
-#: /home/tim/code/KwaMoja/Timesheets.php:478
+#: /home/tim/code/KwaMoja/Timesheets.php:473
+#: /home/tim/code/KwaMoja/Timesheets.php:482
 #: /home/tim/code/KwaMoja/WorkOrderIssue.php:368
 #: /home/tim/code/KwaMoja/WorkOrderIssue.php:583
 #: /home/tim/code/KwaMoja/WorkOrderReceive.php:748
@@ -12246,7 +12246,7 @@ msgstr "Ugovor: odaberite kupca"
 #: /home/tim/code/KwaMoja/KCMCRequestRadiologyTest.php:285
 #: /home/tim/code/KwaMoja/KCMCSelectPatient.php:119
 #: /home/tim/code/KwaMoja/MRPReport.php:539
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:78
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:80
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:90
 #: /home/tim/code/KwaMoja/PurchData.php:375
 #: /home/tim/code/KwaMoja/SearchCustomers.php:50
@@ -12282,7 +12282,7 @@ msgid "Part of the Branch Phone Number"
 msgstr "Dio telefonskog broja podružnice"
 
 #: /home/tim/code/KwaMoja/Contracts.php:786
-#: /home/tim/code/KwaMoja/Customers.php:726
+#: /home/tim/code/KwaMoja/Customers.php:725
 #: /home/tim/code/KwaMoja/Donors.php:280
 #: /home/tim/code/KwaMoja/GLCashFlowsSetup.php:50
 #: /home/tim/code/KwaMoja/GLCashFlowsSetup.php:230
@@ -12310,7 +12310,7 @@ msgstr "Reset"
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:1096
 #: /home/tim/code/KwaMoja/CustomerTransInquiry.php:108
 #: /home/tim/code/KwaMoja/Customers.php:18
-#: /home/tim/code/KwaMoja/Customers.php:268
+#: /home/tim/code/KwaMoja/Customers.php:270
 #: /home/tim/code/KwaMoja/FTP_RadioBeacon.php:47
 #: /home/tim/code/KwaMoja/KCMCInsuranceCompanyDetails.php:12
 #: /home/tim/code/KwaMoja/KCMCLaboratoryReport.php:58
@@ -12442,7 +12442,7 @@ msgstr "Ugovor zaglavlja"
 #: /home/tim/code/KwaMoja/SelectProduct.php:114
 #: /home/tim/code/KwaMoja/SpecialOrder.php:710
 #: /home/tim/code/KwaMoja/StockDispatch.php:481
-#: /home/tim/code/KwaMoja/Stocks.php:1224
+#: /home/tim/code/KwaMoja/Stocks.php:1230
 #: /home/tim/code/KwaMoja/SuppPriceList.php:203
 #: /home/tim/code/KwaMoja/SuppPriceList.php:267
 #: /home/tim/code/KwaMoja/SuppPriceList.php:323
@@ -12456,7 +12456,7 @@ msgstr "Kategorija"
 #: /home/tim/code/KwaMoja/KCMCSyncCare2xItems.php:26
 #: /home/tim/code/KwaMoja/PricesBasedOnMarkUp.php:102
 #: /home/tim/code/KwaMoja/SpecialOrder.php:714
-#: /home/tim/code/KwaMoja/Stocks.php:1228
+#: /home/tim/code/KwaMoja/Stocks.php:1234
 msgid "The stock categories could not be retrieved because"
 msgstr "Kategorije zaliha nije moguće dohvatiti jer"
 
@@ -12465,7 +12465,7 @@ msgstr "Kategorije zaliha nije moguće dohvatiti jer"
 #: /home/tim/code/KwaMoja/KCMCSyncCare2xItems.php:27
 #: /home/tim/code/KwaMoja/PricesBasedOnMarkUp.php:103
 #: /home/tim/code/KwaMoja/SpecialOrder.php:715
-#: /home/tim/code/KwaMoja/Stocks.php:1229
+#: /home/tim/code/KwaMoja/Stocks.php:1235
 msgid "The SQL used to retrieve stock categories and failed was"
 msgstr "SQL je koristio za preuzimanje kategorija zaliha i nije uspio"
 
@@ -12641,7 +12641,7 @@ msgstr "Napravite ponudu"
 msgid "Cancel and Delete Contract"
 msgstr "Otkažite i izbrišite ugovor"
 
-#: /home/tim/code/KwaMoja/CopyBOM.php:10 /home/tim/code/KwaMoja/index.php:27
+#: /home/tim/code/KwaMoja/CopyBOM.php:10 /home/tim/code/KwaMoja/index.php:29
 #: /home/tim/code/KwaMoja/includes/header_main.php:26
 msgid "Copy a BOM to New Item Code"
 msgstr "Kopirajte BOM u kôd nove stavke"
@@ -12894,7 +12894,7 @@ msgstr "Neto"
 #: /home/tim/code/KwaMoja/GLAccountInquiry.php:207
 #: /home/tim/code/KwaMoja/GLAccountReport.php:352
 #: /home/tim/code/KwaMoja/GLJournal.php:208
-#: /home/tim/code/KwaMoja/GLJournal.php:610
+#: /home/tim/code/KwaMoja/GLJournal.php:606
 #: /home/tim/code/KwaMoja/GLJournalInquiry.php:95
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:203
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:287
@@ -12904,8 +12904,8 @@ msgstr "Neto"
 #: /home/tim/code/KwaMoja/InternalStockRequestFulfill.php:312
 #: /home/tim/code/KwaMoja/OrderDetails.php:200
 #: /home/tim/code/KwaMoja/PDFOrdersInvoiced.php:405
-#: /home/tim/code/KwaMoja/Payments.php:1171
-#: /home/tim/code/KwaMoja/Payments.php:1278
+#: /home/tim/code/KwaMoja/Payments.php:1170
+#: /home/tim/code/KwaMoja/Payments.php:1277
 #: /home/tim/code/KwaMoja/SelectOrderItems.php:2646
 #: /home/tim/code/KwaMoja/SellThroughSupport.php:259
 #: /home/tim/code/KwaMoja/SellThroughSupport.php:426
@@ -13596,7 +13596,7 @@ msgstr "za"
 #: /home/tim/code/KwaMoja/POReport.php:1427
 #: /home/tim/code/KwaMoja/PO_AuthoriseMyOrders.php:54
 #: /home/tim/code/KwaMoja/PO_OrderDetails.php:25
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:81
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:83
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:47
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:93
 #: /home/tim/code/KwaMoja/SalesInquiry.php:626
@@ -13913,9 +13913,9 @@ msgstr "fakturirana"
 #: /home/tim/code/KwaMoja/GLAccountInquiry.php:210
 #: /home/tim/code/KwaMoja/GLAccountReport.php:351
 #: /home/tim/code/KwaMoja/GLJournal.php:207
-#: /home/tim/code/KwaMoja/GLJournal.php:579
-#: /home/tim/code/KwaMoja/GLJournal.php:609
-#: /home/tim/code/KwaMoja/GLJournal.php:664
+#: /home/tim/code/KwaMoja/GLJournal.php:577
+#: /home/tim/code/KwaMoja/GLJournal.php:605
+#: /home/tim/code/KwaMoja/GLJournal.php:660
 #: /home/tim/code/KwaMoja/SalesCommissionReports.php:80
 #: /home/tim/code/KwaMoja/SalesCommissionStatements.php:80
 #: /home/tim/code/KwaMoja/SuppCreditGRNs.php:257
@@ -14254,7 +14254,7 @@ msgstr "Zapis definicije valute izbrisan je"
 #: /home/tim/code/KwaMoja/Currencies.php:299
 #: /home/tim/code/KwaMoja/Currencies.php:455
 #: /home/tim/code/KwaMoja/CustomerBranches.php:721
-#: /home/tim/code/KwaMoja/Customers.php:494
+#: /home/tim/code/KwaMoja/Customers.php:500
 #: /home/tim/code/KwaMoja/Donors.php:223
 #: /home/tim/code/KwaMoja/FreightCosts.php:235
 #: /home/tim/code/KwaMoja/KCMCInsuranceCompanyDetails.php:326
@@ -14920,8 +14920,8 @@ msgstr "Prijava korisnika"
 #: /home/tim/code/KwaMoja/SuppLoginSetup.php:112
 #: /home/tim/code/KwaMoja/WWW_Users.php:526
 #: /home/tim/code/KwaMoja/WWW_Users.php:540
-#: /home/tim/code/KwaMoja/includes/Login.php:94
-#: /home/tim/code/KwaMoja/includes/Login.php:96
+#: /home/tim/code/KwaMoja/includes/Login.php:100
+#: /home/tim/code/KwaMoja/includes/Login.php:101
 #: /home/tim/code/KwaMoja/install/Page3.php:37
 msgid "Password"
 msgstr "Lozinka"
@@ -15100,7 +15100,7 @@ msgstr "Obavijest o kreditu"
 
 #: /home/tim/code/KwaMoja/CustWhereAlloc.php:53
 #: /home/tim/code/KwaMoja/PDFOrdersInvoiced.php:401
-#: /home/tim/code/KwaMoja/Payments.php:1368
+#: /home/tim/code/KwaMoja/Payments.php:1367
 #: /home/tim/code/KwaMoja/SalesInquiry.php:635
 #: /home/tim/code/KwaMoja/SalesInquiry.php:641
 #: /home/tim/code/KwaMoja/SalesInquiry.php:841
@@ -15201,9 +15201,9 @@ msgstr "Nije uspjelo dohvaćanje podataka o naplati"
 #: /home/tim/code/KwaMoja/GLAccountUsers.php:115
 #: /home/tim/code/KwaMoja/GLAccountUsers.php:126
 #: /home/tim/code/KwaMoja/GLJournal.php:205
-#: /home/tim/code/KwaMoja/GLJournal.php:607
+#: /home/tim/code/KwaMoja/GLJournal.php:603
 #: /home/tim/code/KwaMoja/GLTransInquiry.php:42
-#: /home/tim/code/KwaMoja/Payments.php:1277
+#: /home/tim/code/KwaMoja/Payments.php:1276
 #: /home/tim/code/KwaMoja/RegularPaymentsProcess.php:206
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:379
 #: /home/tim/code/KwaMoja/SalesPeople.php:198
@@ -15395,7 +15395,7 @@ msgstr "dodijeljeni"
 #: /home/tim/code/KwaMoja/DailyBankTransactions.php:169
 #: /home/tim/code/KwaMoja/DailyBankTransactions.php:172
 #: /home/tim/code/KwaMoja/GLAccountInquiry.php:211
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:393
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:397
 #: /home/tim/code/KwaMoja/SupplierInquiry.php:205
 #: /home/tim/code/KwaMoja/prlALD.php:146
 #: /home/tim/code/KwaMoja/prlAuthoriseLoans.php:73
@@ -15522,8 +15522,8 @@ msgstr "Ukupni saldo"
 #: /home/tim/code/KwaMoja/PrintCustStatements.php:436
 #: /home/tim/code/KwaMoja/SalesPeople.php:195
 #: /home/tim/code/KwaMoja/Shipments.php:421
-#: /home/tim/code/KwaMoja/Stocks.php:1374
-#: /home/tim/code/KwaMoja/Stocks.php:1376
+#: /home/tim/code/KwaMoja/Stocks.php:1380
+#: /home/tim/code/KwaMoja/Stocks.php:1382
 #: /home/tim/code/KwaMoja/SupplierInquiry.php:138
 #: /home/tim/code/KwaMoja/WhereUsedInquiry.php:99
 #: /home/tim/code/KwaMoja/Z_UpdateSystypes.php:31
@@ -15832,7 +15832,7 @@ msgstr "dugovanja"
 
 #: /home/tim/code/KwaMoja/CustomerBalancesMovement.php:196
 #: /home/tim/code/KwaMoja/CustomerBalancesMovement.php:203
-#: /home/tim/code/KwaMoja/Timesheets.php:679
+#: /home/tim/code/KwaMoja/Timesheets.php:691
 msgid "TOTALS"
 msgstr "UKUPNO"
 
@@ -16234,8 +16234,8 @@ msgid "Use this branch as default for cash sales"
 msgstr "Koristite ovu granu kao zadanu za gotovinsku prodaju"
 
 #: /home/tim/code/KwaMoja/CustomerBranches.php:882
-#: /home/tim/code/KwaMoja/Customers.php:691
-#: /home/tim/code/KwaMoja/Customers.php:699
+#: /home/tim/code/KwaMoja/Customers.php:690
+#: /home/tim/code/KwaMoja/Customers.php:698
 #: /home/tim/code/KwaMoja/KCMCInpatientAdmission.php:242
 #: /home/tim/code/KwaMoja/KCMCOutpatientAdmission.php:244
 #: /home/tim/code/KwaMoja/KCMCRequestBacteriologyTest.php:413
@@ -16448,7 +16448,7 @@ msgstr "Datum transakcije"
 #: /home/tim/code/KwaMoja/InventoryValuation.php:202
 #: /home/tim/code/KwaMoja/KCMCMaintainBacteriologyTests.php:173
 #: /home/tim/code/KwaMoja/KCMCMaintainRadiologyTests.php:173
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:393
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:397
 #: /home/tim/code/KwaMoja/SupplierTenderCreate.php:449
 #: /home/tim/code/KwaMoja/SupplierTenders.php:304
 #: /home/tim/code/KwaMoja/WOCanBeProducedNow.php:42
@@ -16722,7 +16722,7 @@ msgstr "izmijenite kriterije pretraživanja i pokušajte ponovo"
 
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:747
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:775
-#: /home/tim/code/KwaMoja/Customers.php:429
+#: /home/tim/code/KwaMoja/Customers.php:434
 msgid "The customer details could not be retrieved because"
 msgstr "Pojedinosti korisnika nije moguće dohvatiti jer"
 
@@ -16735,7 +16735,7 @@ msgstr "Pojedinosti korisnika nije moguće dohvatiti jer"
 #: /home/tim/code/KwaMoja/KCMCPharmacy.php:883
 #: /home/tim/code/KwaMoja/KCMCRadiology.php:653
 #: /home/tim/code/KwaMoja/MonthlyBankTransactions.php:28
-#: /home/tim/code/KwaMoja/Payments.php:1009
+#: /home/tim/code/KwaMoja/Payments.php:1008
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:235
 msgid "The bank accounts could not be retrieved because"
 msgstr "Bankovne račune nije moguće preuzeti jer"
@@ -16797,12 +16797,12 @@ msgid "The exchange rate between the currency of the bank account currency and t
 msgstr "Tečaj između valute valute bankovnog računa i valute računa"
 
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:944
-#: /home/tim/code/KwaMoja/Payments.php:1119
+#: /home/tim/code/KwaMoja/Payments.php:1118
 msgid "Functional Exchange Rate"
 msgstr "Funkcionalni tečaj"
 
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:946
-#: /home/tim/code/KwaMoja/Payments.php:1121
+#: /home/tim/code/KwaMoja/Payments.php:1120
 msgid "The exchange rate between the currency of the business (the functional currency) and the currency of the bank account"
 msgstr "Tečaj između valute poslovanja (funkcionalna valuta) i valute bankovnog računa"
 
@@ -16815,12 +16815,12 @@ msgid "The payemnt method for this batch, cheque, direct debit, BACS, etc"
 msgstr "Način plaćanja za ovu seriju, ček, izravno terećenje, BACS, itd"
 
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:977
-#: /home/tim/code/KwaMoja/Payments.php:1164
+#: /home/tim/code/KwaMoja/Payments.php:1163
 msgid "Reference on Bank Transactions Inquiry"
 msgstr "Upitnik o obavijesti o bankovnim transakcijama"
 
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:990
-#: /home/tim/code/KwaMoja/Payments.php:1173
+#: /home/tim/code/KwaMoja/Payments.php:1172
 msgid "Narrative on General Ledger Account Inquiry"
 msgstr "Narativnost na upit o računu glavne knjige"
 
@@ -16834,7 +16834,7 @@ msgstr "Uključeno u"
 
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:1019
 #: /home/tim/code/KwaMoja/PO_Items.php:348
-#: /home/tim/code/KwaMoja/Payments.php:995
+#: /home/tim/code/KwaMoja/Payments.php:994
 #: /home/tim/code/KwaMoja/SelectSalesOrder.php:259
 #: /home/tim/code/KwaMoja/SelectSalesOrder.php:418
 #: /home/tim/code/KwaMoja/SpecialOrder.php:462
@@ -16866,7 +16866,7 @@ msgstr "primljen"
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:204
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:292
 #: /home/tim/code/KwaMoja/InternalStockRequestFulfill.php:351
-#: /home/tim/code/KwaMoja/Payments.php:1279
+#: /home/tim/code/KwaMoja/Payments.php:1278
 #: /home/tim/code/KwaMoja/PcAuthorizeExpenses.php:115
 #: /home/tim/code/KwaMoja/PcClaimExpensesFromTab.php:409
 #: /home/tim/code/KwaMoja/PcClaimExpensesFromTab.php:618
@@ -16882,8 +16882,8 @@ msgstr "Označiti"
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:1208
 #: /home/tim/code/KwaMoja/DefineWarehouse.php:380
 #: /home/tim/code/KwaMoja/GLJournal.php:221
-#: /home/tim/code/KwaMoja/GLJournal.php:542
-#: /home/tim/code/KwaMoja/GLJournal.php:629
+#: /home/tim/code/KwaMoja/GLJournal.php:540
+#: /home/tim/code/KwaMoja/GLJournal.php:625
 #: /home/tim/code/KwaMoja/GLTagProfit_Loss.php:123
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:301
 #: /home/tim/code/KwaMoja/MRPPlannedPurchaseOrders.php:349
@@ -16952,7 +16952,7 @@ msgid "The amount of the receipt in"
 msgstr "Iznos primitka u"
 
 #: /home/tim/code/KwaMoja/CustomerReceipt.php:1177
-#: /home/tim/code/KwaMoja/Payments.php:1450
+#: /home/tim/code/KwaMoja/Payments.php:1449
 msgid "Amount of Discount"
 msgstr "Iznos popusta"
 
@@ -17481,16 +17481,16 @@ msgstr "Korisniku nije moguće izbrisati jer su ugovori stvoreni koji se odnose 
 msgid "contracts referring to this customer"
 msgstr "ugovori koji se odnose na tog kupca"
 
-#: /home/tim/code/KwaMoja/Customers.php:268
+#: /home/tim/code/KwaMoja/Customers.php:270
 msgid "has been deleted - together with all the associated branches and contacts"
 msgstr "je izbrisan - zajedno sa svim povezanim granama i kontaktima"
 
-#: /home/tim/code/KwaMoja/Customers.php:345
+#: /home/tim/code/KwaMoja/Customers.php:351
 msgid "In order to create a new customer you must first set up at least one sales type/price list"
 msgstr "Da biste stvorili novog kupca, najprije morate postaviti najmanje jedan tip prodaje / cjenik"
 
-#: /home/tim/code/KwaMoja/Customers.php:345
-#: /home/tim/code/KwaMoja/Customers.php:353
+#: /home/tim/code/KwaMoja/Customers.php:351
+#: /home/tim/code/KwaMoja/Customers.php:359
 #: /home/tim/code/KwaMoja/KCMCAddPatientNotes.php:135
 #: /home/tim/code/KwaMoja/includes/ConnectDB_mariadb.php:31
 #: /home/tim/code/KwaMoja/includes/ConnectDB_mysql.php:30
@@ -17498,67 +17498,67 @@ msgstr "Da biste stvorili novog kupca, najprije morate postaviti najmanje jedan 
 msgid "Click"
 msgstr "Klik"
 
-#: /home/tim/code/KwaMoja/Customers.php:345
+#: /home/tim/code/KwaMoja/Customers.php:351
 msgid "to set up your price lists"
 msgstr "da biste postavili svoje cjenike"
 
-#: /home/tim/code/KwaMoja/Customers.php:353
+#: /home/tim/code/KwaMoja/Customers.php:359
 msgid "In order to create a new customer you must first set up at least one customer type"
 msgstr "Da biste stvorili novog kupca, najprije morate postaviti barem jednu vrstu kupca"
 
-#: /home/tim/code/KwaMoja/Customers.php:353
+#: /home/tim/code/KwaMoja/Customers.php:359
 msgid "to set up your customer types"
 msgstr "da biste postavili vrste kupaca"
 
-#: /home/tim/code/KwaMoja/Customers.php:357
+#: /home/tim/code/KwaMoja/Customers.php:363
 #: /home/tim/code/KwaMoja/InitialScripts.php:115
 msgid "Click here to continue"
 msgstr "Kliknite ovdje za nastavak"
 
-#: /home/tim/code/KwaMoja/Customers.php:393
+#: /home/tim/code/KwaMoja/Customers.php:399
 msgid "Insert new Customer"
 msgstr "Umetnite novog kupca"
 
-#: /home/tim/code/KwaMoja/Customers.php:457
+#: /home/tim/code/KwaMoja/Customers.php:462
 msgid "Edit Customer Details"
 msgstr "Uređivanje podataka o kupcu"
 
-#: /home/tim/code/KwaMoja/Customers.php:474
+#: /home/tim/code/KwaMoja/Customers.php:480
 #: /home/tim/code/KwaMoja/Donors.php:203
 #: /home/tim/code/KwaMoja/Suppliers.php:505
 msgid "Address Line 1 (Street)"
 msgstr "Adresa 1 (ulica)"
 
-#: /home/tim/code/KwaMoja/Customers.php:478
+#: /home/tim/code/KwaMoja/Customers.php:484
 #: /home/tim/code/KwaMoja/Donors.php:207
 #: /home/tim/code/KwaMoja/Suppliers.php:510
 msgid "Address Line 2 (Street)"
 msgstr "2. redak adrese (ulica)"
 
-#: /home/tim/code/KwaMoja/Customers.php:482
+#: /home/tim/code/KwaMoja/Customers.php:488
 #: /home/tim/code/KwaMoja/Donors.php:211
 #: /home/tim/code/KwaMoja/Suppliers.php:515
 msgid "Address Line 3 (Suburb/City)"
 msgstr "Adresna linija 3 (predgrađe / grad)"
 
-#: /home/tim/code/KwaMoja/Customers.php:486
+#: /home/tim/code/KwaMoja/Customers.php:492
 #: /home/tim/code/KwaMoja/Donors.php:215
 #: /home/tim/code/KwaMoja/Suppliers.php:520
 msgid "Address Line 4 (State/Province)"
 msgstr "Adresna linija 4 (država / provincija)"
 
-#: /home/tim/code/KwaMoja/Customers.php:490
+#: /home/tim/code/KwaMoja/Customers.php:496
 #: /home/tim/code/KwaMoja/Donors.php:219
 #: /home/tim/code/KwaMoja/Suppliers.php:525
 msgid "Address Line 5 (Postal Code)"
 msgstr "Adresna linija 5 (poštanski broj)"
 
-#: /home/tim/code/KwaMoja/Customers.php:526
+#: /home/tim/code/KwaMoja/Customers.php:532
 #: /home/tim/code/KwaMoja/SelectCustomer.php:752
 msgid "Customer Type"
 msgstr "Vrsta kupca"
 
-#: /home/tim/code/KwaMoja/Customers.php:541
+#: /home/tim/code/KwaMoja/Customers.php:547
 msgid "Customer Since"
 msgstr "Kupac od"
 
@@ -17621,27 +17621,27 @@ msgstr "Adresa HO"
 msgid "Address to Branch"
 msgstr "Adresa podružnice"
 
-#: /home/tim/code/KwaMoja/Customers.php:672
+#: /home/tim/code/KwaMoja/Customers.php:671
 msgid "Contact Deleted"
 msgstr "Kontakt uklonjen"
 
-#: /home/tim/code/KwaMoja/Customers.php:703
+#: /home/tim/code/KwaMoja/Customers.php:702
 msgid "Add Contact"
 msgstr "Dodaj kontakt"
 
-#: /home/tim/code/KwaMoja/Customers.php:715
+#: /home/tim/code/KwaMoja/Customers.php:714
 msgid "Are you sure you wish to delete this customer contact?"
 msgstr "Jeste li sigurni da želite izbrisati ovaj kontakt s kupcima?"
 
-#: /home/tim/code/KwaMoja/Customers.php:725
+#: /home/tim/code/KwaMoja/Customers.php:724
 msgid "Add New Customer"
 msgstr "Dodaj novi klijent"
 
-#: /home/tim/code/KwaMoja/Customers.php:730
+#: /home/tim/code/KwaMoja/Customers.php:729
 msgid "Update Customer"
 msgstr "Ažuriranje kupca"
 
-#: /home/tim/code/KwaMoja/Customers.php:731
+#: /home/tim/code/KwaMoja/Customers.php:730
 msgid "Delete Customer"
 msgstr "Izbriši korisnika"
 
@@ -17660,7 +17660,7 @@ msgstr "Upit o bankovnim transakcijama"
 #: /home/tim/code/KwaMoja/KCMCPharmacy.php:891
 #: /home/tim/code/KwaMoja/KCMCRadiology.php:661
 #: /home/tim/code/KwaMoja/MonthlyBankTransactions.php:40
-#: /home/tim/code/KwaMoja/Payments.php:1019
+#: /home/tim/code/KwaMoja/Payments.php:1018
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:246
 #: /home/tim/code/KwaMoja/SuppPaymentRun.php:331
 msgid "Bank Accounts have not yet been defined. You must first"
@@ -17908,11 +17908,11 @@ msgstr "Prosječna dnevna prodaja"
 msgid "Dashboard"
 msgstr "kontrolna ploča"
 
-#: /home/tim/code/KwaMoja/Dashboard.php:44 /home/tim/code/KwaMoja/index.php:134
+#: /home/tim/code/KwaMoja/Dashboard.php:44 /home/tim/code/KwaMoja/index.php:140
 msgid "A maximum of 6 reports is allowd on each users dashboard"
 msgstr "Na nadzornoj ploči svakog korisnika dopušteno je najviše 6 izvještaja"
 
-#: /home/tim/code/KwaMoja/Dashboard.php:77 /home/tim/code/KwaMoja/index.php:208
+#: /home/tim/code/KwaMoja/Dashboard.php:77 /home/tim/code/KwaMoja/index.php:216
 msgid "Add reports to your dashboard"
 msgstr "Dodajte izvješća na nadzornu ploču"
 
@@ -18501,7 +18501,7 @@ msgstr "Ažuriraj stavke"
 #: /home/tim/code/KwaMoja/DiscountCategories.php:241
 #: /home/tim/code/KwaMoja/DiscountMatrix.php:84
 #: /home/tim/code/KwaMoja/StockDispatch.php:237
-#: /home/tim/code/KwaMoja/Stocks.php:1476
+#: /home/tim/code/KwaMoja/Stocks.php:1482
 #: /home/tim/code/KwaMoja/includes/OcKwaMojaToOpenCartSync.php:553
 msgid "Discount Category"
 msgstr "Kategorija popusta"
@@ -18767,7 +18767,7 @@ msgstr "Do sada nije bilo pojava"
 #: /home/tim/code/KwaMoja/EDIProcessOrders.php:125
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:10
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:56
-#: /home/tim/code/KwaMoja/includes/header.php:28
+#: /home/tim/code/KwaMoja/includes/header.php:29
 msgid "ERROR"
 msgstr "ERROR"
 
@@ -19522,7 +19522,7 @@ msgstr "Cust Order"
 #: /home/tim/code/KwaMoja/POReport.php:1216
 #: /home/tim/code/KwaMoja/POReport.php:1232
 #: /home/tim/code/KwaMoja/POReport.php:1339
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:388
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:392
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:323
 #: /home/tim/code/KwaMoja/PrintCredit.php:179
 #: /home/tim/code/KwaMoja/PrintCustTrans.php:918
@@ -19565,7 +19565,7 @@ msgid "Delivery To"
 msgstr "Dostava za"
 
 #: /home/tim/code/KwaMoja/FTP_RadioBeacon.php:53
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:398
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:402
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:326
 #: /home/tim/code/KwaMoja/SelectCompletedOrder.php:479
 #: /home/tim/code/KwaMoja/SelectRecurringSalesOrder.php:107
@@ -20305,31 +20305,31 @@ msgid "Asset Description"
 msgstr "Opis imovine"
 
 #: /home/tim/code/KwaMoja/FixedAssetItems.php:461
-#: /home/tim/code/KwaMoja/Stocks.php:1134
+#: /home/tim/code/KwaMoja/Stocks.php:1140
 msgid "short"
 msgstr "kratak"
 
 #: /home/tim/code/KwaMoja/FixedAssetItems.php:471
-#: /home/tim/code/KwaMoja/Stocks.php:1144
+#: /home/tim/code/KwaMoja/Stocks.php:1150
 msgid "long"
 msgstr "dugo"
 
 #: /home/tim/code/KwaMoja/FixedAssetItems.php:477
 #: /home/tim/code/KwaMoja/SalesCategories.php:453
-#: /home/tim/code/KwaMoja/Stocks.php:1179
+#: /home/tim/code/KwaMoja/Stocks.php:1185
 msgid "Image File ("
 msgstr "Slikovna datoteka ("
 
 #: /home/tim/code/KwaMoja/FixedAssetItems.php:479
 #: /home/tim/code/KwaMoja/Manufacturers.php:315
 #: /home/tim/code/KwaMoja/SalesCategories.php:455
-#: /home/tim/code/KwaMoja/Stocks.php:1182
+#: /home/tim/code/KwaMoja/Stocks.php:1188
 msgid "Clear Image"
 msgstr "Izbriši sliku"
 
 #: /home/tim/code/KwaMoja/FixedAssetItems.php:507
 #: /home/tim/code/KwaMoja/Manufacturers.php:83
-#: /home/tim/code/KwaMoja/Stocks.php:1191
+#: /home/tim/code/KwaMoja/Stocks.php:1197
 msgid "You do not have access to delete this item image file."
 msgstr "Nemate pristup za brisanje slikovne datoteke ove stavke."
 
@@ -20370,7 +20370,7 @@ msgstr "Dodajte lokaciju aktive"
 
 #: /home/tim/code/KwaMoja/FixedAssetItems.php:563
 #: /home/tim/code/KwaMoja/StockCounts.php:369
-#: /home/tim/code/KwaMoja/Stocks.php:1456
+#: /home/tim/code/KwaMoja/Stocks.php:1462
 #: /home/tim/code/KwaMoja/includes/DefineLabelClass.php:135
 msgid "Bar Code"
 msgstr "Bar kod"
@@ -21133,7 +21133,7 @@ msgstr "Za razdoblje"
 #: /home/tim/code/KwaMoja/GLAccountCSV.php:73
 #: /home/tim/code/KwaMoja/GLAccountInquiry.php:94
 #: /home/tim/code/KwaMoja/GLAccountReport.php:292
-#: /home/tim/code/KwaMoja/Payments.php:1244
+#: /home/tim/code/KwaMoja/Payments.php:1243
 #: /home/tim/code/KwaMoja/StockAdjustments.php:638
 #: /home/tim/code/KwaMoja/StockTransfers.php:875
 #: /home/tim/code/KwaMoja/SuppTransGLAnalysis.php:268
@@ -21234,8 +21234,8 @@ msgstr "Odabrano razdoblje od trenutka je nakon razdoblja do!  Ponovno odaberite
 #: /home/tim/code/KwaMoja/GLAccountGraph.php:49
 #: /home/tim/code/KwaMoja/GLAccountUsers.php:56
 #: /home/tim/code/KwaMoja/GLBudgets.php:124
-#: /home/tim/code/KwaMoja/GLJournal.php:510
-#: /home/tim/code/KwaMoja/Payments.php:1203
+#: /home/tim/code/KwaMoja/GLJournal.php:508
+#: /home/tim/code/KwaMoja/Payments.php:1202
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:308
 msgid "Select GL Account"
 msgstr "Odaberite GL račun"
@@ -21486,9 +21486,9 @@ msgstr "Trans no"
 #: /home/tim/code/KwaMoja/GLAccountInquiry.php:209
 #: /home/tim/code/KwaMoja/GLAccountReport.php:350
 #: /home/tim/code/KwaMoja/GLJournal.php:206
-#: /home/tim/code/KwaMoja/GLJournal.php:564
-#: /home/tim/code/KwaMoja/GLJournal.php:608
-#: /home/tim/code/KwaMoja/GLJournal.php:667
+#: /home/tim/code/KwaMoja/GLJournal.php:562
+#: /home/tim/code/KwaMoja/GLJournal.php:604
+#: /home/tim/code/KwaMoja/GLJournal.php:663
 msgid "Debit"
 msgstr "Zaduženje"
 
@@ -21538,7 +21538,7 @@ msgstr "Pokreni izvješće"
 #: /home/tim/code/KwaMoja/PDFReceipt.php:30
 #: /home/tim/code/KwaMoja/PO_Header.php:846
 #: /home/tim/code/KwaMoja/PO_PDFPurchOrder.php:58
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:435
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:439
 #: /home/tim/code/KwaMoja/PrintWOItemSlip.php:140
 #: /home/tim/code/KwaMoja/ReorderLevel.php:277
 #: /home/tim/code/KwaMoja/StockDispatch.php:472
@@ -22577,8 +22577,8 @@ msgid "Journal Type"
 msgstr "Vrsta časopisa"
 
 #: /home/tim/code/KwaMoja/GLJournal.php:101
-#: /home/tim/code/KwaMoja/GLJournal.php:492
-#: /home/tim/code/KwaMoja/GLJournal.php:495
+#: /home/tim/code/KwaMoja/GLJournal.php:490
+#: /home/tim/code/KwaMoja/GLJournal.php:493
 #: /home/tim/code/KwaMoja/GLJournalTemplates.php:47
 #: /home/tim/code/KwaMoja/KCMCDailyWardNotes.php:726
 #: /home/tim/code/KwaMoja/KCMCDailyWardNotes.php:730
@@ -22598,8 +22598,8 @@ msgid "Normal"
 msgstr "Normalan"
 
 #: /home/tim/code/KwaMoja/GLJournal.php:103
-#: /home/tim/code/KwaMoja/GLJournal.php:491
-#: /home/tim/code/KwaMoja/GLJournal.php:494
+#: /home/tim/code/KwaMoja/GLJournal.php:489
+#: /home/tim/code/KwaMoja/GLJournal.php:492
 #: /home/tim/code/KwaMoja/GLJournalTemplates.php:49
 msgid "Reversing"
 msgstr "zadnji"
@@ -22629,7 +22629,7 @@ msgid "Save journal as a template"
 msgstr "Spremite dnevnik kao predložak"
 
 #: /home/tim/code/KwaMoja/GLJournal.php:197
-#: /home/tim/code/KwaMoja/GLJournal.php:603
+#: /home/tim/code/KwaMoja/GLJournal.php:599
 msgid "Journal Summary"
 msgstr "Sažetak časopisa"
 
@@ -22638,8 +22638,8 @@ msgid "Template description"
 msgstr "Opis predloška"
 
 #: /home/tim/code/KwaMoja/GLJournal.php:204
-#: /home/tim/code/KwaMoja/GLJournal.php:540
-#: /home/tim/code/KwaMoja/GLJournal.php:606
+#: /home/tim/code/KwaMoja/GLJournal.php:538
+#: /home/tim/code/KwaMoja/GLJournal.php:602
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:294
 msgid "GL Tag"
 msgstr "GL oznaka"
@@ -22649,7 +22649,7 @@ msgid "Save as template"
 msgstr "Spremi kao predložak"
 
 #: /home/tim/code/KwaMoja/GLJournal.php:253
-#: /home/tim/code/KwaMoja/GLJournal.php:677
+#: /home/tim/code/KwaMoja/GLJournal.php:673
 msgid "Accept and Process Journal"
 msgstr "Prihvatite i obradite časopis"
 
@@ -22710,39 +22710,39 @@ msgstr "Uneseni priručni GL kod ne postoji u bazi podataka"
 msgid "You must select a GL account code"
 msgstr "Morate odabrati kôd GL računa"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:476
+#: /home/tim/code/KwaMoja/GLJournal.php:474
 msgid "Journal Header Details"
 msgstr "Pojedinosti zaglavlja časopisa"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:479
+#: /home/tim/code/KwaMoja/GLJournal.php:477
 msgid "Date to Process Journal"
 msgstr "Datum za obradu časopisa"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:503
+#: /home/tim/code/KwaMoja/GLJournal.php:501
 msgid "Journal Line Entry"
 msgstr "Unos dnevnika časopisa"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:590
-#: /home/tim/code/KwaMoja/Payments.php:1216
-#: /home/tim/code/KwaMoja/Payments.php:1222
+#: /home/tim/code/KwaMoja/GLJournal.php:588
+#: /home/tim/code/KwaMoja/Payments.php:1215
+#: /home/tim/code/KwaMoja/Payments.php:1221
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:315
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:320
 msgid "GL Narrative"
 msgstr "GL Narrative"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:661
+#: /home/tim/code/KwaMoja/GLJournal.php:657
 msgid "Required to balance"
 msgstr "Potrebno je uravnotežiti"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:678
+#: /home/tim/code/KwaMoja/GLJournal.php:674
 msgid "Save as a template"
 msgstr "Spremi kao predložak"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:681
+#: /home/tim/code/KwaMoja/GLJournal.php:677
 msgid "The journal must balance ie debits equal to credits before it can be processed"
 msgstr "Časopis mora ravnotežu tj. Terećenja jednaka kreditima prije nego što se može obraditi"
 
-#: /home/tim/code/KwaMoja/GLJournal.php:684
+#: /home/tim/code/KwaMoja/GLJournal.php:680
 msgid "Load from a template"
 msgstr "Učitavanje iz predloška"
 
@@ -23177,7 +23177,7 @@ msgstr "Razdoblje"
 #: /home/tim/code/KwaMoja/GLTransInquiry.php:46
 #: /home/tim/code/KwaMoja/PcAuthorizeCheque.php:97
 #: /home/tim/code/KwaMoja/PcAuthorizeExpenses.php:116
-#: /home/tim/code/KwaMoja/Timesheets.php:643
+#: /home/tim/code/KwaMoja/Timesheets.php:651
 #: /home/tim/code/KwaMoja/prlAuthoriseLoans.php:9
 #: /home/tim/code/KwaMoja/prlLoanPayments.php:9
 msgid "Posted"
@@ -23541,7 +23541,7 @@ msgid "Date Goods/Service Received"
 msgstr "Datum robe / usluga primljena"
 
 #: /home/tim/code/KwaMoja/GoodsReceived.php:116
-#: /home/tim/code/KwaMoja/Payments.php:1408
+#: /home/tim/code/KwaMoja/Payments.php:1407
 msgid "Supplier Reference"
 msgstr "Reference dobavljača"
 
@@ -24111,10 +24111,10 @@ msgstr "Početno stanje kao u"
 #: /home/tim/code/KwaMoja/ImportBankTrans.php:455
 #: /home/tim/code/KwaMoja/ImportBankTrans.php:495
 #: /home/tim/code/KwaMoja/ImportBankTransAnalysis.php:202
-#: /home/tim/code/KwaMoja/Payments.php:1430
-#: /home/tim/code/KwaMoja/Payments.php:1432
-#: /home/tim/code/KwaMoja/Payments.php:1440
-#: /home/tim/code/KwaMoja/Payments.php:1442
+#: /home/tim/code/KwaMoja/Payments.php:1429
+#: /home/tim/code/KwaMoja/Payments.php:1431
+#: /home/tim/code/KwaMoja/Payments.php:1439
+#: /home/tim/code/KwaMoja/Payments.php:1441
 #: /home/tim/code/KwaMoja/Prices_Customer.php:54
 #: /home/tim/code/KwaMoja/RevisionTranslations.php:32
 #: /home/tim/code/KwaMoja/SpecialOrder.php:121
@@ -24955,8 +24955,8 @@ msgstr "neovlašten"
 #: /home/tim/code/KwaMoja/PO_Header.php:841
 #: /home/tim/code/KwaMoja/PO_Header.php:856
 #: /home/tim/code/KwaMoja/PO_Header.php:860
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:134
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:137
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:136
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:139
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:141
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:143
 #: /home/tim/code/KwaMoja/PcAssignCashToTab.php:259
@@ -25028,7 +25028,7 @@ msgstr "Nema dostupnih zaliha"
 
 #: /home/tim/code/KwaMoja/InternalStockRequestInquiry.php:473
 #: /home/tim/code/KwaMoja/MRPReport.php:721
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:262
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:266
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:80
 #: /home/tim/code/KwaMoja/SelectCompletedOrder.php:113
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:169
@@ -25352,14 +25352,14 @@ msgid "Reorder Level"
 msgstr "Reorder Level"
 
 #: /home/tim/code/KwaMoja/InventoryQuantities.php:137
-#: /home/tim/code/KwaMoja/Stocks.php:1404
+#: /home/tim/code/KwaMoja/Stocks.php:1410
 msgid "Serialised"
 msgstr "serijalizirani"
 
 #: /home/tim/code/KwaMoja/InventoryQuantities.php:137
 #: /home/tim/code/KwaMoja/StockQuantityByDate.php:135
-#: /home/tim/code/KwaMoja/Stocks.php:1396
-#: /home/tim/code/KwaMoja/Stocks.php:1398
+#: /home/tim/code/KwaMoja/Stocks.php:1402
+#: /home/tim/code/KwaMoja/Stocks.php:1404
 msgid "Controlled"
 msgstr "kontrolirano"
 
@@ -30187,7 +30187,7 @@ msgid "The patients first name"
 msgstr "Ime pacijenta"
 
 #: /home/tim/code/KwaMoja/KCMCRegister.php:472
-#: /home/tim/code/KwaMoja/Timesheets.php:512
+#: /home/tim/code/KwaMoja/Timesheets.php:520
 #: /home/tim/code/KwaMoja/prlEmployeeMaster.php:376
 msgid "Last Name"
 msgstr "Prezime"
@@ -30895,7 +30895,7 @@ msgid "Synchronise with Care2x Item Table"
 msgstr "Sinkronizirajte s tablicom predmeta Care2x"
 
 #: /home/tim/code/KwaMoja/KCMCSyncCare2xItems.php:44
-#: /home/tim/code/KwaMoja/Stocks.php:1245
+#: /home/tim/code/KwaMoja/Stocks.php:1251
 msgid "Add or Modify Stock Categories"
 msgstr "Dodaj ili izmijeni kategorije zaliha"
 
@@ -33030,7 +33030,7 @@ msgid "Desc"
 msgstr "opis"
 
 #: /home/tim/code/KwaMoja/MRPReport.php:180
-#: /home/tim/code/KwaMoja/Stocks.php:1501
+#: /home/tim/code/KwaMoja/Stocks.php:1507
 msgid "Pan Size"
 msgstr "Veličina pan"
 
@@ -33533,7 +33533,7 @@ msgstr "Osoba"
 #: /home/tim/code/KwaMoja/MaintenanceTasks.php:219
 #: /home/tim/code/KwaMoja/MaintenanceUserSchedule.php:48
 #: /home/tim/code/KwaMoja/SalesPeople.php:192
-#: /home/tim/code/KwaMoja/Timesheets.php:514
+#: /home/tim/code/KwaMoja/Timesheets.php:522
 #: /home/tim/code/KwaMoja/prlEmployeeMaster.php:459
 msgid "Manager"
 msgstr "Menadžer"
@@ -33885,7 +33885,7 @@ msgid "and Month Ending"
 msgstr "i mjesec završetka"
 
 #: /home/tim/code/KwaMoja/MonthlyBankTransactions.php:166
-#: /home/tim/code/KwaMoja/Payments.php:1154
+#: /home/tim/code/KwaMoja/Payments.php:1153
 msgid "Cheque Number"
 msgstr "Provjerite broj"
 
@@ -34022,8 +34022,8 @@ msgstr "Službeni nalog bit će vam poslan u dogledno vrijeme"
 #: /home/tim/code/KwaMoja/PO_Header.php:845
 #: /home/tim/code/KwaMoja/PO_Header.php:855
 #: /home/tim/code/KwaMoja/PO_Header.php:861
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:128
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:131
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:130
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:133
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:136
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:138
 #: /home/tim/code/KwaMoja/WOCanBeProducedNow.php:45
@@ -36295,7 +36295,7 @@ msgstr "Vrsta izvješća"
 #: /home/tim/code/KwaMoja/PO_AuthoriseMyOrders.php:58
 #: /home/tim/code/KwaMoja/PO_Header.php:755
 #: /home/tim/code/KwaMoja/PO_Items.php:1098
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:389
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:393
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:324
 #: /home/tim/code/KwaMoja/ReprintGRN.php:89
 #: /home/tim/code/KwaMoja/dashboard/customer_orders.php:56
@@ -36496,8 +36496,8 @@ msgstr "Datum narudžbe"
 #: /home/tim/code/KwaMoja/PO_AuthoriseMyOrders.php:93
 #: /home/tim/code/KwaMoja/PO_Header.php:837
 #: /home/tim/code/KwaMoja/PO_Header.php:854
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:146
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:149
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:148
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:151
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:156
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:158
 #: /home/tim/code/KwaMoja/prlAuthoriseLoans.php:11
@@ -36509,8 +36509,8 @@ msgstr "odbijen"
 #: /home/tim/code/KwaMoja/PO_Header.php:842
 #: /home/tim/code/KwaMoja/PO_Header.php:847
 #: /home/tim/code/KwaMoja/PO_Header.php:859
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:140
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:143
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:142
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:145
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:151
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:153
 #: /home/tim/code/KwaMoja/PickingLists.php:680
@@ -36797,7 +36797,7 @@ msgid "Reprint Now"
 msgstr "Ispišite sada"
 
 #: /home/tim/code/KwaMoja/PO_Header.php:815
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:119
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:121
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:125
 #: /home/tim/code/KwaMoja/SelectWorkOrder.php:177
 msgid "Order Status"
@@ -37276,7 +37276,7 @@ msgid "Price per item"
 msgstr "Cijena po stavci"
 
 #: /home/tim/code/KwaMoja/PO_Items.php:1094
-#: /home/tim/code/KwaMoja/Stocks.php:1320
+#: /home/tim/code/KwaMoja/Stocks.php:1326
 #: /home/tim/code/KwaMoja/includes/PO_ReadInOrder.php:188
 msgid "each"
 msgstr "svaki"
@@ -37287,7 +37287,7 @@ msgstr "Kategorija stavke"
 
 #: /home/tim/code/KwaMoja/PO_Items.php:1411
 #: /home/tim/code/KwaMoja/SelectProduct.php:577
-#: /home/tim/code/KwaMoja/Stocks.php:1630
+#: /home/tim/code/KwaMoja/Stocks.php:1636
 msgid "Insert New Item"
 msgstr "Umetnite novu stavku"
 
@@ -37587,12 +37587,18 @@ msgid "Search Outstanding Purchase Orders"
 msgstr "Pretraživanje izvanrednih narudžbenica"
 
 #: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:37
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:41
+#: /home/tim/code/KwaMoja/sql/updates/42.php:106
+msgid "Add Purchase Order"
+msgstr "Dodaj narudžbu"
+
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:53
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:44
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:62
 msgid "The Order Number entered"
 msgstr "Unesen je broj narudžbe"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:37
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:53
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:44
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:62
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:70
@@ -37601,7 +37607,7 @@ msgstr "Unesen je broj narudžbe"
 msgid "MUST"
 msgstr "MORA"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:37
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:53
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:44
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:62
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:70
@@ -37610,23 +37616,17 @@ msgstr "MORA"
 msgid "be numeric"
 msgstr "biti numerički"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:50
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:54
-#: /home/tim/code/KwaMoja/sql/updates/42.php:106
-msgid "Add Purchase Order"
-msgstr "Dodaj narudžbu"
-
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:61
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:63
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:25
 msgid "for Supplier"
 msgstr "za dobavljača"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:68
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:70
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:32
 msgid "for stock item"
 msgstr "za dionicu"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:94
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:96
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:106
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:204
 #: /home/tim/code/KwaMoja/Shipments.php:372
@@ -37635,36 +37635,36 @@ msgstr "za dionicu"
 msgid "Into Stock Location"
 msgstr "U Stock Mjesto"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:122
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:125
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:124
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:127
 msgid "Pending and Authorised"
 msgstr "Na čekanju i autorizaciji"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:173
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:175
 msgid "Orders Between"
 msgstr "Narudžbe između"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:181
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:186
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:185
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:190
 msgid "Show PO Details"
 msgstr "Prikaži pojedinosti o narudžbi"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:193
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:197
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:3
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:165
 msgid "Search Purchase Orders"
 msgstr "Pretraživanje narudžbenica"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:199
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:203
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:174
 msgid "To search for purchase orders for a specific part use the part selection facilities below"
 msgstr "Da biste potražili narudžbenice za određeni dio, upotrijebite elemente za odabir dijela u nastavku"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:210
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:214
 msgid "Item search criteria"
 msgstr "Kriteriji za pretraživanje predmeta"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:243
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:247
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:206
 #: /home/tim/code/KwaMoja/SelectCompletedOrder.php:407
 #: /home/tim/code/KwaMoja/SelectPickingLists.php:295
@@ -37675,32 +37675,32 @@ msgstr "Kriteriji za pretraživanje predmeta"
 msgid "Search Parts Now"
 msgstr "Pretražujte dijelove sada"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:272
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:276
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:217
 #: /home/tim/code/KwaMoja/Shipt_Select.php:223
 #: /home/tim/code/KwaMoja/SuppLoginSetup.php:16
 msgid "Orders"
 msgstr "Narudžbe"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:379
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:383
 #: /home/tim/code/KwaMoja/PO_SelectPurchOrder.php:311
 #: /home/tim/code/KwaMoja/SelectCompletedOrder.php:324
 msgid "No orders were returned by the SQL because"
 msgstr "SQL nije vratio nijednu narudžbu jer"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:387
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:391
 msgid "Order #"
 msgstr "Narudžba #"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:390
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:394
 msgid "Initiated by"
 msgstr "Inicirano od strane"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:412
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:416
 msgid "Failed to retrieve purchorder details"
 msgstr "Nije uspjelo dohvaćanje pojedinosti o kupnji"
 
-#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:438
+#: /home/tim/code/KwaMoja/PO_SelectOSPurchOrder.php:442
 msgid "Print Copy"
 msgstr "Ispis Kopiraj"
 
@@ -37775,7 +37775,7 @@ msgstr "Vratite se"
 #: /home/tim/code/KwaMoja/PaymentAllocations.php:60
 #: /home/tim/code/KwaMoja/PaymentAllocations.php:61
 #: /home/tim/code/KwaMoja/Payments.php:817
-#: /home/tim/code/KwaMoja/Payments.php:971
+#: /home/tim/code/KwaMoja/Payments.php:970
 #: /home/tim/code/KwaMoja/PrintCustStatements.php:467
 #: /home/tim/code/KwaMoja/SuppWhereAlloc.php:33
 #: /home/tim/code/KwaMoja/SuppWhereAlloc.php:36
@@ -38131,7 +38131,7 @@ msgid "Could not get the currency of the bank account"
 msgstr "Nije moguće dobiti valutu bankovnog računa"
 
 #: /home/tim/code/KwaMoja/Payments.php:323
-#: /home/tim/code/KwaMoja/Payments.php:1460
+#: /home/tim/code/KwaMoja/Payments.php:1458
 msgid "Accept and Process Supplier Payment"
 msgstr "Prihvaćanje i obrada plaćanja dobavljača"
 
@@ -38288,168 +38288,168 @@ msgstr "SQL je koristio za preuzimanje naziva bankovnog računa"
 msgid "is not set up as a bank account with a valid general ledger account"
 msgstr "nije postavljen kao bankovni račun s važećim računom glavne knjige"
 
-#: /home/tim/code/KwaMoja/Payments.php:979
+#: /home/tim/code/KwaMoja/Payments.php:978
 #: /home/tim/code/KwaMoja/Suppliers.php:639
 msgid "Supplier Group"
 msgstr "Grupa dobavljača"
 
-#: /home/tim/code/KwaMoja/Payments.php:983
+#: /home/tim/code/KwaMoja/Payments.php:982
 msgid "from the"
 msgstr "od"
 
-#: /home/tim/code/KwaMoja/Payments.php:1038
+#: /home/tim/code/KwaMoja/Payments.php:1037
 msgid "Select the bank account to use for this payment."
 msgstr "Odaberite bankovni račun koji ćete koristiti za ovu uplatu."
 
-#: /home/tim/code/KwaMoja/Payments.php:1043
+#: /home/tim/code/KwaMoja/Payments.php:1042
 msgid "Date Paid"
 msgstr "Datum plaćanja"
 
-#: /home/tim/code/KwaMoja/Payments.php:1045
+#: /home/tim/code/KwaMoja/Payments.php:1044
 msgid "Select the date for this transaction."
 msgstr "Odaberite datum za ovu transakciju."
 
-#: /home/tim/code/KwaMoja/Payments.php:1050
+#: /home/tim/code/KwaMoja/Payments.php:1049
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:265
 msgid "Currency of Payment"
 msgstr "Valuta plaćanja"
 
-#: /home/tim/code/KwaMoja/Payments.php:1058
+#: /home/tim/code/KwaMoja/Payments.php:1057
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:273
 msgid "No currencies are defined yet. Payments cannot be entered until a currency is defined"
 msgstr "Još nisu definirane valute.  Plaćanja se ne mogu upisati sve dok se valuta ne definira"
 
-#: /home/tim/code/KwaMoja/Payments.php:1069
+#: /home/tim/code/KwaMoja/Payments.php:1068
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:283
 msgid "The transaction currency does not need to be the same as the bank account currency"
 msgstr "Valuta transakcije ne mora biti jednaka valuti bankovnog računa"
 
-#: /home/tim/code/KwaMoja/Payments.php:1075
+#: /home/tim/code/KwaMoja/Payments.php:1074
 #: /home/tim/code/KwaMoja/Suppliers.php:686
 msgid "Supplier Currency"
 msgstr "Valuta dobavljača"
 
-#: /home/tim/code/KwaMoja/Payments.php:1093
-#: /home/tim/code/KwaMoja/Payments.php:1111
+#: /home/tim/code/KwaMoja/Payments.php:1092
+#: /home/tim/code/KwaMoja/Payments.php:1110
 msgid "Suggested rate"
 msgstr "Predložena stopa"
 
-#: /home/tim/code/KwaMoja/Payments.php:1104
+#: /home/tim/code/KwaMoja/Payments.php:1103
 msgid "Payment Exchange Rate"
 msgstr "Tečajna lista"
 
-#: /home/tim/code/KwaMoja/Payments.php:1106
+#: /home/tim/code/KwaMoja/Payments.php:1105
 msgid "The exchange rate between the currency of the bank account currency and the currency of the payment"
 msgstr "Tečaj između valute valute bankovnog računa i valute plaćanja"
 
-#: /home/tim/code/KwaMoja/Payments.php:1125
+#: /home/tim/code/KwaMoja/Payments.php:1124
 msgid "Payment type"
 msgstr "Način plaćanja"
 
-#: /home/tim/code/KwaMoja/Payments.php:1141
+#: /home/tim/code/KwaMoja/Payments.php:1140
 msgid "Select the Payment Method for this transaction"
 msgstr "Odaberite način plaćanja za tu transakciju"
 
-#: /home/tim/code/KwaMoja/Payments.php:1156
+#: /home/tim/code/KwaMoja/Payments.php:1155
 msgid "(if using pre-printed stationery)"
 msgstr "(ako koristite unaprijed tiskane tiskanice)"
 
-#: /home/tim/code/KwaMoja/Payments.php:1185
+#: /home/tim/code/KwaMoja/Payments.php:1184
 msgid "General Ledger Payment Analysis Entry"
 msgstr "Unos analize plaćanja glavne knjige"
 
-#: /home/tim/code/KwaMoja/Payments.php:1190
-#: /home/tim/code/KwaMoja/Payments.php:1196
+#: /home/tim/code/KwaMoja/Payments.php:1189
+#: /home/tim/code/KwaMoja/Payments.php:1195
 msgid "Enter GL Account Manually"
 msgstr "Unesite GL račun ručno"
 
-#: /home/tim/code/KwaMoja/Payments.php:1192
-#: /home/tim/code/KwaMoja/Payments.php:1198
+#: /home/tim/code/KwaMoja/Payments.php:1191
+#: /home/tim/code/KwaMoja/Payments.php:1197
 msgid "If you know the GL code enter it here"
 msgstr "Ako znate GL kod upišite ga ovdje"
 
-#: /home/tim/code/KwaMoja/Payments.php:1205
+#: /home/tim/code/KwaMoja/Payments.php:1204
 #: /home/tim/code/KwaMoja/RegularPaymentsSetup.php:310
 msgid "Select the account code for this transaction"
 msgstr "Odaberite kôd računa za ovu transakciju"
 
-#: /home/tim/code/KwaMoja/Payments.php:1209
+#: /home/tim/code/KwaMoja/Payments.php:1208
 msgid "Cheque/Voucher Number"
 msgstr "Broj ček / voucher"
 
-#: /home/tim/code/KwaMoja/Payments.php:1211
+#: /home/tim/code/KwaMoja/Payments.php:1210
 msgid "Enter the voucher or cheque number"
 msgstr "Unesite broj vouka ili ček"
 
-#: /home/tim/code/KwaMoja/Payments.php:1218
-#: /home/tim/code/KwaMoja/Payments.php:1224
+#: /home/tim/code/KwaMoja/Payments.php:1217
+#: /home/tim/code/KwaMoja/Payments.php:1223
 msgid "A narrative for this transaction line"
 msgstr "Priča o ovoj transakcijskoj liniji"
 
-#: /home/tim/code/KwaMoja/Payments.php:1232
-#: /home/tim/code/KwaMoja/Payments.php:1238
+#: /home/tim/code/KwaMoja/Payments.php:1231
+#: /home/tim/code/KwaMoja/Payments.php:1237
 msgid "The amount of the transaction in"
 msgstr "Iznos transakcije u"
 
-#: /home/tim/code/KwaMoja/Payments.php:1263
+#: /home/tim/code/KwaMoja/Payments.php:1262
 #: /home/tim/code/KwaMoja/StockAdjustments.php:656
 #: /home/tim/code/KwaMoja/StockTransfers.php:893
 msgid "Select one or more tags from the list. Use the CTL button to select multiple tags"
 msgstr "Odaberite jednu ili više oznaka s popisa.  Pomoću tipke CTL odaberite više oznaka"
 
-#: /home/tim/code/KwaMoja/Payments.php:1303
+#: /home/tim/code/KwaMoja/Payments.php:1302
 msgid "Are you sure you wish to delete this payment analysis item?"
 msgstr "Jeste li sigurni da želite izbrisati ovu stavku analize plaćanja?"
 
-#: /home/tim/code/KwaMoja/Payments.php:1315
+#: /home/tim/code/KwaMoja/Payments.php:1314
 msgid "Accept and Process GL Payment"
 msgstr "Prihvatite i obradite GL plaćanje"
 
-#: /home/tim/code/KwaMoja/Payments.php:1362
+#: /home/tim/code/KwaMoja/Payments.php:1361
 msgid "Transactions to be allocated by this payment"
 msgstr "Transakcije koje treba dodijeliti ovom uplatom"
 
-#: /home/tim/code/KwaMoja/Payments.php:1367
+#: /home/tim/code/KwaMoja/Payments.php:1366
 #: /home/tim/code/KwaMoja/dashboard/bank_trans.php:50
 msgid "Transaction Type"
 msgstr "vrsta transakcije"
 
-#: /home/tim/code/KwaMoja/Payments.php:1383
+#: /home/tim/code/KwaMoja/Payments.php:1382
 msgid "Pay"
 msgstr "Platiti"
 
-#: /home/tim/code/KwaMoja/Payments.php:1391
+#: /home/tim/code/KwaMoja/Payments.php:1390
 msgid "Supplier Transactions Payment Entry"
 msgstr "Ulaznica za transakcije dobavljača"
 
-#: /home/tim/code/KwaMoja/Payments.php:1399
+#: /home/tim/code/KwaMoja/Payments.php:1398
 msgid "Supplier Narrative"
 msgstr "Naručitelj nabave"
 
-#: /home/tim/code/KwaMoja/Payments.php:1401
+#: /home/tim/code/KwaMoja/Payments.php:1400
 msgid "Supplier narrative in general ledger transactions. If blank, it uses the bank narrative."
 msgstr "Priča o dobavljaču u transakcijama glavne knjige.  Ako je prazno, koristi se bankovnom pričom."
 
-#: /home/tim/code/KwaMoja/Payments.php:1410
+#: /home/tim/code/KwaMoja/Payments.php:1409
 msgid "Supplier reference in supplier transactions. If blank, it uses the payment type."
 msgstr "Referenca dobavljača u transakcijama dobavljača.  Ako je prazno, upotrebljava vrstu plaćanja."
 
-#: /home/tim/code/KwaMoja/Payments.php:1417
+#: /home/tim/code/KwaMoja/Payments.php:1416
 msgid "Transaction Text"
 msgstr "Tekst transakcije"
 
-#: /home/tim/code/KwaMoja/Payments.php:1419
+#: /home/tim/code/KwaMoja/Payments.php:1418
 msgid "Transaction text in supplier transactions. If blank, it uses the narrative."
 msgstr "Tekst transakcije u transakcijama dobavljača.  Ako je prazno, koristi se pripovijest."
 
-#: /home/tim/code/KwaMoja/Payments.php:1430
-#: /home/tim/code/KwaMoja/Payments.php:1432
-#: /home/tim/code/KwaMoja/Payments.php:1440
-#: /home/tim/code/KwaMoja/Payments.php:1442
+#: /home/tim/code/KwaMoja/Payments.php:1429
+#: /home/tim/code/KwaMoja/Payments.php:1431
+#: /home/tim/code/KwaMoja/Payments.php:1439
+#: /home/tim/code/KwaMoja/Payments.php:1441
 msgid "The amount to be paid to"
 msgstr "Iznos koji treba platiti"
 
-#: /home/tim/code/KwaMoja/Payments.php:1452
+#: /home/tim/code/KwaMoja/Payments.php:1451
 msgid "Amount of supplier discount applied on this transaction"
 msgstr "Iznos popusta dobavljača koji se primjenjuje na ovu transakciju"
 
@@ -38794,7 +38794,7 @@ msgstr "Vrsta troška"
 
 #: /home/tim/code/KwaMoja/PcExpenses.php:170
 #: /home/tim/code/KwaMoja/PcExpenses.php:319
-#: /home/tim/code/KwaMoja/Stocks.php:1481
+#: /home/tim/code/KwaMoja/Stocks.php:1487
 #: /home/tim/code/KwaMoja/TaxAuthorityRates.php:87
 msgid "Tax Category"
 msgstr "Kategorija poreza"
@@ -40571,8 +40571,8 @@ msgid "Work Order Item Production Slip"
 msgstr "Proizvodni nalog za proizvodnju radnog naloga"
 
 #: /home/tim/code/KwaMoja/PrintWOItemSlip.php:146
-#: /home/tim/code/KwaMoja/Timesheets.php:436
-#: /home/tim/code/KwaMoja/Timesheets.php:458
+#: /home/tim/code/KwaMoja/Timesheets.php:440
+#: /home/tim/code/KwaMoja/Timesheets.php:462
 #: /home/tim/code/KwaMoja/WOCanBeProducedNow.php:41
 msgid "WO"
 msgstr "WO"
@@ -45813,8 +45813,8 @@ msgstr "Pretraživanje stavki inventara"
 
 #: /home/tim/code/KwaMoja/SelectProduct.php:96
 #: /home/tim/code/KwaMoja/SelectProduct.php:833
-#: /home/tim/code/KwaMoja/Stocks.php:1379
-#: /home/tim/code/KwaMoja/Stocks.php:1381
+#: /home/tim/code/KwaMoja/Stocks.php:1385
+#: /home/tim/code/KwaMoja/Stocks.php:1387
 #: /home/tim/code/KwaMoja/SupplierPriceList.php:556
 #: /home/tim/code/KwaMoja/WhereUsedInquiry.php:97
 msgid "Obsolete"
@@ -48451,8 +48451,8 @@ msgid "Cost From"
 msgstr "Trošak od"
 
 #: /home/tim/code/KwaMoja/StockCostUpdate.php:181
-#: /home/tim/code/KwaMoja/Stocks.php:1512
-#: /home/tim/code/KwaMoja/Stocks.php:1527
+#: /home/tim/code/KwaMoja/Stocks.php:1518
+#: /home/tim/code/KwaMoja/Stocks.php:1533
 msgid "Material Cost"
 msgstr "Trošak materijala"
 
@@ -50188,63 +50188,63 @@ msgstr "i sve podatke o kupnji koji su možda postavljeni za taj dio"
 msgid "and any prices that may have been set up for the part"
 msgstr "i bilo koje cijene koje su možda bile postavljene za dio"
 
-#: /home/tim/code/KwaMoja/Stocks.php:980
+#: /home/tim/code/KwaMoja/Stocks.php:986
 msgid "Previous Item"
 msgstr "Prethodna stavka"
 
-#: /home/tim/code/KwaMoja/Stocks.php:981
+#: /home/tim/code/KwaMoja/Stocks.php:987
 msgid "Navigate Items"
 msgstr "Kretanje stavkama"
 
-#: /home/tim/code/KwaMoja/Stocks.php:982
+#: /home/tim/code/KwaMoja/Stocks.php:988
 msgid "Next Item"
 msgstr "Sljedeća stavka"
 
-#: /home/tim/code/KwaMoja/Stocks.php:996
+#: /home/tim/code/KwaMoja/Stocks.php:1002
 msgid "New Stock Item Details"
 msgstr "Pojedinosti o novim zalihama"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1101
+#: /home/tim/code/KwaMoja/Stocks.php:1107
 msgid "Clone Stock Item Details"
 msgstr "Pojedinosti o kloniranim zalihama"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1114
+#: /home/tim/code/KwaMoja/Stocks.php:1120
 msgid "Amend Stock Item Details"
 msgstr "Izmijeniti pojedinosti o zalihama"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1163
+#: /home/tim/code/KwaMoja/Stocks.php:1169
 msgid "Long Description"
 msgstr "dugi opis"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1206
+#: /home/tim/code/KwaMoja/Stocks.php:1212
 msgid "Specification File (.pdf format)"
 msgstr "Datoteka specifikacija (.pdf format)"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1208
+#: /home/tim/code/KwaMoja/Stocks.php:1214
 msgid "Clear Specification"
 msgstr "Jasna specifikacija"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1215
+#: /home/tim/code/KwaMoja/Stocks.php:1221
 msgid "You do not have access to delete this item specification file."
 msgstr "Nemate pristup brisanju datoteke specifikacije ove stavke."
 
-#: /home/tim/code/KwaMoja/Stocks.php:1293
+#: /home/tim/code/KwaMoja/Stocks.php:1299
 msgid "Economic Order Quantity"
 msgstr "Ekonomska narudžba"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1298
+#: /home/tim/code/KwaMoja/Stocks.php:1304
 msgid "Packaged Volume (metres cubed)"
 msgstr "Pakirana količina (metrički kvadrati)"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1303
+#: /home/tim/code/KwaMoja/Stocks.php:1309
 msgid "Packaged Weight (KGs)"
 msgstr "Pakirana težina (kg)"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1308
+#: /home/tim/code/KwaMoja/Stocks.php:1314
 msgid "Net Weight (KGs)"
 msgstr "Neto težina (kg)"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1313
+#: /home/tim/code/KwaMoja/Stocks.php:1319
 #: /home/tim/code/KwaMoja/SupplierTenders.php:119
 #: /home/tim/code/KwaMoja/SupplierTenders.php:512
 #: /home/tim/code/KwaMoja/SupplierTenders.php:515
@@ -50253,87 +50253,87 @@ msgstr "Neto težina (kg)"
 msgid "Units of Measure"
 msgstr "Mjerne jedinice"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1333
+#: /home/tim/code/KwaMoja/Stocks.php:1339
 msgid "Assembly, Kit, Manufactured or Service/Labour"
 msgstr "Skupština, paketa, proizvedenog ili servisiranja / rada"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1341
-#: /home/tim/code/KwaMoja/Stocks.php:1343
+#: /home/tim/code/KwaMoja/Stocks.php:1347
+#: /home/tim/code/KwaMoja/Stocks.php:1349
 msgid "Kit"
 msgstr "oprema"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1362
-#: /home/tim/code/KwaMoja/Stocks.php:1364
+#: /home/tim/code/KwaMoja/Stocks.php:1368
+#: /home/tim/code/KwaMoja/Stocks.php:1370
 msgid "Service/Labour"
 msgstr "Servis / rada"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1371
+#: /home/tim/code/KwaMoja/Stocks.php:1377
 msgid "Current or Obsolete"
 msgstr "Trenutačno ili zastarjelo"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1387
+#: /home/tim/code/KwaMoja/Stocks.php:1393
 msgid "Batch, Serial or Lot Control"
 msgstr "Serijska ili serijska kontrola"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1391
-#: /home/tim/code/KwaMoja/Stocks.php:1393
+#: /home/tim/code/KwaMoja/Stocks.php:1397
+#: /home/tim/code/KwaMoja/Stocks.php:1399
 msgid "No Control"
 msgstr "Nema kontrole"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1417
+#: /home/tim/code/KwaMoja/Stocks.php:1423
 msgid "this has no effect if the item is not Controlled"
 msgstr "to nema učinka ako stavka nije Kontrolirana"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1422
+#: /home/tim/code/KwaMoja/Stocks.php:1428
 msgid "Next Serial No (Greater than zero for auto numbering)"
 msgstr "Sljedeći serijski broj (veći od nule za automatsko numeriranje)"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1429
+#: /home/tim/code/KwaMoja/Stocks.php:1435
 msgid "Perishable"
 msgstr "kvarljiv"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1446
+#: /home/tim/code/KwaMoja/Stocks.php:1452
 msgid "Decimal Places for display Quantity"
 msgstr "Decimalna mjesta za prikaz Količina"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1466
+#: /home/tim/code/KwaMoja/Stocks.php:1472
 msgid "Drawing Number"
 msgstr "Broj za crtanje"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1506
+#: /home/tim/code/KwaMoja/Stocks.php:1512
 msgid "Shrinkage Factor"
 msgstr "Faktor stezanja"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1568
+#: /home/tim/code/KwaMoja/Stocks.php:1574
 msgid "Item Category Properties"
 msgstr "Kategorija svojstava stavke"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1593
+#: /home/tim/code/KwaMoja/Stocks.php:1599
 msgid "A number between"
 msgstr "Broj između"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1593
+#: /home/tim/code/KwaMoja/Stocks.php:1599
 msgid "is expected"
 msgstr "je očekivano"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1632
-#: /home/tim/code/KwaMoja/Stocks.php:1641
+#: /home/tim/code/KwaMoja/Stocks.php:1638
+#: /home/tim/code/KwaMoja/Stocks.php:1647
 msgid "Categories"
 msgstr "Kategorije"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1639
+#: /home/tim/code/KwaMoja/Stocks.php:1645
 msgid "Delete This Item"
 msgstr "Izbriši ovu stavku"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1643
+#: /home/tim/code/KwaMoja/Stocks.php:1649
 msgid "Only click the Delete button if you are sure you wish to delete the item!"
 msgstr "Samo kliknite gumb Izbriši ako ste sigurni da želite izbrisati stavku!"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1643
+#: /home/tim/code/KwaMoja/Stocks.php:1649
 msgid "Checks will be made to ensure that there are no stock movements, sales analysis records, sales order items or purchase order items for the item"
 msgstr "Provjerit će se kako bi se osiguralo da nema stavke zaliha, analize prodaje, stavke narudžbe ili stavke narudžbenice za tu stavku"
 
-#: /home/tim/code/KwaMoja/Stocks.php:1643
+#: /home/tim/code/KwaMoja/Stocks.php:1649
 msgid "No deletions will be allowed if they exist"
 msgstr "Neće biti dopuštene brisanje ako postoje"
 
@@ -50862,9 +50862,9 @@ msgstr "Trenutna cijena"
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:18
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:26
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:71
-#: /home/tim/code/KwaMoja/includes/header.php:28
-#: /home/tim/code/KwaMoja/includes/header.php:36
-#: /home/tim/code/KwaMoja/includes/header.php:44
+#: /home/tim/code/KwaMoja/includes/header.php:29
+#: /home/tim/code/KwaMoja/includes/header.php:37
+#: /home/tim/code/KwaMoja/includes/header.php:45
 msgid "Report"
 msgstr "izvješće"
 
@@ -54497,37 +54497,37 @@ msgid "The total hours entered are zero for this line - so better to delete the 
 msgstr "Ukupni uneseni sati su za ovu liniju nula - zato je bolje da biste izbrisali liniju"
 
 #: /home/tim/code/KwaMoja/Timesheets.php:108
-#: /home/tim/code/KwaMoja/Timesheets.php:189
+#: /home/tim/code/KwaMoja/Timesheets.php:191
 msgid "The hours entered for day 1 look to be too high - this is probably an error"
 msgstr "Sati uneseni za prvi dan izgledaju previsoko - to je vjerovatno greška"
 
 #: /home/tim/code/KwaMoja/Timesheets.php:112
-#: /home/tim/code/KwaMoja/Timesheets.php:193
+#: /home/tim/code/KwaMoja/Timesheets.php:195
 msgid "The hours entered for day 2 look to be too high - this is probably an error"
 msgstr "Sati uneseni za drugi dan izgledaju previsoko - vjerojatno je to greška"
 
 #: /home/tim/code/KwaMoja/Timesheets.php:116
-#: /home/tim/code/KwaMoja/Timesheets.php:197
+#: /home/tim/code/KwaMoja/Timesheets.php:199
 msgid "The hours entered for day 3 look to be too high - this is probably an error"
 msgstr "Sati uneseni za 3. dan izgledaju previsoko - vjerojatno je to greška"
 
 #: /home/tim/code/KwaMoja/Timesheets.php:120
-#: /home/tim/code/KwaMoja/Timesheets.php:201
+#: /home/tim/code/KwaMoja/Timesheets.php:203
 msgid "The hours entered for day 4 look to be too high - this is probably an error"
 msgstr "Sati uneseni za dan 4 izgledaju previsoko - to je vjerovatno greška"
 
 #: /home/tim/code/KwaMoja/Timesheets.php:124
-#: /home/tim/code/KwaMoja/Timesheets.php:205
+#: /home/tim/code/KwaMoja/Timesheets.php:207
 msgid "The hours entered for day 5 look to be too high - this is probably an error"
 msgstr "Sati uneseni za dan 5 izgledaju previsoko - to je vjerojatno greška"
 
 #: /home/tim/code/KwaMoja/Timesheets.php:128
-#: /home/tim/code/KwaMoja/Timesheets.php:209
+#: /home/tim/code/KwaMoja/Timesheets.php:211
 msgid "The hours entered for day 6 look to be too high - this is probably an error"
 msgstr "Radni sati uvedeni za 6. dan izgledaju previsoko - to je vjerojatno greška"
 
 #: /home/tim/code/KwaMoja/Timesheets.php:132
-#: /home/tim/code/KwaMoja/Timesheets.php:213
+#: /home/tim/code/KwaMoja/Timesheets.php:215
 msgid "The hours entered for day 7 look to be too high - this is probably an error"
 msgstr "Radni sati uneseni za 7. dan izgledaju previsoko - to je vjerojatno greška"
 
@@ -54539,152 +54539,152 @@ msgstr "Ako se vrijeme ne može naplatiti, to moraju odražavati i radni nalog i
 msgid "If a work order is selected then the work centre must be set"
 msgstr "Ako je odabran radni nalog, tada se mora postaviti radni centar"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:233
+#: /home/tim/code/KwaMoja/Timesheets.php:235
 msgid "An existing timesheet record for the same work order, week ending and work centre was updated with these hours"
 msgstr "Postojeći zapisnik radnog vremena za isti radni nalog, završetak tjedna i radni centar ažurirani su s ovim satima"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:258
+#: /home/tim/code/KwaMoja/Timesheets.php:260
 msgid "Could not add this timesheet record"
 msgstr "Ovaj zapis s radnog lista nije mogao dodati"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:260
+#: /home/tim/code/KwaMoja/Timesheets.php:262
 msgid "Timesheet record added"
 msgstr "Dodan je zapisnik vremenskog lista"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:288
-#: /home/tim/code/KwaMoja/Timesheets.php:336
+#: /home/tim/code/KwaMoja/Timesheets.php:292
+#: /home/tim/code/KwaMoja/Timesheets.php:340
 msgid "This timesheet cannot be submitted until your full working week hours are accounted for"
 msgstr "Ovaj se raspored ne može podnijeti sve dok se ne uračunaju puni sati radnog tjedna"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:288
-#: /home/tim/code/KwaMoja/Timesheets.php:336
+#: /home/tim/code/KwaMoja/Timesheets.php:292
+#: /home/tim/code/KwaMoja/Timesheets.php:340
 msgid "hours or more must be entered"
 msgstr "sati ili više moraju biti upisani"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:304
+#: /home/tim/code/KwaMoja/Timesheets.php:308
 msgid "timesheet submitted for the week ending"
 msgstr "tablica koja se šalje za tjedan koji završava"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:305
+#: /home/tim/code/KwaMoja/Timesheets.php:309
 msgid "Review and approve this timesheet"
 msgstr "Pregledajte i odobrite ovaj obrazac"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:313
+#: /home/tim/code/KwaMoja/Timesheets.php:317
 msgid "This timesheet has been submitted to your manager for approval"
 msgstr "Ovaj je tablica poslana vašem odobrenju na upravljanje"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:313
+#: /home/tim/code/KwaMoja/Timesheets.php:317
 msgid "Timesheet submitted"
 msgstr "Predložen je dnevnik"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:338
+#: /home/tim/code/KwaMoja/Timesheets.php:342
 msgid "This timesheet cannot be submitted until a cost is set up for the item defined for this employee"
 msgstr "Ovaj se raspored ne može podnijeti sve dok se ne postavi trošak za stavku definiranu za ovog zaposlenika"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:338
+#: /home/tim/code/KwaMoja/Timesheets.php:342
 msgid "This employees labour item has no cost entered"
 msgstr "Ova stavka rada radnika nije unela trošak"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:368
+#: /home/tim/code/KwaMoja/Timesheets.php:372
 msgid "No more time to post for this timesheet"
 msgstr "Nema više vremena za objavljivanje u ovom listu vremena"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:405
+#: /home/tim/code/KwaMoja/Timesheets.php:409
 msgid "Timesheet for the week ending"
 msgstr "Tablica za tjedan koji završava"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:407
+#: /home/tim/code/KwaMoja/Timesheets.php:411
 msgid "labour stock movement records could not be inserted when processing the timesheet because"
 msgstr "evidencije o kretanju zaliha radne snage nisu se mogle umetnuti prilikom obrade radnog lista jer"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:408
+#: /home/tim/code/KwaMoja/Timesheets.php:412
 msgid "The following SQL to insert the labour stock movement records was used"
 msgstr "Za umetanje zapisa o stanju radne snage upotrijebljen je sljedeći SQL"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:436
-#: /home/tim/code/KwaMoja/Timesheets.php:458
+#: /home/tim/code/KwaMoja/Timesheets.php:440
+#: /home/tim/code/KwaMoja/Timesheets.php:462
 msgid "as"
 msgstr "kao"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:436
-#: /home/tim/code/KwaMoja/Timesheets.php:458
+#: /home/tim/code/KwaMoja/Timesheets.php:440
+#: /home/tim/code/KwaMoja/Timesheets.php:462
 msgid "hours"
 msgstr "sati"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:439
+#: /home/tim/code/KwaMoja/Timesheets.php:443
 msgid "The labour cost posting to a work order GL posting could not be inserted because"
 msgstr "Objavljivanje troškova rada na radnom nalogu GL nije moguće umetnuti jer"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:440
+#: /home/tim/code/KwaMoja/Timesheets.php:444
 #: /home/tim/code/KwaMoja/WorkOrderIssue.php:340
 #: /home/tim/code/KwaMoja/WorkOrderIssue.php:556
 msgid "The following SQL to insert the work order issue GLTrans record was used"
 msgstr "Upotrijebljen je sljedeći SQL za umetanje naloga za radni nalog GLTR"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:461
+#: /home/tim/code/KwaMoja/Timesheets.php:465
 msgid "The labour recovery account credit on the approval of a timesheet GL posting could not be inserted because"
 msgstr "Kredit na računu za oporavak rada na odobrenju knjiženja u GL-u nije moguće umetnuti jer"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:462
+#: /home/tim/code/KwaMoja/Timesheets.php:466
 msgid "The following SQL to insert the labour gltrans record was used"
 msgstr "Za umetanje zapisa rada gltrans korišten je sljedeći SQL"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:468
+#: /home/tim/code/KwaMoja/Timesheets.php:472
 msgid "Could not update the work order labour cost because"
 msgstr "Troškove rada na radnom nalogu nije moguće ažurirati jer"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:478
+#: /home/tim/code/KwaMoja/Timesheets.php:482
 msgid "Could not change the timesheet status to approved because"
 msgstr "Ne može se promijeniti status tablice u odobreni jer"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:480
+#: /home/tim/code/KwaMoja/Timesheets.php:484
 msgid "Timesheet posted"
 msgstr "Objavljen je Timesheet"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:511
+#: /home/tim/code/KwaMoja/Timesheets.php:519
 msgid "First name"
 msgstr "Ime"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:538
+#: /home/tim/code/KwaMoja/Timesheets.php:546
 msgid "No employees have been set up yet"
 msgstr "Još nije postavljen nijedan zaposlenik"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:542
+#: /home/tim/code/KwaMoja/Timesheets.php:550
 msgid "Select a different employee"
 msgstr "Odaberite drugog zaposlenika"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:544
+#: /home/tim/code/KwaMoja/Timesheets.php:552
 msgid "Only employees set up to enter timesheets can use this script - please see the timesheet administrator"
 msgstr "Samo radnici koji su postavljeni za unos u tablice mogu koristiti ovu skriptu - pogledajte administratora vremena"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:549
+#: /home/tim/code/KwaMoja/Timesheets.php:557
 msgid "Timesheet row deleted"
 msgstr "Redak retka je izbrisan"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:558
+#: /home/tim/code/KwaMoja/Timesheets.php:566
 msgid "For the week ending"
 msgstr "Za tjedan koji završava"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:633
-#: /home/tim/code/KwaMoja/Timesheets.php:647
-#: /home/tim/code/KwaMoja/Timesheets.php:695
-#: /home/tim/code/KwaMoja/Timesheets.php:697
+#: /home/tim/code/KwaMoja/Timesheets.php:641
+#: /home/tim/code/KwaMoja/Timesheets.php:655
+#: /home/tim/code/KwaMoja/Timesheets.php:707
+#: /home/tim/code/KwaMoja/Timesheets.php:709
 msgid "Non-chargable"
 msgstr "Non-chargable"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:657
+#: /home/tim/code/KwaMoja/Timesheets.php:665
 msgid "Are you sure you wish to delete this timesheet entry"
 msgstr "Jeste li sigurni da želite izbrisati ovaj unos u tablici?"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:657
+#: /home/tim/code/KwaMoja/Timesheets.php:665
 msgid "submitted"
 msgstr "podnijeti"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:779
+#: /home/tim/code/KwaMoja/Timesheets.php:791
 msgid "Submit for Approval"
 msgstr "Pošaljite na odobrenje"
 
-#: /home/tim/code/KwaMoja/Timesheets.php:785
+#: /home/tim/code/KwaMoja/Timesheets.php:797
 msgid "Approve"
 msgstr "Odobriti"
 
@@ -55075,8 +55075,8 @@ msgid "This page contains the users settings than can be changed by the user."
 msgstr "Ova stranica sadrži postavke korisnika, a korisnik ih ne može mijenjati."
 
 #: /home/tim/code/KwaMoja/UserSettings.php:134
-msgid "Edit the settings for this user"
-msgstr "Uredite postavke za ovog korisnika"
+msgid "Edit the settings for"
+msgstr "Uredite postavke za"
 
 #: /home/tim/code/KwaMoja/UserSettings.php:145
 msgid "Maximum Number of Records to Display"
@@ -59246,37 +59246,57 @@ msgstr "Dodavanje citata u tablicu prodavača"
 msgid "Adding confirmeddate to salesorders table"
 msgstr "Dodavanje potvrde u tablicu prodavača"
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:6
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:4
 msgid "Database Upgrade"
 msgstr "Nadogradnja baze podataka"
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:48
-msgid "You have database updates that are required."
-msgstr "Imate ažuriranja baze podataka koja su potrebna."
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:63
+msgid "You have the following database updates which are required."
+msgstr "Imate sljedeća ažuriranja baze podataka koja su potrebna."
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:48
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:63
 msgid "Please ensure that you have taken a backup of your current database before continuing."
 msgstr "Prije nastavka provjerite jeste li uzeli sigurnosnu kopiju trenutne baze podataka."
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:50
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:67
+msgid "Update Number"
+msgstr "Ažuriraj broj"
+
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:68
+msgid "Update Description"
+msgstr "Ažurirajte opis"
+
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:91
+msgid "No descriptrion can be found for this update"
+msgstr "Nije moguće pronaći opis za ovo ažuriranje"
+
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:110
 msgid "Continue With Updates"
 msgstr "Nastavite s ažuriranjima"
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:73
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:131
 msgid "Database Updates Have Been Run"
 msgstr "Ažuriranja baza podataka su pokrenuta"
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:74
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:134
 msgid "updates have errors in them"
 msgstr "ažuriranja imaju pogreške u njima"
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:75
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:137
+msgid "updates have not been done as the update was unnecessary on this database"
+msgstr "ažuriranja nisu izvršena jer ažuriranje nije bilo potrebno za ovu bazu podataka"
+
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:140
 msgid "updates have succeeded"
 msgstr "ažuriranja su uspjela"
 
-#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:76
-msgid "updates have not been done as the update was unnecessary on this database"
-msgstr "ažuriranja nisu izvršena jer ažuriranje nije bilo potrebno za ovu bazu podataka"
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:152
+msgid "Log out of KwaMoja"
+msgstr "Odjavite se s KwaMoja"
+
+#: /home/tim/code/KwaMoja/Z_UpgradeDatabase.php:153
+msgid "You need to logout and log back in for these changes to take affect"
+msgstr "Morate se odjaviti i ponovno prijaviti kako bi ove promjene stupile na snagu"
 
 #: /home/tim/code/KwaMoja/Z_Upgrade_3.01-3.02.php:4
 msgid "Upgrade 3.01 - 3.02"
@@ -59727,28 +59747,28 @@ msgstr "Geokodiranje generira XML"
 msgid "KwaMoja ERP"
 msgstr "KwaMoja ERP"
 
-#: /home/tim/code/KwaMoja/index.php:36
+#: /home/tim/code/KwaMoja/index.php:38
 #: /home/tim/code/KwaMoja/includes/header_main.php:35
 msgid "KwaMoja"
 msgstr "KwaMoja"
 
-#: /home/tim/code/KwaMoja/index.php:143 /home/tim/code/KwaMoja/index.php:144
+#: /home/tim/code/KwaMoja/index.php:156 /home/tim/code/KwaMoja/index.php:157
 #: /home/tim/code/KwaMoja/includes/header_main.php:113
 #: /home/tim/code/KwaMoja/includes/header_main.php:114
 msgid "Logout"
 msgstr "Odjaviti se"
 
-#: /home/tim/code/KwaMoja/index.php:143
+#: /home/tim/code/KwaMoja/index.php:156
 #: /home/tim/code/KwaMoja/includes/header_main.php:113
 msgid "Are you sure you wish to logout?"
 msgstr "Jeste li sigurni da se želite odjaviti?"
 
-#: /home/tim/code/KwaMoja/index.php:143
+#: /home/tim/code/KwaMoja/index.php:156
 #: /home/tim/code/KwaMoja/includes/header_main.php:113
 msgid "Confirm Logout"
 msgstr "Potvrdite odjavu"
 
-#: /home/tim/code/KwaMoja/index.php:146
+#: /home/tim/code/KwaMoja/index.php:159
 msgid "Change the user settings"
 msgstr "Promijenite korisničke postavke"
 
@@ -64009,8 +64029,8 @@ msgstr "Naziv baze podataka koji će se koristiti za dolazne transakcije."
 #: /home/tim/code/KwaMoja/api/api_xml-rpc.php:4127
 #: /home/tim/code/KwaMoja/api/api_xml-rpc.php:4165
 #: /home/tim/code/KwaMoja/api/api_xml-rpc.php:4203
-#: /home/tim/code/KwaMoja/includes/Login.php:90
-#: /home/tim/code/KwaMoja/includes/Login.php:92
+#: /home/tim/code/KwaMoja/includes/Login.php:98
+#: /home/tim/code/KwaMoja/includes/Login.php:99
 msgid "User name"
 msgstr "Korisničko ime"
 
@@ -65679,6 +65699,20 @@ msgstr "Povratna vrijednost"
 #: /home/tim/code/KwaMoja/dashboard/bank_trans.php:9
 msgid "Latest bank transactions"
 msgstr "Posljednje bankovne transakcije"
+
+#: /home/tim/code/KwaMoja/dashboard/bank_trans.php:19
+#: /home/tim/code/KwaMoja/dashboard/customer_orders.php:19
+#: /home/tim/code/KwaMoja/dashboard/latest_grns.php:21
+#: /home/tim/code/KwaMoja/dashboard/latest_po.php:19
+#: /home/tim/code/KwaMoja/dashboard/latest_po_auth.php:19
+#: /home/tim/code/KwaMoja/dashboard/latest_stock_status.php:20
+#: /home/tim/code/KwaMoja/dashboard/mrp_dashboard.php:19
+#: /home/tim/code/KwaMoja/dashboard/template.php:21
+#: /home/tim/code/KwaMoja/dashboard/total_dashboard.php:19
+#: /home/tim/code/KwaMoja/dashboard/unpaid_invoice.php:19
+#: /home/tim/code/KwaMoja/dashboard/work_orders.php:19
+msgid "Remove this applet from dashboard"
+msgstr "Uklonite ovaj aplet s nadzorne ploče"
 
 #: /home/tim/code/KwaMoja/dashboard/customer_orders.php:9
 msgid "Latest Customer Orders"
@@ -68135,55 +68169,58 @@ msgstr "Nisu pronađene Job Cardove"
 msgid "E-Mail"
 msgstr "E-mail"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:8
+#: /home/tim/code/KwaMoja/includes/Login.php:7
 msgid "Login as user"
 msgstr "Prijavite se kao korisnik"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:8
+#: /home/tim/code/KwaMoja/includes/Login.php:7
 msgid "admin"
 msgstr "admin"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:8
+#: /home/tim/code/KwaMoja/includes/Login.php:7
 msgid "with password"
 msgstr "s lozinkom"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:8
+#: /home/tim/code/KwaMoja/includes/Login.php:7
 msgid "kwamoja"
 msgstr "glitch"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:10
+#: /home/tim/code/KwaMoja/includes/Login.php:9
 msgid "Please login here"
 msgstr "Molimo prijavite se ovdje"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:16
+#: /home/tim/code/KwaMoja/includes/Login.php:15
 msgid "Login screen"
 msgstr "Zaslon za prijavu"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:48
+#: /home/tim/code/KwaMoja/includes/Login.php:72
 #: /home/tim/code/KwaMoja/includes/header_main.php:103
 msgid "Company"
 msgstr "Društvo"
 
-#: /home/tim/code/KwaMoja/includes/Login.php:105
-#: /home/tim/code/KwaMoja/includes/Login.php:108
+#: /home/tim/code/KwaMoja/includes/Login.php:102
+msgid "Show Password"
+msgstr "Pokaži lozinku"
+
+#: /home/tim/code/KwaMoja/includes/Login.php:111
 msgid "Login"
 msgstr "Prijaviti se"
 
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:26
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:71
-#: /home/tim/code/KwaMoja/includes/header.php:44
+#: /home/tim/code/KwaMoja/includes/header.php:45
 msgid "SUCCESS"
 msgstr "USPJEH"
 
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:34
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:78
-#: /home/tim/code/KwaMoja/includes/header.php:52
+#: /home/tim/code/KwaMoja/includes/header.php:53
 msgid "INFORMATION"
 msgstr "INFORMACIJA"
 
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:34
 #: /home/tim/code/KwaMoja/includes/MiscFunctions.php:78
-#: /home/tim/code/KwaMoja/includes/header.php:52
+#: /home/tim/code/KwaMoja/includes/header.php:53
 msgid "Message"
 msgstr "Poruka"
 
@@ -70135,12 +70172,12 @@ msgstr "Document.pdf"
 msgid "version"
 msgstr "verzija"
 
-#: /home/tim/code/KwaMoja/includes/header.php:5
-#: /home/tim/code/KwaMoja/includes/header.php:14
+#: /home/tim/code/KwaMoja/includes/header.php:6
+#: /home/tim/code/KwaMoja/includes/header.php:15
 msgid "Close this window"
 msgstr "Zatvorite ovaj prozor"
 
-#: /home/tim/code/KwaMoja/includes/header.php:7
+#: /home/tim/code/KwaMoja/includes/header.php:8
 msgid "Help for this function"
 msgstr "Pomoć za ovu funkciju"
 
@@ -73425,6 +73462,12 @@ msgstr "Osobni zajmovi"
 #: /home/tim/code/KwaMoja/sql/updates/99.php:145
 msgid "Staff Loan Repayments"
 msgstr "Otplata zajma osoblja"
+
+#~ msgid "Edit the settings for this user"
+#~ msgstr "Uredite postavke za ovog korisnika"
+
+#~ msgid "You have database updates that are required."
+#~ msgstr "Imate ažuriranja baze podataka koja su potrebna."
 
 #~ msgid "Order Delivery Details"
 #~ msgstr "Naruči pojedinosti o isporuci"
