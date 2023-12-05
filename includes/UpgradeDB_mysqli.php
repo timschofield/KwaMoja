@@ -150,8 +150,8 @@ function NewMenuItem($Link, $Section, $Caption, $URL, $Sequence) {
 			$SQL = "UPDATE `menuitems` SET sequence=sequence+1
 							WHERE sequence>='" . $Sequence . "'
 								AND secroleid='" . $MyRow['secroleid'] . "'
-								AND link='" . $Link . "'
-								AND section='" . $Section . "'";
+								AND modulelink='" . $Link . "'
+								AND menusection='" . $Section . "'";
 			$Response = executeSQL($SQL, False);
 			$SQL = "INSERT INTO `menuitems` (`secroleid`,
 												`modulelink`,
