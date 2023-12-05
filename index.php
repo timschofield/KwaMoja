@@ -40,9 +40,9 @@ if (!isset($RootPath)) {
 			<link href="', $PathPrefix, $RootPath, '/css/print.css" rel="stylesheet" type="text/css" media="print" />
 			<meta name="viewport" content="width=device-width, initial-scale=1">';
 
-	echo '<link href="', $PathPrefix, $RootPath, '/themes/styles.css" id="StyleSheet-main" rel="stylesheet" type="text/css" media="screen" />';
-	echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/styles.css" id="StyleSheet-theme" rel="stylesheet" type="text/css" media="screen" />';
-	echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/', $_SESSION['Direction'], '/styles.css" id="StyleSheet-direction" rel="stylesheet" type="text/css" media="screen" />';
+	echo '<link href="', $PathPrefix, $RootPath, '/css/styles.css" id="StyleSheet-main" rel="stylesheet" type="text/css" media="screen" />';
+	echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/styles.css" id="StyleSheet-theme" rel="stylesheet" type="text/css" media="screen" />';
+	echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/', $_SESSION['Direction'], '/styles.css" id="StyleSheet-direction" rel="stylesheet" type="text/css" media="screen" />';
 
 	echo '<script async type="text/javascript" src = "', $PathPrefix, $RootPath, '/javascripts/MiscFunctions.js"></script>';
 	echo '<script async type="text/javascript" src = "', $PathPrefix, $RootPath, '/javascripts/Modal.js"></script>';
@@ -52,15 +52,15 @@ if (!isset($RootPath)) {
 	</script>';
 
 	if ($_SESSION['ShowPageHelp'] == 0) {
-		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/page_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/page_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
 	} else {
-		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/page_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/page_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
 	}
 
 	if ($_SESSION['ShowFieldHelp'] == 0) {
-		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/field_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/field_help_off.css" rel="stylesheet" type="text/css" media="screen" />';
 	} else {
-		echo '<link href="', $PathPrefix, $RootPath, '/themes/', $_SESSION['Theme'], '/field_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
+		echo '<link href="', $PathPrefix, $RootPath, '/css/', $_SESSION['Theme'], '/field_help_on.css" rel="stylesheet" type="text/css" media="screen" />';
 	}
 
 	if ($Debug === 0) {
