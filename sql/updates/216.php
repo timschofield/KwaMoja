@@ -164,7 +164,7 @@ CreateTable('care_target_test', "CREATE TABLE `care_target_test` (
   UNIQUE KEY `nr` (`nr`)
 )");
 
-NewModule('hospsetup', 'hspsu', _('Hospital Setup'), 15);
+NewModule('hospsetup', 'hsp', _('Hospital Setup'), 15);
 
 RemoveMenuItem('system', 'Transactions', 'Hospital Configuration Options', '/KCMCHospitalConfiguration.php');
 NewMenuItem('hospsetup', 'Transactions', _('Hospital Configuration Options'), '/KCMCHospitalConfiguration.php', 1);
