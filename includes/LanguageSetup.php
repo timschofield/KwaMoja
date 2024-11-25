@@ -10,7 +10,7 @@ mb_internal_encoding('UTF-8');
  * normally the lower case two character country code underscore uppercase 2
  * character country code does the trick  except for en !!
 */
-
+//require_once('../inludes/MiscFunctions.php');
 $_SESSION['DefaultLanguage'] = $DefaultLanguage;
 
 /*

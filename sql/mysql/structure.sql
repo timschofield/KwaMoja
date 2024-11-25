@@ -2,7 +2,7 @@
 
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `KwaMoja2` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `KwaMoja2`;
+USE `KwaMoja`;
 DROP TABLE IF EXISTS `abcgroups`;
 CREATE TABLE `abcgroups` (
   `groupid` int(11) NOT NULL DEFAULT '0',

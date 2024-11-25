@@ -77,9 +77,9 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 				$InputError = 1;
 				prnMsg(_('All the account group names must be at least one character long'), 'error');
 			} //mb_strlen($_POST['GroupName']) == 0
-			
 
-			
+
+
 		}
 		if ($_POST['ParentGroup'] != '') {
 			if (CheckForRecursiveGroup($_POST['GroupCode'], $_POST['ParentGroup'])) {
@@ -241,9 +241,9 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 			unset($_POST['SequenceInTB']);
 			unset($GroupNames);
 		} //$InputError != 1
-		
 
-		
+
+
 	} elseif (isset($_GET['delete'])) {
 		//the link to delete a selected record was clicked instead of the submit button
 		// PREVENT DELETES IF DEPENDENT RECORDS IN 'ChartMaster'
@@ -299,9 +299,9 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 			}
 
 		} //end if account group used in GL accounts
-		
 
-		
+
+
 	} //isset($_GET['delete'])
 	if (!isset($_GET['SelectedAccountGroup']) and !isset($_POST['SelectedAccountGroup'])) {
 		/*	An account group could be posted when one has been edited and is being updated or GOT when selected for modification
@@ -391,7 +391,7 @@ function CheckForRecursiveGroup($ParentGroupCode, $GroupCode) {
 		echo '</tbody>';
 		echo '</table>';
 	} //end of ifs and buts!
-	
+
 
 	if (isset($_POST['SelectedAccountGroup']) or isset($_GET['SelectedAccountGroup'])) {
 		echo '<div class="toplink">

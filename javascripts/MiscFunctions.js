@@ -491,6 +491,8 @@ function ToggleCheckbox(element) {
 		element.checked=true;
 	}
 }
+SetLinkHandler(element) {
+}
 function initial() {
 	Scheduler();
 	if (document.getElementsByTagName) {

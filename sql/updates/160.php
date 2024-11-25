@@ -1,10 +1,14 @@
 <?php
 
+ChangeColumnType('tagref', $'tags', 'INT(11)', 'NOT Null', '');
+
 CreateTable('gltags',
 "CREATE TABLE `gltags` (
   `counterindex` INT(11) NOT NULL DEFAULT '0',
   `tagref` INT(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`counterindex`, `tagref`)
+  PRIMARY KEY (`counterindex`, `tagref`),
+  FOREIGN KEY (counterindex) REFERENCES gltrans(counterindex),
+  FOREIGN KEY (tagref) REFERENCES tags(tagref)
 )");
 
 

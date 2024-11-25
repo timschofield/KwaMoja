@@ -64,7 +64,7 @@ if (isset($_POST['Add']) or isset($_POST['Update'])) {
 	}
 	if (isset($_POST['Frequency']) and $_POST['Frequency'] == 'D') {
 		$_POST['Days'] = 0; // If its a Daily payment then Days must be zero
-		
+
 	}
 	if (isset($_POST['Frequency']) and $_POST['Frequency'] == 'W' and $_POST['Days'] > 6) {
 		prnMsg(_('If the payment is to be made weekly then the days field must be an integer between 0 and 6'), 'error');
@@ -295,7 +295,7 @@ echo '<field>
 		<select multiple="multiple" name="Tag[]">';
 echo '<option value="0">0 - ', _('None'), '</option>';
 while ($MyRow = DB_fetch_array($Result)) {
-	if (in_array($MyRow['tagref'], $Tags) or in_array($MyRow['tagref'], $_SESSION['JournalDetail']->GLEntries[$_GET['Edit']]->tag)) {
+	if (in_array($MyRow['tagref'], $Tags)) {
 		echo '<option selected="selected" value="', $MyRow['tagref'], '">', $MyRow['tagref'], ' - ', $MyRow['tagdescription'], '</option>';
 	} else {
 		echo '<option value="', $MyRow['tagref'], '">', $MyRow['tagref'], ' - ', $MyRow['tagdescription'], '</option>';

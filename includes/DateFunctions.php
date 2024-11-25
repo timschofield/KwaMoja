@@ -262,7 +262,7 @@ function YearEndDate($MonthNo, $YearIncrement) {
 function ConvertSQLDate($DateEntry) {
 
 	//for MySQL dates are in the format YYYY-mm-dd
-	
+
 
 	if (mb_strpos($DateEntry, '/')) {
 		$Date_Array = explode('/', $DateEntry);
@@ -312,7 +312,7 @@ function ConvertSQLDate($DateEntry) {
 function ConvertSQLDateTime($DateEntry) {
 
 	//for MySQL dates are in the format YYYY-mm-dd H:i:s
-	
+
 
 	if (mb_strpos($DateEntry, '/')) {
 		$Date_Array = explode('/', $DateEntry);
@@ -536,7 +536,7 @@ function Format_Date($DateEntry) {
 			}
 		}
 		// end if check date
-		
+
 	} else { // end if all numeric inputs
 		return 0;
 	}
@@ -963,11 +963,11 @@ function DateDiff($Date1, $Date2, $Period) {
 	} elseif ($_SESSION['DefaultDateFormat'] == 'Y/m/d') {
 		$Date1_Stamp = mktime(0, 0, 0, (int)$Date1_array[1], (int)$Date1_array[2], (int)$Date1_array[0]); //Changeorder of entries to match Y/M/D format
 		$Date2_Stamp = mktime(0, 0, 0, (int)$Date2_array[1], (int)$Date2_array[2], (int)$Date2_array[0]); //Changeorder of entries to match Y/M/D format
-		
+
 	} elseif ($_SESSION['DefaultDateFormat'] == 'Y-m-d') {
 		$Date1_Stamp = mktime(0, 0, 0, (int)$Date1_array[1], (int)$Date1_array[2], (int)$Date1_array[0]); //Changeorder of entries to match Y/M/D format
 		$Date2_Stamp = mktime(0, 0, 0, (int)$Date2_array[1], (int)$Date2_array[2], (int)$Date2_array[0]); //Changeorder of entries to match Y/M/D format
-		
+
 	}
 	$Difference = $Date1_Stamp - $Date2_Stamp;
 
@@ -1038,7 +1038,7 @@ function CreatePeriod($PeriodNo, $PeriodEnd) {
 	$TotalsSQL = "INSERT INTO gltotals (account, period, amount)
 				SELECT accountcode, '" . $PeriodNo . "', 0 FROM chartmaster";
 	$ErrMsg = _('An error occurred in adding a new period number to the gltotals table');
-	$TotalsResult = DB_query($TotalsSQL, $ErrMsg);
+//	$TotalsResult = DB_query($TotalsSQL, $ErrMsg);
 }
 
 function PeriodExists($TransDate) {
